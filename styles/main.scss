@@ -1,0 +1,255 @@
+@import "./_variables";
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+main {
+    height: 100vh;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:$desktopNavPadding;
+        -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
+        box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
+
+        .mobileLogo {
+            display: none;
+        }
+
+        .desktopLogo {
+            img {
+                width: 18vw;
+            }
+        }
+
+        .desktopNav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                list-style: none;
+                list-style-type: none;
+
+                li {
+                    padding: 0 2rem;
+
+                    a {
+                        text-decoration: none;
+                        color: $darkBlue;
+                        font-size: $navFontSizeClamp;
+                        font-family: $fontFamily;
+                        text-transform: capitalize;
+                    }
+
+                }
+            }
+
+            .navHome::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(0);
+                transition: 0.25s all;
+            }
+            
+            .navHome:hover::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(1);
+                transition: 0.25s all;
+            }
+
+            .navPortfolio::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(0);
+                transition: 0.25s all;
+            }
+            
+            .navPortfolio:hover::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(1);
+                transition: 0.25s all;
+            }
+
+            .navAbout::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(0);
+                transition: 0.25s all;
+            }
+            
+            .navAbout:hover::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(1);
+                transition: 0.25s all;
+            }
+
+            .navResume::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(0);
+                transition: 0.25s all;
+            }
+            
+            .navResume:hover::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(1);
+                transition: 0.25s all;
+            }
+
+
+
+        }
+
+        .contactButtonContainer {
+            padding: 0 0 0 2rem;
+
+            .contactButton {
+                @include contactButton;
+                font-family: $fontFamily;
+                font-size: $navFontSizeClamp;
+            }
+
+            .contactButton:hover {
+                @include contactButtonHover;
+                font-family: $fontFamily;
+                font-size: $navFontSizeClamp;
+            }
+        }
+    }
+
+    header {
+        padding: $desktopPadding;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80vh;
+
+        .boxOne {
+
+            .description {
+                position: relative;
+
+                p {
+                    @include subHeadingTwo;
+                }
+            }
+
+            .title {
+                margin: -8% 0;
+                
+                h1 {
+                    @include headingDarkBlue;
+                    text-transform:capitalize;
+                }
+
+                span {
+                    @include headingLightBlue;
+                }
+            }
+
+            .details {
+                padding: 1rem 0 0 0;
+
+                .myWork {
+                    @include buttonNeutral;
+                    transition: 0.25s all;
+                    text-transform: capitalize;
+                }
+
+                .myWork:hover {
+                    @include buttonNeutralHover;
+                    transition: 0.25s all;
+                }
+
+                .letschatButton {
+                    @include letsChatButton;
+                    transition: 0.25s all;
+                    text-transform: capitalize;
+                    margin: 0 0 0 3rem;
+                }
+
+                .letschatButton::before {
+                    @include letsChatButtonHover;
+                    transform: scaleY(0);
+                    transition: 0.25s all;
+                }
+
+                
+                .letschatButton:hover:before {
+                    @include letsChatButtonHover;
+                    transform: scaleY(1);
+                    transition: 0.25s all;
+                }
+            }
+
+        }
+
+        .boxTwo {
+
+            img {
+                height: 30rem;
+                width: auto;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+
+    }
+
+    main {
+    
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:$mobileNavPadding;
+            -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
+            box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
+    
+            .desktopLogo {
+                display: none;
+            }
+    
+            .desktopNav {
+               display: none;
+    
+            }
+    
+            .contactButtonContainer {
+               display: none;
+            }
+
+            .mobileLogo {
+                display: initial;
+            }
+        }
+    }
+    
+  }

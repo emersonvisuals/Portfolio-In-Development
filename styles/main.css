@@ -1,0 +1,364 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins;
+}
+
+main {
+  height: 100vh;
+}
+
+main nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 13vw;
+  -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+}
+
+main nav .mobileLogo {
+  display: none;
+}
+
+main nav .desktopLogo img {
+  width: 18vw;
+}
+
+main nav .desktopNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main nav .desktopNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  list-style-type: none;
+}
+
+main nav .desktopNav ul li {
+  padding: 0 2rem;
+}
+
+main nav .desktopNav ul li a {
+  text-decoration: none;
+  color: #101011;
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-family: poppins;
+  text-transform: capitalize;
+}
+
+main nav .desktopNav .navHome::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main nav .desktopNav .navHome:hover::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main nav .desktopNav .navPortfolio::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main nav .desktopNav .navPortfolio:hover::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main nav .desktopNav .navAbout::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main nav .desktopNav .navAbout:hover::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main nav .desktopNav .navResume::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main nav .desktopNav .navResume:hover::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main nav .contactButtonContainer {
+  padding: 0 0 0 2rem;
+}
+
+main nav .contactButtonContainer .contactButton {
+  background-color: transparent;
+  padding: 1.5rem 7rem;
+  border-radius: 5rem;
+  font-family: poppins;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  color: #101011;
+  border: 1px solid #101011;
+  font-family: poppins;
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
+}
+
+main nav .contactButtonContainer .contactButton:hover {
+  background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
+  padding: 1.5rem 7rem;
+  border-radius: 5rem;
+  font-family: poppins;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  border: none;
+  border: 1px solid transparent;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  font-family: poppins;
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
+}
+
+main header {
+  padding: 0 13vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80vh;
+}
+
+main header .boxOne .description {
+  position: relative;
+}
+
+main header .boxOne .description p {
+  font-size: clamp(1.25rem, 1.25vw, 2.7rem);
+  font-family: poppins;
+}
+
+main header .boxOne .title {
+  margin: -8% 0;
+}
+
+main header .boxOne .title h1 {
+  font-size: clamp(5.5rem, 6vw, 12.5rem);
+  color: #101011;
+  font-family: poppins;
+  text-transform: capitalize;
+}
+
+main header .boxOne .title span {
+  font-size: clamp(5.5rem, 6vw, 12.5rem);
+  color: #1C56A3;
+  font-family: poppins;
+}
+
+main header .boxOne .details {
+  padding: 1rem 0 0 0;
+}
+
+main header .boxOne .details .myWork {
+  background-color: transparent;
+  padding: 1.25rem clamp(6rem, 7rem, 10rem);
+  border-radius: 5rem;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+  color: #1C56A3;
+  border: 1px solid #1C56A3;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  transition: 0.25s all;
+  text-transform: capitalize;
+}
+
+main header .boxOne .details .myWork:hover {
+  background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
+  padding: 1.25rem clamp(6rem, 7rem, 10rem);
+  border-radius: 5rem;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main header .boxOne .details .letschatButton {
+  background-color: transparent;
+  border: none;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+  color: #1C56A3;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  text-transform: capitalize;
+  margin: 0 0 0 3rem;
+}
+
+main header .boxOne .details .letschatButton::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main header .boxOne .details .letschatButton:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+main header .boxTwo img {
+  height: 30rem;
+  width: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  main nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem 10vw;
+    -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+  }
+  main nav .desktopLogo {
+    display: none;
+  }
+  main nav .desktopNav {
+    display: none;
+  }
+  main nav .contactButtonContainer {
+    display: none;
+  }
+  main nav .mobileLogo {
+    display: initial;
+  }
+}
+/*# sourceMappingURL=main.css.map */

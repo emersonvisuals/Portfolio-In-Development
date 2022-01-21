@@ -1,0 +1,137 @@
+// colors
+$darkBlue: #101011;
+$blue: #1C56A3;
+$tan: hsl(40, 45%, 92%);
+$grey: #EDEEF4;
+$white: #FFFFFF;
+$gradient: linear-gradient(27deg, rgba(16,55,108,1) 0%, rgba(28,86,163,1) 100%);
+
+// font 
+$fontFamily: poppins; 
+$headingFontSize: 12.5rem;
+$headingFontSizeClamp: clamp(5.5rem, 6vw, 12.5rem);
+$subheadingFontSize: 6.5rem; 
+$subheadingFontSizeClamp: clamp(4rem, 7vw, 6.5rem);
+$subheadingTwoFontSize: 2.7rem; 
+$subheadingTwoFontSizeClamp: clamp(1.25rem, 1.25vw, 2.7rem);
+$fontButton: clamp(1.5rem, 1.25vw, 2.7rem);
+$navFontSizeClamp: clamp(1rem, 1.5vw, 1.8rem);
+
+//padding
+$desktopNavPadding: 3rem 13vw;
+$desktopPadding: 0 13vw;
+$mobileNavPadding: 3rem 10vw;
+
+//navbar 
+$logoSize: clamp(5rem, 20vw, 20rem);
+
+
+// contact nav Button
+    @mixin contactButton {
+        background-color: transparent;
+        padding: 1.5rem 7rem;
+        border-radius: 5rem;
+        font-family: poppins;
+        font-weight:500;
+        text-transform: capitalize;
+        font-size:1.8rem;
+        color:$darkBlue;
+        border: 1px solid $darkBlue;
+    }
+
+    @mixin contactButtonHover {
+        background: $gradient;
+        padding: 1.5rem 7rem;
+        border-radius: 5rem;
+        font-family: poppins;
+        font-weight:500;
+        text-transform: capitalize;
+        font-size:1.8rem;
+        color:$white;
+        border: none;
+        border: 1px solid transparent;
+        transition: 0.25s all;
+    }
+
+// default button
+    @mixin buttonNeutral {
+        background-color: transparent;
+        padding: 1.25rem clamp(6rem, 7rem, 10rem);
+        border-radius: 5rem;
+        font-family: poppins;
+        font-weight:600;
+        font-size:$fontButton;
+        color:$blue;
+        border: 1px solid $blue;
+        transition: 0.25s all;
+    }
+
+    @mixin buttonNeutralHover { 
+        background: $gradient;
+        padding: 1.25rem clamp(6rem, 7rem, 10rem);
+        border-radius: 5rem;
+        font-family: poppins;
+        font-weight:600;
+        font-size:$fontButton;
+        color:$white;
+        border: 1px solid transparent;
+        transition: 0.25s all;
+    }
+
+// lets chat button
+
+    @mixin letsChatButton {
+        background-color: transparent;
+        border: none;
+        font-family: $fontFamily;
+        font-weight:600;
+        font-size:$fontButton;
+        color:$blue;
+
+    }
+
+    @mixin letsChatButtonHover {
+        content: '';
+        position: absolute;
+        background-color: $blue;
+        width: 2.0rem;
+        height: 1rem;
+        margin: 3rem 0 0 0;
+    }
+
+// tan underline 
+    @mixin tanHeaderClamp {
+        background-color: $tan;
+        border-radius: 3rem;
+    }
+
+//heading 
+    @mixin headingDarkBlue {
+        font-size: $headingFontSizeClamp;
+        color: $darkBlue;
+        font-family: $fontFamily;
+    }
+
+    @mixin headingLightBlue {
+        font-size: $headingFontSizeClamp;
+        color: $blue;
+        font-family: $fontFamily;
+    }
+
+//subHeading
+
+//subHeading Two 
+@mixin subHeadingTwo {
+    font-size: $subheadingTwoFontSizeClamp;
+    font-family: $fontFamily;
+}
+
+//navbar 
+    @mixin navHover {
+        content: '';
+        position: absolute;
+        background-color: $blue;
+        width: 2.0rem;
+        height: 1rem;
+        margin: 3rem 0 0 0;
+    }
