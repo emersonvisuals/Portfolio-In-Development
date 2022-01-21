@@ -203,8 +203,7 @@ main {
         .boxTwo {
 
             img {
-                height: 30rem;
-                width: auto;
+                @include illustration;
             }
         }
 

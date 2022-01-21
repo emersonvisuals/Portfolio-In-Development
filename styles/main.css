@@ -329,8 +329,8 @@ main header .boxOne .details .letschatButton:hover:before {
 }
 
 main header .boxTwo img {
-  height: 30rem;
   width: auto;
+  height: clamp(25rem, 35rem, 50rem);
 }
 
 @media only screen and (max-width: 1024px) {
