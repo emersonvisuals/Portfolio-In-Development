@@ -186,15 +186,16 @@ main {
 
                 .letschatButton::before {
                     @include letsChatButtonHover;
-                    transform: scaleY(0);
                     transition: 0.25s all;
+                    transform: scaleY(0);
+                    
                 }
 
                 
                 .letschatButton:hover:before {
                     @include letsChatButtonHover;
-                    transform: scaleY(1);
                     transition: 0.25s all;
+                    transform: scaleY(1);
                 }
             }
 
