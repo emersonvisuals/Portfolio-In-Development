@@ -100,7 +100,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     }
 
 // tan underline 
-
     @mixin tanUnderline {
         content: '';
         width: clamp(42rem, 42vw, 82rem);
@@ -145,5 +144,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
 // illustrations 
     @mixin illustration {
+        width: auto;
         height: clamp(25rem, 26vw, 50rem);
     }

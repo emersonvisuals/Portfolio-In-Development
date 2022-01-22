@@ -3,6 +3,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 html {
@@ -151,6 +152,7 @@ main {
 
                 p::before {
                     @include tanUnderline;
+                }
             }
 
             .typingEffect {
@@ -170,10 +172,12 @@ main {
                   margin-left: 0.1rem;
                   width: 3px;
                   animation: blink 1s infinite;
+                  z-index: 1;
                 }
                 
                 .cursor.typing {
                   animation: none;
+                  z-index: 1;
                 }
                 
                 @keyframes blink {
@@ -185,6 +189,18 @@ main {
                 }
             }
 
+            .title {
+                margin: -8% 0;
+                
+                h1 {
+                    @include headingDarkBlue;
+                    text-transform:capitalize;
+                }
+
+                span {
+                    @include headingLightBlue;
+                }
+            }
 
             .details {
                 padding: 1rem 0 0 0;
@@ -214,7 +230,6 @@ main {
                     
                 }
 
-                
                 .letschatButton:hover:before {
                     @include letsChatButtonHover;
                     transition: 0.25s all;
@@ -231,7 +246,25 @@ main {
             }
         }
     }
+
+    .background {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: fixed;
+        bottom:5rem;
+        right: -5rem;
+        z-index: -1;
+
+        img {
+            height: auto;
+            width: 55rem;
+        }
+
+
+    }
 }
+
+
 
 
 
