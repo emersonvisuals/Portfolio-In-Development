@@ -207,10 +207,37 @@ main {
                 @include illustration;
             }
         }
-
     }
 }
 
+.container {
+
+  }
+  .container h1 {
+      @include headingDarkBlue;
+      margin: -1rem 0 0 0;
+  }
+  .container h1 span.typed-text {
+      @include headingDarkBlue;
+  }
+  .container h1 span.cursor {
+    display: inline-block;
+    background-color: $blue;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container h1 span.cursor.typing {
+    animation: none;
+  }
+
+  @keyframes blink {
+    0%  { background-color: $blue; }
+    49% { background-color: $blue; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: $blue; }
+  }
 
 
 
