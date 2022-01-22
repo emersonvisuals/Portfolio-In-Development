@@ -230,30 +230,83 @@ main header {
   height: 80vh;
 }
 
-main header .boxOne .description {
-  position: relative;
-}
-
 main header .boxOne .description p {
   font-size: clamp(1.25rem, 1.25vw, 2.7rem);
   font-family: poppins;
+  margin: 0;
 }
 
-main header .boxOne .title {
-  margin: -8% 0;
+main header .boxOne .description p::before {
+  content: '';
+  width: clamp(42rem, 42vw, 82rem);
+  height: clamp(2rem, 2vw, 4rem);
+  background-color: #f4eee1;
+  position: absolute;
+  z-index: -1;
+  border-radius: 2rem;
 }
 
-main header .boxOne .title h1 {
-  font-size: clamp(5.5rem, 6vw, 12.5rem);
-  color: #101011;
-  font-family: poppins;
-  text-transform: capitalize;
-}
-
-main header .boxOne .title span {
+main header .boxOne .typingEffect h1 {
   font-size: clamp(5.5rem, 6vw, 12.5rem);
   color: #1C56A3;
   font-family: poppins;
+  margin: 0;
+}
+
+main header .boxOne .typingEffect .typed-text {
+  font-size: clamp(5.5rem, 6vw, 12.5rem);
+  color: #101011;
+  font-family: poppins;
+}
+
+main header .boxOne .typingEffect .cursor {
+  display: inline-block;
+  background-color: #1C56A3;
+  margin-left: 0.1rem;
+  width: 3px;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+main header .boxOne .typingEffect .cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #1C56A3;
+  }
+  49% {
+    background-color: #1C56A3;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #1C56A3;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #1C56A3;
+  }
+  49% {
+    background-color: #1C56A3;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #1C56A3;
+  }
 }
 
 main header .boxOne .details {
@@ -329,71 +382,7 @@ main header .boxOne .details .letschatButton:hover:before {
 }
 
 main header .boxTwo img {
-  width: auto;
-  height: clamp(25rem, 35rem, 50rem);
-}
-
-.container h1 {
-  font-size: clamp(5.5rem, 6vw, 12.5rem);
-  color: #1C56A3;
-  font-family: poppins;
-  margin: -1rem 0 0 0;
-}
-
-.container h1 span.typed-text {
-  font-size: clamp(5.5rem, 6vw, 12.5rem);
-  color: #101011;
-  font-family: poppins;
-}
-
-.container h1 span.cursor {
-  display: inline-block;
-  background-color: #1C56A3;
-  margin-left: 0.1rem;
-  width: 3px;
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
-}
-
-.container h1 span.cursor.typing {
-  -webkit-animation: none;
-          animation: none;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    background-color: #1C56A3;
-  }
-  49% {
-    background-color: #1C56A3;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #1C56A3;
-  }
-}
-
-@keyframes blink {
-  0% {
-    background-color: #1C56A3;
-  }
-  49% {
-    background-color: #1C56A3;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #1C56A3;
-  }
+  height: clamp(25rem, 26vw, 50rem);
 }
 
 @media only screen and (max-width: 1024px) {
