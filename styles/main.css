@@ -572,7 +572,7 @@ main .background img {
 }
 
 #portfolio {
-  height: 110vh;
+  height: calc(100vh - 4rem);
   padding: 0 13vw;
   display: -webkit-box;
   display: -ms-flexbox;

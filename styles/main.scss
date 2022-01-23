@@ -330,7 +330,7 @@ main {
 }
 
 #portfolio {
-    height: 110vh;
+    height: calc(100vh - 4rem);
     padding: $desktopPadding;
     display: flex;
     flex-direction: column;
