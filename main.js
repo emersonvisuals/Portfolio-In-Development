@@ -54,17 +54,19 @@ trigger.addEventListener('click', function(){
 
 // desktop portfolio nav toggle
 const portfolioTrigger = document.querySelector('.navPortfolio');
-const portfolioMenu = document.querySelector('.portfolioToggle');
+const portfolioToggle = document.querySelector('.portfolioToggle');
 
 portfolioTrigger.addEventListener('click', function(){
-  portfolioMenu.classList.toggle('active');
+  portfolioToggle.classList.toggle('active');
   portfolioTrigger.classList.toggle('active');
 
+  /*
   window.onclick = function(e){
-    if(e.target !== portfolioTrigger) {
-      portfolioMenu.classList.remove('active');
+    if(e.target !== portfolioToggle.classList.contains('active')) {
+      portfolioToggle.classList.remove('active');
       portfolioTrigger.classList.remove('active');
     }
   }
+  */
 });
 
