@@ -16,13 +16,17 @@ main {
     height: 100vh;
 
     nav {
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:$desktopNavPadding;
         -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
         box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
-        background-color: $white;
+        background-color: rgba(255, 255, 255, 0.75);
+        z-index: 2;
+        padding: $desktopNavPadding;
+        width: calc(100% - 26vw);
+        backdrop-filter: blur(1rem);
 
         .mobileLogo {
             display: none;
@@ -176,7 +180,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 80vh;
+        height: 100vh;
 
         .boxOne {
             animation: boxOneAnimation 1s;
@@ -345,12 +349,11 @@ main {
     }
 
     .container {
-        background-image: url(/images/portfolioBackground-image.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
         height: auto;
         width: 100%;
         border-radius: 2rem;
+        padding: 0 2.5rem;
 
         .marqueeOne {
             overflow: hidden;
