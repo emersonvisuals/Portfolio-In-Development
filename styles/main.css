@@ -230,7 +230,7 @@ main header {
 main header .boxOne .description p {
   font-size: clamp(1.25rem, 1.25vw, 2.7rem);
   font-family: poppins;
-  margin: 0;
+  margin: 1.25rem 0;
 }
 
 main header .boxOne .description p::before {
