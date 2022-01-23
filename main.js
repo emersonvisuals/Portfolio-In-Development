@@ -60,13 +60,5 @@ portfolioTrigger.addEventListener('click', function(){
   portfolioToggle.classList.toggle('active');
   portfolioTrigger.classList.toggle('active');
 
-  /*
-  window.onclick = function(e){
-    if(e.target !== portfolioToggle.classList.contains('active')) {
-      portfolioToggle.classList.remove('active');
-      portfolioTrigger.classList.remove('active');
-    }
-  }
-  */
 });
 

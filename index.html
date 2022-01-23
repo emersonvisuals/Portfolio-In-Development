@@ -77,10 +77,136 @@
             <h1>portfolio</h1>
         </div>
         <div class="container">
-            <img src="/images/portfolioBackground-image.png" alt="">
+            <div class="marqueeOne">
+                <span class="uxuiDesign">ux/ui design</span>
+                <span class="graphicDesign">graphic design</span>
+                <span class="architecture">architecture</span>
+                <span class="frontendDevelopment">frontend development</span>
+                <span class="digitalArtwork">digital artwork</span>
+            </div>
+            <div class="marqueeTwo">
+                <span class="uxuiDesign">ux/ui design</span>
+                <span class="graphicDesign">graphic design</span>
+                <span class="architecture">architecture</span>
+                <span class="frontendDevelopment">frontend development</span>
+                <span class="digitalArtwork">digital artwork</span>
+            </div>
+            <div class="marqueeThree">
+                <span class="uxuiDesign">ux/ui design</span>
+                <span class="graphicDesign">graphic design</span>
+                <span class="architecture">architecture</span>
+                <span class="frontendDevelopment">frontend development</span>
+                <span class="digitalArtwork">digital artwork</span>
+            </div>
+            <div class="marqueeFour">
+                <span class="uxuiDesign">ux/ui design</span>
+                <span class="graphicDesign">graphic design</span>
+                <span class="architecture">architecture</span>
+                <span class="frontendDevelopment">frontend development</span>
+                <span class="digitalArtwork">digital artwork</span>
+            </div>
+            <div class="marqueeFive">
+                <span class="uxuiDesign">ux/ui design</span>
+                <span class="graphicDesign">graphic design</span>
+                <span class="architecture">architecture</span>
+                <span class="frontendDevelopment">frontend development</span>
+                <span class="digitalArtwork">digital artwork</span>
+            </div>
         </div>
     </div>
     
     <script src="main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+
+
+    <script>
+                        /**
+         * Example of starting a plugin with options.
+         * I am just passing some of the options in the following example.
+         * you can also start the plugin using $('.marquee').marquee(); with defaults
+        */
+        $('.marqueeOne').marquee({
+            //duration in milliseconds of the marquee
+            duration: 20000,
+            //gap in pixels between the tickers
+            gap: 0,
+            //time in milliseconds before the marquee will start animating
+            delayBeforeStart: 0,
+            //'left' or 'right'
+            direction: 'left',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: true,
+
+            startVisible:true,
+
+            pauseOnHover:true
+        });
+        $('.marqueeTwo').marquee({
+            //duration in milliseconds of the marquee
+            duration: 20000,
+            //gap in pixels between the tickers
+            gap: 0,
+            //time in milliseconds before the marquee will start animating
+            delayBeforeStart: 0,
+            //'left' or 'right'
+            direction: 'right',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: true,
+
+            startVisible:true,
+
+            pauseOnHover:true
+        });
+        $('.marqueeThree').marquee({
+            //duration in milliseconds of the marquee
+            duration: 20000,
+            //gap in pixels between the tickers
+            gap: 0,
+            //time in milliseconds before the marquee will start animating
+            delayBeforeStart: 0,
+            //'left' or 'right'
+            direction: 'left',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: true,
+
+            startVisible:true,
+
+            pauseOnHover:true
+        });
+        $('.marqueeFour').marquee({
+            //duration in milliseconds of the marquee
+            duration: 20000,
+            //gap in pixels between the tickers
+            gap: 0,
+            //time in milliseconds before the marquee will start animating
+            delayBeforeStart: 0,
+            //'left' or 'right'
+            direction: 'right',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: true,
+
+            startVisible:true,
+
+            pauseOnHover:true
+        });
+        $('.marqueeFive').marquee({
+            //duration in milliseconds of the marquee
+            duration: 20000,
+            //gap in pixels between the tickers
+            gap: 0,
+            //time in milliseconds before the marquee will start animating
+            delayBeforeStart: 0,
+            //'left' or 'right'
+            direction: 'left',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: true,
+
+            startVisible:true,
+
+            pauseOnHover:true
+        });
+    </script>
+
 </body>
 </html>

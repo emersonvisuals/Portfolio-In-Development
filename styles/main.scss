@@ -344,13 +344,151 @@ main {
     }
 
     .container {
+        background-image: url(/images/portfolioBackground-image.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        border-radius: 2rem;
 
-        img {
-            padding:0;
-            margin: 0;
-            height: auto;
-            width: 100%;
-            border-radius: 3rem;
+        .marqueeOne {
+            overflow: hidden;
+
+
+            span {
+                @include marquee;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 1rem;
+            }
+
+            .uxuiDesign:hover {
+                @include marqueeHover;
+            }
+            .graphicDesign:hover {
+                @include marqueeHover;
+            }
+            .architecture:hover {
+                @include marqueeHover;
+            }
+            .frontendDevelopment:hover {
+                @include marqueeHover;
+            }
+            .digitalArtwork:hover {
+                @include marqueeHover;
+            }
+        }
+
+        .marqueeTwo {
+            overflow: hidden;
+
+
+            span {
+                @include marquee;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 1rem;
+            }
+
+            .uxuiDesign:hover {
+                @include marqueeHover;
+            }
+            .graphicDesign:hover {
+                @include marqueeHover;
+            }
+            .architecture:hover {
+                @include marqueeHover;
+            }
+            .frontendDevelopment:hover {
+                @include marqueeHover;
+            }
+            .digitalArtwork:hover {
+                @include marqueeHover;
+            }
+        }
+
+        .marqueeThree {
+            overflow: hidden;
+
+
+            span {
+                @include marquee;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 1rem;
+            }
+
+            .uxuiDesign:hover {
+                @include marqueeHover;
+            }
+            .graphicDesign:hover {
+                @include marqueeHover;
+            }
+            .architecture:hover {
+                @include marqueeHover;
+            }
+            .frontendDevelopment:hover {
+                @include marqueeHover;
+            }
+            .digitalArtwork:hover {
+                @include marqueeHover;
+            }
+        }
+
+        .marqueeFour {
+            overflow: hidden;
+
+
+            span {
+                @include marquee;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 1rem;
+            }
+
+            .uxuiDesign:hover {
+                @include marqueeHover;
+            }
+            .graphicDesign:hover {
+                @include marqueeHover;
+            }
+            .architecture:hover {
+                @include marqueeHover;
+            }
+            .frontendDevelopment:hover {
+                @include marqueeHover;
+            }
+            .digitalArtwork:hover {
+                @include marqueeHover;
+            }
+        }
+
+        .marqueeFive {
+            overflow: hidden;
+
+
+            span {
+                @include marquee;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 1rem;
+            }
+
+            .uxuiDesign:hover {
+                @include marqueeHover;
+            }
+            .graphicDesign:hover {
+                @include marqueeHover;
+            }
+            .architecture:hover {
+                @include marqueeHover;
+            }
+            .frontendDevelopment:hover {
+                @include marqueeHover;
+            }
+            .digitalArtwork:hover {
+                @include marqueeHover;
+            }
         }
     }
 }
