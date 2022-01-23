@@ -50,3 +50,21 @@ const toggle = document.querySelector('.mobileToggle');
 trigger.addEventListener('click', function(){
   toggle.classList.toggle('active');
 });
+
+
+// desktop portfolio nav toggle
+const portfolioTrigger = document.querySelector('.navPortfolio');
+const portfolioMenu = document.querySelector('.portfolioToggle');
+
+portfolioTrigger.addEventListener('click', function(){
+  portfolioMenu.classList.toggle('active');
+  portfolioTrigger.classList.toggle('active');
+
+  window.onclick = function(e){
+    if(e.target !== portfolioTrigger) {
+      portfolioMenu.classList.remove('active');
+      portfolioTrigger.classList.remove('active');
+    }
+  }
+});
+

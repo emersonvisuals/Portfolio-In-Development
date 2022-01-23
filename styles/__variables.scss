@@ -16,6 +16,7 @@ $subheadingTwoFontSize: 2.7rem;
 $subheadingTwoFontSizeClamp: clamp(1.25rem, 1.25vw, 2.7rem);
 $fontButton: clamp(1.5rem, 1.25vw, 2.7rem);
 $navFontSizeClamp: clamp(1rem, 1.5vw, 1.8rem);
+$navPortfolioToggleSizeClamp: clamp(0.75rem, 1.25vw, 1.5rem);
 
 //padding
 $desktopNavPadding: 3rem 13vw;
@@ -207,4 +208,13 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         100% {opacity: 1;}
     }
 
+// portfolio Toggle Desktop
+
+    @mixin portfolioToggleStyle {
+        text-decoration: none;
+        color: $darkBlue;
+        font-size: $navPortfolioToggleSizeClamp;
+        font-family: $fontFamily;
+        text-transform: capitalize;
+    }
     
