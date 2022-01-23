@@ -113,6 +113,16 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         border-radius: 2rem;
     }
 
+    @mixin tanUnderLineSubHeading {
+        content: '';
+        width: clamp(13rem, 16vw, 28rem);
+        height: clamp(2rem, 2vw, 4rem);
+        background-color: $tan;
+        position: absolute;
+        z-index: -1;
+        border-radius: 2rem;
+    }
+
 //heading 
     @mixin headingDarkBlue {
         font-size: $headingFontSizeClamp;
@@ -127,12 +137,17 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     }
 
 //subHeading
+    @mixin subHeading {
+        text-transform: capitalize;
+        font-size: clamp(3rem, 3.75vw, 6.5rem);
+        font-weight: 700;
+    }
 
 //subHeading Two 
-@mixin subHeadingTwo {
-    font-size: $subheadingTwoFontSizeClamp;
-    font-family: $fontFamily;
-}
+    @mixin subHeadingTwo {
+        font-size: $subheadingTwoFontSizeClamp;
+        font-family: $fontFamily;
+    }
 
 //navbar 
     @mixin navHover {

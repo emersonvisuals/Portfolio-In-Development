@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1548" height="822" viewBox="0 0 1548 822">
+  <defs>
+    <pattern id="pattern" width="1" height="1" viewBox="89.727 47.646 1368.545 726.708">
+      <image preserveAspectRatio="none" width="1548" height="822" xlink:href="portfolioBackground-image.png"/>
+    </pattern>
+  </defs>
+  <rect id="portfolioBackground" width="1548" height="822" fill="url(#pattern)"/>
+</svg>
