@@ -853,6 +853,55 @@ main .background img {
   transition: 0.5s all;
 }
 
+#portfolio .container .marqueeSix {
+  overflow: hidden;
+  display: none;
+}
+
+#portfolio .container .marqueeSix span {
+  text-transform: capitalize;
+  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-weight: 700;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+  color: transparent;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#portfolio .container .marqueeSix .uxuiDesign:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#portfolio .container .marqueeSix .graphicDesign:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#portfolio .container .marqueeSix .architecture:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#portfolio .container .marqueeSix .frontendDevelopment:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#portfolio .container .marqueeSix .digitalArtwork:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
 @media only screen and (max-width: 1024px) {
   main nav {
     display: -webkit-box;
@@ -976,6 +1025,9 @@ main .background img {
   }
   #portfolio {
     padding: 0 10vw;
+  }
+  #portfolio .container .marqueeSix {
+    display: inherit;
   }
 }
 /*# sourceMappingURL=main.css.map */
