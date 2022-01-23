@@ -144,6 +144,7 @@ main {
         height: 80vh;
 
         .boxOne {
+            animation: boxOneAnimation 1s;
 
             .description {
 
@@ -154,6 +155,7 @@ main {
 
                 p::before {
                     @include tanUnderline;
+                    height: 10px;
                 }
             }
 
@@ -183,11 +185,7 @@ main {
                 }
                 
                 @keyframes blink {
-                  0%  { background-color: $blue; }
-                  49% { background-color: $blue; }
-                  50% { background-color: transparent; }
-                  99% { background-color: transparent; }
-                  100%  { background-color: $blue; }
+                    @include blink;
                 }
             }
 
@@ -238,14 +236,22 @@ main {
                     transform: scaleY(1);
                 }
             }
+        }
 
+        @keyframes boxOneAnimation {
+            @include scroll;
         }
 
         .boxTwo {
+            animation: boxTwoAnimation 1s;
 
             img {
                 @include illustration;
             }
+        }
+
+        @keyframes boxTwoAnimation {
+            @include slideRight;
         }
     }
 
@@ -254,16 +260,15 @@ main {
         bottom: 3rem;
         left: 50%;
         margin: 0 0 0 -3.5rem;
-        animation: scrollicon 2s;
+        animation: scrollIconAnimation 2s;
 
         img {
             width: auto;
             height: 6rem;
         }
 
-        @keyframes scrollicon {
-            0% {opacity: 0; transform: translateY(3rem);}
-            100% {opacity: 1;}
+        @keyframes scrollIconAnimation {
+            @include scroll;
         }
     }
 

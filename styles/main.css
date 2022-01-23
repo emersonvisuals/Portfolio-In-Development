@@ -231,6 +231,11 @@ main header {
   height: 80vh;
 }
 
+main header .boxOne {
+  -webkit-animation: boxOneAnimation 1s;
+          animation: boxOneAnimation 1s;
+}
+
 main header .boxOne .description p {
   font-size: clamp(1.25rem, 1.25vw, 2.7rem);
   font-family: poppins;
@@ -245,6 +250,7 @@ main header .boxOne .description p::before {
   position: absolute;
   z-index: -1;
   border-radius: 2rem;
+  height: 10px;
 }
 
 main header .boxOne .typingEffect h1 {
@@ -401,26 +407,7 @@ main header .boxOne .details .letschatButton:hover:before {
           transform: scaleY(1);
 }
 
-main header .boxTwo img {
-  width: auto;
-  height: clamp(25rem, 26vw, 50rem);
-}
-
-main .scrollDown {
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  margin: 0 0 0 -3.5rem;
-  -webkit-animation: scrollicon 2s;
-          animation: scrollicon 2s;
-}
-
-main .scrollDown img {
-  width: auto;
-  height: 6rem;
-}
-
-@-webkit-keyframes scrollicon {
+@-webkit-keyframes boxOneAnimation {
   0% {
     opacity: 0;
     -webkit-transform: translateY(3rem);
@@ -431,7 +418,75 @@ main .scrollDown img {
   }
 }
 
-@keyframes scrollicon {
+@keyframes boxOneAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main header .boxTwo {
+  -webkit-animation: boxTwoAnimation 1s;
+          animation: boxTwoAnimation 1s;
+}
+
+main header .boxTwo img {
+  width: auto;
+  height: clamp(25rem, 26vw, 50rem);
+}
+
+@-webkit-keyframes boxTwoAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes boxTwoAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main .scrollDown {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  margin: 0 0 0 -3.5rem;
+  -webkit-animation: scrollIconAnimation 2s;
+          animation: scrollIconAnimation 2s;
+}
+
+main .scrollDown img {
+  width: auto;
+  height: 6rem;
+}
+
+@-webkit-keyframes scrollIconAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollIconAnimation {
   0% {
     opacity: 0;
     -webkit-transform: translateY(3rem);

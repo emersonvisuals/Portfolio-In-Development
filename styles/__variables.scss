@@ -187,4 +187,24 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         transition: 0.5s all;
     }
 
+// animations
+
+    @mixin blink {
+        0%  { background-color: $blue; }
+        49% { background-color: $blue; }
+        50% { background-color: transparent; }
+        99% { background-color: transparent; }
+        100%  { background-color: $blue; }
+    }
+
+    @mixin scroll {
+        0% {opacity: 0; transform: translateY(3rem);}
+        100% {opacity: 1;}
+    }
+
+    @mixin slideRight {
+        0% {opacity: 0; transform: translateX(3rem);}
+        100% {opacity: 1;}
+    }
+
     
