@@ -62,3 +62,9 @@ portfolioTrigger.addEventListener('click', function(){
 
 });
 
+
+// scroll background icon animation
+const backgroundImage = document.querySelector('.background');
+
+console.log(backgroundImage);
+
