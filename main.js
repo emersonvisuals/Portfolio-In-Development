@@ -1,3 +1,4 @@
+// Typing effect
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
@@ -39,4 +40,13 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+
+// mobile toggle
+const trigger = document.querySelector('.mobileTrigger');
+const toggle = document.querySelector('.mobileToggle');
+
+trigger.addEventListener('click', function(){
+  toggle.classList.toggle('active');
 });

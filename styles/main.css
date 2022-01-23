@@ -28,8 +28,6 @@ main nav {
   padding: 3rem 13vw;
   -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 main nav .mobileLogo {
@@ -213,6 +211,10 @@ main nav .contactButtonContainer .contactButton:hover {
   transition: 0.25s all;
   font-family: poppins;
   font-size: clamp(1rem, 1.5vw, 1.8rem);
+}
+
+main nav .mobileTrigger {
+  display: none;
 }
 
 main header {
@@ -404,11 +406,47 @@ main header .boxTwo img {
   height: clamp(25rem, 26vw, 50rem);
 }
 
+main .scrollDown {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  margin: 0 0 0 -3.5rem;
+  -webkit-animation: scrollicon 2s;
+          animation: scrollicon 2s;
+}
+
+main .scrollDown img {
+  width: auto;
+  height: 6rem;
+}
+
+@-webkit-keyframes scrollicon {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollicon {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 main .background {
   overflow-x: hidden;
   overflow-y: hidden;
   position: fixed;
-  bottom: 5rem;
+  bottom: 3rem;
   right: -5rem;
   z-index: -1;
 }
@@ -444,6 +482,96 @@ main .background img {
   }
   main nav .mobileLogo {
     display: initial;
+  }
+  main nav .mobileTrigger {
+    display: initial;
+    content: '';
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+  main nav .mobileTrigger .mobileToggle {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 50%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle::after {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    bottom: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle::before {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.35rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle.active {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 50%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    width: 0;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle.active::after {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    bottom: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: 0rem;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle.active::before {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.35rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0rem;
+    transition: 0.5s all;
   }
   main header {
     padding: 0 10vw;

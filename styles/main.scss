@@ -22,7 +22,6 @@ main {
         padding:$desktopNavPadding;
         -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
         box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
-        position: sticky;
 
         .mobileLogo {
             display: none;
@@ -130,6 +129,10 @@ main {
                 font-family: $fontFamily;
                 font-size: $navFontSizeClamp;
             }
+        }
+
+        .mobileTrigger {
+            display: none;
         }
     }
 
@@ -246,11 +249,29 @@ main {
         }
     }
 
+    .scrollDown {
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        margin: 0 0 0 -3.5rem;
+        animation: scrollicon 2s;
+
+        img {
+            width: auto;
+            height: 6rem;
+        }
+
+        @keyframes scrollicon {
+            0% {opacity: 0; transform: translateY(3rem);}
+            100% {opacity: 1;}
+        }
+    }
+
     .background {
         overflow-x: hidden;
         overflow-y: hidden;
         position: fixed;
-        bottom:5rem;
+        bottom:3rem;
         right: -5rem;
         z-index: -1;
 
@@ -301,6 +322,47 @@ main {
 
             .mobileLogo {
                 display: initial;
+            }
+
+            .mobileTrigger {
+                display: initial;
+                content: '';
+                position: relative;
+                width: 2.5rem;
+                height: 2.5rem;
+                cursor: pointer;
+
+                .mobileToggle {
+                    @include mobileToggle;
+                }
+
+                .mobileToggle::after {
+                    @include mobileToggleAfter;
+                }
+
+                .mobileToggle::before {
+                    @include mobileToggleBefore;
+                }
+
+                .mobileToggle.active {
+                    @include mobileToggle;
+                    width: 0;
+                    transition: 0.5s all;
+                }
+
+                .mobileToggle.active::after {
+                    @include mobileToggleAfter;
+                    transform: rotate(45deg);
+                    bottom: 0rem;
+                    transition: 0.5s all;
+                }
+
+                .mobileToggle.active::before {
+                    @include mobileToggleBefore;
+                    transform: rotate(-45deg);
+                    top: 0rem;
+                    transition: 0.5s all;
+                }
             }
         }
 

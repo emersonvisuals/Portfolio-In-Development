@@ -149,3 +149,42 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: auto;
         height: clamp(25rem, 26vw, 50rem);
     }
+
+// mobile toggle
+    @mixin mobileToggle {
+        display: initial;
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: 0.3rem;
+        background-color: $blue;
+        z-index: 1;
+        top:50%;
+        transition: 0.5s all;
+    }
+
+    @mixin mobileToggleBefore {
+        display: initial;
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: 0.35rem;
+        background-color: $blue;
+        z-index: 1;
+        top:0.75rem;
+        transition: 0.5s all;
+    }
+
+    @mixin mobileToggleAfter {
+        display: initial;
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: 0.3rem;
+        background-color: $blue;
+        z-index: 1;
+        bottom:0.75rem;
+        transition: 0.5s all;
+    }
+
+    
