@@ -345,7 +345,7 @@ main header .boxOne .details .myWork {
   border-radius: 5rem;
   font-family: poppins;
   font-weight: 600;
-  font-size: clamp(1.5rem, 1.5vw, 2.7rem);
+  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
   color: #1C56A3;
   border: 1px solid #1C56A3;
   -webkit-transition: 0.25s all;
@@ -360,7 +360,7 @@ main header .boxOne .details .myWork:hover {
   border-radius: 5rem;
   font-family: poppins;
   font-weight: 600;
-  font-size: clamp(1.5rem, 1.5vw, 2.7rem);
+  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
   color: #FFFFFF;
   border: 1px solid transparent;
   -webkit-transition: 0.25s all;
@@ -373,7 +373,7 @@ main header .boxOne .details .letschatButton {
   border: none;
   font-family: poppins;
   font-weight: 600;
-  font-size: clamp(1.5rem, 1.5vw, 2.7rem);
+  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
   color: #1C56A3;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
