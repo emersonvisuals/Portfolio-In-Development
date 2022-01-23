@@ -10,6 +10,7 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: $fontFamily;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -351,7 +352,7 @@ main {
     .container {
         background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
         height: auto;
-        width: 100%;
+        width: calc(100% - 5rem);
         border-radius: 2rem;
         padding: 0 2.5rem;
 
@@ -517,6 +518,7 @@ main {
             align-items: center;
             justify-content: space-between;
             padding:$mobileNavPadding;
+            width: calc(100% - 20vw);
             -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
             box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
     

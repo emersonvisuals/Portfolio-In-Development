@@ -54,6 +54,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         border: none;
         border: 1px solid transparent;
         transition: 0.25s all;
+        cursor: pointer;
     }
 
 // default button
@@ -79,6 +80,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         color:$white;
         border: 1px solid transparent;
         transition: 0.25s all;
+        cursor: pointer;
     }
 
 // lets chat button
@@ -89,7 +91,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         font-weight:600;
         font-size:$fontButton;
         color:$blue;
-
+        cursor: pointer;
     }
 
     @mixin letsChatButtonHover {
@@ -99,7 +101,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: 2rem;
         height: 1rem;
         margin: clamp(0rem, 1.75em, 4.25rem) 0 0 0;
-
+        cursor: pointer;
     }
 
 // tan underline 
@@ -153,7 +155,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
     @mixin marquee {
         text-transform: capitalize;
-        font-size: clamp(4rem, 5vw, 7rem);
+        font-size: clamp(6rem, 4.25vw, 8rem);
         font-weight: 700;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: $white;

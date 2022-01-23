@@ -9,6 +9,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: poppins;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -263,6 +264,7 @@ main nav .contactButtonContainer .contactButton:hover {
   border: 1px solid transparent;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
+  cursor: pointer;
   font-family: poppins;
   font-size: clamp(1.3rem, 1vw, 1.8rem);
 }
@@ -419,6 +421,7 @@ main header .boxOne .details .myWork:hover {
   border: 1px solid transparent;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
+  cursor: pointer;
   transition: 0.25s all;
 }
 
@@ -429,6 +432,7 @@ main header .boxOne .details .letschatButton {
   font-weight: 600;
   font-size: clamp(1.5rem, 1.25vw, 2.7rem);
   color: #1C56A3;
+  cursor: pointer;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   text-transform: capitalize;
@@ -442,6 +446,7 @@ main header .boxOne .details .letschatButton::before {
   width: 2rem;
   height: 1rem;
   margin: clamp(0rem, 1.75em, 4.25rem) 0 0 0;
+  cursor: pointer;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   -webkit-transform: scaleY(0);
@@ -455,6 +460,7 @@ main header .boxOne .details .letschatButton:hover:before {
   width: 2rem;
   height: 1rem;
   margin: clamp(0rem, 1.75em, 4.25rem) 0 0 0;
+  cursor: pointer;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   -webkit-transform: scaleY(1);
@@ -602,7 +608,7 @@ main .background img {
   background-image: -webkit-gradient(linear, right bottom, left top, from(#101011), color-stop(#1d2031), color-stop(#253154), color-stop(#27437a), to(#1c56a3));
   background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
   height: auto;
-  width: 100%;
+  width: calc(100% - 5rem);
   border-radius: 2rem;
   padding: 0 2.5rem;
 }
@@ -613,7 +619,7 @@ main .background img {
 
 #portfolio .container .marqueeOne span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -661,7 +667,7 @@ main .background img {
 
 #portfolio .container .marqueeTwo span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -709,7 +715,7 @@ main .background img {
 
 #portfolio .container .marqueeThree span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -757,7 +763,7 @@ main .background img {
 
 #portfolio .container .marqueeFour span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -805,7 +811,7 @@ main .background img {
 
 #portfolio .container .marqueeFive span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -859,6 +865,7 @@ main .background img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 3rem 10vw;
+    width: calc(100% - 20vw);
     -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
   }
