@@ -28,6 +28,7 @@ main nav {
   padding: 3rem 13vw;
   -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+  background-color: #FFFFFF;
 }
 
 main nav .mobileLogo {
@@ -66,7 +67,7 @@ main nav .desktopNav ul li {
 main nav .desktopNav ul li a {
   text-decoration: none;
   color: #101011;
-  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-size: clamp(1.3rem, 1vw, 1.8rem);
   font-family: poppins;
   text-transform: capitalize;
 }
@@ -241,7 +242,7 @@ main nav .contactButtonContainer .contactButton {
   color: #101011;
   border: 1px solid #101011;
   font-family: poppins;
-  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-size: clamp(1.3rem, 1vw, 1.8rem);
 }
 
 main nav .contactButtonContainer .contactButton:hover {
@@ -258,7 +259,7 @@ main nav .contactButtonContainer .contactButton:hover {
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   font-family: poppins;
-  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-size: clamp(1.3rem, 1vw, 1.8rem);
 }
 
 main nav .mobileTrigger {
