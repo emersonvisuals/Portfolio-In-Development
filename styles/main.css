@@ -78,8 +78,6 @@ main nav .desktopNav .navHome::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
@@ -92,8 +90,6 @@ main nav .desktopNav .navHome:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
@@ -446,6 +442,9 @@ main .background img {
   }
   main nav .mobileLogo {
     display: initial;
+  }
+  main header {
+    padding: 0 10vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
