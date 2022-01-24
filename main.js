@@ -70,7 +70,7 @@ window.onclick = function(event) {
   }
 }
 
-
+/*
 // parallax background icon animation
 const backgroundImage = document.querySelector('.background');
 
@@ -85,10 +85,10 @@ window.addEventListener('scroll', function(e) {
 
   target.style.transform = 'translateX('+rate+'px)'
 });
-
+*/
 
 // portfolio below icon animation
-
+/*
 window.addEventListener('scroll', function(e){
 
   const portfolioBelow = document.querySelector('.scrollDown');
@@ -101,5 +101,39 @@ window.addEventListener('scroll', function(e){
 
   portfolioBelow.style.opacity = ''+rateTwo+''
 
+});
+*/
+
+
+
+
+// line animation
+
+var path = document.querySelector('path');
+var length = path.getTotalLength();
+// Clear any previous transition
+path.style.transition = path.style.WebkitTransition = 'none';
+// Set up the starting positions
+path.style.strokeDasharray = length + ' ' + length;
+path.style.strokeDashoffset = length;
+// Trigger a layout so styles are calculated & the browser
+// picks up the starting position before animating
+path.getBoundingClientRect();
+
+
+window.addEventListener('scroll', () => {
+  
+  // What % down is it?
+  var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+
+  // Length to offset the dashes
+  var drawLength = length * scrollPercentage;
+
+  // Draw in reverse
+  path.style.strokeDashoffset = length - drawLength;
 
 });
+
+
+

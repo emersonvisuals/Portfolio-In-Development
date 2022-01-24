@@ -580,6 +580,21 @@ main .background svg {
   width: 50rem;
 }
 
+#lineAnimationContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#lineAnimationContainer svg {
+  display: inline-block;
+  height: 100%;
+}
+
 #portfolio {
   height: calc(100vh - 4rem);
   padding: 0 13vw;
