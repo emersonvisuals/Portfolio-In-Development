@@ -899,9 +899,8 @@ main .background svg {
   transition: 0.5s all;
 }
 
-#about {
+.about {
   padding: 0 13vw;
-  height: 100vh;
 }
 
 @-webkit-keyframes portfolioAnimation {
