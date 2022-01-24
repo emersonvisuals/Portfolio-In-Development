@@ -62,6 +62,15 @@ main {
                     }
 
                 }
+
+                .navPortfolio {
+                    text-decoration: none;
+                    color: $darkBlue;
+                    font-size: $navFontSizeClamp;
+                    font-family: $fontFamily;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                }
             }
 
             .navHome::before {
@@ -83,7 +92,7 @@ main {
                 transition: 0.25s all;
             }
 
-            a.navPortfolio.active::before {
+            .navPortfolio.active::before {
                 transform:scaleY(1);
             }
             

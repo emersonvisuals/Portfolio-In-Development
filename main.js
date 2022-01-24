@@ -63,8 +63,15 @@ portfolioTrigger.addEventListener('click', function(){
 });
 
 
+window.onclick = function(event) {
+  if (event.target !== portfolioTrigger) {
+    portfolioToggle.classList.remove('active');
+    portfolioTrigger.classList.remove('active');
+  }
+}
+
+
 // scroll background icon animation
 const backgroundImage = document.querySelector('.background');
-
-console.log(backgroundImage);
+;
 

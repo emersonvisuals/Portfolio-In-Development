@@ -78,6 +78,15 @@ main nav .desktopNav ul li a {
   text-transform: capitalize;
 }
 
+main nav .desktopNav ul .navPortfolio {
+  text-decoration: none;
+  color: #101011;
+  font-size: clamp(1.3rem, 1vw, 1.8rem);
+  font-family: poppins;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
 main nav .desktopNav .navHome::before {
   content: '';
   position: absolute;
@@ -116,7 +125,7 @@ main nav .desktopNav .navPortfolio::before {
   transition: 0.25s all;
 }
 
-main nav .desktopNav a.navPortfolio.active::before {
+main nav .desktopNav .navPortfolio.active::before {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
