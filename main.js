@@ -88,20 +88,18 @@ window.addEventListener('scroll', function(e) {
 
 
 // portfolio below icon animation
-/*
+
 window.addEventListener('scroll', function(e){
 
   const portfolioBelow = document.querySelector('.scrollDown');
 
   let scrolledTwo = window.pageYOffset;
-  let rateTwo = scrolledTwo * 0.01;
-  let rateThree = scrolledTwo * 0.005;
+  let rateTwo = 100 / scrolledTwo;
 
   console.log(rateTwo);
 
 
   portfolioBelow.style.opacity = ''+rateTwo+''
-  portfolioBelow.style.transform = 'scale('+rateThree+', '+rateThree+')'
+
 
 });
-*/
