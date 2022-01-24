@@ -575,9 +575,9 @@ main .background {
   z-index: -1;
 }
 
-main .background img {
+main .background svg {
   height: auto;
-  width: 55rem;
+  width: 50rem;
 }
 
 #portfolio {

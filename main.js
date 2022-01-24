@@ -71,7 +71,37 @@ window.onclick = function(event) {
 }
 
 
-// scroll background icon animation
+// parallax background icon animation
 const backgroundImage = document.querySelector('.background');
-;
 
+console.log(backgroundImage);
+
+window.addEventListener('scroll', function(e) {
+
+  const target = document.querySelector('#scroll');
+
+  let scrolled = window.pageYOffset;
+  let rate = scrolled * 0.1;
+
+  target.style.transform = 'translateX('+rate+'px)'
+});
+
+
+// portfolio below icon animation
+/*
+window.addEventListener('scroll', function(e){
+
+  const portfolioBelow = document.querySelector('.scrollDown');
+
+  let scrolledTwo = window.pageYOffset;
+  let rateTwo = scrolledTwo * 0.01;
+  let rateThree = scrolledTwo * 0.005;
+
+  console.log(rateTwo);
+
+
+  portfolioBelow.style.opacity = ''+rateTwo+''
+  portfolioBelow.style.transform = 'scale('+rateThree+', '+rateThree+')'
+
+});
+*/
