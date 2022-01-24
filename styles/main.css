@@ -584,6 +584,8 @@ main .background img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: portfolioAnimation 1s;
+          animation: portfolioAnimation 1s;
 }
 
 #portfolio .title h1 {
@@ -900,6 +902,28 @@ main .background img {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+}
+
+@-webkit-keyframes portfolioAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes portfolioAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

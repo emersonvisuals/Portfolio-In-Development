@@ -335,6 +335,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: portfolioAnimation 1s;
 
     .title {
         
@@ -526,6 +527,10 @@ main {
         }
 
     }
+}
+
+@keyframes portfolioAnimation {
+    @include scroll;
 }
 
 
