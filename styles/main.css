@@ -530,42 +530,6 @@ main header .boxTwo img {
   }
 }
 
-main .scrollDown {
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  margin: 0 0 0 -3.5rem;
-  -webkit-animation: scrollIconAnimation 2s;
-          animation: scrollIconAnimation 2s;
-}
-
-main .scrollDown img {
-  width: auto;
-  height: 6rem;
-}
-
-@-webkit-keyframes scrollIconAnimation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes scrollIconAnimation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 main .background {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -580,22 +544,23 @@ main .background svg {
   width: 50rem;
 }
 
-#lineAnimationContainer {
+main .lineAnimationContainer {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   text-align: center;
   overflow: hidden;
+  z-index: -2;
 }
 
-#lineAnimationContainer svg {
+main .lineAnimationContainer svg {
   display: inline-block;
-  height: 100%;
+  height: 100vh;
 }
 
-#portfolio {
+.portfolio {
   height: calc(100vh - 4rem);
   padding: 0 13vw;
   display: -webkit-box;
@@ -612,7 +577,7 @@ main .background svg {
           animation: portfolioAnimation 1s;
 }
 
-#portfolio .title h1 {
+.portfolio .title h1 {
   text-transform: capitalize;
   font-size: clamp(3rem, 3.75vw, 6.5rem);
   font-weight: 700;
@@ -620,7 +585,7 @@ main .background svg {
   padding: 0;
 }
 
-#portfolio .title h1::before {
+.portfolio .title h1::before {
   content: '';
   width: clamp(13rem, 16vw, 28rem);
   height: clamp(2rem, 2vw, 4rem);
@@ -630,7 +595,7 @@ main .background svg {
   border-radius: 2rem;
 }
 
-#portfolio .container {
+.portfolio .container {
   background-image: -webkit-gradient(linear, right bottom, left top, from(#101011), color-stop(#1d2031), color-stop(#253154), color-stop(#27437a), to(#1c56a3));
   background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
   height: auto;
@@ -639,11 +604,11 @@ main .background svg {
   padding: 0 2.5rem;
 }
 
-#portfolio .container .marqueeOne {
+.portfolio .container .marqueeOne {
   overflow: hidden;
 }
 
-#portfolio .container .marqueeOne span {
+.portfolio .container .marqueeOne span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -657,41 +622,41 @@ main .background svg {
   padding: 1rem;
 }
 
-#portfolio .container .marqueeOne .uxuiDesign:hover {
+.portfolio .container .marqueeOne .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeOne .graphicDesign:hover {
+.portfolio .container .marqueeOne .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeOne .architecture:hover {
+.portfolio .container .marqueeOne .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeOne .frontendDevelopment:hover {
+.portfolio .container .marqueeOne .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeOne .digitalArtwork:hover {
+.portfolio .container .marqueeOne .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeTwo {
+.portfolio .container .marqueeTwo {
   overflow: hidden;
 }
 
-#portfolio .container .marqueeTwo span {
+.portfolio .container .marqueeTwo span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -705,41 +670,41 @@ main .background svg {
   padding: 1rem;
 }
 
-#portfolio .container .marqueeTwo .uxuiDesign:hover {
+.portfolio .container .marqueeTwo .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeTwo .graphicDesign:hover {
+.portfolio .container .marqueeTwo .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeTwo .architecture:hover {
+.portfolio .container .marqueeTwo .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeTwo .frontendDevelopment:hover {
+.portfolio .container .marqueeTwo .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeTwo .digitalArtwork:hover {
+.portfolio .container .marqueeTwo .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeThree {
+.portfolio .container .marqueeThree {
   overflow: hidden;
 }
 
-#portfolio .container .marqueeThree span {
+.portfolio .container .marqueeThree span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -753,41 +718,41 @@ main .background svg {
   padding: 1rem;
 }
 
-#portfolio .container .marqueeThree .uxuiDesign:hover {
+.portfolio .container .marqueeThree .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeThree .graphicDesign:hover {
+.portfolio .container .marqueeThree .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeThree .architecture:hover {
+.portfolio .container .marqueeThree .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeThree .frontendDevelopment:hover {
+.portfolio .container .marqueeThree .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeThree .digitalArtwork:hover {
+.portfolio .container .marqueeThree .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFour {
+.portfolio .container .marqueeFour {
   overflow: hidden;
 }
 
-#portfolio .container .marqueeFour span {
+.portfolio .container .marqueeFour span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -801,41 +766,41 @@ main .background svg {
   padding: 1rem;
 }
 
-#portfolio .container .marqueeFour .uxuiDesign:hover {
+.portfolio .container .marqueeFour .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFour .graphicDesign:hover {
+.portfolio .container .marqueeFour .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFour .architecture:hover {
+.portfolio .container .marqueeFour .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFour .frontendDevelopment:hover {
+.portfolio .container .marqueeFour .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFour .digitalArtwork:hover {
+.portfolio .container .marqueeFour .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFive {
+.portfolio .container .marqueeFive {
   overflow: hidden;
 }
 
-#portfolio .container .marqueeFive span {
+.portfolio .container .marqueeFive span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -849,42 +814,42 @@ main .background svg {
   padding: 1rem;
 }
 
-#portfolio .container .marqueeFive .uxuiDesign:hover {
+.portfolio .container .marqueeFive .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFive .graphicDesign:hover {
+.portfolio .container .marqueeFive .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFive .architecture:hover {
+.portfolio .container .marqueeFive .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFive .frontendDevelopment:hover {
+.portfolio .container .marqueeFive .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeFive .digitalArtwork:hover {
+.portfolio .container .marqueeFive .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeSix {
+.portfolio .container .marqueeSix {
   overflow: hidden;
   display: none;
 }
 
-#portfolio .container .marqueeSix span {
+.portfolio .container .marqueeSix span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -898,34 +863,39 @@ main .background svg {
   padding: 1rem;
 }
 
-#portfolio .container .marqueeSix .uxuiDesign:hover {
+.portfolio .container .marqueeSix .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeSix .graphicDesign:hover {
+.portfolio .container .marqueeSix .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeSix .architecture:hover {
+.portfolio .container .marqueeSix .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeSix .frontendDevelopment:hover {
+.portfolio .container .marqueeSix .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#portfolio .container .marqueeSix .digitalArtwork:hover {
+.portfolio .container .marqueeSix .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+}
+
+#about {
+  padding: 0 13vw;
+  height: 100vh;
 }
 
 @-webkit-keyframes portfolioAnimation {
