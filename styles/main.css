@@ -13,7 +13,7 @@ html {
 }
 
 main {
-  height: 100vh;
+  height: 75vh;
 }
 
 main nav {
@@ -347,42 +347,6 @@ main header .boxOne .typingEffect .cursor.typing {
   z-index: 1;
 }
 
-@-webkit-keyframes blink {
-  0% {
-    background-color: #1C56A3;
-  }
-  49% {
-    background-color: #1C56A3;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #1C56A3;
-  }
-}
-
-@keyframes blink {
-  0% {
-    background-color: #1C56A3;
-  }
-  49% {
-    background-color: #1C56A3;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #1C56A3;
-  }
-}
-
 main header .boxOne .title {
   margin: -8% 0;
 }
@@ -405,7 +369,7 @@ main header .boxOne .details {
 }
 
 main header .boxOne .details .myWork {
-  background-color: transparent;
+  background-color: #FFFFFF;
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
   font-family: poppins;
@@ -476,28 +440,6 @@ main header .boxOne .details .letschatButton:hover:before {
           transform: scaleY(1);
 }
 
-@-webkit-keyframes boxOneAnimation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes boxOneAnimation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 main header .boxTwo {
   -webkit-animation: boxTwoAnimation 1s;
           animation: boxTwoAnimation 1s;
@@ -506,28 +448,6 @@ main header .boxTwo {
 main header .boxTwo img {
   width: auto;
   height: clamp(25rem, 26vw, 50rem);
-}
-
-@-webkit-keyframes boxTwoAnimation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(3rem);
-            transform: translateX(3rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes boxTwoAnimation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(3rem);
-            transform: translateX(3rem);
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 main .background {
@@ -545,30 +465,24 @@ main .background svg {
 }
 
 .animationSection {
-  height: 5vh;
+  height: auto;
 }
 
 .animationSection .lineAnimationContainer {
-  position: absolute;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 200vh;
-  text-align: center;
   overflow: hidden;
-  z-index: -2;
+  z-index: -1;
+  padding: 0 13vw;
 }
 
 .animationSection .lineAnimationContainer svg {
-  display: inline-block;
-  height: 100vh;
-  -webkit-transform: translateY(55rem);
-          transform: translateY(55rem);
+  width: calc(100vw - 26vw);
 }
 
 .portfolio {
-  height: calc(100vh - 4rem);
+  height: auto;
   padding: 0 13vw;
+  padding-bottom: clamp(8rem, 5vw, 15rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -899,8 +813,26 @@ main .background svg {
   transition: 0.5s all;
 }
 
-.about {
-  padding: 0 13vw;
+@-webkit-keyframes boxOneAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes boxOneAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes portfolioAnimation {
@@ -919,6 +851,64 @@ main .background svg {
     opacity: 0;
     -webkit-transform: translateY(3rem);
             transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #1C56A3;
+  }
+  49% {
+    background-color: #1C56A3;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #1C56A3;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #1C56A3;
+  }
+  49% {
+    background-color: #1C56A3;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #1C56A3;
+  }
+}
+
+@-webkit-keyframes boxTwoAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes boxTwoAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
   }
   100% {
     opacity: 1;
