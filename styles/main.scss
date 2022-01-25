@@ -14,7 +14,7 @@ html {
 }
 
 main {
-    height: 75vh;
+    height: 100vh;
 
     nav {
         position: fixed;
@@ -187,107 +187,124 @@ main {
 
     header {
         padding: $desktopPadding;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         height: 100vh;
 
-        .boxOne {
-            animation: boxOneAnimation 1s;
+        .boxesContainer {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-            .description {
-
-                p {
-                    @include subHeadingTwo;
-                    margin: 1.25rem 0;
+            .boxOne {
+                animation: boxOneAnimation 1s;
+    
+                .description {
+    
+                    p {
+                        @include subHeadingTwo;
+                        margin: 1.25rem 0;
+                    }
+    
+                    p::before {
+                        @include tanUnderline;
+                        height: 10px;
+                    }
                 }
-
-                p::before {
-                    @include tanUnderline;
-                    height: 10px;
-                }
-            }
-
-            .typingEffect {
-
-                h1 {
-                    @include headingLightBlue;
-                    margin: 0;
-                }
-
-                .typed-text {
-                    @include headingDarkBlue;
-                }
-                
-                .cursor {
-                  display: inline-block;
-                  background-color: $blue;
-                  margin-left: 0.1rem;
-                  width: 3px;
-                  animation: blink 1s infinite;
-                  z-index: 1;
-                }
-                
-                .cursor.typing {
-                  animation: none;
-                  z-index: 1;
-                }
-            }
-
-            .title {
-                margin: -8% 0;
-                
-                h1 {
-                    @include headingDarkBlue;
-                    text-transform:capitalize;
-                }
-
-                span {
-                    @include headingLightBlue;
-                }
-            }
-
-            .details {
-                padding: 1rem 0 0 0;
-
-                .myWork {
-                    @include buttonNeutral;
-                    transition: 0.25s all;
-                    text-transform: capitalize;
-                }
-
-                .myWork:hover {
-                    @include buttonNeutralHover;
-                    transition: 0.25s all;
-                }
-
-                .letschatButton {
-                    @include letsChatButton;
-                    transition: 0.25s all;
-                    text-transform: capitalize;
-                    margin: 0 0 0 3rem;
-                }
-
-                .letschatButton::before {
-                    @include letsChatButtonHover;
-                    transition: 0.25s all;
-                    transform: scaleY(0);
+    
+                .typingEffect {
+    
+                    h1 {
+                        @include headingLightBlue;
+                        margin: 0;
+                    }
+    
+                    .typed-text {
+                        @include headingDarkBlue;
+                    }
                     
+                    .cursor {
+                      display: inline-block;
+                      background-color: $blue;
+                      margin-left: 0.1rem;
+                      width: 3px;
+                      animation: blink 1s infinite;
+                      z-index: 1;
+                    }
+                    
+                    .cursor.typing {
+                      animation: none;
+                      z-index: 1;
+                    }
                 }
-
-                .letschatButton:hover:before {
-                    @include letsChatButtonHover;
-                    transition: 0.25s all;
-                    transform: scaleY(1);
+    
+                .title {
+                    margin: -8% 0;
+                    
+                    h1 {
+                        @include headingDarkBlue;
+                        text-transform:capitalize;
+                    }
+    
+                    span {
+                        @include headingLightBlue;
+                    }
+                }
+    
+                .details {
+                    padding: 1rem 0 0 0;
+    
+                    .myWork {
+                        @include buttonNeutral;
+                        transition: 0.25s all;
+                        text-transform: capitalize;
+                    }
+    
+                    .myWork:hover {
+                        @include buttonNeutralHover;
+                        transition: 0.25s all;
+                    }
+    
+                    .letschatButton {
+                        @include letsChatButton;
+                        transition: 0.25s all;
+                        text-transform: capitalize;
+                        margin: 0 0 0 3rem;
+                    }
+    
+                    .letschatButton::before {
+                        @include letsChatButtonHover;
+                        transition: 0.25s all;
+                        transform: scaleY(0);
+                        
+                    }
+    
+                    .letschatButton:hover:before {
+                        @include letsChatButtonHover;
+                        transition: 0.25s all;
+                        transform: scaleY(1);
+                    }
                 }
             }
+    
+            .boxTwo {
+                animation: boxTwoAnimation 1s;
+    
+                img {
+                    @include illustration;
+                }
+            }
+
         }
 
-        .boxTwo {
-            animation: boxTwoAnimation 1s;
+        .portfolioBelow {
+            position: absolute;
+            bottom:2rem;
+            left:calc(50% - 6rem);
+            animation: portfolioBelow 0.5s;
 
             img {
-                @include illustration;
+                width: 12rem;
+                height: auto;
             }
         }
     }
@@ -310,24 +327,25 @@ main {
 }
 
 .animationSection {
-    height: auto;
 
     .lineAnimationContainer {
-        left: 0;
+        position: fixed;
         overflow: hidden;
         z-index: -1;
-        padding: $desktopPadding;
+        top:8rem;
+        left: 5%;
+        text-align: center;
 
         svg {
-            width: calc(100vw - 26vw);
+            height: 100vh;
+            width: auto;
         }
     }
 }
 
 .portfolio {
-    height: auto;
+    height: calc(100vh - 4rem);
     padding: $desktopPadding;
-    padding-bottom: clamp(8rem,5vw,15rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -540,6 +558,10 @@ main {
 
 @keyframes boxTwoAnimation {
     @include slideRight;
+}
+
+@keyframes portfolioBelow {
+    @include scroll;
 }
 
 

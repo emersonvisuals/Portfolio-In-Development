@@ -13,7 +13,7 @@ html {
 }
 
 main {
-  height: 75vh;
+  height: 100vh;
 }
 
 main nav {
@@ -284,6 +284,11 @@ main nav .mobileTrigger {
 
 main header {
   padding: 0 13vw;
+  height: 100vh;
+}
+
+main header .boxesContainer {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,21 +298,20 @@ main header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100vh;
 }
 
-main header .boxOne {
+main header .boxesContainer .boxOne {
   -webkit-animation: boxOneAnimation 1s;
           animation: boxOneAnimation 1s;
 }
 
-main header .boxOne .description p {
+main header .boxesContainer .boxOne .description p {
   font-size: clamp(1.25rem, 1.25vw, 2.7rem);
   font-family: poppins;
   margin: 1.25rem 0;
 }
 
-main header .boxOne .description p::before {
+main header .boxesContainer .boxOne .description p::before {
   content: '';
   width: clamp(42rem, 42vw, 82rem);
   height: clamp(2rem, 2vw, 4rem);
@@ -318,20 +322,20 @@ main header .boxOne .description p::before {
   height: 10px;
 }
 
-main header .boxOne .typingEffect h1 {
+main header .boxesContainer .boxOne .typingEffect h1 {
   font-size: clamp(5.5rem, 6vw, 12.5rem);
   color: #1C56A3;
   font-family: poppins;
   margin: 0;
 }
 
-main header .boxOne .typingEffect .typed-text {
+main header .boxesContainer .boxOne .typingEffect .typed-text {
   font-size: clamp(5.5rem, 6vw, 12.5rem);
   color: #101011;
   font-family: poppins;
 }
 
-main header .boxOne .typingEffect .cursor {
+main header .boxesContainer .boxOne .typingEffect .cursor {
   display: inline-block;
   background-color: #1C56A3;
   margin-left: 0.1rem;
@@ -341,34 +345,34 @@ main header .boxOne .typingEffect .cursor {
   z-index: 1;
 }
 
-main header .boxOne .typingEffect .cursor.typing {
+main header .boxesContainer .boxOne .typingEffect .cursor.typing {
   -webkit-animation: none;
           animation: none;
   z-index: 1;
 }
 
-main header .boxOne .title {
+main header .boxesContainer .boxOne .title {
   margin: -8% 0;
 }
 
-main header .boxOne .title h1 {
+main header .boxesContainer .boxOne .title h1 {
   font-size: clamp(5.5rem, 6vw, 12.5rem);
   color: #101011;
   font-family: poppins;
   text-transform: capitalize;
 }
 
-main header .boxOne .title span {
+main header .boxesContainer .boxOne .title span {
   font-size: clamp(5.5rem, 6vw, 12.5rem);
   color: #1C56A3;
   font-family: poppins;
 }
 
-main header .boxOne .details {
+main header .boxesContainer .boxOne .details {
   padding: 1rem 0 0 0;
 }
 
-main header .boxOne .details .myWork {
+main header .boxesContainer .boxOne .details .myWork {
   background-color: #FFFFFF;
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
@@ -383,7 +387,7 @@ main header .boxOne .details .myWork {
   text-transform: capitalize;
 }
 
-main header .boxOne .details .myWork:hover {
+main header .boxesContainer .boxOne .details .myWork:hover {
   background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
@@ -398,7 +402,7 @@ main header .boxOne .details .myWork:hover {
   transition: 0.25s all;
 }
 
-main header .boxOne .details .letschatButton {
+main header .boxesContainer .boxOne .details .letschatButton {
   background-color: transparent;
   border: none;
   font-family: poppins;
@@ -412,7 +416,7 @@ main header .boxOne .details .letschatButton {
   margin: 0 0 0 3rem;
 }
 
-main header .boxOne .details .letschatButton::before {
+main header .boxesContainer .boxOne .details .letschatButton::before {
   content: '';
   position: absolute;
   background-color: #1C56A3;
@@ -426,7 +430,7 @@ main header .boxOne .details .letschatButton::before {
           transform: scaleY(0);
 }
 
-main header .boxOne .details .letschatButton:hover:before {
+main header .boxesContainer .boxOne .details .letschatButton:hover:before {
   content: '';
   position: absolute;
   background-color: #1C56A3;
@@ -440,14 +444,27 @@ main header .boxOne .details .letschatButton:hover:before {
           transform: scaleY(1);
 }
 
-main header .boxTwo {
+main header .boxesContainer .boxTwo {
   -webkit-animation: boxTwoAnimation 1s;
           animation: boxTwoAnimation 1s;
 }
 
-main header .boxTwo img {
+main header .boxesContainer .boxTwo img {
   width: auto;
   height: clamp(25rem, 26vw, 50rem);
+}
+
+main header .portfolioBelow {
+  position: absolute;
+  bottom: 2rem;
+  left: calc(50% - 6rem);
+  -webkit-animation: portfolioBelow 0.5s;
+          animation: portfolioBelow 0.5s;
+}
+
+main header .portfolioBelow img {
+  width: 12rem;
+  height: auto;
 }
 
 main .background {
@@ -464,25 +481,23 @@ main .background svg {
   width: 50rem;
 }
 
-.animationSection {
-  height: auto;
-}
-
 .animationSection .lineAnimationContainer {
-  left: 0;
+  position: fixed;
   overflow: hidden;
   z-index: -1;
-  padding: 0 13vw;
+  top: 8rem;
+  left: 5%;
+  text-align: center;
 }
 
 .animationSection .lineAnimationContainer svg {
-  width: calc(100vw - 26vw);
+  height: 100vh;
+  width: auto;
 }
 
 .portfolio {
-  height: auto;
+  height: calc(100vh - 4rem);
   padding: 0 13vw;
-  padding-bottom: clamp(8rem, 5vw, 15rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -909,6 +924,28 @@ main .background svg {
     opacity: 0;
     -webkit-transform: translateX(3rem);
             transform: translateX(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes portfolioBelow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes portfolioBelow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
   }
   100% {
     opacity: 1;

@@ -99,8 +99,6 @@ window.addEventListener('scroll', () => {
 
 });
 
-
-
 // parallax animation 
 const backgroundImage = document.querySelector('.background');
 
