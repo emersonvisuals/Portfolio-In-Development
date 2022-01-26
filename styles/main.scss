@@ -326,23 +326,6 @@ main {
     }
 }
 
-.animationSection {
-
-    .lineAnimationContainer {
-        position: fixed;
-        overflow: hidden;
-        z-index: -1;
-        top:8rem;
-        left: 5%;
-        text-align: center;
-
-        svg {
-            height: 100vh;
-            width: auto;
-        }
-    }
-}
-
 .portfolio {
     height: calc(100vh - 4rem);
     padding: $desktopPadding;
@@ -540,6 +523,105 @@ main {
             }
         }
 
+    }
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .aboutGridContainer {
+        height: 60vh;
+        display: grid;
+        padding: $desktopPadding;
+        grid-template-columns: 30% 40% 30%;
+        grid-column-gap: 1rem;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 1rem;
+        grid-template-areas: 
+        "imageOne imageTwo details"
+        "imageOne imageThree details";
+
+            .aboutImageOne {
+                grid-area: imageOne;
+                width: auto;
+                height: 100%;
+                background-image: url(/images/aboutImageOne.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .aboutImageTwo {
+                grid-area: imageTwo;
+                width: auto;
+                height: 100%;
+                background-image: url(/images/aboutImageTwo.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .aboutImageThree {
+                grid-area: imageThree;
+                width: auto;
+                height: 100%;
+                background-image: url(/images/aboutImageThree.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+
+            .details {
+                grid-area: details;
+                width: auto;
+                height: 100%;
+                margin: 0;
+                height: 0;
+
+                p {
+                    @include paragraph;
+                    margin: 0;
+                    padding:0;
+                }
+
+                .signatureIcon {
+                    width: calc(100% - 15rem);
+                    height: auto;
+                }
+
+                .viewMore {
+                    @include buttonNeutral;
+                    text-transform: capitalize;
+                    width: 100%;
+                }
+
+                .viewMore:hover {
+                    @include buttonNeutralHover;
+                    width: 100%;
+                }
+            }
+    }
+
+}
+
+.animationSection {
+
+    .lineAnimationContainer {
+        position: fixed;
+        overflow: hidden;
+        z-index: -1;
+        top:8rem;
+        left: 5%;
+        text-align: center;
+
+        svg {
+            height: 100vh;
+            width: auto;
+        }
     }
 }
 
