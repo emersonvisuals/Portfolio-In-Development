@@ -614,13 +614,14 @@ main {
         position: fixed;
         overflow: hidden;
         z-index: -1;
-        top:8rem;
-        left: 3vw;
+        top:0;
+        left: 4vw;
         text-align: center;
 
         svg {
             height: 100vh;
             width: auto;
+            transform: scale(50%);
         }
     }
 }

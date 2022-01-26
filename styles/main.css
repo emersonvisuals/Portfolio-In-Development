@@ -937,14 +937,16 @@ main .background svg {
   position: fixed;
   overflow: hidden;
   z-index: -1;
-  top: 8rem;
-  left: 3vw;
+  top: 0;
+  left: 4vw;
   text-align: center;
 }
 
 .animationSection .lineAnimationContainer svg {
   height: 100vh;
   width: auto;
+  -webkit-transform: scale(50%);
+          transform: scale(50%);
 }
 
 @-webkit-keyframes boxOneAnimation {
