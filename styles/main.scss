@@ -781,13 +781,14 @@ main {
             position: fixed;
             overflow: hidden;
             z-index: -1;
-            top:8rem;
+            top:0;
             left: 2vw;
             text-align: center;
     
             svg {
                 height: 100vh;
                 width: auto;
+                transform: scale(50%);
             }
         }
     }

@@ -1223,13 +1223,15 @@ main .background svg {
     position: fixed;
     overflow: hidden;
     z-index: -1;
-    top: 8rem;
+    top: 0;
     left: 2vw;
     text-align: center;
   }
   .animationSection .lineAnimationContainer svg {
     height: 100vh;
     width: auto;
+    -webkit-transform: scale(50%);
+            transform: scale(50%);
   }
 }
 /*# sourceMappingURL=main.css.map */
