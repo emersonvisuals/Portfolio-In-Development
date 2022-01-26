@@ -938,7 +938,7 @@ main .background svg {
   overflow: hidden;
   z-index: -1;
   top: 8rem;
-  left: 5%;
+  left: 3vw;
   text-align: center;
 }
 
@@ -1192,11 +1192,44 @@ main .background svg {
   main header {
     padding: 0 10vw;
   }
-  #portfolio {
+  .portfolio {
     padding: 0 10vw;
+    height: 100vh;
   }
-  #portfolio .container .marqueeSix {
+  .portfolio .container .marqueeSix {
     display: inherit;
+  }
+  .about {
+    padding: 0 0 15rem 0;
+    height: 100vh;
+  }
+  .about .aboutGridContainer {
+    height: clamp(25rem, 35vw, 35rem);
+    display: -ms-grid;
+    display: grid;
+    padding: 0 10vw;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    grid-column-gap: 1rem;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    grid-row-gap: 1rem;
+        grid-template-areas: "imageOne imageTwo" "imageOne imageThree" "details details";
+  }
+  .about .aboutGridContainer .details .signatureIcon {
+    width: 30%;
+  }
+  .animationSection .lineAnimationContainer {
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    top: 8rem;
+    left: 2vw;
+    text-align: center;
+  }
+  .animationSection .lineAnimationContainer svg {
+    height: 100vh;
+    width: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
