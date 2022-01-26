@@ -100,7 +100,8 @@ window.addEventListener('scroll', () => {
 });
 
 // parallax animation 
-const backgroundImage = document.querySelector('.background');
+
+
 
 window.addEventListener('scroll', function(e) {
 
@@ -117,12 +118,18 @@ window.addEventListener('scroll', function(e) {
     
     } else if (target[index].dataset.direction === 'horizontal') {
       var posX = window.pageYOffset * target[index].dataset.ratex;
-target[index].style.transform = 'translate3d('+pos+'px, 0px, 0px)';
+      target[index].style.transform = 'translate3d('+pos+'px, 0px, 0px)';
+
+    } else if (target[index].dataset.direction === 'opacity') {
+      var posX = window.pageYOffset * target[index].dataset.ratex;
+      target[index].style.opacity = 'calc(1 - '+pos+')';
+    
     
     } else {
       return
     }
   }
+
 });
 
 
