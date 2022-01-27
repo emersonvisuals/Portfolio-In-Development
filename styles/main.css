@@ -458,8 +458,6 @@ main header .portfolioBelow {
   position: absolute;
   bottom: 5rem;
   left: calc(50% - 6rem);
-  -webkit-animation: portfolioBelow 0.5s;
-          animation: portfolioBelow 0.5s;
 }
 
 main header .portfolioBelow img {
@@ -1172,28 +1170,6 @@ footer .footerList .footerContact {
   }
 }
 
-@-webkit-keyframes portfolioBelow {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes portfolioBelow {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   main {
     height: 80vh;
@@ -1205,8 +1181,6 @@ footer .footerList .footerContact {
     position: absolute;
     bottom: 5rem;
     left: calc(50% - 6rem);
-    -webkit-animation: portfolioBelow 0.5s;
-            animation: portfolioBelow 0.5s;
   }
   main header .portfolioBelow img {
     width: 12rem;
@@ -1328,9 +1302,6 @@ footer .footerList .footerContact {
             transform: rotate(-45deg);
     top: 0rem;
     transition: 0.5s all;
-  }
-  main header {
-    padding: 0 10vw;
   }
   .portfolio {
     padding: 0 10vw;

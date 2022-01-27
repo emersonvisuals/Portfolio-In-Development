@@ -300,7 +300,6 @@ main {
             position: absolute;
             bottom:5rem;
             left:calc(50% - 6rem);
-            animation: portfolioBelow 0.5s;
 
             img {
                 width: 12rem;
@@ -728,10 +727,6 @@ footer {
     @include slideRight;
 }
 
-@keyframes portfolioBelow {
-    @include scroll;
-}
-
 
 
 
@@ -755,7 +750,6 @@ footer {
                 position: absolute;
                 bottom:5rem;
                 left:calc(50% - 6rem);
-                animation: portfolioBelow 0.5s;
     
                 img {
                     width: 12rem;
@@ -830,10 +824,6 @@ footer {
                     transition: 0.5s all;
                 }
             }
-        }
-
-        header {
-            padding: $mobilePadding;
         }
     }
 
