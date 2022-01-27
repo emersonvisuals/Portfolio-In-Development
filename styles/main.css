@@ -814,6 +814,55 @@ main .background svg {
   transition: 0.5s all;
 }
 
+.portfolio .container .marqueeSeven {
+  overflow: hidden;
+  display: none;
+}
+
+.portfolio .container .marqueeSeven span {
+  text-transform: capitalize;
+  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-weight: 700;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+  color: transparent;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.portfolio .container .marqueeSeven .uxuiDesign:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .container .marqueeSeven .graphicDesign:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .container .marqueeSeven .architecture:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .container .marqueeSeven .frontendDevelopment:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .container .marqueeSeven .digitalArtwork:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
 .about {
   height: 100vh;
   display: -webkit-box;
@@ -1146,6 +1195,9 @@ footer .footerList .footerContact {
 }
 
 @media only screen and (max-width: 1024px) {
+  main header {
+    padding: 0 10vw;
+  }
   main nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1273,12 +1325,15 @@ footer .footerList .footerContact {
   .portfolio .container .marqueeSix {
     display: inherit;
   }
+  .portfolio .container .marqueeSeven {
+    display: inherit;
+  }
   .about {
     padding: 0 0 15rem 0;
     height: 100vh;
   }
   .about .aboutGridContainer {
-    height: clamp(25rem, 35vw, 35rem);
+    height: clamp(30rem, 60vw, 50rem);
     display: -ms-grid;
     display: grid;
     padding: 0 10vw;
@@ -1293,16 +1348,24 @@ footer .footerList .footerContact {
   .about .aboutGridContainer .details .signatureIcon {
     width: 30%;
   }
+  footer {
+    height: 30vh;
+    padding: 0 10vw;
+  }
+  footer .logo img {
+    width: auto;
+    height: 4vh;
+  }
   .animationSection .lineAnimationContainer {
     position: fixed;
     overflow: hidden;
     z-index: -1;
     top: 30%;
-    left: 5%;
+    left: clamp(1%, 3vw, 5%);
     text-align: center;
   }
   .animationSection .lineAnimationContainer svg {
-    height: 50vh;
+    height: 30vh;
     width: auto;
   }
 }

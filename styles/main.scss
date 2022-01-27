@@ -523,6 +523,37 @@ main {
             }
         }
 
+        .marqueeSeven {
+            overflow: hidden;
+            display: none;
+
+
+            span {
+                @include marquee;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 1rem;
+            }
+
+            .uxuiDesign:hover {
+                @include marqueeHover;
+            }
+            .graphicDesign:hover {
+                @include marqueeHover;
+            }
+            .architecture:hover {
+                @include marqueeHover;
+            }
+            .frontendDevelopment:hover {
+                @include marqueeHover;
+            }
+            .digitalArtwork:hover {
+                @include marqueeHover;
+            }
+        }
+
+        
+
     }
 }
 
@@ -715,6 +746,10 @@ footer {
     }
 
     main {
+
+        header {
+            padding: $mobilePadding;
+        }
     
         nav {
             display: flex;
@@ -800,6 +835,10 @@ footer {
             .marqueeSix {
                 display: inherit;
             }
+
+            .marqueeSeven {
+                display: inherit;
+            }
         }
     }
 
@@ -808,7 +847,7 @@ footer {
         height: 100vh;
 
         .aboutGridContainer {
-            height: clamp(25rem, 35vw, 35rem);
+            height: clamp(30rem, 60vw, 50rem);
             display: grid;
             padding: $mobilePadding;
             grid-template-columns: 40% 60%;
@@ -830,6 +869,20 @@ footer {
         }
     }
 
+    footer {
+        height: 30vh;
+        padding: $mobilePadding;
+
+        .logo {
+
+            img {
+                width: auto;
+                height: 4vh;
+            }
+        }
+
+    }
+
     .animationSection {
         
         .lineAnimationContainer {
@@ -837,11 +890,11 @@ footer {
             overflow: hidden;
             z-index: -1;
             top:30%;
-            left: 5%;
+            left: clamp(1%, 3vw, 5%);
             text-align: center;
     
             svg {
-                height: 50vh;
+                height: 30vh;
                 width: auto;
             }
         }
