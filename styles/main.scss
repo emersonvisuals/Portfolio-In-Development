@@ -614,14 +614,13 @@ main {
         position: fixed;
         overflow: hidden;
         z-index: -1;
-        top:0;
-        left: 4vw;
+        top:30%;
+        left: 5%;
         text-align: center;
 
         svg {
-            height: 100vh;
+            height: 50vh;
             width: auto;
-            transform: scale(50%);
         }
     }
 }
@@ -782,15 +781,14 @@ main {
             position: fixed;
             overflow: hidden;
             z-index: -1;
-            top:0;
-            left: 4vw;
+            top:30%;
+            left: 5%;
             text-align: center;
     
-                svg {
-                    height: 100vh;
-                    width: auto;
-                    transform: scale(50%);
-                }
+            svg {
+                height: 50vh;
+                width: auto;
+            }
         }
     }
 

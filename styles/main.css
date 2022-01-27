@@ -937,16 +937,14 @@ main .background svg {
   position: fixed;
   overflow: hidden;
   z-index: -1;
-  top: 0;
-  left: 4vw;
+  top: 30%;
+  left: 5%;
   text-align: center;
 }
 
 .animationSection .lineAnimationContainer svg {
-  height: 100vh;
+  height: 50vh;
   width: auto;
-  -webkit-transform: scale(50%);
-          transform: scale(50%);
 }
 
 @-webkit-keyframes boxOneAnimation {
@@ -1225,15 +1223,13 @@ main .background svg {
     position: fixed;
     overflow: hidden;
     z-index: -1;
-    top: 0;
-    left: 4vw;
+    top: 30%;
+    left: 5%;
     text-align: center;
   }
   .animationSection .lineAnimationContainer svg {
-    height: 100vh;
+    height: 50vh;
     width: auto;
-    -webkit-transform: scale(50%);
-            transform: scale(50%);
   }
 }
 /*# sourceMappingURL=main.css.map */
