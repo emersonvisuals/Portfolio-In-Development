@@ -933,6 +933,74 @@ main .background svg {
   width: 100%;
 }
 
+footer {
+  height: 35vh;
+  background-color: #101011;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 13vw;
+}
+
+footer .footerList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footerList h1 {
+  font-size: clamp(1.5rem, 1.2vw, 2.2rem);
+  font-family: poppins;
+  font-weight: 700;
+  color: #1C56A3;
+  text-transform: capitalize;
+}
+
+footer .footerList ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+footer .footerList li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+footer .footerList a {
+  font-family: poppins;
+  font-size: clamp(1.25rem, 1vw, 2rem);
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+  list-style: none;
+  line-height: 2.75rem;
+}
+
+footer .footerList .footerPortfolio {
+  margin: 0 10rem;
+}
+
+footer .footerList .footerSocials {
+  margin: 0 10rem 0 0;
+}
+
+footer .footerList .footerContact {
+  margin: 0 0 0 0;
+}
+
 .animationSection .lineAnimationContainer {
   position: fixed;
   overflow: hidden;

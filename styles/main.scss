@@ -608,6 +608,51 @@ main {
 
 }
 
+footer {
+    height: 35vh;
+    background-color: $darkBlue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: $desktopPadding;
+
+    .footerList {
+        display: flex;
+        flex-direction: row;
+        h1 {
+            @include footerHeading;
+        }
+
+        ul {
+            list-style: none;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        a {
+            @include footerParagraph;
+        }
+
+        .footerPortfolio {
+            margin: 0 10rem;
+        }
+
+        .footerSocials {
+            margin: 0 10rem 0 0;
+        }
+
+        .footerContact {
+            margin: 0 0 0 0;
+        }
+    }
+}
+
 .animationSection {
 
     .lineAnimationContainer {
