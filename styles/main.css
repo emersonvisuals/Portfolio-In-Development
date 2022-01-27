@@ -1057,7 +1057,7 @@ footer .footerList .footerContact {
   position: fixed;
   overflow: hidden;
   z-index: -1;
-  top: clamp(15%, 8vw, 20%);
+  top: clamp(9%, 8vw, 14%);
   left: 5%;
   text-align: center;
 }
