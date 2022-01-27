@@ -1226,7 +1226,7 @@ main .background svg {
     overflow: hidden;
     z-index: -1;
     top: 0;
-    left: 2vw;
+    left: 4vw;
     text-align: center;
   }
   .animationSection .lineAnimationContainer svg {

@@ -777,20 +777,20 @@ main {
     }
 
     .animationSection {
-
+        
         .lineAnimationContainer {
             position: fixed;
             overflow: hidden;
             z-index: -1;
             top:0;
-            left: 2vw;
+            left: 4vw;
             text-align: center;
     
-            svg {
-                height: 100vh;
-                width: auto;
-                transform: scale(50%);
-            }
+                svg {
+                    height: 100vh;
+                    width: auto;
+                    transform: scale(50%);
+                }
         }
     }
 
