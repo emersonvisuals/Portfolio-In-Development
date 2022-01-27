@@ -750,6 +750,15 @@ footer {
 
         header {
             padding: $mobilePadding;
+
+            .portfolioBelow {
+                bottom:5rem;
+    
+                img {
+                    width: 12rem;
+                    height: auto;
+                }
+            }
         }
     
         nav {

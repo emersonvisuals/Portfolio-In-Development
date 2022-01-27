@@ -1201,6 +1201,13 @@ footer .footerList .footerContact {
   main header {
     padding: 0 10vw;
   }
+  main header .portfolioBelow {
+    bottom: 5rem;
+  }
+  main header .portfolioBelow img {
+    width: 12rem;
+    height: auto;
+  }
   main nav {
     display: -webkit-box;
     display: -ms-flexbox;
