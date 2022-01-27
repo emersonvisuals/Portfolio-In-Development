@@ -456,7 +456,7 @@ main header .boxesContainer .boxTwo img {
 
 main header .portfolioBelow {
   position: absolute;
-  bottom: 5rem;
+  top: 85%;
   left: calc(50% - 6rem);
 }
 
@@ -1179,7 +1179,7 @@ footer .footerList .footerContact {
   }
   main header .portfolioBelow {
     position: absolute;
-    bottom: 5rem;
+    top: 85%;
     left: calc(50% - 6rem);
   }
   main header .portfolioBelow img {
