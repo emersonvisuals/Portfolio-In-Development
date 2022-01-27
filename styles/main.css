@@ -945,6 +945,7 @@ main .background svg {
 .animationSection .lineAnimationContainer svg {
   height: 50vh;
   width: auto;
+  margin: 0 0 -3rem 0;
 }
 
 @-webkit-keyframes boxOneAnimation {
