@@ -710,7 +710,6 @@ footer {
     }
 }
 
-
 @keyframes boxOneAnimation {
     @include scroll;
 }
@@ -741,7 +740,7 @@ footer {
     }
 
     main {
-        height: 80vh;
+        height: 100%;
 
         header {
             padding: $mobilePadding;
@@ -828,7 +827,9 @@ footer {
     }
 
     .portfolio {
+        height: 100%;
         padding: $mobilePadding;
+        padding-bottom: 30rem;
 
 
         .container {
@@ -845,8 +846,8 @@ footer {
     }
 
     .about {
-        padding: 0 0 35rem 0;
-        height: 50vh;
+        padding: 0 0 30rem 0;
+        height: 100%;
 
         .aboutGridContainer {
             height: clamp(30rem, 60vw, 50rem);
