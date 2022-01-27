@@ -752,7 +752,10 @@ footer {
             padding: $mobilePadding;
 
             .portfolioBelow {
+                position: absolute;
                 bottom:5rem;
+                left:calc(50% - 6rem);
+                animation: portfolioBelow 0.5s;
     
                 img {
                     width: 12rem;

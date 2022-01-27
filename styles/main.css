@@ -1202,7 +1202,11 @@ footer .footerList .footerContact {
     padding: 0 10vw;
   }
   main header .portfolioBelow {
+    position: absolute;
     bottom: 5rem;
+    left: calc(50% - 6rem);
+    -webkit-animation: portfolioBelow 0.5s;
+            animation: portfolioBelow 0.5s;
   }
   main header .portfolioBelow img {
     width: 12rem;
