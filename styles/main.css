@@ -456,7 +456,7 @@ main header .boxesContainer .boxTwo img {
 
 main header .portfolioBelow {
   position: absolute;
-  bottom: 2rem;
+  bottom: 5rem;
   left: calc(50% - 6rem);
   -webkit-animation: portfolioBelow 0.5s;
           animation: portfolioBelow 0.5s;
