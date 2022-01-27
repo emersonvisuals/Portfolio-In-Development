@@ -176,8 +176,8 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 // footer Paragraphs
     @mixin footerParagraph {
         font-family: $fontFamily;
-        font-size:  clamp(1.25rem, 1vw, 2.0rem);;
-        font-weight: 400;
+        font-size:  clamp(1rem, 0.8vw, 1.5rem);;
+        font-weight: 600;
         color:$white;
         text-decoration: none;
         list-style: none;

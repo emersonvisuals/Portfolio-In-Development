@@ -616,6 +616,14 @@ footer {
     align-items: center;
     padding: $desktopPadding;
 
+    .logo {
+
+        img {
+            width: auto;
+            height: 5vh;
+        }
+    }
+
     .footerList {
         display: flex;
         flex-direction: row;
@@ -659,7 +667,7 @@ footer {
         position: fixed;
         overflow: hidden;
         z-index: -1;
-        top:30%;
+        top:clamp(15%, 8vw, 20%);
         left: 5%;
         text-align: center;
 

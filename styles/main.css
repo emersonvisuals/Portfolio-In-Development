@@ -949,6 +949,11 @@ footer {
   padding: 0 13vw;
 }
 
+footer .logo img {
+  width: auto;
+  height: 5vh;
+}
+
 footer .footerList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -981,8 +986,8 @@ footer .footerList li {
 
 footer .footerList a {
   font-family: poppins;
-  font-size: clamp(1.25rem, 1vw, 2rem);
-  font-weight: 400;
+  font-size: clamp(1rem, 0.8vw, 1.5rem);
+  font-weight: 600;
   color: #FFFFFF;
   text-decoration: none;
   list-style: none;
@@ -1005,7 +1010,7 @@ footer .footerList .footerContact {
   position: fixed;
   overflow: hidden;
   z-index: -1;
-  top: 30%;
+  top: clamp(15%, 8vw, 20%);
   left: 5%;
   text-align: center;
 }
