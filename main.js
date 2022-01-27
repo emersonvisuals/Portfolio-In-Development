@@ -123,7 +123,7 @@ window.addEventListener('scroll', function(e) {
     } else if (target[index].dataset.direction === 'opacityAndScale') {
       var posX = window.pageYOffset * target[index].dataset.ratex;
       target[index].style.opacity = 'calc(1 - '+pos+')';
-      target[index].style.transform = 'scale(calc(1 + '+pos+' * 0.3), calc(1 + '+pos+' * 0.3))';
+      //target[index].style.transform = 'scale(calc(1 + '+pos+' * 0.3), calc(1 + '+pos+' * 0.3))';
     
     } else {
       return
