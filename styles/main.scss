@@ -743,7 +743,7 @@ footer {
         height: 100%;
 
         header {
-            padding: $mobilePadding;
+            padding: $ipadPadding;
 
             .portfolioBelow {
                 position: absolute;
@@ -761,7 +761,7 @@ footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding:$mobileNavPadding;
+            padding:$ipadNavPadding;
             width: calc(100% - 20vw);
             -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
             box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
@@ -828,7 +828,7 @@ footer {
 
     .portfolio {
         height: 100%;
-        padding: $mobilePadding;
+        padding: $ipadPadding;
         padding-bottom: 30rem;
 
 
@@ -852,7 +852,7 @@ footer {
         .aboutGridContainer {
             height: clamp(30rem, 60vw, 50rem);
             display: grid;
-            padding: $mobilePadding;
+            padding: $ipadPadding;
             grid-template-columns: 40% 60%;
             grid-column-gap: 1rem;
             grid-template-rows: 50% 50%;
@@ -874,7 +874,7 @@ footer {
 
     footer {
         height: 30vh;
-        padding: $mobilePadding;
+        padding: $ipadPadding;
 
         .logo {
 
@@ -906,3 +906,48 @@ footer {
     
     
   }
+
+@media only screen and (max-width: 750px) {
+    main {
+
+        nav {
+            padding: $mobileNavPadding;
+            width: calc(100% - 14vw);
+
+
+        }
+
+        header {
+            padding: $mobilePadding;
+
+            .boxesContainer {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+                .boxOne {
+                    padding: 0 0 3rem 0;
+
+                    .description {
+
+                        p {
+                            font-size: $paragraphFontSizeClamp;
+                        }
+
+                        p::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    footer {
+        display: none;
+    }
+}

@@ -1355,4 +1355,42 @@ footer .footerList .footerContact {
     width: auto;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  main nav {
+    padding: 3rem 7vw;
+    width: calc(100% - 14vw);
+  }
+  main header {
+    padding: 0 7vw;
+  }
+  main header .boxesContainer {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main header .boxesContainer .boxOne {
+    padding: 0 0 3rem 0;
+  }
+  main header .boxesContainer .boxOne .description p {
+    font-size: clamp(1rem, 0.9vw, 2rem);
+  }
+  main header .boxesContainer .boxOne .description p::before {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
