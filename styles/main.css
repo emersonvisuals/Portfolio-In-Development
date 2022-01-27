@@ -1195,6 +1195,9 @@ footer .footerList .footerContact {
 }
 
 @media only screen and (max-width: 1024px) {
+  main {
+    height: 80vh;
+  }
   main header {
     padding: 0 10vw;
   }
@@ -1320,7 +1323,6 @@ footer .footerList .footerContact {
   }
   .portfolio {
     padding: 0 10vw;
-    height: 100vh;
   }
   .portfolio .container .marqueeSix {
     display: inherit;
@@ -1329,8 +1331,8 @@ footer .footerList .footerContact {
     display: inherit;
   }
   .about {
-    padding: 0 0 15rem 0;
-    height: 100vh;
+    padding: 0 0 35rem 0;
+    height: 50vh;
   }
   .about .aboutGridContainer {
     height: clamp(30rem, 60vw, 50rem);

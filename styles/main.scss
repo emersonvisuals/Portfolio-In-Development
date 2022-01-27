@@ -746,6 +746,7 @@ footer {
     }
 
     main {
+        height: 80vh;
 
         header {
             padding: $mobilePadding;
@@ -826,7 +827,6 @@ footer {
 
     .portfolio {
         padding: $mobilePadding;
-        height: 100vh;
 
 
         .container {
@@ -843,8 +843,8 @@ footer {
     }
 
     .about {
-        padding: 0 0 15rem 0;
-        height: 100vh;
+        padding: 0 0 35rem 0;
+        height: 50vh;
 
         .aboutGridContainer {
             height: clamp(30rem, 60vw, 50rem);
