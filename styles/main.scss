@@ -943,7 +943,7 @@ footer {
 
                     .typingEffect {
                         padding: 0 0 1rem 0;
-                        
+
                         .typingEffectOne::after {
                             content: "\a";
                             white-space: pre;
@@ -972,8 +972,17 @@ footer {
 
     }
 
+    .portfolio {
+        padding: $mobilePadding;
+        padding-bottom: 30rem;
+    }
+
     .about {
-        padding: 0 0 50rem 0;
+        padding-bottom: 50rem;
+
+        .aboutGridContainer {
+            padding: $mobilePadding;
+        }
     }
 
 
