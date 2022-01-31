@@ -943,7 +943,7 @@ footer {
 
                     .typingEffect {
                         padding: 0 0 1rem 0;
-
+                        
                         .typingEffectOne::after {
                             content: "\a";
                             white-space: pre;
@@ -958,7 +958,7 @@ footer {
 
             .portfolioBelow {
                 position: absolute;
-                top:90%;
+                top:80%;
                 left:calc(50% - 5rem);
                 
                 img {
