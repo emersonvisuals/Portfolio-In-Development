@@ -846,7 +846,7 @@ footer {
     }
 
     .about {
-        padding: 0 0 30rem 0;
+        padding: 0 0 50rem 0;
         height: 100%;
 
         .aboutGridContainer {
@@ -887,7 +887,7 @@ footer {
     }
 
     .animationSection {
-        
+
         .lineAnimationContainer {
             position: fixed;
             overflow: hidden;
@@ -968,9 +968,84 @@ footer {
 
         }
 
+
+
     }
 
+    .about {
+        padding: 0 0 50rem 0;
+    }
+
+
     footer {
+        height: auto;
+        background-color: $darkBlue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: $mobileFooterPadding;
+    
+        .logo {
+            display: none;
+        }
+    
+        .footerList {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                @include footerHeading;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+    
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+            }
+    
+            li {
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+            }
+    
+            a {
+                @include footerParagraph;
+            }
+    
+            .footerPortfolio {
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+    
+            .footerSocials {
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+    
+            .footerContact {
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+        }
+    }
+
+    .animationSection {
         display: none;
     }
 }

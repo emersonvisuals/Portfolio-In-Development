@@ -9,7 +9,7 @@ $gradient: linear-gradient(27deg, rgba(16,55,108,1) 0%, rgba(28,86,163,1) 100%);
 // font 
 $fontFamily: poppins; 
 $headingFontSize: 12.5rem;
-$headingFontSizeClamp: clamp(5.5rem, 6vw, 12.5rem);
+$headingFontSizeClamp: clamp(5.95rem, 6vw, 12.5rem);
 $subheadingFontSize: 6.5rem; 
 $subheadingFontSizeClamp: clamp(4rem, 7vw, 6.5rem);
 $subheadingTwoFontSize: 2.7rem; 
@@ -29,6 +29,7 @@ $ipadNavPadding: 3rem 10vw;
 $ipadPadding: 0 10vw;
 $mobileNavPadding: 3rem 7vw;
 $mobilePadding: 0 7vw;
+$mobileFooterPadding: 5rem 7vw;
 
 
 //navbar 
@@ -113,7 +114,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 // tan underline 
     @mixin tanUnderline {
         content: '';
-        width: clamp(42rem, 42vw, 82rem);
+        width: clamp(34rem, 35vw, 82rem);
         height: clamp(2rem, 2vw, 4rem);
         background-color: $tan;
         position: absolute;

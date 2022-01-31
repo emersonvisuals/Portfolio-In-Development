@@ -313,7 +313,7 @@ main header .boxesContainer .boxOne .description p {
 
 main header .boxesContainer .boxOne .description p::before {
   content: '';
-  width: clamp(42rem, 42vw, 82rem);
+  width: clamp(34rem, 35vw, 82rem);
   height: clamp(2rem, 2vw, 4rem);
   background-color: #f4eee1;
   position: absolute;
@@ -323,14 +323,14 @@ main header .boxesContainer .boxOne .description p::before {
 }
 
 main header .boxesContainer .boxOne .typingEffect h1 {
-  font-size: clamp(5.5rem, 6vw, 12.5rem);
+  font-size: clamp(5.95rem, 6vw, 12.5rem);
   color: #1C56A3;
   font-family: poppins;
   margin: 0;
 }
 
 main header .boxesContainer .boxOne .typingEffect .typed-text {
-  font-size: clamp(5.5rem, 6vw, 12.5rem);
+  font-size: clamp(5.95rem, 6vw, 12.5rem);
   color: #101011;
   font-family: poppins;
 }
@@ -356,14 +356,14 @@ main header .boxesContainer .boxOne .title {
 }
 
 main header .boxesContainer .boxOne .title h1 {
-  font-size: clamp(5.5rem, 6vw, 12.5rem);
+  font-size: clamp(5.95rem, 6vw, 12.5rem);
   color: #101011;
   font-family: poppins;
   text-transform: capitalize;
 }
 
 main header .boxesContainer .boxOne .title span {
-  font-size: clamp(5.5rem, 6vw, 12.5rem);
+  font-size: clamp(5.95rem, 6vw, 12.5rem);
   color: #1C56A3;
   font-family: poppins;
 }
@@ -1315,7 +1315,7 @@ footer .footerList .footerContact {
     display: inherit;
   }
   .about {
-    padding: 0 0 30rem 0;
+    padding: 0 0 50rem 0;
     height: 100%;
   }
   .about .aboutGridContainer {
@@ -1407,7 +1407,122 @@ footer .footerList .footerContact {
   main header .portfolioBelow img {
     width: 10rem;
   }
+  .about {
+    padding: 0 0 50rem 0;
+  }
   footer {
+    height: auto;
+    background-color: #101011;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5rem 7vw;
+  }
+  footer .logo {
+    display: none;
+  }
+  footer .footerList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    flex-direction: column;
+  }
+  footer .footerList h1 {
+    font-size: clamp(1.5rem, 1.2vw, 2.2rem);
+    font-family: poppins;
+    font-weight: 700;
+    color: #1C56A3;
+    text-transform: capitalize;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footerList ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  }
+  footer .footerList li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  }
+  footer .footerList a {
+    font-family: poppins;
+    font-size: clamp(1rem, 0.8vw, 1.5rem);
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    list-style: none;
+    line-height: 2.75rem;
+  }
+  footer .footerList .footerPortfolio {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  footer .footerList .footerSocials {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  footer .footerList .footerContact {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .animationSection {
     display: none;
   }
 }
