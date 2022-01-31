@@ -937,7 +937,7 @@ main .background svg {
 }
 
 .about .aboutGridContainer .details p {
-  font-size: clamp(1rem, 0.9vw, 2rem);
+  font-size: clamp(1.19rem, 0.9vw, 2rem);
   font-family: poppins;
   line-height: clamp(3rem, 2vw, 4rem);
   font-weight: 400;
@@ -1369,25 +1369,43 @@ footer .footerList .footerContact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   main header .boxesContainer .boxOne {
-    padding: 0 0 3rem 0;
+    width: 100%;
   }
   main header .boxesContainer .boxOne .description p {
-    font-size: clamp(1rem, 0.9vw, 2rem);
+    font-size: clamp(1.19rem, 0.9vw, 2rem);
   }
   main header .boxesContainer .boxOne .description p::before {
+    width: clamp(33rem, 42vw, 82rem);
+  }
+  main header .boxesContainer .boxOne .typingEffect {
+    padding: 0 0 1rem 0;
+  }
+  main header .boxesContainer .boxOne .typingEffect .typingEffectOne::after {
+    content: "\a";
+    white-space: pre;
+  }
+  main header .boxesContainer .boxTwo {
     display: none;
+  }
+  main header .portfolioBelow {
+    position: absolute;
+    top: 90%;
+    left: calc(50% - 5rem);
+  }
+  main header .portfolioBelow img {
+    width: 10rem;
   }
   footer {
     display: none;

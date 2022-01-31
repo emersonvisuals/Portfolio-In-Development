@@ -101,8 +101,6 @@ window.addEventListener('scroll', () => {
 
 // parallax animation 
 
-
-
 window.addEventListener('scroll', function(e) {
 
   const target = document.querySelectorAll('#scroll');

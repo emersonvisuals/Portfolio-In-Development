@@ -923,12 +923,12 @@ footer {
             .boxesContainer {
                 height: 100%;
                 display: flex;
-                align-items: center;
                 justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 
                 .boxOne {
-                    padding: 0 0 3rem 0;
+                    width: 100%;
 
                     .description {
 
@@ -937,9 +937,32 @@ footer {
                         }
 
                         p::before {
-                            display: none;
+                            width: clamp(33rem, 42vw, 82rem);
                         }
                     }
+
+                    .typingEffect {
+                        padding: 0 0 1rem 0;
+
+                        .typingEffectOne::after {
+                            content: "\a";
+                            white-space: pre;
+                        }
+                    }
+                }
+
+                .boxTwo {
+                    display: none;
+                }
+            }
+
+            .portfolioBelow {
+                position: absolute;
+                top:90%;
+                left:calc(50% - 5rem);
+                
+                img {
+                    width: 10rem;
                 }
             }
 
