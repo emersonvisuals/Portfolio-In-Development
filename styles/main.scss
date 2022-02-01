@@ -1050,6 +1050,7 @@ footer {
 
         nav.active {
             padding: $mobileNavPadding;
+            width: calc(100% - 14vw);
         }
 
         header {
