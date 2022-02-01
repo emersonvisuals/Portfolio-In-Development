@@ -1495,7 +1495,7 @@ footer .footerList .footerContact {
     padding: 0 7vw;
   }
   footer {
-    height: 100vh;
+    height: calc(100vh - 9rem);
     background-color: #101011;
     display: -webkit-box;
     display: -ms-flexbox;
