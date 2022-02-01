@@ -1059,7 +1059,7 @@ footer {
 
 
     footer {
-        height: 100vh;
+        height: calc(100vh - 9rem);
         background-color: $darkBlue;
         display: flex;
         flex-direction: column;
