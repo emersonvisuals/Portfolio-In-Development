@@ -1495,7 +1495,7 @@ footer .footerList .footerContact {
     padding: 0 7vw;
   }
   footer {
-    height: auto;
+    height: 100vh;
     background-color: #101011;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1510,7 +1510,6 @@ footer .footerList .footerContact {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 5rem 7vw;
   }
   footer .logo {
     display: none;
