@@ -1407,6 +1407,13 @@ footer .footerList .footerContact {
   main header .portfolioBelow img {
     width: 10rem;
   }
+  main .background {
+    top: 47.5rem;
+  }
+  main .background svg {
+    height: auto;
+    width: 38rem;
+  }
   .portfolio {
     padding: 0 7vw;
     padding-bottom: 30rem;
