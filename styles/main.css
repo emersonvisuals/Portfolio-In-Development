@@ -1365,7 +1365,6 @@ footer .footerList .footerContact {
     padding: 0 7vw;
   }
   main header .boxesContainer {
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1382,6 +1381,7 @@ footer .footerList .footerContact {
   }
   main header .boxesContainer .boxOne {
     width: 100%;
+    padding: 0 0 5rem 0;
   }
   main header .boxesContainer .boxOne .description p {
     font-size: clamp(1.19rem, 0.9vw, 2rem);
