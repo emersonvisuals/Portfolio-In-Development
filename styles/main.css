@@ -1307,6 +1307,9 @@ footer .footerList .footerContact {
     top: 0rem;
     transition: 0.5s all;
   }
+  main .background {
+    top: 80rem;
+  }
   .portfolio {
     height: 100%;
     padding: 0 10vw;

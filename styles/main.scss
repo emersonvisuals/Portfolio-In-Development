@@ -737,7 +737,6 @@ footer {
 
 @media only screen and (max-width: 1024px) {
     body {
-
     }
 
     main {
@@ -824,6 +823,10 @@ footer {
                     transition: 0.5s all;
                 }
             }
+        }
+
+        .background {
+            top:80rem;
         }
     }
 
