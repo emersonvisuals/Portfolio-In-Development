@@ -529,7 +529,7 @@ main .background svg {
 
 .portfolio .container .marqueeOne span {
   text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-size: clamp(4rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -577,7 +577,7 @@ main .background svg {
 
 .portfolio .container .marqueeTwo span {
   text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-size: clamp(4rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -625,7 +625,7 @@ main .background svg {
 
 .portfolio .container .marqueeThree span {
   text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-size: clamp(4rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -673,7 +673,7 @@ main .background svg {
 
 .portfolio .container .marqueeFour span {
   text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-size: clamp(4rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -721,7 +721,7 @@ main .background svg {
 
 .portfolio .container .marqueeFive span {
   text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-size: clamp(4rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -770,7 +770,7 @@ main .background svg {
 
 .portfolio .container .marqueeSix span {
   text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-size: clamp(4rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -819,7 +819,7 @@ main .background svg {
 
 .portfolio .container .marqueeSeven span {
   text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-size: clamp(4rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -1051,6 +1051,10 @@ footer .footerList .footerSocials {
 
 footer .footerList .footerContact {
   margin: 0 0 0 0;
+}
+
+.animationSection {
+  display: none;
 }
 
 .animationSection .lineAnimationContainer {

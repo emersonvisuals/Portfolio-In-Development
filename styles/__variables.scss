@@ -30,7 +30,6 @@ $ipadPadding: 0 10vw;
 $mobileNavPadding: 3rem 7vw;
 $mobilePadding: 0 7vw;
 $mobileFooterPadding: 5rem 7vw;
-$mobileHomeMainPadding: 0 0 20rem 0;
 
 
 //navbar 
@@ -191,7 +190,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 // marquee font
     @mixin marquee {
         text-transform: capitalize;
-        font-size: clamp(6rem, 4.25vw, 8rem);
+        font-size: clamp(4rem, 4.25vw, 8rem);
         font-weight: 700;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: $white;
