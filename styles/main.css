@@ -1012,7 +1012,7 @@ footer .footerList {
 }
 
 footer .footerList h1 {
-  font-size: clamp(1.5rem, 1.2vw, 2.2rem);
+  font-size: clamp(2rem, 1.2vw, 2.2rem);
   font-family: poppins;
   font-weight: 700;
   color: #1C56A3;
@@ -1033,7 +1033,7 @@ footer .footerList li {
 
 footer .footerList a {
   font-family: poppins;
-  font-size: clamp(1rem, 0.8vw, 1.5rem);
+  font-size: clamp(1.25rem, 0.8vw, 1.5rem);
   font-weight: 600;
   color: #FFFFFF;
   text-decoration: none;
@@ -1529,7 +1529,7 @@ footer .footerList .footerContact {
     flex-direction: column;
   }
   footer .footerList h1 {
-    font-size: clamp(1.5rem, 1.2vw, 2.2rem);
+    font-size: clamp(2rem, 1.2vw, 2.2rem);
     font-family: poppins;
     font-weight: 700;
     color: #1C56A3;
@@ -1569,7 +1569,7 @@ footer .footerList .footerContact {
   }
   footer .footerList a {
     font-family: poppins;
-    font-size: clamp(1rem, 0.8vw, 1.5rem);
+    font-size: clamp(1.25rem, 0.8vw, 1.5rem);
     font-weight: 600;
     color: #FFFFFF;
     text-decoration: none;
