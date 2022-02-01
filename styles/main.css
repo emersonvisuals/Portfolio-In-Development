@@ -529,7 +529,7 @@ main .background svg {
 
 .portfolio .container .marqueeOne span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 4.25vw, 8rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -577,7 +577,7 @@ main .background svg {
 
 .portfolio .container .marqueeTwo span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 4.25vw, 8rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -625,7 +625,7 @@ main .background svg {
 
 .portfolio .container .marqueeThree span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 4.25vw, 8rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -673,7 +673,7 @@ main .background svg {
 
 .portfolio .container .marqueeFour span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 4.25vw, 8rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -721,7 +721,7 @@ main .background svg {
 
 .portfolio .container .marqueeFive span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 4.25vw, 8rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -770,7 +770,7 @@ main .background svg {
 
 .portfolio .container .marqueeSix span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 4.25vw, 8rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -819,7 +819,7 @@ main .background svg {
 
 .portfolio .container .marqueeSeven span {
   text-transform: capitalize;
-  font-size: clamp(4rem, 4.25vw, 8rem);
+  font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFFFFF;
@@ -1422,6 +1422,69 @@ footer .footerList .footerContact {
     padding: 0 7vw;
     padding-bottom: 30rem;
   }
+  .portfolio .container .marqueeOne span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .portfolio .container .marqueeTwo span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .portfolio .container .marqueeThree span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .portfolio .container .marqueeFour span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .portfolio .container .marqueeFive span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .portfolio .container .marqueeSix span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .portfolio .container .marqueeSeven span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
   .about {
     padding-bottom: 50rem;
   }
@@ -1539,9 +1602,6 @@ footer .footerList .footerContact {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-  }
-  .animationSection {
-    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

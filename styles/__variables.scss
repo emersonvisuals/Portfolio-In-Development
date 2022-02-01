@@ -190,7 +190,16 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 // marquee font
     @mixin marquee {
         text-transform: capitalize;
-        font-size: clamp(4rem, 4.25vw, 8rem);
+        font-size: clamp(6rem, 4.25vw, 8rem);
+        font-weight: 700;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $white;
+        color: transparent;
+        transition: 0.5s all;
+    }
+
+    @mixin marqueeMobile {
+        font-size: 5rem;
         font-weight: 700;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: $white;
