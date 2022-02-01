@@ -1579,6 +1579,9 @@ footer .footerList .footerContact {
     padding: 3rem 7vw;
     width: calc(100% - 14vw);
   }
+  main nav.active {
+    padding: 3rem 7vw;
+  }
   main header {
     padding: 0 7vw;
   }

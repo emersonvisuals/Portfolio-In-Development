@@ -1046,8 +1046,10 @@ footer {
         nav {
             padding: $mobileNavPadding;
             width: calc(100% - 14vw);
+        }
 
-
+        nav.active {
+            padding: $mobileNavPadding;
         }
 
         header {
