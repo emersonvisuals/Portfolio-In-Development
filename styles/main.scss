@@ -756,7 +756,7 @@ footer {
                 }
             }
         }
-    
+
         nav {
             display: flex;
             align-items: center;
@@ -790,6 +790,135 @@ footer {
                 width: 2.5rem;
                 height: 2.5rem;
                 cursor: pointer;
+
+                .mobileToggle {
+                    @include mobileToggle;
+                }
+
+                .mobileToggle::after {
+                    @include mobileToggleAfter;
+                }
+
+                .mobileToggle::before {
+                    @include mobileToggleBefore;
+                }
+
+                .mobileToggle.active {
+                    @include mobileToggle;
+                    width: 0;
+                    transition: 0.5s all;
+                }
+
+                .mobileToggle.active::after {
+                    @include mobileToggleAfter;
+                    transform: rotate(45deg);
+                    bottom: 0rem;
+                    transition: 0.5s all;
+                }
+
+                .mobileToggle.active::before {
+                    @include mobileToggleBefore;
+                    transform: rotate(-45deg);
+                    top: 0rem;
+                    transition: 0.5s all;
+                }
+            }
+        }
+
+    
+        nav.active {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:$ipadNavPadding;
+            width: calc(100% - 20vw);
+            -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
+            box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
+            transition: 0.5s all;
+
+            .desktopLogo {
+                display: none;
+            }
+    
+            .desktopNav {
+                margin: 6rem 0 0 0;
+                display: inherit;
+
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+
+                    li {
+                        padding: 1rem 0;
+                    }
+                    
+
+                            
+                    .navHome::before {
+                        @include navHover;
+                        display: none;
+                    }
+                    
+                    .navHome:hover::before {
+                        @include navHover;
+                        display: none;
+                    }
+
+                    .navPortfolio::before {
+                        @include navHover;
+                        display: none;
+                    }
+                    
+                    .navPortfolio:hover::before {
+                        @include navHover;
+                        display: none;
+                    }
+
+                    .navAbout::before {
+                        @include navHover;
+                        display: none;
+                    }
+                    
+                    .navAbout:hover::before {
+                        @include navHover;
+                        display: none;
+                    }
+
+                    .navResume::before {
+                        @include navHover;
+                        opacity: 1;
+                        transform:scaleY(0);
+                        transition: 0.25s all;
+                    }
+                    
+                    .navResume:hover::before {
+                        @include navHover;
+                        display: none;
+                    }
+
+                }
+
+                
+            }
+    
+            .contactButtonContainer {
+               display: none;
+            }
+
+            .mobileLogo {
+                display: initial;
+                margin: 0 0 22rem 0;
+            }
+
+            .mobileTrigger {
+                display: initial;
+                content: '';
+                position: relative;
+                width: 2.5rem;
+                height: 2.5rem;
+                cursor: pointer;
+                margin: 0 0 22rem 0;
 
                 .mobileToggle {
                     @include mobileToggle;

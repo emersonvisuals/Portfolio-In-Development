@@ -72,7 +72,6 @@ window.onclick = function(event) {
 
 
 // line animation
-
 var path = document.querySelector('#lineAnimationLine');
 var length = path.getTotalLength();
 // Clear any previous transition
@@ -100,12 +99,10 @@ window.addEventListener('scroll', () => {
 });
 
 // parallax animation 
-
 window.addEventListener('scroll', function(e) {
 
   const target = document.querySelectorAll('#scroll');
 
-  console.log(target);
 
   var index = 0, length = target.length;
   for(index; index < length; index++) {
@@ -130,6 +127,12 @@ window.addEventListener('scroll', function(e) {
 
 });
 
+// burger menu toggle
+const nav = document.querySelector('nav');
 
+console.log(nav);
 
+trigger.addEventListener('click', function(){
+  nav.classList.toggle('active');
+});
 

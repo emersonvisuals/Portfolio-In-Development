@@ -1307,6 +1307,217 @@ footer .footerList .footerContact {
     top: 0rem;
     transition: 0.5s all;
   }
+  main nav.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem 10vw;
+    width: calc(100% - 20vw);
+    -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav.active .desktopLogo {
+    display: none;
+  }
+  main nav.active .desktopNav {
+    margin: 6rem 0 0 0;
+    display: inherit;
+  }
+  main nav.active .desktopNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  main nav.active .desktopNav ul li {
+    padding: 1rem 0;
+  }
+  main nav.active .desktopNav ul .navHome::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    display: none;
+  }
+  main nav.active .desktopNav ul .navHome:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    display: none;
+  }
+  main nav.active .desktopNav ul .navPortfolio::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    display: none;
+  }
+  main nav.active .desktopNav ul .navPortfolio:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    display: none;
+  }
+  main nav.active .desktopNav ul .navAbout::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    display: none;
+  }
+  main nav.active .desktopNav ul .navAbout:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    display: none;
+  }
+  main nav.active .desktopNav ul .navResume::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  main nav.active .desktopNav ul .navResume:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    display: none;
+  }
+  main nav.active .contactButtonContainer {
+    display: none;
+  }
+  main nav.active .mobileLogo {
+    display: initial;
+    margin: 0 0 22rem 0;
+  }
+  main nav.active .mobileTrigger {
+    display: initial;
+    content: '';
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin: 0 0 22rem 0;
+  }
+  main nav.active .mobileTrigger .mobileToggle {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 50%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav.active .mobileTrigger .mobileToggle::after {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    bottom: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav.active .mobileTrigger .mobileToggle::before {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.35rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav.active .mobileTrigger .mobileToggle.active {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 50%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    width: 0;
+    transition: 0.5s all;
+  }
+  main nav.active .mobileTrigger .mobileToggle.active::after {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    bottom: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: 0rem;
+    transition: 0.5s all;
+  }
+  main nav.active .mobileTrigger .mobileToggle.active::before {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.35rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0rem;
+    transition: 0.5s all;
+  }
   main .background {
     top: 80rem;
   }
