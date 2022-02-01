@@ -373,7 +373,7 @@ main header .boxesContainer .boxOne .details {
 }
 
 main header .boxesContainer .boxOne .details .myWork {
-  background-color: #FFFFFF;
+  background-color: transparent;
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
   font-family: poppins;
@@ -951,7 +951,7 @@ main .background svg {
 }
 
 .about .aboutGridContainer .details .viewMore {
-  background-color: #FFFFFF;
+  background-color: transparent;
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
   font-family: poppins;
@@ -1401,7 +1401,7 @@ footer .footerList .footerContact {
   }
   main header .portfolioBelow {
     position: absolute;
-    top: 65rem;
+    top: 62.5rem;
     left: calc(50% - 5rem);
   }
   main header .portfolioBelow img {
