@@ -907,7 +907,7 @@ footer {
     
   }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
     main {
 
         nav {
@@ -958,7 +958,7 @@ footer {
 
             .portfolioBelow {
                 position: absolute;
-                top:80%;
+                top:60rem;
                 left:calc(50% - 5rem);
                 
                 img {

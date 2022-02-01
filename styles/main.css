@@ -1356,7 +1356,7 @@ footer .footerList .footerContact {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   main nav {
     padding: 3rem 7vw;
     width: calc(100% - 14vw);
@@ -1401,7 +1401,7 @@ footer .footerList .footerContact {
   }
   main header .portfolioBelow {
     position: absolute;
-    top: 80%;
+    top: 60rem;
     left: calc(50% - 5rem);
   }
   main header .portfolioBelow img {
