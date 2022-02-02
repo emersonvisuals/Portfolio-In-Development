@@ -1412,6 +1412,62 @@ footer .footerList .footerContact {
   main nav.active .desktopNav ul .navResume:hover::before {
     display: none;
   }
+  main nav.active .desktopNav ul .navPortfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: inherit;
+    z-index: 3;
+  }
+  main nav.active .desktopNav ul .navPortfolio .portfolioToggle {
+    text-align: center;
+    position: inherit;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    top: inherit;
+    margin: 0;
+    padding: 1rem 0;
+    width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: none;
+  }
+  main nav.active .desktopNav ul .navPortfolio .portfolioToggle li {
+    list-style: none;
+    padding: 0.25rem 0;
+  }
+  main nav.active .desktopNav ul .navPortfolio .portfolioToggle li a.portfolioToggleFont {
+    text-decoration: none;
+    color: #101011;
+    font-size: clamp(0.75rem, 1.25vw, 1.5rem);
+    font-family: poppins;
+    text-transform: capitalize;
+  }
+  main nav.active .desktopNav ul .navPortfolio .portfolioToggle.active {
+    display: inherit;
+  }
   main nav.active .contactButtonContainer {
     display: initial;
     padding: 0;

@@ -56,11 +56,12 @@ trigger.addEventListener('click', function(){
 const portfolioTrigger = document.querySelector('.navPortfolio');
 const portfolioToggle = document.querySelector('.portfolioToggle');
 
+
 portfolioTrigger.addEventListener('click', function(){
   portfolioToggle.classList.toggle('active');
   portfolioTrigger.classList.toggle('active');
-
 });
+
 
 
 window.onclick = function(event) {
