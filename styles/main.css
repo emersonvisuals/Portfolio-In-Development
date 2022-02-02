@@ -1200,7 +1200,7 @@ footer .footerList .footerContact {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 3rem 10vw;
+    padding: 4rem 10vw;
     width: calc(100% - 20vw);
     -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
@@ -1210,23 +1210,25 @@ footer .footerList .footerContact {
   }
   main nav .desktopNav {
     display: none;
-    opacity: 0;
-    -webkit-transition: 1s all;
-    transition: 1s all;
   }
   main nav .contactButtonContainer {
     display: none;
   }
   main nav .mobileLogo {
     display: initial;
+    position: absolute;
+    left: 10vw;
+    top: 3rem;
   }
   main nav .mobileTrigger {
     display: initial;
     content: '';
-    position: relative;
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
+    position: absolute;
+    right: 10vw;
+    top: 3rem;
   }
   main nav .mobileTrigger .mobileToggle {
     display: initial;
@@ -1317,26 +1319,11 @@ footer .footerList .footerContact {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 3rem 10vw;
-    width: calc(100% - 20vw);
-    -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  main nav.active .desktopLogo {
-    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main nav.active .desktopNav {
-    margin: 0;
-    padding: 0 1rem 0 0;
-    display: inherit;
-    opacity: 1;
-    -webkit-transition: 1s all;
-    transition: 1s all;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1364,54 +1351,6 @@ footer .footerList .footerContact {
   main nav.active .desktopNav ul li {
     padding: 1rem 0;
   }
-  main nav.active .desktopNav ul .navHome:hover {
-    font-weight: 700;
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    color: #1C56A3;
-  }
-  main nav.active .desktopNav ul .navHome::before {
-    display: none;
-  }
-  main nav.active .desktopNav ul .navHome:hover::before {
-    display: none;
-  }
-  main nav.active .desktopNav ul .navPortfolio:hover {
-    font-weight: 700;
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    color: #1C56A3;
-  }
-  main nav.active .desktopNav ul .navPortfolio::before {
-    display: none;
-  }
-  main nav.active .desktopNav ul .navPortfolio:hover::before {
-    display: none;
-  }
-  main nav.active .desktopNav ul .navAbout::before {
-    display: none;
-  }
-  main nav.active .desktopNav ul .navAbout:hover {
-    font-weight: 700;
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    color: #1C56A3;
-  }
-  main nav.active .desktopNav ul .navAbout:hover::before {
-    display: none;
-  }
-  main nav.active .desktopNav ul .navResume::before {
-    display: none;
-  }
-  main nav.active .desktopNav ul .navResume:hover {
-    font-weight: 700;
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    color: #1C56A3;
-  }
-  main nav.active .desktopNav ul .navResume:hover::before {
-    display: none;
-  }
   main nav.active .desktopNav ul .navPortfolio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1437,7 +1376,7 @@ footer .footerList .footerContact {
             box-shadow: none;
     top: inherit;
     margin: 0;
-    padding: 1rem 0;
+    padding: 0;
     width: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1479,11 +1418,12 @@ footer .footerList .footerContact {
   main nav.active .mobileTrigger {
     display: initial;
     content: '';
-    position: relative;
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
-    margin: 0 0 22rem 0;
+    position: absolute;
+    right: 10vw;
+    top: 3rem;
   }
   main nav.active .mobileTrigger .mobileToggle {
     display: initial;
@@ -1567,6 +1507,15 @@ footer .footerList .footerContact {
     top: 0rem;
     transition: 0.5s all;
   }
+  main nav.active .navHome::before {
+    display: none;
+  }
+  main nav.active a::before {
+    display: none;
+  }
+  main nav.active .navPortfolio::before {
+    display: none;
+  }
   main .background {
     top: 80rem;
   }
@@ -1625,11 +1574,11 @@ footer .footerList .footerContact {
 
 @media only screen and (max-width: 650px) {
   main nav {
-    padding: 3rem 7vw;
+    padding: 4rem 7vw;
     width: calc(100% - 14vw);
   }
   main nav.active {
-    padding: 3rem 7vw;
+    padding: 4rem 7vw;
     width: calc(100% - 14vw);
   }
   main header {

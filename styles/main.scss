@@ -772,8 +772,6 @@ footer {
     
             .desktopNav {
                display: none;
-               opacity: 0;
-               transition: 1s all;
     
             }
     
@@ -783,15 +781,21 @@ footer {
 
             .mobileLogo {
                 display: initial;
+                position: absolute;
+                left: 10vw;
+                top: 3rem;
             }
 
             .mobileTrigger {
                 display: initial;
                 content: '';
-                position: relative;
                 width: 2.5rem;
                 height: 2.5rem;
                 cursor: pointer;
+                position: absolute;
+                right: 10vw;
+                top: 3rem;
+
 
                 .mobileToggle {
                     @include mobileToggle;
@@ -830,23 +834,9 @@ footer {
         nav.active {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding:$ipadNavPadding;
-            width: calc(100% - 20vw);
-            -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
-            box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
-            transition: 0.5s all;
-
-            .desktopLogo {
-                display: none;
-            }
-    
+            justify-content: center;
+            
             .desktopNav {
-                margin: 0;
-                padding: 0 1rem 0 0;
-                display: inherit;
-                opacity: 1;
-                transition: 1s all;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -859,54 +849,6 @@ footer {
 
                     li {
                         padding: 1rem 0;
-                    }
-                            
-                    .navHome:hover {
-                        @include navHoverMobile;
-                    }
-
-                    .navHome::before {
-                        display: none;
-                    }
-                    
-                    .navHome:hover::before {
-                        display: none;
-                    }
-
-                    .navPortfolio:hover {
-                        @include navHoverMobile;
-                    }
-
-                    .navPortfolio::before {
-                        display: none;
-                    }
-                    
-                    .navPortfolio:hover::before {
-                        display: none;
-                    }
-
-                    .navAbout::before {
-                        display: none;
-                    }
-
-                    .navAbout:hover {
-                        @include navHoverMobile;
-                    }
-                    
-                    .navAbout:hover::before {
-                        display: none;
-                    }
-
-                    .navResume::before {
-                        display: none;
-                    }
-
-                    .navResume:hover {
-                        @include navHoverMobile;
-                    }
-                    
-                    .navResume:hover::before {
-                        display: none;
                     }
 
                     .navPortfolio {
@@ -925,7 +867,7 @@ footer {
                             box-shadow: none;
                             top:inherit;
                             margin: 0;
-                            padding: 1rem 0;
+                            padding: 0;
                             width: inherit;
                             display: flex;
                             flex-direction: column;
@@ -963,11 +905,12 @@ footer {
             .mobileTrigger {
                 display: initial;
                 content: '';
-                position: relative;
                 width: 2.5rem;
                 height: 2.5rem;
                 cursor: pointer;
-                margin: 0 0 22rem 0;
+                position: absolute;
+                right: 10vw;
+                top: 3rem;
 
                 .mobileToggle {
                     @include mobileToggle;
@@ -1001,7 +944,22 @@ footer {
                     transition: 0.5s all;
                 }
             }
+
+            .navHome::before {
+                display: none;
+            }
+
+            a::before {
+                display: none;
+            }
+
+            .navPortfolio::before {
+                display: none;
+            }
+
         }
+
+
 
         .background {
             top:80rem;
