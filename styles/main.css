@@ -233,7 +233,7 @@ main nav .desktopNav .portfolioToggle li {
 main nav .desktopNav .portfolioToggle li a.portfolioToggleFont {
   text-decoration: none;
   color: #101011;
-  font-size: clamp(0.75rem, 1.25vw, 1.5rem);
+  font-size: clamp(1.15rem, 1.25vw, 1.5rem);
   font-family: poppins;
   text-transform: capitalize;
 }
@@ -1392,6 +1392,7 @@ footer .footerList .footerContact {
         -ms-flex-pack: center;
             justify-content: center;
     display: none;
+    padding: 1.25rem 0 0 0;
   }
   main nav.active .desktopNav ul .navPortfolio .portfolioToggle li {
     list-style: none;
@@ -1400,7 +1401,7 @@ footer .footerList .footerContact {
   main nav.active .desktopNav ul .navPortfolio .portfolioToggle li a.portfolioToggleFont {
     text-decoration: none;
     color: #101011;
-    font-size: clamp(0.75rem, 1.25vw, 1.5rem);
+    font-size: clamp(1.15rem, 1.25vw, 1.5rem);
     font-family: poppins;
     text-transform: capitalize;
   }
@@ -1577,9 +1578,103 @@ footer .footerList .footerContact {
     padding: 4rem 7vw;
     width: calc(100% - 14vw);
   }
+  main nav .mobileLogo {
+    left: 7vw;
+    top: 3rem;
+  }
+  main nav .mobileTrigger {
+    right: 7vw;
+    top: 3rem;
+  }
+  main nav .mobileTrigger .mobileToggle {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 50%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle::after {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    bottom: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle::before {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.35rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle.active {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 50%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    width: 0;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle.active::after {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    bottom: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: 0rem;
+    transition: 0.5s all;
+  }
+  main nav .mobileTrigger .mobileToggle.active::before {
+    display: initial;
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 0.35rem;
+    background-color: #1C56A3;
+    z-index: 1;
+    top: 0.75rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0rem;
+    transition: 0.5s all;
+  }
   main nav.active {
     padding: 4rem 7vw;
     width: calc(100% - 14vw);
+  }
+  main nav.active .mobileTrigger {
+    right: 7vw;
+    top: 3rem;
   }
   main header {
     padding: 0 7vw;

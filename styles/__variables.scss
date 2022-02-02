@@ -20,16 +20,17 @@ $paragraphFontSpacing: 4rem;
 $paragraphFontSpacingClamp: clamp(3rem, 2vw, 4rem);
 $fontButton: clamp(1.5rem, 1.25vw, 2.7rem);
 $navFontSizeClamp: clamp(1.3rem, 1vw, 1.8rem);
-$navPortfolioToggleSizeClamp: clamp(0.75rem, 1.25vw, 1.5rem);
+$navPortfolioToggleSizeClamp: clamp(1.15rem, 1.25vw, 1.5rem);
+$navPortfolioMobileFontSize: 1rem;
 
 //padding
 $desktopNavPadding: 2rem 13vw;
 $desktopPadding: 0 13vw;
 $ipadNavPadding: 4rem 10vw;
 $ipadPadding: 0 10vw;
-$mobileNavPadding: 4rem 7vw;
-$mobilePadding: 0 7vw;
-$mobileFooterPadding: 5rem 7vw;
+$mobileNavPadding: 4rem 7vw; 
+$mobilePadding: 0 7vw; 
+$mobileFooterPadding: 5rem 7vw; 
 
 //navbar 
 $logoSize: clamp(5rem, 20vw, 20rem);

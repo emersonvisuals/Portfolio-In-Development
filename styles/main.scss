@@ -874,6 +874,7 @@ footer {
                             align-items: center;
                             justify-content: center;
                             display: none;
+                            padding: 1.25rem 0 0 0;
             
                             li {
                                 list-style: none;
@@ -1054,11 +1055,62 @@ footer {
         nav {
             padding: $mobileNavPadding;
             width: calc(100% - 14vw);
+
+            .mobileLogo {
+                left: 7vw;
+                top: 3rem;
+            }
+
+            .mobileTrigger {
+                right: 7vw;
+                top: 3rem;
+
+
+                .mobileToggle {
+                    @include mobileToggle;
+                }
+
+                .mobileToggle::after {
+                    @include mobileToggleAfter;
+                }
+
+                .mobileToggle::before {
+                    @include mobileToggleBefore;
+                }
+
+                .mobileToggle.active {
+                    @include mobileToggle;
+                    width: 0;
+                    transition: 0.5s all;
+                }
+
+                .mobileToggle.active::after {
+                    @include mobileToggleAfter;
+                    transform: rotate(45deg);
+                    bottom: 0rem;
+                    transition: 0.5s all;
+                }
+
+                .mobileToggle.active::before {
+                    @include mobileToggleBefore;
+                    transform: rotate(-45deg);
+                    top: 0rem;
+                    transition: 0.5s all;
+                }
+            }
+
+
         }
 
         nav.active {
             padding: $mobileNavPadding;
             width: calc(100% - 14vw);
+
+            .mobileTrigger {
+                right: 7vw;
+                top: 3rem;
+            }
+
         }
 
         header {
@@ -1120,9 +1172,6 @@ footer {
                 width: 38rem;
             }
         }
-
-
-
     }
 
     .portfolio {
@@ -1196,7 +1245,6 @@ footer {
             padding: $mobilePadding;
         }
     }
-
 
     footer {
         height: calc(100vh - 9rem);
