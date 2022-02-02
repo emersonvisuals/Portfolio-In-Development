@@ -772,6 +772,8 @@ footer {
     
             .desktopNav {
                display: none;
+               opacity: 0;
+               transition: 1s all;
     
             }
     
@@ -841,8 +843,15 @@ footer {
             }
     
             .desktopNav {
-                margin: 6rem 0 0 0;
+                margin: 0;
                 display: inherit;
+                opacity: 1;
+                transition: 1s all;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
 
                 ul {
                     flex-direction: column;
@@ -855,55 +864,62 @@ footer {
                     
 
                             
+                    .navHome:hover {
+                        @include navHoverMobile;
+                    }
+
                     .navHome::before {
-                        @include navHover;
                         display: none;
                     }
                     
                     .navHome:hover::before {
-                        @include navHover;
                         display: none;
                     }
 
+                    .navPortfolio:hover {
+                        @include navHoverMobile;
+                    }
+
                     .navPortfolio::before {
-                        @include navHover;
                         display: none;
                     }
                     
                     .navPortfolio:hover::before {
-                        @include navHover;
                         display: none;
                     }
 
                     .navAbout::before {
-                        @include navHover;
                         display: none;
+                    }
+
+                    .navAbout:hover {
+                        @include navHoverMobile;
                     }
                     
                     .navAbout:hover::before {
-                        @include navHover;
                         display: none;
                     }
 
                     .navResume::before {
-                        @include navHover;
-                        opacity: 1;
-                        transform:scaleY(0);
-                        transition: 0.25s all;
-                    }
-                    
-                    .navResume:hover::before {
-                        @include navHover;
                         display: none;
                     }
 
-                }
+                    .navResume:hover {
+                        @include navHoverMobile;
+                    }
+                    
+                    .navResume:hover::before {
+                        display: none;
+                    }
 
-                
+
+                }
+  
             }
     
             .contactButtonContainer {
-               display: none;
+                display:initial;
+                padding: 0;
             }
 
             .mobileLogo {

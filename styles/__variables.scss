@@ -31,7 +31,6 @@ $mobileNavPadding: 3rem 7vw;
 $mobilePadding: 0 7vw;
 $mobileFooterPadding: 5rem 7vw;
 
-
 //navbar 
 $logoSize: clamp(5rem, 20vw, 20rem);
 
@@ -220,6 +219,12 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: 2.0rem;
         height: 1rem;
         margin: 3rem 0 0 0;
+    }
+
+    @mixin navHoverMobile {
+        font-weight: 700;
+        transition: 0.25s all;
+        color: $blue;
     }
 
 
