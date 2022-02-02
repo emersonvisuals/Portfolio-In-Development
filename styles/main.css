@@ -981,7 +981,7 @@ main .background svg {
 }
 
 footer {
-  height: 35vh;
+  height: 40rem;
   background-color: #101011;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1546,7 +1546,7 @@ footer .footerList .footerContact {
     width: 30%;
   }
   footer {
-    height: 30vh;
+    height: 40rem;
     padding: 0 10vw;
   }
   footer .logo img {
