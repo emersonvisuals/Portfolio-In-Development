@@ -39,7 +39,7 @@ main {
             }
         }
 
-        .desktopNav {
+        .navList {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -760,7 +760,7 @@ footer {
         nav {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             padding:$ipadNavPadding;
             width: calc(100% - 20vw);
             -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
@@ -770,13 +770,71 @@ footer {
                 display: none;
             }
     
-            .desktopNav {
-               display: none;
+            .navList {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                max-height: 0;
+                opacity: 0%;
+                transform: translateY(-9rem);
+                visibility: hidden;
+                transition: 0.5s all;
+
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+
+                    li {
+                        padding: 1rem 0;
+                    }
+
+                    .navPortfolio {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        display: inherit;
+                        z-index: 3;
+
     
+                        .portfolioToggle {
+                            text-align: center;
+                            position: inherit;
+                            background-color: transparent; 
+                            box-shadow: none;
+                            top:inherit;
+                            margin: 0;
+                            padding: 0;
+                            width: inherit;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            display: none;
+                            padding: 1.25rem 0 0 0;
+            
+                            li {
+                                list-style: none;
+                                padding: 0.25rem 0;
+            
+                                a.portfolioToggleFont {
+                                    @include portfolioToggleStyle;
+                                }
+                            }
+                        }
+
+                        .portfolioToggle.active {
+                            display: inherit;
+                        }
+                    }
+                }
             }
     
             .contactButtonContainer {
-               display: none;
+                display:initial;
+                padding: 0;
             }
 
             .mobileLogo {
@@ -829,6 +887,18 @@ footer {
                     transition: 0.5s all;
                 }
             }
+            
+            .navHome::before {
+                display: none;
+            }
+
+            a::before {
+                display: none;
+            }
+
+            .navPortfolio::before {
+                display: none;
+            }
         }
 
         nav.active {
@@ -836,11 +906,16 @@ footer {
             align-items: center;
             justify-content: center;
             
-            .desktopNav {
+            .navList {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                max-height: 50vh;
+                opacity: 100%;
+                transform: translateY(0rem);
+                visibility: visible;
+                transition: 0.5s all;
 
                 ul {
                     flex-direction: column;
@@ -959,8 +1034,6 @@ footer {
             }
 
         }
-
-
 
         .background {
             top:80rem;
