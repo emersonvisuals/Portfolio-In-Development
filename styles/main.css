@@ -451,7 +451,7 @@ main header .boxesContainer .boxTwo {
 
 main header .boxesContainer .boxTwo img {
   width: auto;
-  height: clamp(25rem, 26vw, 50rem);
+  height: clamp(30rem, 26vw, 50rem);
 }
 
 main header .portfolioBelow {
