@@ -94,7 +94,7 @@ window.addEventListener('scroll', () => {
 
 
   // Length to offset the dashes
-  var drawLength = length * scrollPercentage * 2.5;
+  var drawLength = length * scrollPercentage * 3;
 
   // Draw in reverse
   path.style.strokeDashoffset = length - drawLength;
