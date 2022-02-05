@@ -451,7 +451,7 @@ main header .boxesContainer .boxTwo {
 
 main header .boxesContainer .boxTwo img {
   width: auto;
-  height: clamp(25rem, 26vw, 50rem);
+  height: clamp(30rem, 26vw, 50rem);
 }
 
 main header .portfolioBelow {
@@ -479,7 +479,7 @@ main .background svg {
   width: 50rem;
 }
 
-section.portfolio {
+.portfolio {
   height: calc(100vh - 4rem);
   padding: 0 13vw;
   display: -webkit-box;
@@ -494,14 +494,9 @@ section.portfolio {
           justify-content: center;
   -webkit-animation: portfolioAnimation 1s;
           animation: portfolioAnimation 1s;
-  opacity: 0%;
-  -webkit-transition: 0.75s all;
-  transition: 0.75s all;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
 }
 
-section.portfolio .title h1 {
+.portfolio .title h1 {
   text-transform: capitalize;
   font-size: clamp(3rem, 3.75vw, 6.5rem);
   font-weight: 700;
@@ -509,7 +504,7 @@ section.portfolio .title h1 {
   padding: 0;
 }
 
-section.portfolio .title h1::before {
+.portfolio .title h1::before {
   content: '';
   width: clamp(13rem, 16vw, 28rem);
   height: clamp(2rem, 2vw, 4rem);
@@ -519,7 +514,7 @@ section.portfolio .title h1::before {
   border-radius: 2rem;
 }
 
-section.portfolio .container {
+.portfolio .container {
   background-image: -webkit-gradient(linear, right bottom, left top, from(#101011), color-stop(#1d2031), color-stop(#253154), color-stop(#27437a), to(#1c56a3));
   background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
   height: auto;
@@ -528,11 +523,11 @@ section.portfolio .container {
   padding: 0 2.5rem;
 }
 
-section.portfolio .container .marqueeOne {
+.portfolio .container .marqueeOne {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeOne span {
+.portfolio .container .marqueeOne span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -546,41 +541,41 @@ section.portfolio .container .marqueeOne span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeOne .uxuiDesign:hover {
+.portfolio .container .marqueeOne .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeOne .graphicDesign:hover {
+.portfolio .container .marqueeOne .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeOne .architecture:hover {
+.portfolio .container .marqueeOne .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeOne .frontendDevelopment:hover {
+.portfolio .container .marqueeOne .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeOne .digitalArtwork:hover {
+.portfolio .container .marqueeOne .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo {
+.portfolio .container .marqueeTwo {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeTwo span {
+.portfolio .container .marqueeTwo span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -594,41 +589,41 @@ section.portfolio .container .marqueeTwo span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeTwo .uxuiDesign:hover {
+.portfolio .container .marqueeTwo .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo .graphicDesign:hover {
+.portfolio .container .marqueeTwo .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo .architecture:hover {
+.portfolio .container .marqueeTwo .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo .frontendDevelopment:hover {
+.portfolio .container .marqueeTwo .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo .digitalArtwork:hover {
+.portfolio .container .marqueeTwo .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree {
+.portfolio .container .marqueeThree {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeThree span {
+.portfolio .container .marqueeThree span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -642,41 +637,41 @@ section.portfolio .container .marqueeThree span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeThree .uxuiDesign:hover {
+.portfolio .container .marqueeThree .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree .graphicDesign:hover {
+.portfolio .container .marqueeThree .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree .architecture:hover {
+.portfolio .container .marqueeThree .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree .frontendDevelopment:hover {
+.portfolio .container .marqueeThree .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree .digitalArtwork:hover {
+.portfolio .container .marqueeThree .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour {
+.portfolio .container .marqueeFour {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeFour span {
+.portfolio .container .marqueeFour span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -690,41 +685,41 @@ section.portfolio .container .marqueeFour span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeFour .uxuiDesign:hover {
+.portfolio .container .marqueeFour .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour .graphicDesign:hover {
+.portfolio .container .marqueeFour .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour .architecture:hover {
+.portfolio .container .marqueeFour .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour .frontendDevelopment:hover {
+.portfolio .container .marqueeFour .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour .digitalArtwork:hover {
+.portfolio .container .marqueeFour .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive {
+.portfolio .container .marqueeFive {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeFive span {
+.portfolio .container .marqueeFive span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -738,91 +733,42 @@ section.portfolio .container .marqueeFive span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeFive .uxuiDesign:hover {
+.portfolio .container .marqueeFive .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive .graphicDesign:hover {
+.portfolio .container .marqueeFive .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive .architecture:hover {
+.portfolio .container .marqueeFive .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive .frontendDevelopment:hover {
+.portfolio .container .marqueeFive .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive .digitalArtwork:hover {
+.portfolio .container .marqueeFive .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSix {
-  overflow: hidden;
-  display: none;
-}
-
-section.portfolio .container .marqueeSix span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.portfolio .container .marqueeSix .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSix .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSix .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSix .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSix .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSeven {
+.portfolio .container .marqueeSix {
   overflow: hidden;
   display: none;
 }
 
-section.portfolio .container .marqueeSeven span {
+.portfolio .container .marqueeSix span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -836,37 +782,86 @@ section.portfolio .container .marqueeSeven span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeSeven .uxuiDesign:hover {
+.portfolio .container .marqueeSix .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSeven .graphicDesign:hover {
+.portfolio .container .marqueeSix .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSeven .architecture:hover {
+.portfolio .container .marqueeSix .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSeven .frontendDevelopment:hover {
+.portfolio .container .marqueeSix .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSeven .digitalArtwork:hover {
+.portfolio .container .marqueeSix .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.about {
+.portfolio .container .marqueeSeven {
+  overflow: hidden;
+  display: none;
+}
+
+.portfolio .container .marqueeSeven span {
+  text-transform: capitalize;
+  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-weight: 700;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+  color: transparent;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.portfolio .container .marqueeSeven .uxuiDesign:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .container .marqueeSeven .graphicDesign:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .container .marqueeSeven .architecture:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .container .marqueeSeven .frontendDevelopment:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.portfolio .container .marqueeSeven .digitalArtwork:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.about {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,14 +872,9 @@ section.about {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0%;
-  -webkit-transition: 0.75s all;
-  transition: 0.75s all;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
 }
 
-section.about .aboutGridContainer {
+.about .aboutGridContainer {
   height: 60vh;
   display: -ms-grid;
   display: grid;
@@ -898,7 +888,7 @@ section.about .aboutGridContainer {
       grid-template-areas: "imageOne imageTwo details" "imageOne imageThree details";
 }
 
-section.about .aboutGridContainer .aboutImageOne {
+.about .aboutGridContainer .aboutImageOne {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -911,7 +901,7 @@ section.about .aboutGridContainer .aboutImageOne {
   background-repeat: no-repeat;
 }
 
-section.about .aboutGridContainer .aboutImageTwo {
+.about .aboutGridContainer .aboutImageTwo {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: imageTwo;
@@ -923,7 +913,7 @@ section.about .aboutGridContainer .aboutImageTwo {
   background-repeat: no-repeat;
 }
 
-section.about .aboutGridContainer .aboutImageThree {
+.about .aboutGridContainer .aboutImageThree {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: imageThree;
@@ -935,7 +925,7 @@ section.about .aboutGridContainer .aboutImageThree {
   background-repeat: no-repeat;
 }
 
-section.about .aboutGridContainer .details {
+.about .aboutGridContainer .details {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -946,7 +936,7 @@ section.about .aboutGridContainer .details {
   height: 0;
 }
 
-section.about .aboutGridContainer .details p {
+.about .aboutGridContainer .details p {
   font-size: clamp(1.19rem, 0.9vw, 2rem);
   font-family: poppins;
   line-height: clamp(3rem, 2vw, 4rem);
@@ -955,12 +945,12 @@ section.about .aboutGridContainer .details p {
   padding: 0;
 }
 
-section.about .aboutGridContainer .details .signatureIcon {
+.about .aboutGridContainer .details .signatureIcon {
   width: calc(100% - 15rem);
   height: auto;
 }
 
-section.about .aboutGridContainer .details .viewMore {
+.about .aboutGridContainer .details .viewMore {
   background-color: transparent;
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
@@ -975,7 +965,7 @@ section.about .aboutGridContainer .details .viewMore {
   width: 100%;
 }
 
-section.about .aboutGridContainer .details .viewMore:hover {
+.about .aboutGridContainer .details .viewMore:hover {
   background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
@@ -1082,22 +1072,6 @@ footer .footerList .footerContact {
   margin: 0 0 0rem 0;
 }
 
-section.portfolio.active {
-  opacity: 100%;
-  -webkit-transition: 0.75s all;
-  transition: 0.75s all;
-  -webkit-transform: translateY(0rem);
-          transform: translateY(0rem);
-}
-
-section.about.active {
-  opacity: 100%;
-  -webkit-transition: 0.75s all;
-  transition: 0.75s all;
-  -webkit-transform: translateY(0rem);
-          transform: translateY(0rem);
-}
-
 @-webkit-keyframes boxOneAnimation {
   0% {
     opacity: 0;
@@ -1110,6 +1084,28 @@ section.about.active {
 }
 
 @keyframes boxOneAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes portfolioAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes portfolioAnimation {
   0% {
     opacity: 0;
     -webkit-transform: translateY(3rem);

@@ -232,7 +232,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 // illustrations 
     @mixin illustration {
         width: auto;
-        height: clamp(25rem, 26vw, 50rem);
+        height: clamp(30rem, 26vw, 50rem);
     }
 
 // mobile toggle
@@ -301,4 +301,3 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         font-family: $fontFamily;
         text-transform: capitalize;
     }
-    
