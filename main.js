@@ -136,3 +136,28 @@ console.log(nav);
 trigger.addEventListener('click', function(){
   nav.classList.toggle('active');
 });
+
+// intersection observer
+const portfolio = document.querySelector('.portfolio');
+const sections = document.querySelectorAll('section');
+const options = { 
+  root: null, // it is the viewport.
+  threshold: 0.5, // 0 to 1 scale.
+  rootMargin: "0px"
+};
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) {
+      return;
+    } else {
+      console.log(entry.target);
+      observer.unobserve(entry.target);
+      entry.target.classList.toggle('active');
+    }
+  });
+}, options);
+
+
+sections.forEach(section => {
+  observer.observe(section);
+})

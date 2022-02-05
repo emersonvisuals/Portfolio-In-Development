@@ -325,13 +325,14 @@ main {
     }
 }
 
-.portfolio {
+section.portfolio {
     height: calc(100vh - 4rem);
     padding: $desktopPadding;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: portfolioAnimation 1s;
+    opacity: 0%;
+    transition: 0.5s all;
 
     .title {
         
@@ -556,11 +557,13 @@ main {
     }
 }
 
-.about {
+section.about {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0%;
+    transition: 0.5s all;
 
     .aboutGridContainer {
         height: 60vh;
@@ -689,6 +692,16 @@ footer {
             margin: 0 0 0 0;
         }
     }
+}
+
+section.portfolio.active {
+    opacity: 100%;
+    transition: 0.5s all;
+}
+
+section.about.active {
+    opacity: 100%;
+    transition: 0.5s all;
 }
 
 .animationSection {
