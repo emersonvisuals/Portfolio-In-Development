@@ -73,6 +73,8 @@ window.onclick = function(event) {
 
 
 // line animation
+
+
 var path = document.querySelector('#lineAnimationLine');
 var length = path.getTotalLength();
 // Clear any previous transition
@@ -92,12 +94,14 @@ window.addEventListener('scroll', () => {
 
 
   // Length to offset the dashes
-  var drawLength = length * scrollPercentage;
+  var drawLength = length * scrollPercentage * 2.5;
 
   // Draw in reverse
   path.style.strokeDashoffset = length - drawLength;
 
 });
+
+
 
 // parallax animation 
 window.addEventListener('scroll', function(e) {
@@ -161,3 +165,4 @@ const observer = new IntersectionObserver(function(entries, observer) {
 sections.forEach(section => {
   observer.observe(section);
 })
+

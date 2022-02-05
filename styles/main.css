@@ -303,6 +303,7 @@ main header .boxesContainer {
 main header .boxesContainer .boxOne {
   -webkit-animation: boxOneAnimation 1s;
           animation: boxOneAnimation 1s;
+  position: relative;
 }
 
 main header .boxesContainer .boxOne .description p {
@@ -442,6 +443,21 @@ main header .boxesContainer .boxOne .details .letschatButton:hover:before {
   transition: 0.25s all;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+}
+
+main header .boxesContainer .boxOne .animationSection .lineAnimationContainer {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  top: 45vh;
+  left: -40vw;
+  text-align: center;
+}
+
+main header .boxesContainer .boxOne .animationSection .lineAnimationContainer svg {
+  height: auto;
+  width: 200rem;
+  margin: 0 0 0rem 0;
 }
 
 main header .boxesContainer .boxTwo {
@@ -1067,25 +1083,6 @@ section.about.active {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
-}
-
-.animationSection {
-  display: none;
-}
-
-.animationSection .lineAnimationContainer {
-  position: fixed;
-  overflow: hidden;
-  z-index: -1;
-  top: clamp(9%, 8vw, 14%);
-  left: 5%;
-  text-align: center;
-}
-
-.animationSection .lineAnimationContainer svg {
-  height: 50vh;
-  width: auto;
-  margin: 0 0 0rem 0;
 }
 
 @-webkit-keyframes boxOneAnimation {

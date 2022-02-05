@@ -197,6 +197,7 @@ main {
 
             .boxOne {
                 animation: boxOneAnimation 1s;
+                position: relative;
     
                 .description {
     
@@ -282,6 +283,25 @@ main {
                         @include letsChatButtonHover;
                         transition: 0.25s all;
                         transform: scaleY(1);
+                    }
+                }
+
+                .animationSection {
+
+                    .lineAnimationContainer {
+                        position: absolute;
+                        overflow: hidden;
+                        z-index: -1;
+                        top:45vh;
+                        left:-40vw;
+                        text-align: center;
+                
+                
+                        svg {
+                            height: auto;
+                            width: 200rem;
+                            margin: 0 0 0rem 0;
+                        }
                     }
                 }
             }
@@ -702,26 +722,6 @@ section.portfolio.active {
 section.about.active {
     opacity: 100%;
     transition: 0.5s all;
-}
-
-.animationSection {
-    display: none;
-
-    .lineAnimationContainer {
-        position: fixed;
-        overflow: hidden;
-        z-index: -1;
-        top:clamp(9%, 8vw, 14%);
-        left: 5%;
-        text-align: center;
-
-
-        svg {
-            height: 50vh;
-            width: auto;
-            margin: 0 0 0rem 0;
-        }
-    }
 }
 
 @keyframes boxOneAnimation {
