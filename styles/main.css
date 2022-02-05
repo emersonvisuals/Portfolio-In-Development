@@ -1642,22 +1642,22 @@ section.about.active {
   main .background {
     top: 80rem;
   }
-  .portfolio {
+  section.portfolio {
     height: 100%;
     padding: 0 10vw;
     padding-bottom: 30rem;
   }
-  .portfolio .container .marqueeSix {
+  section.portfolio .container .marqueeSix {
     display: inherit;
   }
-  .portfolio .container .marqueeSeven {
+  section.portfolio .container .marqueeSeven {
     display: inherit;
   }
-  .about {
+  section.about {
     padding: 0 0 50rem 0;
     height: 100%;
   }
-  .about .aboutGridContainer {
+  section.about .aboutGridContainer {
     height: clamp(30rem, 60vw, 50rem);
     display: -ms-grid;
     display: grid;
@@ -1670,7 +1670,7 @@ section.about.active {
     grid-row-gap: 1rem;
         grid-template-areas: "imageOne imageTwo" "imageOne imageThree" "details details";
   }
-  .about .aboutGridContainer .details .signatureIcon {
+  section.about .aboutGridContainer .details .signatureIcon {
     width: 30%;
   }
   footer {
@@ -1851,11 +1851,11 @@ section.about.active {
     height: auto;
     width: 38rem;
   }
-  .portfolio {
+  section.portfolio {
     padding: 0 7vw;
     padding-bottom: 30rem;
   }
-  .portfolio .container .marqueeOne span {
+  section.portfolio .container .marqueeOne span {
     font-size: 5rem;
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
@@ -1864,7 +1864,7 @@ section.about.active {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
-  .portfolio .container .marqueeTwo span {
+  section.portfolio .container .marqueeTwo span {
     font-size: 5rem;
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
@@ -1873,7 +1873,7 @@ section.about.active {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
-  .portfolio .container .marqueeThree span {
+  section.portfolio .container .marqueeThree span {
     font-size: 5rem;
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
@@ -1882,7 +1882,7 @@ section.about.active {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
-  .portfolio .container .marqueeFour span {
+  section.portfolio .container .marqueeFour span {
     font-size: 5rem;
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
@@ -1891,7 +1891,7 @@ section.about.active {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
-  .portfolio .container .marqueeFive span {
+  section.portfolio .container .marqueeFive span {
     font-size: 5rem;
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
@@ -1900,7 +1900,7 @@ section.about.active {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
-  .portfolio .container .marqueeSix span {
+  section.portfolio .container .marqueeSix span {
     font-size: 5rem;
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
@@ -1909,7 +1909,7 @@ section.about.active {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
-  .portfolio .container .marqueeSeven span {
+  section.portfolio .container .marqueeSeven span {
     font-size: 5rem;
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
@@ -1918,10 +1918,10 @@ section.about.active {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
-  .about {
+  section.about {
     padding-bottom: 50rem;
   }
-  .about .aboutGridContainer {
+  section.about .aboutGridContainer {
     padding: 0 7vw;
   }
   footer {
