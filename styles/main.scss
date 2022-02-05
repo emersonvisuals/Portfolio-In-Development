@@ -325,13 +325,16 @@ main {
     }
 }
 
-.portfolio {
+section.portfolio {
     height: calc(100vh - 4rem);
     padding: $desktopPadding;
     display: flex;
     flex-direction: column;
     justify-content: center;
     animation: portfolioAnimation 1s;
+    opacity: 0%;
+    transition: 0.75s all;
+    transform: translateY(5rem);
 
     .title {
         
@@ -556,11 +559,14 @@ main {
     }
 }
 
-.about {
+section.about {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0%;
+    transition: 0.75s all;
+    transform: translateY(5rem);
 
     .aboutGridContainer {
         height: 60vh;
@@ -711,11 +717,23 @@ footer {
     }
 }
 
-@keyframes boxOneAnimation {
-    @include scroll;
+
+
+
+
+section.portfolio.active {
+    opacity: 100%;
+    transition: 0.75s all;
+    transform: translateY(0rem);
 }
 
-@keyframes portfolioAnimation {
+section.about.active {
+    opacity: 100%;
+    transition: 0.75s all;
+    transform: translateY(0rem);
+}
+
+@keyframes boxOneAnimation {
     @include scroll;
 }
 
