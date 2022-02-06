@@ -84,7 +84,7 @@ path.style.strokeDasharray = length + ' ' + length;
 path.style.strokeDashoffset = length;
 // Trigger a layout so styles are calculated & the browser
 // picks up the starting position before animating
-path.getBoundingClientRect();
+path.getBoundingClientRect();  
 
 
 window.addEventListener('scroll', () => {
@@ -94,7 +94,7 @@ window.addEventListener('scroll', () => {
 
 
   // Length to offset the dashes
-  var drawLength = length * scrollPercentage * 3;
+  var drawLength = length * scrollPercentage * 3.5;
 
   // Draw in reverse
   path.style.strokeDashoffset = length - drawLength;

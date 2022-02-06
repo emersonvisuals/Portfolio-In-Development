@@ -448,27 +448,15 @@ main header .boxesContainer .boxOne .details .letschatButton:hover:before {
 main header .boxesContainer .boxTwo {
   -webkit-animation: boxTwoAnimation 1s;
           animation: boxTwoAnimation 1s;
+  z-index: 2;
   position: relative;
 }
 
 main header .boxesContainer .boxTwo img {
   width: auto;
   height: clamp(30rem, 26vw, 50rem);
-}
-
-main header .boxesContainer .boxTwo .animationSection .lineAnimationContainer {
-  position: absolute;
-  overflow: hidden;
-  z-index: -1;
-  top: 20rem;
-  right: 0;
-  text-align: center;
-}
-
-main header .boxesContainer .boxTwo .animationSection .lineAnimationContainer svg {
-  height: 100vh;
-  width: auto;
-  margin: 0 0 0rem 0;
+  z-index: 2;
+  position: relative;
 }
 
 main header .portfolioBelow {
@@ -514,7 +502,11 @@ section.portfolio {
   transition: 0.5s all;
 }
 
-section.portfolio .title h1 {
+section.portfolio .titleContainer {
+  position: relative;
+}
+
+section.portfolio .titleContainer .title h1 {
   text-transform: capitalize;
   font-size: clamp(3rem, 3.75vw, 6.5rem);
   font-weight: 700;
@@ -522,14 +514,24 @@ section.portfolio .title h1 {
   padding: 0;
 }
 
-section.portfolio .title h1::before {
-  content: '';
-  width: clamp(13rem, 16vw, 28rem);
-  height: clamp(2rem, 2vw, 4rem);
-  background-color: #f4eee1;
+section.portfolio .titleContainer .animationSection {
+  z-index: -2;
+}
+
+section.portfolio .titleContainer .animationSection .lineAnimationContainer {
   position: absolute;
-  z-index: -1;
-  border-radius: 2rem;
+  overflow: hidden;
+  z-index: -2;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+section.portfolio .titleContainer .animationSection .lineAnimationContainer svg {
+  height: auto;
+  width: 80vw;
+  margin: 0 0 0rem 0;
+  z-index: -2;
 }
 
 section.portfolio .container {
