@@ -143,6 +143,7 @@ trigger.addEventListener('click', function(){
 
 // intersection observer
 const portfolio = document.querySelector('.portfolio');
+const animationLine = document.querySelectorAll('.lineAnimationContainer');
 const sections = document.querySelectorAll('section');
 const options = { 
   root: null, // it is the viewport.
@@ -165,4 +166,3 @@ const observer = new IntersectionObserver(function(entries, observer) {
 sections.forEach(section => {
   observer.observe(section);
 })
-
