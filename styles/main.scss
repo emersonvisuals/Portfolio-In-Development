@@ -362,9 +362,9 @@ section.portfolio {
         
         
                 svg {
-                    height: clamp(75vh, 85vh, 95vh);
-                    width: clamp(70vw, 80vw, 90vw);
-                    margin: 0 0 0rem 0;
+                    height:auto;
+                    width: clamp(70vw, 75vw, 80vw);
+                    margin: 0;
                     z-index: -2;
                 }
             }
