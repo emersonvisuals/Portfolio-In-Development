@@ -292,6 +292,18 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         100% {opacity: 1;}
     }
 
+    @mixin lineAnimationTitleBefore {
+        opacity: 0%;
+        transition: 0.5s all;
+        transform: translateY(-3rem);
+    }
+
+    @mixin lineAnimationTitleAfter {
+        opacity: 100%;
+        transition: 0.5s all;
+        transform: translateY(0rem);
+    }
+
 // portfolio Toggle Desktop
 
     @mixin portfolioToggleStyle {

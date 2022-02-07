@@ -316,7 +316,7 @@ main {
         overflow-x: hidden;
         overflow-y: hidden;
         position: fixed;
-        top:40rem;
+        bottom:5rem;
         right: -5rem;
         z-index: -1;
 
@@ -335,13 +335,12 @@ section.portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0%;
-    transition: 0.5s all;
 
     .titleContainer {
         position: relative;
 
         .title {
+            @include lineAnimationTitleBefore;
             
             h1 {
                 @include subHeading;
@@ -372,6 +371,8 @@ section.portfolio {
     }
 
     .container {
+        opacity: 0%;
+        transition: 0.5s all;
         background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
         height: auto;
         width: calc(100% - 5rem);
@@ -589,14 +590,13 @@ section.about {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    opacity: 0%;
-    transition: 0.5s all;
     padding: $desktopPadding;
 
     .titleContainerAbout {
         position: relative;
 
         .aboutTitle {
+            @include lineAnimationTitleBefore
 
             h1 {
                 @include subHeading;
@@ -638,6 +638,8 @@ section.about {
         grid-template-areas: 
         "imageOne imageTwo details"
         "imageOne imageThree details";
+        opacity: 0%;
+        transition: 0.5s all;
 
             .aboutImageOne {
                 grid-area: imageOne;
@@ -757,13 +759,30 @@ footer {
 }
 
 section.portfolio.active {
-    opacity: 100%;
-    transition: 0.5s all;
+
+    .container {
+        opacity: 100%;
+        transition: 0.5s all;
+    }
+
+    .titleContainer {
+
+        .title {
+            @include lineAnimationTitleAfter;
+        }
+    }
 }
 
 section.about.active {
-    opacity: 100%;
-    transition: 0.5s all;
+
+    .aboutTitle {
+        @include lineAnimationTitleAfter
+    }
+
+    .aboutGridContainer {
+        opacity: 100%;
+        transition: 0.5s all;
+    }
 }
 
 @keyframes boxOneAnimation {

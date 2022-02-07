@@ -106,7 +106,7 @@ window.addEventListener('scroll', () => {
 
   // Length to offset the dashes
   var drawLength = length * scrollPercentage * 5.5;
-  var drawLengthTwo = length * scrollPercentage * 5.2;
+  var drawLengthTwo = length * scrollPercentage * 4.75;
 
   // Draw in reverse
   path.style.strokeDashoffset = length - drawLength;
@@ -161,7 +161,7 @@ const sections = document.querySelectorAll('section');
 const options = { 
   root: null, // it is the viewport.
   threshold: 0.5, // 0 to 1 scale.
-  rootMargin: "0px"
+  rootMargin: "-100px"
 };
 const observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {

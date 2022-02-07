@@ -473,7 +473,7 @@ main .background {
   overflow-x: hidden;
   overflow-y: hidden;
   position: fixed;
-  top: 40rem;
+  bottom: 5rem;
   right: -5rem;
   z-index: -1;
 }
@@ -496,13 +496,18 @@ section.portfolio {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0%;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
 }
 
 section.portfolio .titleContainer {
   position: relative;
+}
+
+section.portfolio .titleContainer .title {
+  opacity: 0%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
 }
 
 section.portfolio .titleContainer .title h1 {
@@ -530,6 +535,9 @@ section.portfolio .titleContainer .animationSection .lineAnimationContainer svg 
 }
 
 section.portfolio .container {
+  opacity: 0%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#101011), color-stop(#1d2031), color-stop(#253154), color-stop(#27437a), to(#1c56a3));
   background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
   height: auto;
@@ -893,14 +901,19 @@ section.about {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  opacity: 0%;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
   padding: 0 13vw;
 }
 
 section.about .titleContainerAbout {
   position: relative;
+}
+
+section.about .titleContainerAbout .aboutTitle {
+  opacity: 0%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
 }
 
 section.about .titleContainerAbout .aboutTitle h1 {
@@ -938,6 +951,9 @@ section.about .aboutGridContainer {
       grid-template-rows: 50% 50%;
   grid-row-gap: 1rem;
       grid-template-areas: "imageOne imageTwo details" "imageOne imageThree details";
+  opacity: 0%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 section.about .aboutGridContainer .aboutImageOne {
@@ -1105,13 +1121,29 @@ footer .footerList .footerContact {
   margin: 0 0 0 0;
 }
 
-section.portfolio.active {
+section.portfolio.active .container {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.about.active {
+section.portfolio.active .titleContainer .title {
+  opacity: 100%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+}
+
+section.about.active .aboutTitle {
+  opacity: 100%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+}
+
+section.about.active .aboutGridContainer {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
