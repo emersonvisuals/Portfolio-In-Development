@@ -586,15 +586,51 @@ section.portfolio {
 section.about {
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
     opacity: 0%;
     transition: 0.5s all;
+    padding: $desktopPadding;
+
+    .titleContainerAbout {
+        position: relative;
+
+        .aboutTitle {
+
+            h1 {
+                @include subHeading;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .animationSectionAbout {
+
+            .lineAnimationContainerAbout {
+                position: absolute;
+                overflow: hidden;
+                z-index: -2;
+                bottom: 0;
+                left:0;
+                text-align: center;
+        
+        
+                svg {
+                    height:auto;
+                    width: clamp(70vw, 75vw, 80vw);
+                    margin: 0;
+                    z-index: -2;
+                }
+            }
+        }
+
+    }
+
 
     .aboutGridContainer {
         height: 60vh;
         display: grid;
-        padding: $desktopPadding;
         grid-template-columns: 30% 40% 30%;
         grid-column-gap: 1rem;
         grid-template-rows: 50% 50%;

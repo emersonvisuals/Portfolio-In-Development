@@ -76,7 +76,9 @@ window.onclick = function(event) {
 
 
 var path = document.querySelector('#lineAnimationLine');
+var pathTwo = document.querySelector('#lineAnimationLineTwo');
 var length = path.getTotalLength();
+
 // Clear any previous transition
 path.style.transition = path.style.WebkitTransition = 'none';
 // Set up the starting positions
@@ -86,6 +88,15 @@ path.style.strokeDashoffset = length;
 // picks up the starting position before animating
 path.getBoundingClientRect();  
 
+// Clear any previous transition
+pathTwo.style.transition = pathTwo.style.WebkitTransition = 'none';
+// Set up the starting positions
+pathTwo.style.strokeDasharray = length + ' ' + length;
+pathTwo.style.strokeDashoffset = length;
+// Trigger a layout so styles are calculated & the browser
+// picks up the starting position before animating
+pathTwo.getBoundingClientRect();  
+
 
 window.addEventListener('scroll', () => {
   
@@ -94,10 +105,12 @@ window.addEventListener('scroll', () => {
 
 
   // Length to offset the dashes
-  var drawLength = length * scrollPercentage * 5.25;
+  var drawLength = length * scrollPercentage * 5.5;
+  var drawLengthTwo = length * scrollPercentage * 5.2;
 
   // Draw in reverse
   path.style.strokeDashoffset = length - drawLength;
+  pathTwo.style.strokeDashoffset = length - drawLengthTwo;
 
 });
 
