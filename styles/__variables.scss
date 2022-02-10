@@ -115,7 +115,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     @mixin tanUnderline {
         content: '';
         width: clamp(34rem, 35vw, 82rem);
-        height: clamp(2rem, 2vw, 4rem);
+        height: 1vw;
         background-color: $tan;
         position: absolute;
         z-index: -1;
@@ -302,6 +302,11 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         opacity: 100%;
         transition: 0.5s all;
         transform: translateY(0rem);
+    }
+
+    @mixin tanUnderlineAnimation {
+        0% { width: 0; }
+        100% { width: clamp(34rem, 35vw, 82rem); }
     }
 
 // portfolio Toggle Desktop

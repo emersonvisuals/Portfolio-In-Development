@@ -97,6 +97,7 @@ pathTwo.style.strokeDashoffset = length;
 // picks up the starting position before animating
 pathTwo.getBoundingClientRect();  
 
+const portfolioContainer = document.querySelector('section.portfolio');
 
 window.addEventListener('scroll', () => {
   
@@ -108,9 +109,32 @@ window.addEventListener('scroll', () => {
   var drawLength = length * scrollPercentage * 5.5;
   var drawLengthTwo = length * scrollPercentage * 4.75;
 
+  console.log(drawLengthTwo);
+
   // Draw in reverse
   path.style.strokeDashoffset = length - drawLength;
   pathTwo.style.strokeDashoffset = length - drawLengthTwo;
+
+  // functions
+  function toggleOffPortfolio(){
+    if (drawLength > 6200) {
+      path.style.opacity = '0';
+    } else {
+      return
+    }
+  }
+  toggleOffPortfolio();
+
+  function toggleOffAbout(){
+    if (drawLengthTwo > 11000) {
+      pathTwo.style.opacity = '0'
+    } else {
+      return
+    }
+  }
+  toggleOffAbout();
+
+
 
 });
 
@@ -148,8 +172,6 @@ window.addEventListener('scroll', function(e) {
 // burger menu toggle
 const nav = document.querySelector('nav');
 
-console.log(nav);
-
 trigger.addEventListener('click', function(){
   nav.classList.toggle('active');
 });
@@ -168,7 +190,6 @@ const observer = new IntersectionObserver(function(entries, observer) {
     if(!entry.isIntersecting) {
       return;
     } else {
-      console.log(entry.target);
       observer.unobserve(entry.target);
       entry.target.classList.toggle('active');
     }

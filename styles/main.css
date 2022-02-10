@@ -335,12 +335,13 @@ main header .boxesContainer .boxOne .description p {
 main header .boxesContainer .boxOne .description p::before {
   content: '';
   width: clamp(34rem, 35vw, 82rem);
-  height: clamp(2rem, 2vw, 4rem);
+  height: 1vw;
   background-color: #f4eee1;
   position: absolute;
   z-index: -1;
   border-radius: 2rem;
-  height: 10px;
+  -webkit-animation: tanUnderlineAnimation 2s;
+          animation: tanUnderlineAnimation 2s;
 }
 
 main header .boxesContainer .boxOne .typingEffect h1 {
@@ -554,7 +555,7 @@ section.portfolio .titleContainer .animationSection .lineAnimationContainer svg 
 }
 
 section.portfolio .container {
-  opacity: 0%;
+  opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#101011), color-stop(#1d2031), color-stop(#253154), color-stop(#27437a), to(#1c56a3));
@@ -963,14 +964,14 @@ section.about .aboutGridContainer {
   height: 60vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: calc(30% - 1rem) calc(40% - 1rem) calc(30% - 1rem);
-      grid-template-columns: calc(30% - 1rem) calc(40% - 1rem) calc(30% - 1rem);
+  -ms-grid-columns: calc(30% - 1rem) calc(37% - 1rem) calc(33% - 1rem);
+      grid-template-columns: calc(30% - 1rem) calc(37% - 1rem) calc(33% - 1rem);
   grid-column-gap: 1rem;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
   grid-row-gap: 1rem;
       grid-template-areas: "imageOne imageTwo details" "imageOne imageThree details";
-  opacity: 0%;
+  opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
@@ -1267,6 +1268,24 @@ section.about.active .aboutGridContainer {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes tanUnderlineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: clamp(34rem, 35vw, 82rem);
+  }
+}
+
+@keyframes tanUnderlineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: clamp(34rem, 35vw, 82rem);
   }
 }
 
