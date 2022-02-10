@@ -182,7 +182,7 @@ section.portfolio {
         
                 svg {
                     height:auto;
-                    width: clamp(70vw, 75vw, 80vw);
+                    width: clamp(75vw, 80vw, 85vw);
                     margin: 0;
                     z-index: -2;
                 }
@@ -318,7 +318,7 @@ section.about {
                 width: auto;
                 height: 100%;
                 margin: 0;
-                height: 0;
+                height: auto;
 
                 p {
                     @include paragraph;
@@ -490,64 +490,11 @@ section.about.active {
     main {
 
         nav {
-            padding: $mobileNavPadding;
-            width: calc(100% - 14vw);
-
-            .mobileLogo {
-                left: 7vw;
-                top: 3rem;
-            }
-
-            .mobileTrigger {
-                right: 7vw;
-                top: 3rem;
-
-
-                .mobileToggle {
-                    @include mobileToggle;
-                }
-
-                .mobileToggle::after {
-                    @include mobileToggleAfter;
-                }
-
-                .mobileToggle::before {
-                    @include mobileToggleBefore;
-                }
-
-                .mobileToggle.active {
-                    @include mobileToggle;
-                    width: 0;
-                    transition: 0.5s all;
-                }
-
-                .mobileToggle.active::after {
-                    @include mobileToggleAfter;
-                    transform: rotate(45deg);
-                    bottom: 0rem;
-                    transition: 0.5s all;
-                }
-
-                .mobileToggle.active::before {
-                    @include mobileToggleBefore;
-                    transform: rotate(-45deg);
-                    top: 0rem;
-                    transition: 0.5s all;
-                }
-            }
-
-
+            @include navBarMobile;
         }
 
         nav.active {
-            padding: $mobileNavPadding;
-            width: calc(100% - 14vw);
-
-            .mobileTrigger {
-                right: 7vw;
-                top: 3rem;
-            }
-
+            @include navBarMobileActive;
         }
 
         header {
@@ -615,6 +562,10 @@ section.about.active {
         padding: $mobilePadding;
         padding-bottom: 30rem;
 
+        .animationSection {
+            display: none;
+        }
+
         .container {
 
             .marqueeOne {
@@ -676,10 +627,11 @@ section.about.active {
     }
 
     section.about {
+        padding: $mobilePadding;
         padding-bottom: 50rem;
 
-        .aboutGridContainer {
-            padding: $mobilePadding;
+        .animationSectionAbout {
+            display: none;
         }
     }
 

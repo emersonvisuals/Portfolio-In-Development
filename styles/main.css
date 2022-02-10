@@ -335,7 +335,7 @@ main header .boxesContainer .boxOne .description p {
 main header .boxesContainer .boxOne .description p::before {
   content: '';
   width: clamp(34rem, 35vw, 82rem);
-  height: 1vw;
+  height: 1vh;
   background-color: #f4eee1;
   position: absolute;
   z-index: -1;
@@ -475,7 +475,7 @@ main header .boxesContainer .boxTwo {
 
 main header .boxesContainer .boxTwo img {
   width: auto;
-  height: clamp(30rem, 26vw, 45rem);
+  height: clamp(25rem, 26vw, 45rem);
 }
 
 main header .portfolioBelow {
@@ -532,7 +532,7 @@ section.portfolio .titleContainer .title {
 
 section.portfolio .titleContainer .title h1 {
   text-transform: capitalize;
-  font-size: clamp(3rem, 3.75vw, 6.5rem);
+  font-size: clamp(3.75rem, 3.75vw, 6.5rem);
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -549,7 +549,7 @@ section.portfolio .titleContainer .animationSection .lineAnimationContainer {
 
 section.portfolio .titleContainer .animationSection .lineAnimationContainer svg {
   height: auto;
-  width: clamp(70vw, 75vw, 80vw);
+  width: clamp(75vw, 80vw, 85vw);
   margin: 0;
   z-index: -2;
 }
@@ -938,7 +938,7 @@ section.about .titleContainerAbout .aboutTitle {
 
 section.about .titleContainerAbout .aboutTitle h1 {
   text-transform: capitalize;
-  font-size: clamp(3rem, 3.75vw, 6.5rem);
+  font-size: clamp(3.75rem, 3.75vw, 6.5rem);
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -1021,7 +1021,7 @@ section.about .aboutGridContainer .details {
   width: auto;
   height: 100%;
   margin: 0;
-  height: 0;
+  height: auto;
 }
 
 section.about .aboutGridContainer .details p {
@@ -1945,6 +1945,9 @@ section.about.active .aboutGridContainer {
     padding: 0 7vw;
     padding-bottom: 30rem;
   }
+  section.portfolio .animationSection {
+    display: none;
+  }
   section.portfolio .container .marqueeOne span {
     font-size: 5rem;
     font-weight: 700;
@@ -2009,10 +2012,11 @@ section.about.active .aboutGridContainer {
     transition: 0.5s all;
   }
   section.about {
+    padding: 0 7vw;
     padding-bottom: 50rem;
   }
-  section.about .aboutGridContainer {
-    padding: 0 7vw;
+  section.about .animationSectionAbout {
+    display: none;
   }
   footer {
     height: calc(100vh - 9rem);

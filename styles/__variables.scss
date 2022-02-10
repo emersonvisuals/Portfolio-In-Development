@@ -139,7 +139,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     @mixin tanUnderline {
         content: '';
         width: clamp(34rem, 35vw, 82rem);
-        height: 1vw;
+        height: 1vh;
         background-color: $tan;
         position: absolute;
         z-index: -1;
@@ -172,7 +172,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 //subHeading
     @mixin subHeading {
         text-transform: capitalize;
-        font-size: clamp(3rem, 3.75vw, 6.5rem);
+        font-size: clamp(3.75rem, 3.75vw, 6.5rem);
         font-weight: 700;
         
     }
@@ -632,6 +632,65 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         }
 
     }
+
+    @mixin navBarMobile {
+        padding: $mobileNavPadding;
+        width: calc(100% - 14vw);
+
+        .mobileLogo {
+            left: 7vw;
+            top: 3rem;
+        }
+
+        .mobileTrigger {
+            right: 7vw;
+            top: 3rem;
+
+
+            .mobileToggle {
+                @include mobileToggle;
+            }
+
+            .mobileToggle::after {
+                @include mobileToggleAfter;
+            }
+
+            .mobileToggle::before {
+                @include mobileToggleBefore;
+            }
+
+            .mobileToggle.active {
+                @include mobileToggle;
+                width: 0;
+                transition: 0.5s all;
+            }
+
+            .mobileToggle.active::after {
+                @include mobileToggleAfter;
+                transform: rotate(45deg);
+                bottom: 0rem;
+                transition: 0.5s all;
+            }
+
+            .mobileToggle.active::before {
+                @include mobileToggleBefore;
+                transform: rotate(-45deg);
+                top: 0rem;
+                transition: 0.5s all;
+            }
+        }
+
+    }
+
+    @mixin navBarMobileActive {
+        padding: $mobileNavPadding;
+        width: calc(100% - 14vw);
+
+        .mobileTrigger {
+            right: 7vw;
+            top: 3rem;
+        }
+    }
     
 
     @mixin navBarStyleDesktop {
@@ -824,7 +883,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 // illustrations 
     @mixin illustration {
         width: auto;
-        height: clamp(30rem, 26vw, 45rem);
+        height: clamp(25rem, 26vw, 45rem);
     }
 
 // mobile toggle

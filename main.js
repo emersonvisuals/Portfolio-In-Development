@@ -180,8 +180,8 @@ const animationLine = document.querySelectorAll('.lineAnimationContainer');
 const sections = document.querySelectorAll('section');
 const options = { 
   root: null, // it is the viewport.
-  threshold: 0.5, // 0 to 1 scale.
-  rootMargin: "-100px"
+  threshold: 0.15, // 0 to 1 scale.
+  rootMargin: "-50px"
 };
 const observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
