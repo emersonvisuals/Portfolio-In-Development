@@ -247,6 +247,52 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
                 .navPortfolio {
                     @include navBarStyleDesktop;
+
+                    a#portfolioToggleFontUXUI.portfolioToggleFont::before {
+                        @include navBarToggleBeforeStyleDesktop;
+                    }
+
+                    a#portfolioToggleFontUXUI.portfolioToggleFont:hover:before {
+                        @include navBarToggleBeforeStyleDesktop;
+                        width: 10rem;
+                    }
+
+                    a#portfolioToggleFontGraphicDesign.portfolioToggleFont::before {
+                        @include navBarToggleBeforeStyleDesktop;
+                    }
+
+                    a#portfolioToggleFontGraphicDesign.portfolioToggleFont:hover:before {
+                        @include navBarToggleBeforeStyleDesktop;
+                        width: 12rem;
+                    }
+
+                    a#portfolioToggleFontArchitecture.portfolioToggleFont::before {
+                        @include navBarToggleBeforeStyleDesktop;
+                    }
+
+
+                    a#portfolioToggleFontArchitecture.portfolioToggleFont:hover:before {
+                        @include navBarToggleBeforeStyleDesktop;
+                        width: 9rem;
+                    }
+
+                    a#portfolioToggleFontDigitalArtwork.portfolioToggleFont::before {
+                        @include navBarToggleBeforeStyleDesktop;
+                    }
+
+                    a#portfolioToggleFontDigitalArtwork.portfolioToggleFont:hover::before {
+                        @include navBarToggleBeforeStyleDesktop;
+                        width: 10rem;
+                    }
+
+                    a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont::before {
+                        @include navBarToggleBeforeStyleDesktop;
+                    }
+                    
+                    a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont:hover:before {
+                        @include navBarToggleBeforeStyleDesktop;
+                        width: 17.5rem;
+                    }
                 }
             }
 
@@ -707,7 +753,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             top: 3rem;
         }
     }
-    
 
     @mixin navBarStyleDesktop {
         text-decoration: none;
@@ -717,6 +762,17 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         text-transform: capitalize;
         font-weight: 500;
         cursor: pointer;
+    }
+
+    @mixin navBarToggleBeforeStyleDesktop {
+        content: '';
+        position: absolute;
+        background-color: $tan;
+        height: 1rem;
+        width: 0;
+        transition: 0.25s all;
+        z-index: -1;
+        border-radius: 3rem;
     }
 
 // default footer 
@@ -988,9 +1044,8 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
     @mixin portfolioToggleStyleHover {
         text-decoration: none;
-        color: $blue;
+        color: $darkBlue;
         font-size: $navPortfolioToggleSizeClamp;
         font-family: $fontFamily;
         text-transform: capitalize;
-        transition: 0.25s all;
     }

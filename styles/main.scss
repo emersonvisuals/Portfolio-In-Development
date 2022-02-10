@@ -353,8 +353,7 @@ footer {
 section.portfolio.active {
 
     .container {
-        opacity: 100%;
-        transition: 0.5s all;
+        @include lineAnimationTitleAfter
     }
 
     .titleContainer {

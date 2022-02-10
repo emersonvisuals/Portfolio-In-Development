@@ -90,6 +90,131 @@ main nav .navList ul .navPortfolio {
   cursor: pointer;
 }
 
+main nav .navList ul .navPortfolio a#portfolioToggleFontUXUI.portfolioToggleFont::before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontUXUI.portfolioToggleFont:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+  width: 10rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioToggleFont::before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioToggleFont:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+  width: 12rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioToggleFont::before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioToggleFont:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+  width: 9rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolioToggleFont::before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolioToggleFont:hover::before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+  width: 10rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont::before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+}
+
+main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #f4eee1;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: -1;
+  border-radius: 3rem;
+  width: 17.5rem;
+}
+
 main nav .navList .navHome::before {
   content: '';
   position: absolute;
@@ -248,12 +373,10 @@ main nav .navList .portfolioToggle li a.portfolioToggleFont {
 
 main nav .navList .portfolioToggle li a.portfolioToggleFont:hover {
   text-decoration: none;
-  color: #1C56A3;
+  color: #101011;
   font-size: clamp(1.15rem, 1.25vw, 1.5rem);
   font-family: poppins;
   text-transform: capitalize;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
 }
 
 main nav .navList .portfolioToggle.active {
@@ -1149,6 +1272,8 @@ section.portfolio.active .container {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
 }
 
 section.portfolio.active .titleContainer .title {
