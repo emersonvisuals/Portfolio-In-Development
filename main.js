@@ -109,8 +109,6 @@ window.addEventListener('scroll', () => {
   var drawLength = length * scrollPercentage * 5.5;
   var drawLengthTwo = length * scrollPercentage * 4.75;
 
-  console.log(drawLengthTwo);
-
   // Draw in reverse
   path.style.strokeDashoffset = length - drawLength;
   pathTwo.style.strokeDashoffset = length - drawLengthTwo;

@@ -36,24 +36,46 @@ $mobileFooterPadding: 5rem 7vw;
 $logoSize: clamp(5rem, 20vw, 20rem);
 
 
+// body default 
+    @mixin bodyDefault {
+        font-size: 62.5%;
+        box-sizing: border-box;
+        font-family: $fontFamily;
+        scroll-behavior: smooth;
+    }
+
+// background logo
+    @mixin backgroundLogo {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: fixed;
+        bottom:5rem;
+        right: -5rem;
+        z-index: -1;
+
+        svg {
+            height: auto;
+            width: 50rem;
+        }
+    }
+
 // contact nav Button
     @mixin contactButton {
         background-color: transparent;
         padding: 1.5rem 7rem;
         border-radius: 5rem;
-        font-family: poppins;
         font-weight:500;
         text-transform: capitalize;
-        font-size:1.8rem;
         color:$darkBlue;
         border: 1px solid $darkBlue;
+        font-family: $fontFamily;
+        font-size: $navFontSizeClamp;
     }
 
     @mixin contactButtonHover {
         background: $gradient;
         padding: 1.5rem 7rem;
         border-radius: 5rem;
-        font-family: poppins;
         font-weight:500;
         text-transform: capitalize;
         font-size:1.8rem;
@@ -62,6 +84,8 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         border: 1px solid transparent;
         transition: 0.25s all;
         cursor: pointer;
+        font-family: $fontFamily;
+        font-size: $navFontSizeClamp;
     }
 
 // default button
@@ -167,6 +191,530 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         font-weight: 400;
     }
 
+// navbar 
+    @mixin navBarDesktop {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
+        box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
+        background-color: rgba(255, 255, 255, 0.75);
+        z-index: 3;
+        padding: $desktopNavPadding;
+        width: calc(100% - 26vw);
+        backdrop-filter: blur(1rem);
+
+        .mobileLogo {
+            display: none;
+        }
+
+        .desktopLogo {
+            img {
+                width: 18vw;
+            }
+        }
+
+        .navList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                list-style: none;
+                list-style-type: none;
+
+                li {
+                    position: relative;
+                    padding: 0 2rem;
+
+                    a {
+                        @include navBarStyleDesktop;
+                    }
+
+                }
+
+                .navPortfolio {
+                    @include navBarStyleDesktop;
+                }
+            }
+
+            .navHome::before {
+                @include navHover;
+                opacity: 1;
+                transition: 0.25s all;
+            }
+            
+            .navHome:hover::before {
+                @include navHover;
+                opacity: 1;
+                transition: 0.25s all;
+            }
+
+            .navPortfolio::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(0);
+                transition: 0.25s all;
+            }
+
+            .navPortfolio.active::before {
+                transform:scaleY(1);
+            }
+            
+            .navPortfolio:hover::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(1);
+                transition: 0.25s all;
+            }
+
+            .navAbout::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(0);
+                transition: 0.25s all;
+            }
+            
+            .navAbout:hover::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(1);
+                transition: 0.25s all;
+            }
+
+            .navResume::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(0);
+                transition: 0.25s all;
+            }
+            
+            .navResume:hover::before {
+                @include navHover;
+                opacity: 1;
+                transform:scaleY(1);
+                transition: 0.25s all;
+            }
+
+            .portfolioToggle {
+                position: absolute;
+                background-color: $white;
+                -webkit-box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.15); 
+                box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.15);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                top:5rem;
+                margin: 0;
+                padding: 0.5rem 2rem;
+                width: max-content;
+                border-radius: 2rem;
+                visibility: hidden;
+                transform: translateY(-35rem);
+                transition: 0.5s all;
+                z-index: 3;
+
+                li {
+                    list-style: none;
+                    padding: 1rem 0;
+
+                    a.portfolioToggleFont {
+                        @include portfolioToggleStyle;
+                    }
+
+                    a.portfolioToggleFont:hover {
+                        @include portfolioToggleStyleHover;
+                    }
+                }
+            }
+
+            .portfolioToggle.active {
+                visibility: visible;
+                transform: translateY(0rem);
+                transition: 0.5s all;
+            }
+        }
+
+        .contactButtonContainer {
+            padding: 0 0 0 2rem;
+
+            .contactButton {
+                @include contactButton;
+            }
+
+            .contactButton:hover {
+                @include contactButtonHover;
+            }
+        }
+
+        .mobileTrigger {
+            display: none;
+        }
+
+    }
+    
+    @mixin navBarTablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:$ipadNavPadding;
+        width: calc(100% - 20vw);
+        -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
+        box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
+
+        .desktopLogo {
+            display: none;
+        }
+
+        .navList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-height: 0;
+            opacity: 0%;
+            transform: translateY(-9rem);
+            visibility: hidden;
+            transition: 0.5s all;
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+
+                li {
+                    padding: 1rem 0;
+                }
+
+                .navPortfolio {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    display: inherit;
+                    z-index: 3;
+
+
+                    .portfolioToggle {
+                        text-align: center;
+                        position: inherit;
+                        background-color: transparent; 
+                        box-shadow: none;
+                        top:inherit;
+                        margin: 0;
+                        padding: 0;
+                        width: inherit;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        display: none;
+                        padding: 1.25rem 0 0 0;
+        
+                        li {
+                            list-style: none;
+                            padding: 0.25rem 0;
+        
+                            a.portfolioToggleFont {
+                                @include portfolioToggleStyle;
+                            }
+                        }
+                    }
+
+                    .portfolioToggle.active {
+                        display: inherit;
+                    }
+                }
+            }
+        }
+
+        .contactButtonContainer {
+            display:initial;
+            padding: 0;
+        }
+
+        .mobileLogo {
+            display: initial;
+            position: absolute;
+            left: 10vw;
+            top: 3rem;
+        }
+
+        .mobileTrigger {
+            display: initial;
+            content: '';
+            width: 2.5rem;
+            height: 2.5rem;
+            cursor: pointer;
+            position: absolute;
+            right: 10vw;
+            top: 3rem;
+
+
+            .mobileToggle {
+                @include mobileToggle;
+            }
+
+            .mobileToggle::after {
+                @include mobileToggleAfter;
+            }
+
+            .mobileToggle::before {
+                @include mobileToggleBefore;
+            }
+
+            .mobileToggle.active {
+                @include mobileToggle;
+                width: 0;
+                transition: 0.5s all;
+            }
+
+            .mobileToggle.active::after {
+                @include mobileToggleAfter;
+                transform: rotate(45deg);
+                bottom: 0rem;
+                transition: 0.5s all;
+            }
+
+            .mobileToggle.active::before {
+                @include mobileToggleBefore;
+                transform: rotate(-45deg);
+                top: 0rem;
+                transition: 0.5s all;
+            }
+        }
+        
+        .navHome::before {
+            display: none;
+        }
+
+        a::before {
+            display: none;
+        }
+
+        .navPortfolio::before {
+            display: none;
+        }
+    }
+
+    @mixin navBarTabletActive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .navList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-height: 50vh;
+            opacity: 100%;
+            transform: translateY(0rem);
+            visibility: visible;
+            transition: 0.5s all;
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+
+                li {
+                    padding: 1rem 0;
+                }
+
+                .navPortfolio {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    display: inherit;
+                    z-index: 3;
+
+
+                    .portfolioToggle {
+                        text-align: center;
+                        position: inherit;
+                        background-color: transparent; 
+                        box-shadow: none;
+                        top:inherit;
+                        margin: 0;
+                        padding: 0;
+                        width: inherit;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        display: none;
+                        padding: 1.25rem 0 0 0;
+        
+                        li {
+                            list-style: none;
+                            padding: 0.25rem 0;
+        
+                            a.portfolioToggleFont {
+                                @include portfolioToggleStyle;
+                            }
+                        }
+                    }
+
+                    .portfolioToggle.active {
+                        display: inherit;
+                    }
+                }
+            }
+        }
+
+        .contactButtonContainer {
+            display:initial;
+            padding: 0;
+        }
+
+        .mobileLogo {
+            display: initial;
+            margin: 0 0 22rem 0;
+        }
+
+        .mobileTrigger {
+            display: initial;
+            content: '';
+            width: 2.5rem;
+            height: 2.5rem;
+            cursor: pointer;
+            position: absolute;
+            right: 10vw;
+            top: 3rem;
+
+            .mobileToggle {
+                @include mobileToggle;
+            }
+
+            .mobileToggle::after {
+                @include mobileToggleAfter;
+            }
+
+            .mobileToggle::before {
+                @include mobileToggleBefore;
+            }
+
+            .mobileToggle.active {
+                @include mobileToggle;
+                width: 0;
+                transition: 0.5s all;
+            }
+
+            .mobileToggle.active::after {
+                @include mobileToggleAfter;
+                transform: rotate(45deg);
+                bottom: 0rem;
+                transition: 0.5s all;
+            }
+
+            .mobileToggle.active::before {
+                @include mobileToggleBefore;
+                transform: rotate(-45deg);
+                top: 0rem;
+                transition: 0.5s all;
+            }
+        }
+
+        .navHome::before {
+            display: none;
+        }
+
+        a::before {
+            display: none;
+        }
+
+        .navPortfolio::before {
+            display: none;
+        }
+
+    }
+    
+
+    @mixin navBarStyleDesktop {
+        text-decoration: none;
+        color: $darkBlue;
+        font-size: $navFontSizeClamp;
+        font-family: $fontFamily;
+        text-transform: capitalize;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+// default footer 
+    @mixin defaultFooterDesktop {
+        height: 40rem;
+        background-color: $darkBlue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: $desktopPadding;
+    
+        .logo {
+    
+            img {
+                width: auto;
+                height: 5vh;
+            }
+        }
+    
+        .footerList {
+            display: flex;
+            flex-direction: row;
+            h1 {
+                @include footerHeading;
+            }
+    
+            ul {
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+            }
+    
+            li {
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+            }
+    
+            li a:hover {
+                @include footerParagraphHover;
+            }
+    
+            a {
+                @include footerParagraph;
+            }
+    
+            .footerPortfolio {
+                margin: 0 10rem;
+            }
+    
+            .footerSocials {
+                margin: 0 10rem 0 0;
+            }
+    
+            .footerContact {
+                margin: 0 0 0 0;
+            }
+        }
+    }
+
+    @mixin defaultFooterTablet {
+        height: 40rem;
+        padding: $ipadPadding;
+
+        .logo {
+
+            img {
+                width: auto;
+                height: 4vh;
+            }
+        }
+    }
+
 // footer Heading
     @mixin footerHeading {
         font-size: clamp(2rem, 1.2vw, 2.2rem);
@@ -187,7 +735,51 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         line-height: 2.75rem;
     }
 
-// marquee font
+    @mixin footerParagraphHover {
+        color:$grey;
+    }
+
+// marquee
+    @mixin marqueeContainer {
+        opacity: 100%;
+        transition: 0.5s all;
+        background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
+        height: auto;
+        width: calc(100% - 5rem);
+        border-radius: 2rem;
+        padding: 0 2.5rem;
+        -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
+        box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
+    }
+
+    @mixin marqueeTemplate {
+        overflow: hidden;
+
+
+            span {
+                @include marquee;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 1rem;
+            }
+
+            .uxuiDesign:hover {
+                @include marqueeHover;
+            }
+            .graphicDesign:hover {
+                @include marqueeHover;
+            }
+            .architecture:hover {
+                @include marqueeHover;
+            }
+            .frontendDevelopment:hover {
+                @include marqueeHover;
+            }
+            .digitalArtwork:hover {
+                @include marqueeHover;
+            }
+    }
+
     @mixin marquee {
         text-transform: capitalize;
         font-size: clamp(6rem, 4.25vw, 8rem);

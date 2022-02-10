@@ -7,191 +7,14 @@ body {
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    font-family: $fontFamily;
-    scroll-behavior: smooth;
+    @include bodyDefault;
 }
 
 main {
     height: 100vh;
 
     nav {
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
-        box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
-        background-color: rgba(255, 255, 255, 0.75);
-        z-index: 3;
-        padding: $desktopNavPadding;
-        width: calc(100% - 26vw);
-        backdrop-filter: blur(1rem);
-
-        .mobileLogo {
-            display: none;
-        }
-
-        .desktopLogo {
-            img {
-                width: 18vw;
-            }
-        }
-
-        .navList {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            ul {
-                display: flex;
-                list-style: none;
-                list-style-type: none;
-
-                li {
-                    position: relative;
-                    padding: 0 2rem;
-
-                    a {
-                        text-decoration: none;
-                        color: $darkBlue;
-                        font-size: $navFontSizeClamp;
-                        font-family: $fontFamily;
-                        text-transform: capitalize;
-                    }
-
-                }
-
-                .navPortfolio {
-                    text-decoration: none;
-                    color: $darkBlue;
-                    font-size: $navFontSizeClamp;
-                    font-family: $fontFamily;
-                    text-transform: capitalize;
-                    cursor: pointer;
-                }
-            }
-
-            .navHome::before {
-                @include navHover;
-                opacity: 1;
-                transition: 0.25s all;
-            }
-            
-            .navHome:hover::before {
-                @include navHover;
-                opacity: 1;
-                transition: 0.25s all;
-            }
-
-            .navPortfolio::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(0);
-                transition: 0.25s all;
-            }
-
-            .navPortfolio.active::before {
-                transform:scaleY(1);
-            }
-            
-            .navPortfolio:hover::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(1);
-                transition: 0.25s all;
-            }
-
-            .navAbout::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(0);
-                transition: 0.25s all;
-            }
-            
-            .navAbout:hover::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(1);
-                transition: 0.25s all;
-            }
-
-            .navResume::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(0);
-                transition: 0.25s all;
-            }
-            
-            .navResume:hover::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(1);
-                transition: 0.25s all;
-            }
-
-            .portfolioToggle {
-                position: absolute;
-                background-color: $white;
-                -webkit-box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.15); 
-                box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.15);
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                top:5rem;
-                margin: 0;
-                padding: 0.5rem 2rem;
-                width: max-content;
-                border-radius: 2rem;
-                visibility: hidden;
-                transform: translateY(-35rem);
-                transition: 0.5s all;
-                z-index: 3;
-
-                li {
-                    list-style: none;
-                    padding: 1rem 0;
-
-                    a.portfolioToggleFont {
-                        @include portfolioToggleStyle;
-                    }
-
-                    a.portfolioToggleFont:hover {
-                        @include portfolioToggleStyleHover;
-                    }
-                }
-            }
-
-            .portfolioToggle.active {
-                visibility: visible;
-                transform: translateY(0rem);
-                transition: 0.5s all;
-            }
-
-
-
-        }
-
-        .contactButtonContainer {
-            padding: 0 0 0 2rem;
-
-            .contactButton {
-                @include contactButton;
-                font-family: $fontFamily;
-                font-size: $navFontSizeClamp;
-            }
-
-            .contactButton:hover {
-                @include contactButtonHover;
-                font-family: $fontFamily;
-                font-size: $navFontSizeClamp;
-            }
-        }
-
-        .mobileTrigger {
-            display: none;
-        }
+        @include navBarDesktop;
     }
 
     header {
@@ -322,19 +145,7 @@ main {
     }
 
     .background {
-        overflow-x: hidden;
-        overflow-y: hidden;
-        position: fixed;
-        bottom:5rem;
-        right: -5rem;
-        z-index: -1;
-
-        svg {
-            height: auto;
-            width: 50rem;
-        }
-
-
+        @include backgroundLogo;
     }
 }
 
@@ -380,216 +191,37 @@ section.portfolio {
     }
 
     .container {
-        opacity: 100%;
-        transition: 0.5s all;
-        background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
-        height: auto;
-        width: calc(100% - 5rem);
-        border-radius: 2rem;
-        padding: 0 2.5rem;
-        -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
-        box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
+        @include marqueeContainer;
 
         .marqueeOne {
-            overflow: hidden;
-
-
-            span {
-                @include marquee;
-                text-transform: uppercase;
-                cursor: pointer;
-                padding: 1rem;
-            }
-
-            .uxuiDesign:hover {
-                @include marqueeHover;
-            }
-            .graphicDesign:hover {
-                @include marqueeHover;
-            }
-            .architecture:hover {
-                @include marqueeHover;
-            }
-            .frontendDevelopment:hover {
-                @include marqueeHover;
-            }
-            .digitalArtwork:hover {
-                @include marqueeHover;
-            }
+            @include marqueeTemplate;
         }
 
         .marqueeTwo {
-            overflow: hidden;
-
-
-            span {
-                @include marquee;
-                text-transform: uppercase;
-                cursor: pointer;
-                padding: 1rem;
-            }
-
-            .uxuiDesign:hover {
-                @include marqueeHover;
-            }
-            .graphicDesign:hover {
-                @include marqueeHover;
-            }
-            .architecture:hover {
-                @include marqueeHover;
-            }
-            .frontendDevelopment:hover {
-                @include marqueeHover;
-            }
-            .digitalArtwork:hover {
-                @include marqueeHover;
-            }
+            @include marqueeTemplate;
         }
 
         .marqueeThree {
-            overflow: hidden;
-
-
-            span {
-                @include marquee;
-                text-transform: uppercase;
-                cursor: pointer;
-                padding: 1rem;
-            }
-
-            .uxuiDesign:hover {
-                @include marqueeHover;
-            }
-            .graphicDesign:hover {
-                @include marqueeHover;
-            }
-            .architecture:hover {
-                @include marqueeHover;
-            }
-            .frontendDevelopment:hover {
-                @include marqueeHover;
-            }
-            .digitalArtwork:hover {
-                @include marqueeHover;
-            }
+            @include marqueeTemplate;
         }
 
         .marqueeFour {
-            overflow: hidden;
-
-
-            span {
-                @include marquee;
-                text-transform: uppercase;
-                cursor: pointer;
-                padding: 1rem;
-            }
-
-            .uxuiDesign:hover {
-                @include marqueeHover;
-            }
-            .graphicDesign:hover {
-                @include marqueeHover;
-            }
-            .architecture:hover {
-                @include marqueeHover;
-            }
-            .frontendDevelopment:hover {
-                @include marqueeHover;
-            }
-            .digitalArtwork:hover {
-                @include marqueeHover;
-            }
+            @include marqueeTemplate;
         }
 
         .marqueeFive {
-            overflow: hidden;
-
-
-            span {
-                @include marquee;
-                text-transform: uppercase;
-                cursor: pointer;
-                padding: 1rem;
-            }
-
-            .uxuiDesign:hover {
-                @include marqueeHover;
-            }
-            .graphicDesign:hover {
-                @include marqueeHover;
-            }
-            .architecture:hover {
-                @include marqueeHover;
-            }
-            .frontendDevelopment:hover {
-                @include marqueeHover;
-            }
-            .digitalArtwork:hover {
-                @include marqueeHover;
-            }
+            @include marqueeTemplate;
         }
 
         .marqueeSix {
-            overflow: hidden;
-            display: none;
-
-
-            span {
-                @include marquee;
-                text-transform: uppercase;
-                cursor: pointer;
-                padding: 1rem;
-            }
-
-            .uxuiDesign:hover {
-                @include marqueeHover;
-            }
-            .graphicDesign:hover {
-                @include marqueeHover;
-            }
-            .architecture:hover {
-                @include marqueeHover;
-            }
-            .frontendDevelopment:hover {
-                @include marqueeHover;
-            }
-            .digitalArtwork:hover {
-                @include marqueeHover;
-            }
+            @include marqueeTemplate;
+            display: none
         }
 
         .marqueeSeven {
-            overflow: hidden;
+            @include marqueeTemplate;
             display: none;
-
-
-            span {
-                @include marquee;
-                text-transform: uppercase;
-                cursor: pointer;
-                padding: 1rem;
-            }
-
-            .uxuiDesign:hover {
-                @include marqueeHover;
-            }
-            .graphicDesign:hover {
-                @include marqueeHover;
-            }
-            .architecture:hover {
-                @include marqueeHover;
-            }
-            .frontendDevelopment:hover {
-                @include marqueeHover;
-            }
-            .digitalArtwork:hover {
-                @include marqueeHover;
-            }
         }
-
-        
-
     }
 }
 
@@ -715,56 +347,7 @@ section.about {
 }
 
 footer {
-    height: 40rem;
-    background-color: $darkBlue;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: $desktopPadding;
-
-    .logo {
-
-        img {
-            width: auto;
-            height: 5vh;
-        }
-    }
-
-    .footerList {
-        display: flex;
-        flex-direction: row;
-        h1 {
-            @include footerHeading;
-        }
-
-        ul {
-            list-style: none;
-            text-decoration: none;
-            padding: 0;
-        }
-
-        li {
-            list-style: none;
-            text-decoration: none;
-            padding: 0;
-        }
-
-        a {
-            @include footerParagraph;
-        }
-
-        .footerPortfolio {
-            margin: 0 10rem;
-        }
-
-        .footerSocials {
-            margin: 0 10rem 0 0;
-        }
-
-        .footerContact {
-            margin: 0 0 0 0;
-        }
-    }
+    @include defaultFooterDesktop;
 }
 
 section.portfolio.active {
@@ -823,8 +406,6 @@ section.about.active {
 
 
 @media only screen and (max-width: 1024px) {
-    body {
-    }
 
     main {
         height: 100%;
@@ -845,285 +426,11 @@ section.about.active {
         }
 
         nav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding:$ipadNavPadding;
-            width: calc(100% - 20vw);
-            -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
-            box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
-    
-            .desktopLogo {
-                display: none;
-            }
-    
-            .navList {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                max-height: 0;
-                opacity: 0%;
-                transform: translateY(-9rem);
-                visibility: hidden;
-                transition: 0.5s all;
-
-                ul {
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 0;
-
-                    li {
-                        padding: 1rem 0;
-                    }
-
-                    .navPortfolio {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        display: inherit;
-                        z-index: 3;
-
-    
-                        .portfolioToggle {
-                            text-align: center;
-                            position: inherit;
-                            background-color: transparent; 
-                            box-shadow: none;
-                            top:inherit;
-                            margin: 0;
-                            padding: 0;
-                            width: inherit;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            display: none;
-                            padding: 1.25rem 0 0 0;
-            
-                            li {
-                                list-style: none;
-                                padding: 0.25rem 0;
-            
-                                a.portfolioToggleFont {
-                                    @include portfolioToggleStyle;
-                                }
-                            }
-                        }
-
-                        .portfolioToggle.active {
-                            display: inherit;
-                        }
-                    }
-                }
-            }
-    
-            .contactButtonContainer {
-                display:initial;
-                padding: 0;
-            }
-
-            .mobileLogo {
-                display: initial;
-                position: absolute;
-                left: 10vw;
-                top: 3rem;
-            }
-
-            .mobileTrigger {
-                display: initial;
-                content: '';
-                width: 2.5rem;
-                height: 2.5rem;
-                cursor: pointer;
-                position: absolute;
-                right: 10vw;
-                top: 3rem;
-
-
-                .mobileToggle {
-                    @include mobileToggle;
-                }
-
-                .mobileToggle::after {
-                    @include mobileToggleAfter;
-                }
-
-                .mobileToggle::before {
-                    @include mobileToggleBefore;
-                }
-
-                .mobileToggle.active {
-                    @include mobileToggle;
-                    width: 0;
-                    transition: 0.5s all;
-                }
-
-                .mobileToggle.active::after {
-                    @include mobileToggleAfter;
-                    transform: rotate(45deg);
-                    bottom: 0rem;
-                    transition: 0.5s all;
-                }
-
-                .mobileToggle.active::before {
-                    @include mobileToggleBefore;
-                    transform: rotate(-45deg);
-                    top: 0rem;
-                    transition: 0.5s all;
-                }
-            }
-            
-            .navHome::before {
-                display: none;
-            }
-
-            a::before {
-                display: none;
-            }
-
-            .navPortfolio::before {
-                display: none;
-            }
+            @include navBarTablet;
         }
 
         nav.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            .navList {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                max-height: 50vh;
-                opacity: 100%;
-                transform: translateY(0rem);
-                visibility: visible;
-                transition: 0.5s all;
-
-                ul {
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 0;
-
-                    li {
-                        padding: 1rem 0;
-                    }
-
-                    .navPortfolio {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        display: inherit;
-                        z-index: 3;
-
-    
-                        .portfolioToggle {
-                            text-align: center;
-                            position: inherit;
-                            background-color: transparent; 
-                            box-shadow: none;
-                            top:inherit;
-                            margin: 0;
-                            padding: 0;
-                            width: inherit;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            display: none;
-                            padding: 1.25rem 0 0 0;
-            
-                            li {
-                                list-style: none;
-                                padding: 0.25rem 0;
-            
-                                a.portfolioToggleFont {
-                                    @include portfolioToggleStyle;
-                                }
-                            }
-                        }
-
-                        .portfolioToggle.active {
-                            display: inherit;
-                        }
-                    }
-                }
-            }
-    
-            .contactButtonContainer {
-                display:initial;
-                padding: 0;
-            }
-
-            .mobileLogo {
-                display: initial;
-                margin: 0 0 22rem 0;
-            }
-
-            .mobileTrigger {
-                display: initial;
-                content: '';
-                width: 2.5rem;
-                height: 2.5rem;
-                cursor: pointer;
-                position: absolute;
-                right: 10vw;
-                top: 3rem;
-
-                .mobileToggle {
-                    @include mobileToggle;
-                }
-
-                .mobileToggle::after {
-                    @include mobileToggleAfter;
-                }
-
-                .mobileToggle::before {
-                    @include mobileToggleBefore;
-                }
-
-                .mobileToggle.active {
-                    @include mobileToggle;
-                    width: 0;
-                    transition: 0.5s all;
-                }
-
-                .mobileToggle.active::after {
-                    @include mobileToggleAfter;
-                    transform: rotate(45deg);
-                    bottom: 0rem;
-                    transition: 0.5s all;
-                }
-
-                .mobileToggle.active::before {
-                    @include mobileToggleBefore;
-                    transform: rotate(-45deg);
-                    top: 0rem;
-                    transition: 0.5s all;
-                }
-            }
-
-            .navHome::before {
-                display: none;
-            }
-
-            a::before {
-                display: none;
-            }
-
-            .navPortfolio::before {
-                display: none;
-            }
-
-        }
-
-        .background {
-            top:80rem;
+            @include navBarTabletActive;
         }
     }
 
@@ -1132,10 +439,7 @@ section.about.active {
         padding: $ipadPadding;
         padding-bottom: 30rem;
 
-
         .container {
-            
-
 
             .marqueeSix {
                 display: inherit;
@@ -1148,14 +452,16 @@ section.about.active {
     }
 
     section.about {
-        padding: 0 0 50rem 0;
+        padding: $ipadPadding;
+        padding-bottom: 50rem;
         height: 100%;
 
         .aboutGridContainer {
             height: clamp(30rem, 60vw, 50rem);
             display: grid;
-            padding: $ipadPadding;
-            grid-template-columns: 40% 60%;
+            padding:0;
+            margin: 0;
+            grid-template-columns: calc(40% - 1rem) 60%;
             grid-column-gap: 1rem;
             grid-template-rows: 50% 50%;
             grid-row-gap: 1rem;
@@ -1175,39 +481,9 @@ section.about.active {
     }
 
     footer {
-
-        height: 40rem;
-        padding: $ipadPadding;
-
-        .logo {
-
-            img {
-                width: auto;
-                height: 4vh;
-            }
-        }
-
+        @include defaultFooterTablet;
     }
 
-    .animationSection {
-
-        .lineAnimationContainer {
-            position: fixed;
-            overflow: hidden;
-            z-index: -1;
-            top:30%;
-            left: clamp(1%, 3vw, 5%);
-            text-align: center;
-    
-            svg {
-                height: 30vh;
-                width: auto;
-            }
-        }
-    }
-
-    
-    
   }
 
 @media only screen and (max-width: 650px) {
