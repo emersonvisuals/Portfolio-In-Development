@@ -334,8 +334,8 @@ main header .boxesContainer .boxOne .description p {
 
 main header .boxesContainer .boxOne .description p::before {
   content: '';
-  width: clamp(34rem, 35vw, 82rem);
-  height: 1.5vh;
+  width: clamp(35rem, 35vw, 82rem);
+  height: 1.75vh;
   background-color: #f4eee1;
   position: absolute;
   z-index: -1;
@@ -1924,7 +1924,7 @@ section.about.active .aboutGridContainer {
     font-size: clamp(1.19rem, 0.9vw, 2rem);
   }
   main header .boxesContainer .boxOne .description p::before {
-    width: clamp(33rem, 42vw, 82rem);
+    width: clamp(34rem, 35vw, 82rem);
   }
   main header .boxesContainer .boxOne .typingEffect {
     padding: 0 0 1rem 0;

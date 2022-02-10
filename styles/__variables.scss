@@ -138,8 +138,18 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 // tan underline 
     @mixin tanUnderline {
         content: '';
-        width: clamp(34rem, 35vw, 82rem);
-        height: 1.5vh;
+        width: clamp(35rem, 35vw, 82rem);
+        height: 1.75vh;
+        background-color: $tan;
+        position: absolute;
+        z-index: -1;
+        border-radius: 2rem;
+    }
+
+    @mixin tanUnderlineTabletMobile {
+        content: '';
+        width: clamp(35rem, 35vw, 82rem);
+        height: 1vh;
         background-color: $tan;
         position: absolute;
         z-index: -1;
@@ -962,8 +972,8 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     }
 
     @mixin tanUnderlineAnimation {
-        0% { width: 0; }
-        100% { width: clamp(34rem, 35vw, 82rem); }
+        0% { width: 0;}
+        100% { width: clamp(34rem, 35vw, 82rem);}
     }
 
 // portfolio Toggle Desktop
