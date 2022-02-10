@@ -335,7 +335,7 @@ main header .boxesContainer .boxOne .description p {
 main header .boxesContainer .boxOne .description p::before {
   content: '';
   width: clamp(34rem, 35vw, 82rem);
-  height: 1vh;
+  height: 1.5vh;
   background-color: #f4eee1;
   position: absolute;
   z-index: -1;
@@ -1403,7 +1403,7 @@ section.about.active .aboutGridContainer {
         -ms-flex-pack: center;
             justify-content: center;
     display: none;
-    padding: 1.25rem 0 0 0;
+    padding: 0;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
   }
@@ -1636,6 +1636,7 @@ section.about.active .aboutGridContainer {
     height: 15rem;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
+    padding: 0;
   }
   main nav.active .navList ul .navPortfolio .portfolioToggle.active li {
     opacity: 100%;

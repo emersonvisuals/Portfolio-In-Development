@@ -139,7 +139,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     @mixin tanUnderline {
         content: '';
         width: clamp(34rem, 35vw, 82rem);
-        height: 1vh;
+        height: 1.5vh;
         background-color: $tan;
         position: absolute;
         z-index: -1;
@@ -411,7 +411,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                         align-items: center;
                         justify-content: center;
                         display: none;
-                        padding: 1.25rem 0 0 0;
+                        padding: 0;
                         transition: 0.5s all;
         
                         li {
@@ -561,6 +561,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     .portfolioToggle.active {
                         height: 15rem;
                         transition: 0.5s all;
+                        padding:0;
 
                         li {
                             opacity: 100%;
