@@ -15,6 +15,7 @@ main {
 
     nav {
         @include navBarDesktop;
+
     }
 
     header {
@@ -41,7 +42,7 @@ main {
     
                     p::before {
                         @include tanUnderline;
-                        animation: tanUnderlineAnimation 2s;
+                        animation: tanUnderlineAnimation 1s steps(12);
                     }
                 }
     
@@ -61,7 +62,7 @@ main {
                       background-color: $blue;
                       margin-left: 0.1rem;
                       width: 3px;
-                      animation: blink 1s infinite;
+                      animation: blink 1s infinite steps(12);
                       z-index: 1;
                     }
                     

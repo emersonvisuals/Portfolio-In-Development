@@ -96,8 +96,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontUXUI.portfolioToggleFont
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
 }
@@ -108,8 +108,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontUXUI.portfolioToggleFont
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
   width: 10rem;
@@ -121,8 +121,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioT
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
 }
@@ -133,8 +133,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioT
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
   width: 12rem;
@@ -146,8 +146,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioTo
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
 }
@@ -158,8 +158,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioTo
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
   width: 9rem;
@@ -171,8 +171,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolio
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
 }
@@ -183,8 +183,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolio
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
   width: 10rem;
@@ -196,8 +196,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.port
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
 }
@@ -208,8 +208,8 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.port
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
   z-index: -1;
   border-radius: 3rem;
   width: 17.5rem;
@@ -463,8 +463,8 @@ main header .boxesContainer .boxOne .description p::before {
   position: absolute;
   z-index: -1;
   border-radius: 2rem;
-  -webkit-animation: tanUnderlineAnimation 2s;
-          animation: tanUnderlineAnimation 2s;
+  -webkit-animation: tanUnderlineAnimation 1s steps(12);
+          animation: tanUnderlineAnimation 1s steps(12);
 }
 
 main header .boxesContainer .boxOne .typingEffect h1 {
@@ -485,8 +485,8 @@ main header .boxesContainer .boxOne .typingEffect .cursor {
   background-color: #1C56A3;
   margin-left: 0.1rem;
   width: 3px;
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite steps(12);
+          animation: blink 1s infinite steps(12);
   z-index: 1;
 }
 
@@ -1254,10 +1254,45 @@ footer .footerList a {
   text-decoration: none;
   list-style: none;
   line-height: 2.75rem;
+  z-index: 2;
 }
 
 footer .footerList .footerPortfolio {
   margin: 0 10rem;
+}
+
+footer .footerList .footerPortfolio a {
+  position: relative;
+  z-index: 3;
+}
+
+footer .footerList .footerPortfolio a.footerUXUI::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+}
+
+footer .footerList .footerPortfolio a.footerUXUI:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all steps(6);
+  transition: 0.25s all steps(6);
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 8rem;
 }
 
 footer .footerList .footerSocials {

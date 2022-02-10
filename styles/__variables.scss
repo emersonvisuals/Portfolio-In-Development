@@ -770,7 +770,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         background-color: $tan;
         height: 1rem;
         width: 0;
-        transition: 0.25s all;
+        transition: 0.25s all steps(6);
         z-index: -1;
         border-radius: 3rem;
     }
@@ -817,10 +817,25 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     
             a {
                 @include footerParagraph;
+                z-index: 2;
             }
     
             .footerPortfolio {
                 margin: 0 10rem;
+
+                a {
+                    position: relative;
+                    z-index: 3;
+                }
+
+                a.footerUXUI::before {
+                    @include footereBeforeStyleDesktop;
+                }
+
+                a.footerUXUI:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 8rem;
+                }
             }
     
             .footerSocials {
@@ -844,6 +859,18 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                 height: 4vh;
             }
         }
+    }
+
+    @mixin footereBeforeStyleDesktop {
+        content: '';
+        position: absolute;
+        background-color: $blue;
+        height: 1rem;
+        width: 0;
+        transition: 0.25s all steps(6);
+        border-radius: 3rem;
+        z-index: -1;
+        transform: translateY(0.25rem);
     }
 
 // footer Heading
