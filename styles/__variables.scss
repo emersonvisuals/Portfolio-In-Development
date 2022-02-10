@@ -412,6 +412,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                         justify-content: center;
                         display: none;
                         padding: 1.25rem 0 0 0;
+                        transition: 0.5s all;
         
                         li {
                             list-style: none;
@@ -421,10 +422,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                                 @include portfolioToggleStyle;
                             }
                         }
-                    }
-
-                    .portfolioToggle.active {
-                        display: inherit;
                     }
                 }
             }
@@ -546,12 +543,14 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        display: none;
-                        padding: 1.25rem 0 0 0;
+                        height: 0;
+                        padding: 0;
+                        transition: 0.5s all;
         
                         li {
                             list-style: none;
                             padding: 0.25rem 0;
+                            opacity: 0%;
         
                             a.portfolioToggleFont {
                                 @include portfolioToggleStyle;
@@ -560,7 +559,13 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     }
 
                     .portfolioToggle.active {
-                        display: inherit;
+                        height: 15rem;
+                        transition: 0.5s all;
+
+                        li {
+                            opacity: 100%;
+                            transition: 0.5s all;
+                        }
                     }
                 }
             }

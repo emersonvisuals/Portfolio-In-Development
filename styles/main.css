@@ -1404,6 +1404,8 @@ section.about.active .aboutGridContainer {
             justify-content: center;
     display: none;
     padding: 1.25rem 0 0 0;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
   }
   main nav .navList ul .navPortfolio .portfolioToggle li {
     list-style: none;
@@ -1415,9 +1417,6 @@ section.about.active .aboutGridContainer {
     font-size: clamp(1.15rem, 1.25vw, 1.5rem);
     font-family: poppins;
     text-transform: capitalize;
-  }
-  main nav .navList ul .navPortfolio .portfolioToggle.active {
-    display: inherit;
   }
   main nav .contactButtonContainer {
     display: initial;
@@ -1616,12 +1615,15 @@ section.about.active .aboutGridContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    display: none;
-    padding: 1.25rem 0 0 0;
+    height: 0;
+    padding: 0;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
   }
   main nav.active .navList ul .navPortfolio .portfolioToggle li {
     list-style: none;
     padding: 0.25rem 0;
+    opacity: 0%;
   }
   main nav.active .navList ul .navPortfolio .portfolioToggle li a.portfolioToggleFont {
     text-decoration: none;
@@ -1631,7 +1633,14 @@ section.about.active .aboutGridContainer {
     text-transform: capitalize;
   }
   main nav.active .navList ul .navPortfolio .portfolioToggle.active {
-    display: inherit;
+    height: 15rem;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  main nav.active .navList ul .navPortfolio .portfolioToggle.active li {
+    opacity: 100%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
   }
   main nav.active .contactButtonContainer {
     display: initial;
