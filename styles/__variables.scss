@@ -313,3 +313,12 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         font-family: $fontFamily;
         text-transform: capitalize;
     }
+
+    @mixin portfolioToggleStyleHover {
+        text-decoration: none;
+        color: $blue;
+        font-size: $navPortfolioToggleSizeClamp;
+        font-family: $fontFamily;
+        text-transform: capitalize;
+        transition: 0.25s all;
+    }

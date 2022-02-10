@@ -144,7 +144,10 @@ main {
                 padding: 0.5rem 2rem;
                 width: max-content;
                 border-radius: 2rem;
-                display: none;
+                visibility: hidden;
+                transform: translateY(-35rem);
+                transition: 0.5s all;
+                z-index: 3;
 
                 li {
                     list-style: none;
@@ -153,11 +156,17 @@ main {
                     a.portfolioToggleFont {
                         @include portfolioToggleStyle;
                     }
+
+                    a.portfolioToggleFont:hover {
+                        @include portfolioToggleStyleHover;
+                    }
                 }
             }
 
             .portfolioToggle.active {
-                display:inherit;
+                visibility: visible;
+                transform: translateY(0rem);
+                transition: 0.5s all;
             }
 
 
