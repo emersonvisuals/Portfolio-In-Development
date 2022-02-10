@@ -126,7 +126,7 @@ window.addEventListener('scroll', () => {
   toggleOffPortfolio();
 
   function toggleOffAbout(){
-    if (drawLengthTwo > 11000) {
+    if (drawLengthTwo > 11500) {
       pathTwo.style.opacity = '0'
     } else {
       return
