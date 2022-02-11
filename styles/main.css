@@ -29,7 +29,7 @@ main nav {
           justify-content: space-between;
   -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 3;
   padding: 2rem 13vw;
   width: calc(100% - 26vw);
@@ -42,7 +42,7 @@ main nav .mobileLogo {
 }
 
 main nav .desktopLogo img {
-  width: 18vw;
+  width: 28rem;
 }
 
 main nav .navList {
@@ -90,14 +90,14 @@ main nav .navList ul .navPortfolio {
   cursor: pointer;
 }
 
-main nav .navList ul .navPortfolio a#portfolioToggleFontUXUI.portfolioToggleFont::before {
+main nav .navList ul .navPortfolio a::before {
   content: '';
   position: absolute;
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
 }
@@ -108,23 +108,11 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontUXUI.portfolioToggleFont
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
-  width: 10rem;
-}
-
-main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioToggleFont::before {
-  content: '';
-  position: absolute;
-  background-color: #f4eee1;
-  height: 1rem;
-  width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
-  z-index: -1;
-  border-radius: 3rem;
+  width: 9.5rem;
 }
 
 main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioToggleFont:hover:before {
@@ -133,23 +121,11 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioT
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
-  width: 12rem;
-}
-
-main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioToggleFont::before {
-  content: '';
-  position: absolute;
-  background-color: #f4eee1;
-  height: 1rem;
-  width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
-  z-index: -1;
-  border-radius: 3rem;
+  width: 11.5rem;
 }
 
 main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioToggleFont:hover:before {
@@ -158,23 +134,11 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioTo
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
   width: 9rem;
-}
-
-main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolioToggleFont::before {
-  content: '';
-  position: absolute;
-  background-color: #f4eee1;
-  height: 1rem;
-  width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
-  z-index: -1;
-  border-radius: 3rem;
 }
 
 main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolioToggleFont:hover::before {
@@ -183,23 +147,11 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolio
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
   width: 10rem;
-}
-
-main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont::before {
-  content: '';
-  position: absolute;
-  background-color: #f4eee1;
-  height: 1rem;
-  width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
-  z-index: -1;
-  border-radius: 3rem;
 }
 
 main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont:hover:before {
@@ -208,11 +160,11 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.port
   background-color: #f4eee1;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
-  width: 17.5rem;
+  width: 17.25rem;
 }
 
 main nav .navList .navHome::before {
@@ -223,6 +175,8 @@ main nav .navList .navHome::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
@@ -235,7 +189,13 @@ main nav .navList .navHome:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
   -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
   transition: 0.25s all;
 }
 
@@ -266,9 +226,13 @@ main nav .navList .navPortfolio:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  opacity: 1;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
 
@@ -294,9 +258,13 @@ main nav .navList .navAbout:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  opacity: 1;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
 
@@ -322,9 +290,13 @@ main nav .navList .navResume:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  opacity: 1;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
 
@@ -424,6 +396,11 @@ main nav .mobileTrigger {
   display: none;
 }
 
+main nav .navList a.navHome::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
 main header {
   padding: 0 13vw;
   height: 100vh;
@@ -463,8 +440,8 @@ main header .boxesContainer .boxOne .description p::before {
   position: absolute;
   z-index: -1;
   border-radius: 2rem;
-  -webkit-animation: tanUnderlineAnimation 1s steps(12);
-          animation: tanUnderlineAnimation 1s steps(12);
+  -webkit-animation: tanUnderlineAnimation 2s;
+          animation: tanUnderlineAnimation 2s;
 }
 
 main header .boxesContainer .boxOne .typingEffect h1 {
@@ -485,8 +462,8 @@ main header .boxesContainer .boxOne .typingEffect .cursor {
   background-color: #1C56A3;
   margin-left: 0.1rem;
   width: 3px;
-  -webkit-animation: blink 1s infinite steps(12);
-          animation: blink 1s infinite steps(12);
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
   z-index: 1;
 }
 
@@ -585,6 +562,8 @@ main header .boxesContainer .boxOne .details .letschatButton:hover:before {
   cursor: pointer;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
@@ -1242,10 +1221,6 @@ footer .footerList li {
   padding: 0;
 }
 
-footer .footerList li a:hover {
-  color: #EDEEF4;
-}
-
 footer .footerList a {
   font-family: poppins;
   font-size: clamp(1.25rem, 0.8vw, 1.5rem);
@@ -1266,14 +1241,14 @@ footer .footerList .footerPortfolio a {
   z-index: 3;
 }
 
-footer .footerList .footerPortfolio a.footerUXUI::before {
+footer .footerList .footerPortfolio a::before {
   content: '';
   position: absolute;
   background-color: #1C56A3;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
   border-radius: 3rem;
   z-index: -1;
   -webkit-transform: translateY(0.25rem);
@@ -1286,8 +1261,8 @@ footer .footerList .footerPortfolio a.footerUXUI:hover:before {
   background-color: #1C56A3;
   height: 1rem;
   width: 0;
-  -webkit-transition: 0.25s all steps(6);
-  transition: 0.25s all steps(6);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
   border-radius: 3rem;
   z-index: -1;
   -webkit-transform: translateY(0.25rem);
@@ -1295,12 +1270,215 @@ footer .footerList .footerPortfolio a.footerUXUI:hover:before {
   width: 8rem;
 }
 
+footer .footerList .footerPortfolio a.footerGraphicDesign:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 10rem;
+}
+
+footer .footerList .footerPortfolio a.footerArchitecture:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 8rem;
+}
+
+footer .footerList .footerPortfolio a.footerDigitalArtwork:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 9rem;
+}
+
+footer .footerList .footerPortfolio a.footerFrontendDevelopment:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 14rem;
+}
+
 footer .footerList .footerSocials {
   margin: 0 10rem 0 0;
 }
 
+footer .footerList .footerSocials a {
+  position: relative;
+  z-index: 3;
+}
+
+footer .footerList .footerSocials a::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+}
+
+footer .footerList .footerSocials a.footerFacebook:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 6rem;
+}
+
+footer .footerList .footerSocials a.footerInstagram:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 7rem;
+}
+
+footer .footerList .footerSocials a.footerTiktok:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 4rem;
+}
+
+footer .footerList .footerSocials a.footerYoutube:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 5rem;
+}
+
+footer .footerList .footerSocials a.footerGithub:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 4rem;
+}
+
 footer .footerList .footerContact {
   margin: 0 0 0 0;
+}
+
+footer .footerList .footerContact a {
+  position: relative;
+  z-index: 3;
+}
+
+footer .footerList .footerContact a::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+}
+
+footer .footerList .footerContact a.footerContact:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 5rem;
+}
+
+footer .footerList .footerContact a.footerLinkedin:hover:before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  height: 1rem;
+  width: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  border-radius: 3rem;
+  z-index: -1;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  width: 5rem;
 }
 
 section.portfolio.active .container {

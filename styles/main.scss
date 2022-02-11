@@ -15,7 +15,14 @@ main {
 
     nav {
         @include navBarDesktop;
+        
+        .navList {
 
+            a.navHome::before {
+                transform: scaleY(1);
+            }
+
+        }
     }
 
     header {
@@ -42,7 +49,7 @@ main {
     
                     p::before {
                         @include tanUnderline;
-                        animation: tanUnderlineAnimation 1s steps(12);
+                        animation: tanUnderlineAnimation 2s;
                     }
                 }
     
@@ -62,7 +69,7 @@ main {
                       background-color: $blue;
                       margin-left: 0.1rem;
                       width: 3px;
-                      animation: blink 1s infinite steps(12);
+                      animation: blink 1s infinite;
                       z-index: 1;
                     }
                     
@@ -101,21 +108,16 @@ main {
     
                     .letschatButton {
                         @include letsChatButton;
-                        transition: 0.25s all;
-                        text-transform: capitalize;
                         margin: 0 0 0 3rem;
                     }
     
                     .letschatButton::before {
                         @include letsChatButtonHover;
-                        transition: 0.25s all;
-                        transform: scaleY(0);
                         
                     }
     
                     .letschatButton:hover:before {
                         @include letsChatButtonHover;
-                        transition: 0.25s all;
                         transform: scaleY(1);
                     }
                 }

@@ -123,6 +123,8 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         font-size:$fontButton;
         color:$blue;
         cursor: pointer;
+        transition: 0.25s all;
+        text-transform: capitalize;
     }
 
     @mixin letsChatButtonHover {
@@ -133,6 +135,8 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         height: 1rem;
         margin: clamp(0rem, 1.75em, 4.25rem) 0 0 0;
         cursor: pointer;
+        transition: 0.25s all;
+        transform: scaleY(0);
     }
 
 // tan underline 
@@ -209,7 +213,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         justify-content: space-between;
         -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
         box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.8);
         z-index: 3;
         padding: $desktopNavPadding;
         width: calc(100% - 26vw);
@@ -221,7 +225,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
         .desktopLogo {
             img {
-                width: 18vw;
+                width: 28rem;
             }
         }
 
@@ -248,71 +252,47 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                 .navPortfolio {
                     @include navBarStyleDesktop;
 
-                    a#portfolioToggleFontUXUI.portfolioToggleFont::before {
+                    a::before {
                         @include navBarToggleBeforeStyleDesktop;
                     }
 
                     a#portfolioToggleFontUXUI.portfolioToggleFont:hover:before {
                         @include navBarToggleBeforeStyleDesktop;
-                        width: 10rem;
-                    }
-
-                    a#portfolioToggleFontGraphicDesign.portfolioToggleFont::before {
-                        @include navBarToggleBeforeStyleDesktop;
+                        width: 9.5rem;
                     }
 
                     a#portfolioToggleFontGraphicDesign.portfolioToggleFont:hover:before {
                         @include navBarToggleBeforeStyleDesktop;
-                        width: 12rem;
+                        width: 11.5rem;
                     }
-
-                    a#portfolioToggleFontArchitecture.portfolioToggleFont::before {
-                        @include navBarToggleBeforeStyleDesktop;
-                    }
-
 
                     a#portfolioToggleFontArchitecture.portfolioToggleFont:hover:before {
                         @include navBarToggleBeforeStyleDesktop;
                         width: 9rem;
                     }
 
-                    a#portfolioToggleFontDigitalArtwork.portfolioToggleFont::before {
-                        @include navBarToggleBeforeStyleDesktop;
-                    }
-
                     a#portfolioToggleFontDigitalArtwork.portfolioToggleFont:hover::before {
                         @include navBarToggleBeforeStyleDesktop;
                         width: 10rem;
                     }
-
-                    a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont::before {
-                        @include navBarToggleBeforeStyleDesktop;
-                    }
                     
                     a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont:hover:before {
                         @include navBarToggleBeforeStyleDesktop;
-                        width: 17.5rem;
+                        width: 17.25rem;
                     }
                 }
             }
 
             .navHome::before {
                 @include navHover;
-                opacity: 1;
-                transition: 0.25s all;
             }
             
             .navHome:hover::before {
-                @include navHover;
-                opacity: 1;
-                transition: 0.25s all;
+                @include navHoverActive;
             }
 
             .navPortfolio::before {
                 @include navHover;
-                opacity: 1;
-                transform:scaleY(0);
-                transition: 0.25s all;
             }
 
             .navPortfolio.active::before {
@@ -320,38 +300,23 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             }
             
             .navPortfolio:hover::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(1);
-                transition: 0.25s all;
+                @include navHoverActive;
             }
 
             .navAbout::before {
                 @include navHover;
-                opacity: 1;
-                transform:scaleY(0);
-                transition: 0.25s all;
             }
             
             .navAbout:hover::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(1);
-                transition: 0.25s all;
+                @include navHoverActive;
             }
 
             .navResume::before {
                 @include navHover;
-                opacity: 1;
-                transform:scaleY(0);
-                transition: 0.25s all;
             }
             
             .navResume:hover::before {
-                @include navHover;
-                opacity: 1;
-                transform:scaleY(1);
-                transition: 0.25s all;
+                @include navHoverActive;
             }
 
             .portfolioToggle {
@@ -770,7 +735,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         background-color: $tan;
         height: 1rem;
         width: 0;
-        transition: 0.25s all steps(6);
+        transition: 0.25s all;
         z-index: -1;
         border-radius: 3rem;
     }
@@ -811,10 +776,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                 padding: 0;
             }
     
-            li a:hover {
-                @include footerParagraphHover;
-            }
-    
             a {
                 @include footerParagraph;
                 z-index: 2;
@@ -828,7 +789,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     z-index: 3;
                 }
 
-                a.footerUXUI::before {
+                a::before {
                     @include footereBeforeStyleDesktop;
                 }
 
@@ -836,14 +797,87 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     @include footereBeforeStyleDesktop;
                     width: 8rem;
                 }
+
+                a.footerGraphicDesign:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 10rem;
+                }
+
+                a.footerArchitecture:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 8rem;
+                }
+
+                a.footerDigitalArtwork:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 9rem;
+                }
+
+                a.footerFrontendDevelopment:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 14rem;
+                }
             }
     
             .footerSocials {
                 margin: 0 10rem 0 0;
+
+                a {
+                    position: relative;
+                    z-index: 3;
+                }
+
+                a::before {
+                    @include footereBeforeStyleDesktop;
+                }
+    
+                a.footerFacebook:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 6rem;
+                }
+                    
+                a.footerInstagram:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 7rem;
+                }
+
+                a.footerTiktok:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 4rem;
+                }
+
+                a.footerYoutube:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 5rem;
+                }
+
+                a.footerGithub:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 4rem;
+                }
             }
     
             .footerContact {
                 margin: 0 0 0 0;
+
+                a {
+                    position: relative;
+                    z-index: 3;
+                }
+
+                a::before {
+                    @include footereBeforeStyleDesktop;
+                }
+                
+                a.footerContact:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 5rem;
+                }
+
+                a.footerLinkedin:hover:before {
+                    @include footereBeforeStyleDesktop;
+                    width: 5rem;
+                }
             }
         }
     }
@@ -867,7 +901,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         background-color: $blue;
         height: 1rem;
         width: 0;
-        transition: 0.25s all steps(6);
+        transition: 0.25s all;
         border-radius: 3rem;
         z-index: -1;
         transform: translateY(0.25rem);
@@ -970,6 +1004,16 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: 2.0rem;
         height: 1rem;
         margin: 3rem 0 0 0;
+        opacity: 1;
+        transform:scaleY(0);
+        transition: 0.25s all;
+    }
+
+    @mixin navHoverActive {
+        @include navHover;
+        opacity: 1;
+        transform:scaleY(1);
+        transition: 0.25s all;
     }
 
     @mixin navHoverMobile {
