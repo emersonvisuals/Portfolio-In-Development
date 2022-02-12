@@ -197,4 +197,14 @@ const observer = new IntersectionObserver(function(entries, observer) {
 
 sections.forEach(section => {
   observer.observe(section);
-})
+});
+
+
+// splash screen
+const splash = document.querySelector('.splashScreen');
+
+document.addEventListener('DOMContentLoaded', function(e){
+  setTimeout(function(){
+    splash.classList.add('test');
+  }, 2000);
+});

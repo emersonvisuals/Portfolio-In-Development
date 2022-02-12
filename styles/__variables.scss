@@ -142,18 +142,8 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 // tan underline 
     @mixin tanUnderline {
         content: '';
-        width: clamp(35rem, 35vw, 82rem);
-        height: 1.75vh;
-        background-color: $tan;
-        position: absolute;
-        z-index: -1;
-        border-radius: 2rem;
-    }
-
-    @mixin tanUnderlineTabletMobile {
-        content: '';
-        width: clamp(35rem, 35vw, 82rem);
-        height: 1vh;
+        width: clamp(33rem, 35vw, 82rem);
+        height: clamp(0.75vh, 1vw, 1.75vh);
         background-color: $tan;
         position: absolute;
         z-index: -1;
@@ -895,6 +885,73 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         }
     }
 
+    @mixin defaultFooterMobile {
+        height: calc(100vh - 8rem);
+        background-color: $darkBlue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .logo {
+            display: none;
+        }
+    
+        .footerList {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                @include footerHeading;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+    
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+            }
+    
+            li {
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+            }
+    
+            a {
+                @include footerParagraph;
+            }
+    
+            .footerPortfolio {
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+    
+            .footerSocials {
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+    
+            .footerContact {
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
+        }
+    }
+
     @mixin footereBeforeStyleDesktop {
         content: '';
         position: absolute;
@@ -1100,7 +1157,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
     @mixin tanUnderlineAnimation {
         0% { width: 0;}
-        100% { width: clamp(34rem, 35vw, 82rem);}
+        100% { width: clamp(33rem, 35vw, 82rem)}
     }
 
 // portfolio Toggle Desktop

@@ -12,6 +12,51 @@ html {
   scroll-behavior: smooth;
 }
 
+/*
+section.splashScreen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    text-align: center;
+    z-index: 5;
+
+    h1 {
+        color: $blue;
+        line-height: 90vh;
+        font-size: 4rem;
+        animation: splashScreenAnimation ease-in forwards 2s;
+    }
+}
+
+section.splashScreen.test {
+    z-index: -10;
+    opacity: 0%;
+}
+*/
+@-webkit-keyframes splashScreenAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes splashScreenAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
 main {
   height: 100vh;
 }
@@ -434,8 +479,8 @@ main header .boxesContainer .boxOne .description p {
 
 main header .boxesContainer .boxOne .description p::before {
   content: '';
-  width: clamp(35rem, 35vw, 82rem);
-  height: 1.75vh;
+  width: clamp(33rem, 35vw, 82rem);
+  height: clamp(0.75vh, 1vw, 1.75vh);
   background-color: #f4eee1;
   position: absolute;
   z-index: -1;
@@ -1618,7 +1663,7 @@ section.about.active .aboutGridContainer {
     width: 0;
   }
   100% {
-    width: clamp(34rem, 35vw, 82rem);
+    width: clamp(33rem, 35vw, 82rem);
   }
 }
 
@@ -1627,7 +1672,7 @@ section.about.active .aboutGridContainer {
     width: 0;
   }
   100% {
-    width: clamp(34rem, 35vw, 82rem);
+    width: clamp(33rem, 35vw, 82rem);
   }
 }
 
@@ -2261,9 +2306,6 @@ section.about.active .aboutGridContainer {
   main header .boxesContainer .boxOne .description p {
     font-size: clamp(1.19rem, 0.9vw, 2rem);
   }
-  main header .boxesContainer .boxOne .description p::before {
-    width: clamp(34rem, 35vw, 82rem);
-  }
   main header .boxesContainer .boxOne .typingEffect {
     padding: 0 0 1rem 0;
   }
@@ -2367,7 +2409,7 @@ section.about.active .aboutGridContainer {
     display: none;
   }
   footer {
-    height: calc(100vh - 9rem);
+    height: calc(100vh - 8rem);
     background-color: #101011;
     display: -webkit-box;
     display: -ms-flexbox;

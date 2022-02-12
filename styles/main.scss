@@ -10,6 +10,35 @@ html {
     @include bodyDefault;
 }
 
+/*
+section.splashScreen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    text-align: center;
+    z-index: 5;
+
+    h1 {
+        color: $blue;
+        line-height: 90vh;
+        font-size: 4rem;
+        animation: splashScreenAnimation ease-in forwards 2s;
+    }
+}
+
+section.splashScreen.test {
+    z-index: -10;
+    opacity: 0%;
+}
+*/
+
+@keyframes splashScreenAnimation {
+    0% {opacity: 0;}
+    50% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
 main {
     height: 100vh;
 
@@ -518,9 +547,6 @@ section.about.active {
                             font-size: $paragraphFontSizeClamp;
                         }
 
-                        p::before {
-                            width: clamp(34rem, 35vw, 82rem);
-                        }
                     }
 
                     .typingEffect {
@@ -638,70 +664,6 @@ section.about.active {
     }
 
     footer {
-        height: calc(100vh - 9rem);
-        background-color: $darkBlue;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-        .logo {
-            display: none;
-        }
-    
-        .footerList {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-            h1 {
-                @include footerHeading;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-            }
-    
-            ul {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                list-style: none;
-                text-decoration: none;
-                padding: 0;
-            }
-    
-            li {
-                list-style: none;
-                text-decoration: none;
-                padding: 0;
-            }
-    
-            a {
-                @include footerParagraph;
-            }
-    
-            .footerPortfolio {
-                align-items: center;
-                justify-content: center;
-                margin: 0;
-            }
-    
-            .footerSocials {
-                align-items: center;
-                justify-content: center;
-                margin: 0;
-            }
-    
-            .footerContact {
-                align-items: center;
-                justify-content: center;
-                margin: 0;
-            }
-        }
+        @include defaultFooterMobile;
     }
-
 }
