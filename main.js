@@ -203,6 +203,7 @@ sections.forEach(section => {
 
 
 // splash screen
+/*
 const splash = document.querySelector('.splashScreen');
 const body = document.body;
 window.onload = function(e){
@@ -215,3 +216,4 @@ document.addEventListener('DOMContentLoaded', function(e){
     body.style.overflowY = 'scroll';
   }, 4000);
 });
+*/

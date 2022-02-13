@@ -19,7 +19,7 @@
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 html {
@@ -30,42 +30,32 @@ html {
   scroll-behavior: smooth;
 }
 
+/*
 section.splashScreen {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #FFFFFF;
-  z-index: 5;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    z-index: 5;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
 
-section.splashScreen video {
-  border: none;
-  -webkit-box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, 0.05);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+    video {
+        border: none;
+        -webkit-box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.05); 
+        box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.05);
+        width: fit-content;
+        height: fit-content;
+    }
 }
 
 section.splashScreen.test {
-  -webkit-animation: splashScreenAnimation 1s forwards ease;
-          animation: splashScreenAnimation 1s forwards ease;
+    animation: splashScreenAnimation 1s forwards ease;
 }
-
+*/
 @-webkit-keyframes splashScreenAnimation {
   0% {
     -webkit-transform: translateX(0rem);
@@ -76,7 +66,6 @@ section.splashScreen.test {
             transform: translateX(-200rem);
   }
 }
-
 @keyframes splashScreenAnimation {
   0% {
     -webkit-transform: translateX(0rem);
