@@ -201,13 +201,17 @@ sections.forEach(section => {
 });
 
 
+
 // splash screen
 const splash = document.querySelector('.splashScreen');
+const body = document.body;
+window.onload = function(e){
+  body.style.overflow = 'hidden';
+}
 
 document.addEventListener('DOMContentLoaded', function(e){
   setTimeout(function(){
     splash.classList.add('test');
-  }, 2000);
+    body.style.overflow = 'scroll';
+  }, 4000);
 });
-
-// toggle mobile and tablet menu off. 

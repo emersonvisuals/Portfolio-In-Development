@@ -3,38 +3,39 @@
 body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow:hidden;
 }
 
 html {
     @include bodyDefault;
 }
 
-/*
+
 section.splashScreen {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     background-color: $white;
-    text-align: center;
     z-index: 5;
-    h1 {
-        color: $blue;
-        line-height: 90vh;
-        font-size: 4rem;
-        animation: splashScreenAnimation ease-in forwards 2s;
+    border: none;
+
+    video {
+        border: none;
     }
+
 }
+
 section.splashScreen.test {
-    z-index: -10;
-    opacity: 0%;
+    animation: splashScreenAnimation 1s forwards ease;
 }
-*/
+
 
 @keyframes splashScreenAnimation {
-    0% {opacity: 0;}
-    50% {opacity: 100%;}
-    100% {opacity: 0%;}
+    0% {transform: translateY(0rem);}
+    100% {transform: translateY(-150vh);}
 }
 
 main {

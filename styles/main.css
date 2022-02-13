@@ -19,7 +19,7 @@
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 html {
@@ -30,46 +30,52 @@ html {
   scroll-behavior: smooth;
 }
 
-/*
 section.splashScreen {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: $white;
-    text-align: center;
-    z-index: 5;
-    h1 {
-        color: $blue;
-        line-height: 90vh;
-        font-size: 4rem;
-        animation: splashScreenAnimation ease-in forwards 2s;
-    }
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 5;
+  border: none;
 }
+
+section.splashScreen video {
+  border: none;
+}
+
 section.splashScreen.test {
-    z-index: -10;
-    opacity: 0%;
+  -webkit-animation: splashScreenAnimation 1s forwards ease;
+          animation: splashScreenAnimation 1s forwards ease;
 }
-*/
+
 @-webkit-keyframes splashScreenAnimation {
   0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 100%;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
   100% {
-    opacity: 0%;
+    -webkit-transform: translateY(-150vh);
+            transform: translateY(-150vh);
   }
 }
+
 @keyframes splashScreenAnimation {
   0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 100%;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
   100% {
-    opacity: 0%;
+    -webkit-transform: translateY(-150vh);
+            transform: translateY(-150vh);
   }
 }
 
