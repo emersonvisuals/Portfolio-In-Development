@@ -212,6 +212,6 @@ window.onload = function(e){
 document.addEventListener('DOMContentLoaded', function(e){
   setTimeout(function(){
     splash.classList.add('test');
-    body.style.overflow = 'scroll';
+    body.style.overflowY = 'scroll';
   }, 4000);
 });

@@ -46,10 +46,19 @@ section.splashScreen {
   background-color: #FFFFFF;
   z-index: 5;
   border: none;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 section.splashScreen video {
   border: none;
+  -webkit-box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, 0.05);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 section.splashScreen.test {
@@ -59,23 +68,23 @@ section.splashScreen.test {
 
 @-webkit-keyframes splashScreenAnimation {
   0% {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
   }
   100% {
-    -webkit-transform: translateY(-150vh);
-            transform: translateY(-150vh);
+    -webkit-transform: translateX(-200rem);
+            transform: translateX(-200rem);
   }
 }
 
 @keyframes splashScreenAnimation {
   0% {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
   }
   100% {
-    -webkit-transform: translateY(-150vh);
-            transform: translateY(-150vh);
+    -webkit-transform: translateX(-200rem);
+            transform: translateX(-200rem);
   }
 }
 
