@@ -243,31 +243,31 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     @include navBarStyleDesktop;
 
                     a::before {
-                        @include navBarToggleBeforeStyleDesktop;
+                        @include navBarToggleBeforeStyle;
                     }
 
                     a#portfolioToggleFontUXUI.portfolioToggleFont:hover:before {
-                        @include navBarToggleBeforeStyleDesktop;
+                        @include navBarToggleBeforeStyle;
                         width: 9.5rem;
                     }
 
                     a#portfolioToggleFontGraphicDesign.portfolioToggleFont:hover:before {
-                        @include navBarToggleBeforeStyleDesktop;
+                        @include navBarToggleBeforeStyle;
                         width: 11.5rem;
                     }
 
                     a#portfolioToggleFontArchitecture.portfolioToggleFont:hover:before {
-                        @include navBarToggleBeforeStyleDesktop;
+                        @include navBarToggleBeforeStyle;
                         width: 9rem;
                     }
 
                     a#portfolioToggleFontDigitalArtwork.portfolioToggleFont:hover::before {
-                        @include navBarToggleBeforeStyleDesktop;
+                        @include navBarToggleBeforeStyle;
                         width: 10rem;
                     }
                     
                     a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont:hover:before {
-                        @include navBarToggleBeforeStyleDesktop;
+                        @include navBarToggleBeforeStyle;
                         width: 17.25rem;
                     }
                 }
@@ -363,7 +363,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         .mobileTrigger {
             display: none;
         }
-
     }
     
     @mixin navBarTablet {
@@ -436,6 +435,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     }
                 }
             }
+
         }
 
         .contactButtonContainer {
@@ -493,25 +493,11 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                 transition: 0.5s all;
             }
         }
-        
-        .navHome::before {
-            display: none;
-        }
 
-        a::before {
-            display: none;
-        }
-
-        .navPortfolio::before {
-            display: none;
-        }
     }
 
     @mixin navBarTabletActive {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
+
         .navList {
             display: flex;
             align-items: center;
@@ -580,12 +566,40 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                         }
                     }
                 }
-            }
-        }
+                    
+                .navHome::before {
+                    @include navToggleActive;
+                }
 
-        .contactButtonContainer {
-            display:initial;
-            padding: 0;
+                .navPortfolio::before {
+                    @include navToggleTopPosition;
+                }
+                
+                .navPortfolio:hover::before {
+                    @include navToggleTopPositionActive;
+                }
+
+                .navPortfolio.active::before {
+                    @include navToggleTopPositionActive;
+                }
+
+                .navAbout::before {
+                    @include navToggle;
+                }
+                
+                .navAbout:hover::before {
+                    @include navToggleActive;
+                }
+
+                .navResume::before {
+                    @include navToggle;
+                }
+                
+                .navResume:hover::before {
+                    @include navToggleActive;
+                }
+
+            }
         }
 
         .mobileLogo {
@@ -634,18 +648,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                 top: 0rem;
                 transition: 0.5s all;
             }
-        }
-
-        .navHome::before {
-            display: none;
-        }
-
-        a::before {
-            display: none;
-        }
-
-        .navPortfolio::before {
-            display: none;
         }
 
     }
@@ -719,7 +721,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         cursor: pointer;
     }
 
-    @mixin navBarToggleBeforeStyleDesktop {
+    @mixin navBarToggleBeforeStyle{
         content: '';
         position: absolute;
         background-color: $tan;
@@ -1073,11 +1075,33 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         transition: 0.25s all;
     }
 
-    @mixin navHoverMobile {
-        font-weight: 700;
-        transition: 0.25s all;
-        color: $blue;
+
+    @mixin navToggle {
+        @include navHover;
+        background-color: $blue;
+        transform: translateY(-1.25rem) scaleY(0);
+        z-index: -1;
+        height: 0.75rem;
+        width: 1.5rem;
     }
+
+    @mixin navToggleActive {
+        @include navToggle;
+        transform: translateY(-1.25rem) scaleY(1);
+    }
+
+    @mixin navToggleTopPosition {
+        @include navToggle;
+        top:1rem;
+        left:4rem;
+    }
+
+    @mixin navToggleTopPositionActive {
+        @include navToggleTopPosition;
+        transform: translateY(-1.25rem) scaleY(1);
+        transition: 0.25s all;
+    }
+
 
 
 // illustrations 
