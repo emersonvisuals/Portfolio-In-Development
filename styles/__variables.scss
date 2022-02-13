@@ -435,7 +435,8 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     }
                 }
             }
-              
+            
+            /*
             .navHome::before {
                 @include navToggleActive;
             }
@@ -467,8 +468,15 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             .navResume:hover::before {
                 @include navToggleActive;
             }
+            */
 
+            a::before {
+                display: none;
+            }
 
+            a:hover:before {
+                display: none;
+            }
         }
 
         .contactButtonContainer {
@@ -526,7 +534,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                 transition: 0.5s all;
             }
         }
-
     }
 
     @mixin navBarTabletActive {
@@ -536,7 +543,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            max-height: 50vh;
+            max-height: 55vh;
             opacity: 100%;
             transform: translateY(0rem);
             visibility: visible;
@@ -591,15 +598,16 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     .portfolioToggle.active {
                         height: 15rem;
                         transition: 0.5s all;
-                        padding:0;
+                        padding:2rem 0 0 0;
 
                         li {
                             opacity: 100%;
                             transition: 0.5s all;
+                            padding: 0.5rem 0;
                         }
                     }
                 }
-                    
+                /* 
                 .navHome::before {
                     @include navToggleActive;
                 }
@@ -631,7 +639,19 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                 .navResume:hover::before {
                     @include navToggleActive;
                 }
+                */
 
+                a::before {
+                    display: none;
+                }
+    
+                a:hover:before {
+                    display: none;
+                }
+
+                li::before {
+                    display: none;
+                }
             }
         }
 
@@ -1118,6 +1138,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: 1.5rem;
     }
 
+    /*
     @mixin navToggleActive {
         @include navToggle;
         transform: translateY(-1.25rem) scaleY(1);
@@ -1134,7 +1155,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         transform: translateY(-1.25rem) scaleY(1);
         transition: 0.25s all;
     }
-
+    */
 
 
 // illustrations 

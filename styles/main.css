@@ -1,3 +1,21 @@
+/*
+    @mixin navToggleActive {
+        @include navToggle;
+        transform: translateY(-1.25rem) scaleY(1);
+    }
+
+    @mixin navToggleTopPosition {
+        @include navToggle;
+        top:1rem;
+        left:4rem;
+    }
+
+    @mixin navToggleTopPositionActive {
+        @include navToggleTopPosition;
+        transform: translateY(-1.25rem) scaleY(1);
+        transition: 0.25s all;
+    }
+    */
 body {
   padding: 0;
   margin: 0;
@@ -20,7 +38,6 @@ section.splashScreen {
     background-color: $white;
     text-align: center;
     z-index: 5;
-
     h1 {
         color: $blue;
         line-height: 90vh;
@@ -28,7 +45,6 @@ section.splashScreen {
         animation: splashScreenAnimation ease-in forwards 2s;
     }
 }
-
 section.splashScreen.test {
     z-index: -10;
     opacity: 0%;
@@ -1731,6 +1747,39 @@ section.about.active .aboutGridContainer {
     visibility: hidden;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
+    /*
+            .navHome::before {
+                @include navToggleActive;
+            }
+
+            .navPortfolio::before {
+                @include navToggleTopPosition;
+            }
+            
+            .navPortfolio:hover::before {
+                @include navToggleTopPositionActive;
+            }
+
+            .navPortfolio.active::before {
+                @include navToggleTopPositionActive;
+            }
+
+            .navAbout::before {
+                @include navToggle;
+            }
+            
+            .navAbout:hover::before {
+                @include navToggleActive;
+            }
+
+            .navResume::before {
+                @include navToggle;
+            }
+            
+            .navResume:hover::before {
+                @include navToggleActive;
+            }
+            */
   }
   main nav .navList ul {
     -webkit-box-orient: vertical;
@@ -1801,175 +1850,11 @@ section.about.active .aboutGridContainer {
     font-family: poppins;
     text-transform: capitalize;
   }
-  main nav .navList .navHome::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
+  main nav .navList a::before {
+    display: none;
   }
-  main nav .navList .navPortfolio::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    top: 1rem;
-    left: 4rem;
-  }
-  main nav .navList .navPortfolio:hover::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    top: 1rem;
-    left: 4rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
-    transition: 0.25s all;
-  }
-  main nav .navList .navPortfolio.active::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    top: 1rem;
-    left: 4rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
-    transition: 0.25s all;
-  }
-  main nav .navList .navAbout::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-  }
-  main nav .navList .navAbout:hover::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
-  }
-  main nav .navList .navResume::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-  }
-  main nav .navList .navResume:hover::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
+  main nav .navList a:hover:before {
+    display: none;
   }
   main nav .contactButtonContainer {
     display: initial;
@@ -2087,7 +1972,7 @@ section.about.active .aboutGridContainer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-height: 50vh;
+    max-height: 55vh;
     opacity: 100%;
     -webkit-transform: translateY(0rem);
             transform: translateY(0rem);
@@ -2104,6 +1989,39 @@ section.about.active .aboutGridContainer {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+    /* 
+                .navHome::before {
+                    @include navToggleActive;
+                }
+
+                .navPortfolio::before {
+                    @include navToggleTopPosition;
+                }
+                
+                .navPortfolio:hover::before {
+                    @include navToggleTopPositionActive;
+                }
+
+                .navPortfolio.active::before {
+                    @include navToggleTopPositionActive;
+                }
+
+                .navAbout::before {
+                    @include navToggle;
+                }
+                
+                .navAbout:hover::before {
+                    @include navToggleActive;
+                }
+
+                .navResume::before {
+                    @include navToggle;
+                }
+                
+                .navResume:hover::before {
+                    @include navToggleActive;
+                }
+                */
   }
   main nav.active .navList ul li {
     padding: 1rem 0;
@@ -2169,182 +2087,22 @@ section.about.active .aboutGridContainer {
     height: 15rem;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
-    padding: 0;
+    padding: 2rem 0 0 0;
   }
   main nav.active .navList ul .navPortfolio .portfolioToggle.active li {
     opacity: 100%;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
+    padding: 0.5rem 0;
   }
-  main nav.active .navList ul .navHome::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
+  main nav.active .navList ul a::before {
+    display: none;
   }
-  main nav.active .navList ul .navPortfolio::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    top: 1rem;
-    left: 4rem;
+  main nav.active .navList ul a:hover:before {
+    display: none;
   }
-  main nav.active .navList ul .navPortfolio:hover::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    top: 1rem;
-    left: 4rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
-    transition: 0.25s all;
-  }
-  main nav.active .navList ul .navPortfolio.active::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    top: 1rem;
-    left: 4rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
-    transition: 0.25s all;
-  }
-  main nav.active .navList ul .navAbout::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-  }
-  main nav.active .navList ul .navAbout:hover::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
-  }
-  main nav.active .navList ul .navResume::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-  }
-  main nav.active .navList ul .navResume:hover::before {
-    content: '';
-    position: absolute;
-    background-color: #1C56A3;
-    width: 2.0rem;
-    height: 1rem;
-    margin: 3rem 0 0 0;
-    opacity: 1;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transition: 0.25s all;
-    transition: 0.25s all;
-    background-color: #1C56A3;
-    -webkit-transform: translateY(-1.25rem) scaleY(0);
-            transform: translateY(-1.25rem) scaleY(0);
-    z-index: -1;
-    height: 0.75rem;
-    width: 1.5rem;
-    -webkit-transform: translateY(-1.25rem) scaleY(1);
-            transform: translateY(-1.25rem) scaleY(1);
+  main nav.active .navList ul li::before {
+    display: none;
   }
   main nav.active .mobileLogo {
     display: initial;

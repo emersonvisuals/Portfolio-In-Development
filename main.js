@@ -55,6 +55,7 @@ trigger.addEventListener('click', function(){
 // desktop portfolio nav toggle
 const portfolioTrigger = document.querySelector('.navPortfolio');
 const portfolioToggle = document.querySelector('.portfolioToggle');
+const navBar = document.querySelector('nav');
 
 
 portfolioTrigger.addEventListener('click', function(){
@@ -208,3 +209,5 @@ document.addEventListener('DOMContentLoaded', function(e){
     splash.classList.add('test');
   }, 2000);
 });
+
+// toggle mobile and tablet menu off. 
