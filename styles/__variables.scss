@@ -373,6 +373,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: calc(100% - 20vw);
         -webkit-box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05); 
         box-shadow: 0px 35px 25px -10px rgba(0,0,0,0.05);
+        z-index: 3;
 
         .desktopLogo {
             display: none;
@@ -388,6 +389,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             transform: translateY(-9rem);
             visibility: hidden;
             transition: 0.5s all;
+            z-index: 3;
 
             ul {
                 flex-direction: column;
@@ -548,6 +550,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             transform: translateY(0rem);
             visibility: visible;
             transition: 0.5s all;
+            z-index: 3;
 
             ul {
                 flex-direction: column;
@@ -823,7 +826,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     
             a {
                 @include footerParagraph;
-                z-index: 2;
+                z-index: 1;
             }
     
             .footerPortfolio {
@@ -831,7 +834,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
                 a {
                     position: relative;
-                    z-index: 3;
+                    z-index: 1;
                 }
 
                 a::before {

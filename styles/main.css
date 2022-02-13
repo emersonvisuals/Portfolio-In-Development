@@ -1290,7 +1290,7 @@ footer .footerList a {
   text-decoration: none;
   list-style: none;
   line-height: 2.75rem;
-  z-index: 2;
+  z-index: 1;
 }
 
 footer .footerList .footerPortfolio {
@@ -1299,7 +1299,7 @@ footer .footerList .footerPortfolio {
 
 footer .footerList .footerPortfolio a {
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 footer .footerList .footerPortfolio a::before {
@@ -1722,6 +1722,7 @@ section.about.active .aboutGridContainer {
     width: calc(100% - 20vw);
     -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+    z-index: 3;
   }
   main nav .desktopLogo {
     display: none;
@@ -1747,6 +1748,7 @@ section.about.active .aboutGridContainer {
     visibility: hidden;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
+    z-index: 3;
     /*
             .navHome::before {
                 @include navToggleActive;
@@ -1979,6 +1981,7 @@ section.about.active .aboutGridContainer {
     visibility: visible;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
+    z-index: 3;
   }
   main nav.active .navList ul {
     -webkit-box-orient: vertical;
