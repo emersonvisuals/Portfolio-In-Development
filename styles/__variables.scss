@@ -435,6 +435,39 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     }
                 }
             }
+              
+            .navHome::before {
+                @include navToggleActive;
+            }
+
+            .navPortfolio::before {
+                @include navToggleTopPosition;
+            }
+            
+            .navPortfolio:hover::before {
+                @include navToggleTopPositionActive;
+            }
+
+            .navPortfolio.active::before {
+                @include navToggleTopPositionActive;
+            }
+
+            .navAbout::before {
+                @include navToggle;
+            }
+            
+            .navAbout:hover::before {
+                @include navToggleActive;
+            }
+
+            .navResume::before {
+                @include navToggle;
+            }
+            
+            .navResume:hover::before {
+                @include navToggleActive;
+            }
+
 
         }
 

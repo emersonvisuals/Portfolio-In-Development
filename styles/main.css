@@ -1801,6 +1801,176 @@ section.about.active .aboutGridContainer {
     font-family: poppins;
     text-transform: capitalize;
   }
+  main nav .navList .navHome::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    background-color: #1C56A3;
+    -webkit-transform: translateY(-1.25rem) scaleY(0);
+            transform: translateY(-1.25rem) scaleY(0);
+    z-index: -1;
+    height: 0.75rem;
+    width: 1.5rem;
+    -webkit-transform: translateY(-1.25rem) scaleY(1);
+            transform: translateY(-1.25rem) scaleY(1);
+  }
+  main nav .navList .navPortfolio::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    background-color: #1C56A3;
+    -webkit-transform: translateY(-1.25rem) scaleY(0);
+            transform: translateY(-1.25rem) scaleY(0);
+    z-index: -1;
+    height: 0.75rem;
+    width: 1.5rem;
+    top: 1rem;
+    left: 4rem;
+  }
+  main nav .navList .navPortfolio:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    background-color: #1C56A3;
+    -webkit-transform: translateY(-1.25rem) scaleY(0);
+            transform: translateY(-1.25rem) scaleY(0);
+    z-index: -1;
+    height: 0.75rem;
+    width: 1.5rem;
+    top: 1rem;
+    left: 4rem;
+    -webkit-transform: translateY(-1.25rem) scaleY(1);
+            transform: translateY(-1.25rem) scaleY(1);
+    transition: 0.25s all;
+  }
+  main nav .navList .navPortfolio.active::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    background-color: #1C56A3;
+    -webkit-transform: translateY(-1.25rem) scaleY(0);
+            transform: translateY(-1.25rem) scaleY(0);
+    z-index: -1;
+    height: 0.75rem;
+    width: 1.5rem;
+    top: 1rem;
+    left: 4rem;
+    -webkit-transform: translateY(-1.25rem) scaleY(1);
+            transform: translateY(-1.25rem) scaleY(1);
+    transition: 0.25s all;
+  }
+  main nav .navList .navAbout::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    background-color: #1C56A3;
+    -webkit-transform: translateY(-1.25rem) scaleY(0);
+            transform: translateY(-1.25rem) scaleY(0);
+    z-index: -1;
+    height: 0.75rem;
+    width: 1.5rem;
+  }
+  main nav .navList .navAbout:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    background-color: #1C56A3;
+    -webkit-transform: translateY(-1.25rem) scaleY(0);
+            transform: translateY(-1.25rem) scaleY(0);
+    z-index: -1;
+    height: 0.75rem;
+    width: 1.5rem;
+    -webkit-transform: translateY(-1.25rem) scaleY(1);
+            transform: translateY(-1.25rem) scaleY(1);
+  }
+  main nav .navList .navResume::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    background-color: #1C56A3;
+    -webkit-transform: translateY(-1.25rem) scaleY(0);
+            transform: translateY(-1.25rem) scaleY(0);
+    z-index: -1;
+    height: 0.75rem;
+    width: 1.5rem;
+  }
+  main nav .navList .navResume:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #1C56A3;
+    width: 2.0rem;
+    height: 1rem;
+    margin: 3rem 0 0 0;
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    background-color: #1C56A3;
+    -webkit-transform: translateY(-1.25rem) scaleY(0);
+            transform: translateY(-1.25rem) scaleY(0);
+    z-index: -1;
+    height: 0.75rem;
+    width: 1.5rem;
+    -webkit-transform: translateY(-1.25rem) scaleY(1);
+            transform: translateY(-1.25rem) scaleY(1);
+  }
   main nav .contactButtonContainer {
     display: initial;
     padding: 0;
