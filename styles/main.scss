@@ -196,6 +196,10 @@ section.portfolio {
     .container {
         @include marqueeContainer;
 
+        a {
+            text-decoration: none;
+        }
+
         .marqueeOne {
             @include marqueeTemplate;
         }

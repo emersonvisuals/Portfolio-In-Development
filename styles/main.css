@@ -680,6 +680,10 @@ section.portfolio .container {
   box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
 }
 
+section.portfolio .container a {
+  text-decoration: none;
+}
+
 section.portfolio .container .marqueeOne {
   overflow: hidden;
 }
