@@ -150,16 +150,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         border-radius: 2rem;
     }
 
-    @mixin tanUnderLineSubHeading {
-        content: '';
-        width: clamp(13rem, 16vw, 28rem);
-        height: clamp(2rem, 2vw, 4rem);
-        background-color: $tan;
-        position: absolute;
-        z-index: -1;
-        border-radius: 2rem;
-    }
-
 //heading 
     @mixin headingDarkBlue {
         font-size: $headingFontSizeClamp;
@@ -242,33 +232,37 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                 .navPortfolio {
                     @include navBarStyleDesktop;
 
+                    a.portfolioToggleFont {
+                        @include navBarStyleDesktop;
+                    }
+
                     a::before {
                         @include navBarToggleBeforeStyle;
                     }
 
                     a#portfolioToggleFontUXUI.portfolioToggleFont:hover:before {
                         @include navBarToggleBeforeStyle;
-                        width: 9.5rem;
+                        width: clamp(6rem, 8vw, 9.5rem);
                     }
 
                     a#portfolioToggleFontGraphicDesign.portfolioToggleFont:hover:before {
                         @include navBarToggleBeforeStyle;
-                        width: 11.5rem;
+                        width: clamp(6rem, 9.5vw, 11.5rem);
                     }
 
                     a#portfolioToggleFontArchitecture.portfolioToggleFont:hover:before {
                         @include navBarToggleBeforeStyle;
-                        width: 9rem;
+                        width: clamp(6rem, 7.5vw, 9rem);
                     }
 
                     a#portfolioToggleFontDigitalArtwork.portfolioToggleFont:hover::before {
                         @include navBarToggleBeforeStyle;
-                        width: 10rem;
+                        width: clamp(6rem, 9vw, 10rem);
                     }
                     
                     a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont:hover:before {
                         @include navBarToggleBeforeStyle;
-                        width: 17.25rem;
+                        width: clamp(6rem, 14vw, 17.25rem);
                     }
                 }
             }
@@ -437,40 +431,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     }
                 }
             }
-            
-            /*
-            .navHome::before {
-                @include navToggleActive;
-            }
-
-            .navPortfolio::before {
-                @include navToggleTopPosition;
-            }
-            
-            .navPortfolio:hover::before {
-                @include navToggleTopPositionActive;
-            }
-
-            .navPortfolio.active::before {
-                @include navToggleTopPositionActive;
-            }
-
-            .navAbout::before {
-                @include navToggle;
-            }
-            
-            .navAbout:hover::before {
-                @include navToggleActive;
-            }
-
-            .navResume::before {
-                @include navToggle;
-            }
-            
-            .navResume:hover::before {
-                @include navToggleActive;
-            }
-            */
 
             a::before {
                 display: none;
@@ -610,39 +570,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                         }
                     }
                 }
-                /* 
-                .navHome::before {
-                    @include navToggleActive;
-                }
-
-                .navPortfolio::before {
-                    @include navToggleTopPosition;
-                }
-                
-                .navPortfolio:hover::before {
-                    @include navToggleTopPositionActive;
-                }
-
-                .navPortfolio.active::before {
-                    @include navToggleTopPositionActive;
-                }
-
-                .navAbout::before {
-                    @include navToggle;
-                }
-                
-                .navAbout:hover::before {
-                    @include navToggleActive;
-                }
-
-                .navResume::before {
-                    @include navToggle;
-                }
-                
-                .navResume:hover::before {
-                    @include navToggleActive;
-                }
-                */
 
                 a::before {
                     display: none;
@@ -787,8 +714,24 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         z-index: -1;
         border-radius: 3rem;
     }
+    
+    @mixin portfolioToggleStyle {
+        text-decoration: none;
+        color: $darkBlue;
+        font-size: $navPortfolioToggleSizeClamp;
+        font-family: $fontFamily;
+        text-transform: capitalize;
+    }
 
-// default footer 
+    @mixin portfolioToggleStyleHover {
+        text-decoration: none;
+        color: $darkBlue;
+        font-size: $navPortfolioToggleSizeClamp;
+        font-family: $fontFamily;
+        text-transform: capitalize;
+    }
+
+// footer 
     @mixin defaultFooterDesktop {
         height: 40rem;
         background-color: $darkBlue;
@@ -1022,7 +965,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         transform: translateY(0.25rem);
     }
 
-// footer Heading
     @mixin footerHeading {
         font-size: clamp(2rem, 1.2vw, 2.2rem);
         font-family: $fontFamily;
@@ -1031,7 +973,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         text-transform: capitalize;
     }
 
-// footer Paragraphs
     @mixin footerParagraph {
         font-family: $fontFamily;
         font-size:  clamp(1.25rem, 0.8vw, 1.5rem);;
@@ -1141,26 +1082,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: 1.5rem;
     }
 
-    /*
-    @mixin navToggleActive {
-        @include navToggle;
-        transform: translateY(-1.25rem) scaleY(1);
-    }
-
-    @mixin navToggleTopPosition {
-        @include navToggle;
-        top:1rem;
-        left:4rem;
-    }
-
-    @mixin navToggleTopPositionActive {
-        @include navToggleTopPosition;
-        transform: translateY(-1.25rem) scaleY(1);
-        transition: 0.25s all;
-    }
-    */
-
-
 // illustrations 
     @mixin illustration {
         width: auto;
@@ -1239,22 +1160,4 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     @mixin tanUnderlineAnimation {
         0% { width: 0;}
         100% { width: clamp(33rem, 35vw, 82rem)}
-    }
-
-// portfolio Toggle Desktop
-
-    @mixin portfolioToggleStyle {
-        text-decoration: none;
-        color: $darkBlue;
-        font-size: $navPortfolioToggleSizeClamp;
-        font-family: $fontFamily;
-        text-transform: capitalize;
-    }
-
-    @mixin portfolioToggleStyleHover {
-        text-decoration: none;
-        color: $darkBlue;
-        font-size: $navPortfolioToggleSizeClamp;
-        font-family: $fontFamily;
-        text-transform: capitalize;
     }

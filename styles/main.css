@@ -1,21 +1,3 @@
-/*
-    @mixin navToggleActive {
-        @include navToggle;
-        transform: translateY(-1.25rem) scaleY(1);
-    }
-
-    @mixin navToggleTopPosition {
-        @include navToggle;
-        top:1rem;
-        left:4rem;
-    }
-
-    @mixin navToggleTopPositionActive {
-        @include navToggleTopPosition;
-        transform: translateY(-1.25rem) scaleY(1);
-        transition: 0.25s all;
-    }
-    */
 body {
   padding: 0;
   margin: 0;
@@ -28,53 +10,6 @@ html {
           box-sizing: border-box;
   font-family: poppins;
   scroll-behavior: smooth;
-}
-
-/*
-section.splashScreen {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: $white;
-    z-index: 5;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.8);
-
-    video {
-        border: none;
-        -webkit-box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.05); 
-        box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.05);
-        width: fit-content;
-        height: fit-content;
-    }
-}
-
-section.splashScreen.test {
-    animation: splashScreenAnimation 1s forwards ease;
-}
-*/
-@-webkit-keyframes splashScreenAnimation {
-  0% {
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
-  }
-  100% {
-    -webkit-transform: translateX(-200rem);
-            transform: translateX(-200rem);
-  }
-}
-@keyframes splashScreenAnimation {
-  0% {
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
-  }
-  100% {
-    -webkit-transform: translateX(-200rem);
-            transform: translateX(-200rem);
-  }
 }
 
 main {
@@ -155,6 +90,16 @@ main nav .navList ul .navPortfolio {
   cursor: pointer;
 }
 
+main nav .navList ul .navPortfolio a.portfolioToggleFont {
+  text-decoration: none;
+  color: #101011;
+  font-size: clamp(1.3rem, 1vw, 1.8rem);
+  font-family: poppins;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 main nav .navList ul .navPortfolio a::before {
   content: '';
   position: absolute;
@@ -177,7 +122,7 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontUXUI.portfolioToggleFont
   transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
-  width: 9.5rem;
+  width: clamp(6rem, 8vw, 9.5rem);
 }
 
 main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioToggleFont:hover:before {
@@ -190,7 +135,7 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontGraphicDesign.portfolioT
   transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
-  width: 11.5rem;
+  width: clamp(6rem, 9.5vw, 11.5rem);
 }
 
 main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioToggleFont:hover:before {
@@ -203,7 +148,7 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontArchitecture.portfolioTo
   transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
-  width: 9rem;
+  width: clamp(6rem, 7.5vw, 9rem);
 }
 
 main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolioToggleFont:hover::before {
@@ -216,7 +161,7 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontDigitalArtwork.portfolio
   transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
-  width: 10rem;
+  width: clamp(6rem, 9vw, 10rem);
 }
 
 main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.portfolioToggleFont:hover:before {
@@ -229,7 +174,7 @@ main nav .navList ul .navPortfolio a#portfolioToggleFontFrontendDevelopment.port
   transition: 0.25s all;
   z-index: -1;
   border-radius: 3rem;
-  width: 17.25rem;
+  width: clamp(6rem, 14vw, 17.25rem);
 }
 
 main nav .navList .navHome::before {
@@ -1753,39 +1698,6 @@ section.about.active .aboutGridContainer {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
     z-index: 3;
-    /*
-            .navHome::before {
-                @include navToggleActive;
-            }
-
-            .navPortfolio::before {
-                @include navToggleTopPosition;
-            }
-            
-            .navPortfolio:hover::before {
-                @include navToggleTopPositionActive;
-            }
-
-            .navPortfolio.active::before {
-                @include navToggleTopPositionActive;
-            }
-
-            .navAbout::before {
-                @include navToggle;
-            }
-            
-            .navAbout:hover::before {
-                @include navToggleActive;
-            }
-
-            .navResume::before {
-                @include navToggle;
-            }
-            
-            .navResume:hover::before {
-                @include navToggleActive;
-            }
-            */
   }
   main nav .navList ul {
     -webkit-box-orient: vertical;
@@ -1996,39 +1908,6 @@ section.about.active .aboutGridContainer {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    /* 
-                .navHome::before {
-                    @include navToggleActive;
-                }
-
-                .navPortfolio::before {
-                    @include navToggleTopPosition;
-                }
-                
-                .navPortfolio:hover::before {
-                    @include navToggleTopPositionActive;
-                }
-
-                .navPortfolio.active::before {
-                    @include navToggleTopPositionActive;
-                }
-
-                .navAbout::before {
-                    @include navToggle;
-                }
-                
-                .navAbout:hover::before {
-                    @include navToggleActive;
-                }
-
-                .navResume::before {
-                    @include navToggle;
-                }
-                
-                .navResume:hover::before {
-                    @include navToggleActive;
-                }
-                */
   }
   main nav.active .navList ul li {
     padding: 1rem 0;

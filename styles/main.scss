@@ -10,38 +10,6 @@ html {
     @include bodyDefault;
 }
 
-/*
-section.splashScreen {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: $white;
-    z-index: 5;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.8);
-
-    video {
-        border: none;
-        -webkit-box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.05); 
-        box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.05);
-        width: fit-content;
-        height: fit-content;
-    }
-}
-
-section.splashScreen.test {
-    animation: splashScreenAnimation 1s forwards ease;
-}
-*/
-
-@keyframes splashScreenAnimation {
-    0% {transform: translateX(0rem);}
-    100% {transform: translateX(-200rem);}
-}
-
 main {
     height: 100vh;
 
@@ -430,12 +398,6 @@ section.about.active {
 @keyframes tanUnderlineAnimation {
     @include tanUnderlineAnimation;
 }
-
-
-
-
-
-
 
 
 
