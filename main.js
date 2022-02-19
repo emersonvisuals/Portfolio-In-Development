@@ -200,3 +200,11 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   sections.forEach(section => {
     observer.observe(section);
   });
+
+
+// my work
+const myWorkButton = document.querySelector('button.myWork');
+
+myWorkButton.addEventListener('click', () => {
+  window.scrollTo(0, 700);
+});
