@@ -550,6 +550,7 @@ section.about.active {
 
 @media only screen and (max-width: 650px) {
     main {
+        height: 100%;
 
         nav {
             @include navBarMobile;
@@ -611,13 +612,13 @@ section.about.active {
             overflow-x: hidden;
             overflow-y: hidden;
             position: fixed;
-            top: 50rem;
+            top: 35rem;
             right: -5rem;
             z-index: -1;
 
             svg {
                 height: auto;
-                width: 40rem;
+                width: 35rem;
             }
         }
         
