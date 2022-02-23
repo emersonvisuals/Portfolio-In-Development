@@ -881,7 +881,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     }
 
     @mixin defaultFooterMobile {
-        height: calc(100vh - 8rem);
+        height: calc(100%);
         background-color: $darkBlue;
         display: flex;
         flex-direction: column;
@@ -898,6 +898,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            padding: 11.5rem 0;
 
             h1 {
                 @include footerHeading;

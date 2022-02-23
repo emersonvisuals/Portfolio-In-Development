@@ -2196,7 +2196,7 @@ section.about.active .aboutGridContainer {
     display: none;
   }
   footer {
-    height: calc(100vh - 8rem);
+    height: calc(100%);
     background-color: #101011;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2230,6 +2230,7 @@ section.about.active .aboutGridContainer {
         -ms-flex-pack: center;
             justify-content: center;
     flex-direction: column;
+    padding: 11.5rem 0;
   }
   footer .footerList h1 {
     font-size: clamp(2rem, 1.2vw, 2.2rem);
@@ -2545,7 +2546,7 @@ section.about.active .aboutGridContainer {
     padding-bottom: 50rem;
   }
   footer {
-    height: calc(100vh - 8rem);
+    height: calc(100%);
     background-color: #101011;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2579,6 +2580,7 @@ section.about.active .aboutGridContainer {
         -ms-flex-pack: center;
             justify-content: center;
     flex-direction: column;
+    padding: 11.5rem 0;
   }
   footer .footerList h1 {
     font-size: clamp(2rem, 1.2vw, 2.2rem);
