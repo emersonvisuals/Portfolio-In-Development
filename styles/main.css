@@ -2461,7 +2461,7 @@ section.about.active .aboutGridContainer {
     overflow-x: hidden;
     overflow-y: hidden;
     position: fixed;
-    top: 40rem;
+    top: 45rem;
     right: -5rem;
     z-index: -1;
   }
