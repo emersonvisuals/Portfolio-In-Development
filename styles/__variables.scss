@@ -206,6 +206,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         .desktopLogo {
             img {
                 width: 28rem;
+                cursor: pointer;
             }
         }
 
@@ -451,6 +452,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             position: absolute;
             left: 10vw;
             top: 3rem;
+            cursor: pointer;
         }
 
         .mobileTrigger {
@@ -745,6 +747,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             img {
                 width: auto;
                 height: 5vh;
+                cursor: pointer;
             }
         }
     
@@ -874,16 +877,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
     }
 
     @mixin defaultFooterTablet {
-        height: 40rem;
-        padding: $ipadPadding;
-
-        .logo {
-
-            img {
-                width: auto;
-                height: 4vh;
-            }
-        }
+        @include defaultFooterMobile;
     }
 
     @mixin defaultFooterMobile {

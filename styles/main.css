@@ -43,6 +43,7 @@ main nav .mobileLogo {
 
 main nav .desktopLogo img {
   width: 28rem;
+  cursor: pointer;
 }
 
 main nav .navList {
@@ -616,7 +617,7 @@ main .background svg {
 }
 
 section.portfolio {
-  height: calc(100vh - 4rem);
+  height: 100vh;
   padding: 0 13vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,6 +1204,7 @@ footer {
 footer .logo img {
   width: auto;
   height: 5vh;
+  cursor: pointer;
 }
 
 footer .footerList {
@@ -1787,6 +1789,7 @@ section.about.active .aboutGridContainer {
     position: absolute;
     left: 10vw;
     top: 3rem;
+    cursor: pointer;
   }
   main nav .mobileTrigger {
     display: initial;
@@ -2124,12 +2127,115 @@ section.about.active .aboutGridContainer {
     width: 30%;
   }
   footer {
-    height: 40rem;
-    padding: 0 10vw;
+    height: calc(100vh - 8rem);
+    background-color: #101011;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  footer .logo img {
-    width: auto;
-    height: 4vh;
+  footer .logo {
+    display: none;
+  }
+  footer .footerList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    flex-direction: column;
+  }
+  footer .footerList h1 {
+    font-size: clamp(2rem, 1.2vw, 2.2rem);
+    font-family: poppins;
+    font-weight: 700;
+    color: #1C56A3;
+    text-transform: capitalize;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footerList ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  }
+  footer .footerList li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  }
+  footer .footerList a {
+    font-family: poppins;
+    font-size: clamp(1.25rem, 0.8vw, 1.5rem);
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    list-style: none;
+    line-height: 2.75rem;
+  }
+  footer .footerList .footerPortfolio {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  footer .footerList .footerSocials {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  footer .footerList .footerContact {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
   }
 }
 

@@ -202,9 +202,42 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   });
 
 
-// my work
-const myWorkButton = document.querySelector('button.myWork');
+// scroll on click
+const footerLogo = document.querySelector('div.logo');
+const desktopLogo = document.querySelector('.desktopLogo');
+const mobileLogo = document.querySelector('.mobileLogo');
+const myWork = document.querySelector('button.myWork');
+const portfolioSection = document.querySelector('#scroll.portfolio');
 
-myWorkButton.addEventListener('click', () => {
-  window.scrollTo(0, 700);
+console.log(portfolioSection);
+
+footerLogo.addEventListener('click', function(){
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior: 'smooth'
+  });
 });
+
+desktopLogo.addEventListener('click', function(){
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior: 'smooth'
+  });
+});
+
+mobileLogo.addEventListener('click', function(){
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior: 'smooth'
+  });
+});
+
+
+myWork.addEventListener('click', navigateFourth, false);
+
+function navigateFourth(e) {
+  portfolioSection.scrollIntoView();
+}
