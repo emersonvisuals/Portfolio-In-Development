@@ -440,6 +440,61 @@ section.about.active {
         padding-bottom: 30rem;
 
         .container {
+            .marqueeOne {
+
+                span {
+                    @include marqueeMobile;
+                 }
+
+            }
+
+            .marqueeTwo {
+
+                span {
+                    @include marqueeMobile;
+                 }
+
+            }
+
+            .marqueeThree {
+
+                span {
+                    @include marqueeMobile;
+                 }
+
+            }
+
+            .marqueeFour {
+
+                span {
+                    @include marqueeMobile;
+                 }
+
+            }
+
+            .marqueeFive {
+
+                span {
+                    @include marqueeMobile;
+                 }
+
+            }
+
+            .marqueeSix {
+
+                span {
+                    @include marqueeMobile;
+                 }
+
+            }
+
+            .marqueeSeven {
+
+                span {
+                    @include marqueeMobile;
+                 }
+
+            }
 
             .marqueeSix {
                 display: inherit;

@@ -2098,6 +2098,69 @@ section.about.active .aboutGridContainer {
     padding: 0 10vw;
     padding-bottom: 30rem;
   }
+  section.portfolio .container .marqueeOne span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  section.portfolio .container .marqueeTwo span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  section.portfolio .container .marqueeThree span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  section.portfolio .container .marqueeFour span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  section.portfolio .container .marqueeFive span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  section.portfolio .container .marqueeSix span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  section.portfolio .container .marqueeSeven span {
+    font-size: 5rem;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
   section.portfolio .container .marqueeSix {
     display: inherit;
   }

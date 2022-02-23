@@ -237,18 +237,25 @@ mobileLogo.addEventListener('click', function(){
 
 
 
-const mediaQuery = window.matchMedia('(max-width: 1024px)')
+const mediaQuery01 = window.matchMedia("(max-width: 1024px) and (min-width: 651px)");
+const mediaQuery02 = window.matchMedia("(max-width: 650px)");
 
 
-const yOffset = -150; 
-const y = portfolioSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+const yOffset01 = -250; 
+const y01 = portfolioSection.getBoundingClientRect().top + window.pageYOffset + yOffset01;
+
+const yOffset02 = -170; 
+const y02 = portfolioSection.getBoundingClientRect().top + window.pageYOffset + yOffset02;
+
 
 
 myWork.addEventListener('click', navigateFourth, false);
 
 function navigateFourth(e) {
-  if (mediaQuery.matches) {
-    window.scrollTo({top: y, behavior: 'smooth'});
+  if (mediaQuery01.matches) {
+    window.scrollTo({top: y01, behavior: 'smooth'});
+  } else if (mediaQuery02.matches) {
+    window.scrollTo({top: y02, behavior: 'smooth'});
   } else {
     portfolioSection.scrollIntoView({behavior: 'smooth', top:0});
   }
