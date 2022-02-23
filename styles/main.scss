@@ -608,10 +608,13 @@ section.about.active {
         }
 
         .background {
-            @include backgroundLogo;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            position: fixed;
             bottom: 5rem;
             right: -5rem;
-
+            z-index: -1;
+            
             svg {
                 height: auto;
                 width: 35rem;
