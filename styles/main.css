@@ -606,14 +606,14 @@ main .background {
   overflow-x: hidden;
   overflow-y: hidden;
   position: fixed;
-  bottom: 5rem;
-  right: -5rem;
+  bottom: 5%;
+  right: -5%;
   z-index: -1;
 }
 
 main .background svg {
   height: auto;
-  width: 50rem;
+  width: 60rem;
 }
 
 section.portfolio {

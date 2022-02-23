@@ -49,13 +49,13 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         overflow-x: hidden;
         overflow-y: hidden;
         position: fixed;
-        bottom:5rem;
-        right: -5rem;
+        bottom:5%;
+        right: -5%;
         z-index: -1;
 
         svg {
             height: auto;
-            width: 50rem;
+            width: 60rem;
         }
     }
 
