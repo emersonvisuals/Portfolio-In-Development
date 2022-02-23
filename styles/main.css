@@ -613,7 +613,7 @@ main .background {
 
 main .background svg {
   height: auto;
-  width: 60rem;
+  width: 55rem;
 }
 
 section.portfolio {
@@ -2455,11 +2455,20 @@ section.about.active .aboutGridContainer {
     width: 10rem;
   }
   main .background {
-    top: 47.5rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: fixed;
+    bottom: 5%;
+    right: -5%;
+    z-index: -1;
   }
   main .background svg {
     height: auto;
-    width: 38rem;
+    width: 55rem;
+  }
+  main .background svg {
+    height: auto;
+    width: 35rem;
   }
   section.portfolio {
     height: 100%;

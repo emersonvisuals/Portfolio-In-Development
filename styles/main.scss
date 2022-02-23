@@ -608,13 +608,14 @@ section.about.active {
         }
 
         .background {
-            top:47.5rem;
+            @include backgroundLogo;
 
             svg {
                 height: auto;
-                width: 38rem;
+                width: 35rem;
             }
         }
+        
     }
 
     section.portfolio {
