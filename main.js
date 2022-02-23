@@ -239,5 +239,5 @@ mobileLogo.addEventListener('click', function(){
 myWork.addEventListener('click', navigateFourth, false);
 
 function navigateFourth(e) {
-  portfolioSection.scrollIntoView();
+  portfolioSection.scrollIntoView({behavior: 'smooth'});
 }
