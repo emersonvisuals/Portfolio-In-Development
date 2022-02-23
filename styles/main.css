@@ -2458,13 +2458,13 @@ section.about.active .aboutGridContainer {
     overflow-x: hidden;
     overflow-y: hidden;
     position: fixed;
-    top: 65%;
-    right: -5%;
+    top: 50rem;
+    right: -5rem;
     z-index: -1;
   }
   main .background svg {
     height: auto;
-    width: 40rem;
+    width: 45rem;
   }
   section.portfolio {
     height: 100%;
