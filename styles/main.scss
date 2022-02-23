@@ -609,6 +609,8 @@ section.about.active {
 
         .background {
             @include backgroundLogo;
+            bottom: 5rem;
+            right: -5rem;
 
             svg {
                 height: auto;

@@ -2461,6 +2461,8 @@ section.about.active .aboutGridContainer {
     bottom: 5%;
     right: -5%;
     z-index: -1;
+    bottom: 5rem;
+    right: -5rem;
   }
   main .background svg {
     height: auto;
