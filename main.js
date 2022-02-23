@@ -236,8 +236,20 @@ mobileLogo.addEventListener('click', function(){
 });
 
 
+
+const mediaQuery = window.matchMedia('(max-width: 1024px)')
+
+
+const yOffset = -150; 
+const y = portfolioSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+
 myWork.addEventListener('click', navigateFourth, false);
 
 function navigateFourth(e) {
-  portfolioSection.scrollIntoView({behavior: 'smooth'});
+  if (mediaQuery.matches) {
+    window.scrollTo({top: y, behavior: 'smooth'});
+  } else {
+    portfolioSection.scrollIntoView({behavior: 'smooth', top:0});
+  }
 }

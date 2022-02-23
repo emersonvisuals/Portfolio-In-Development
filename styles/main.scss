@@ -435,7 +435,7 @@ section.about.active {
     }
 
     section.portfolio {
-        height: 100%;
+        height: 60%;
         padding: $ipadPadding;
         padding-bottom: 30rem;
 
@@ -448,6 +448,10 @@ section.about.active {
             .marqueeSeven {
                 display: inherit;
             }
+        }
+        
+        .animationSection {
+            display: none;
         }
     }
 
@@ -476,7 +480,10 @@ section.about.active {
                     width: 30%;
                 }
             }
+        }
 
+        .animationSectionAbout {
+            display: none;
         }
     }
 
@@ -556,6 +563,7 @@ section.about.active {
     }
 
     section.portfolio {
+        height: 100%;
         padding: $mobilePadding;
         padding-bottom: 30rem;
 
@@ -626,10 +634,6 @@ section.about.active {
     section.about {
         padding: $mobilePadding;
         padding-bottom: 50rem;
-
-        .animationSectionAbout {
-            display: none;
-        }
     }
 
     footer {
