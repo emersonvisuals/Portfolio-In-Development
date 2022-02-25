@@ -326,6 +326,7 @@ section.about {
                 height: 100%;
                 margin: 0;
                 height: auto;
+                position: relative;
 
                 p {
                     @include paragraph;
@@ -333,24 +334,29 @@ section.about {
                     padding:0;
                 }
 
-                .signatureIcon {
-                    width: calc(100% - 15rem);
-                    height: auto;
-                }
+                .contentContainer {
+                    position: absolute;
+                    bottom: 0;
+                    
+                    .signatureIcon {
+                        width: calc(100% - 15rem);
+                        height: auto;
+                    }
 
-                .viewMore {
-                    @include buttonNeutral;
-                    text-transform: capitalize;
-                    width: 100%;
-                }
+                    .viewMore {
+                        @include buttonNeutral;
+                        text-transform: capitalize;
+                        width: 100%;
+                    }
 
-                .viewMore:hover {
-                    @include buttonNeutralHover;
-                    width: 100%;
+                    .viewMore:hover {
+                        @include buttonNeutralHover;
+                        width: 100%;
+                    }
                 }
             }
-    }
-
+        }
+    
 }
 
 footer {
@@ -530,9 +536,14 @@ section.about.active {
             "details details";
 
             .details {
+                position: initial;
 
-                .signatureIcon {
-                    width: 30%;
+                .contentContainer {
+                    position: initial;
+
+                    .signatureIcon {
+                        width: 30%;
+                    }
                 }
             }
         }

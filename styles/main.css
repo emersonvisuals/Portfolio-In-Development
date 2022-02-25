@@ -1139,6 +1139,7 @@ section.about .aboutGridContainer .details {
   height: 100%;
   margin: 0;
   height: auto;
+  position: relative;
 }
 
 section.about .aboutGridContainer .details p {
@@ -1150,12 +1151,17 @@ section.about .aboutGridContainer .details p {
   padding: 0;
 }
 
-section.about .aboutGridContainer .details .signatureIcon {
+section.about .aboutGridContainer .details .contentContainer {
+  position: absolute;
+  bottom: 0;
+}
+
+section.about .aboutGridContainer .details .contentContainer .signatureIcon {
   width: calc(100% - 15rem);
   height: auto;
 }
 
-section.about .aboutGridContainer .details .viewMore {
+section.about .aboutGridContainer .details .contentContainer .viewMore {
   background-color: transparent;
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
@@ -1170,7 +1176,7 @@ section.about .aboutGridContainer .details .viewMore {
   width: 100%;
 }
 
-section.about .aboutGridContainer .details .viewMore:hover {
+section.about .aboutGridContainer .details .contentContainer .viewMore:hover {
   background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
@@ -2189,7 +2195,13 @@ section.about.active .aboutGridContainer {
     grid-row-gap: 1rem;
         grid-template-areas: "imageOne imageTwo" "imageOne imageThree" "details details";
   }
-  section.about .aboutGridContainer .details .signatureIcon {
+  section.about .aboutGridContainer .details {
+    position: initial;
+  }
+  section.about .aboutGridContainer .details .contentContainer {
+    position: initial;
+  }
+  section.about .aboutGridContainer .details .contentContainer .signatureIcon {
     width: 30%;
   }
   section.about .animationSectionAbout {
