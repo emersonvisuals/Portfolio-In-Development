@@ -1,9 +1,9 @@
 @import "./_variables";
+@import "./_keyframes";
+
 
 body {
-    padding: 0;
-    margin: 0;
-    overflow-x:hidden;
+    @include body;
 }
 
 html {
@@ -370,7 +370,7 @@ section.portfolio.active {
     }
 
     .titleContainer {
-
+        
         .title {
             @include lineAnimationTitleAfter;
         }
@@ -388,28 +388,6 @@ section.about.active {
         transition: 0.5s all;
     }
 }
-
-@keyframes boxOneAnimation {
-    @include scroll;
-}
-
-@keyframes portfolioAnimation {
-    @include scroll;
-}
-
-@keyframes blink {
-    @include blink;
-}
-
-@keyframes boxTwoAnimation {
-    @include slideRight;
-}
-
-@keyframes tanUnderlineAnimation {
-    @include tanUnderlineAnimation;
-}
-
-
 
 @media only screen and (max-width: 1024px) {
 

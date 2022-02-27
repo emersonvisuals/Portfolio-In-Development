@@ -43,12 +43,24 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 
 
 // mobile toggle
-  const trigger = document.querySelector('.mobileTrigger');
+  const trigger = document.querySelector('.trigger');
   const toggle = document.querySelector('.mobileToggle');
+  const mobileNav = document.querySelector('nav');
+  const navList = document.querySelector('div.navList');
+  const navPortfolio = document.querySelector('.navPortfolio');
 
   trigger.addEventListener('click', function(){
     toggle.classList.toggle('active');
   });
+  
+  window.addEventListener('click', function(e){
+    console.log(e.target);
+    if (e.target !== trigger && e.target !== mobileNav && e.target !== navList &&  e.target !== navPortfolio) {
+      mobileNav.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+  
 
 
 // desktop portfolio nav toggle

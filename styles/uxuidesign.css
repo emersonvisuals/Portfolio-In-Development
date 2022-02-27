@@ -527,7 +527,7 @@ main nav .mobileTrigger {
   display: none;
 }
 
-main nav .navList a.navHome::before {
+main nav .navList li.navPortfolio::before {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
@@ -535,180 +535,47 @@ main nav .navList a.navHome::before {
 main header {
   padding: 0 13vw;
   height: 100vh;
-}
-
-main header .boxesContainer {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  z-index: 2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-main header .boxesContainer .boxOne {
-  -webkit-animation: boxOneAnimation 1s;
-          animation: boxOneAnimation 1s;
+main header .title ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
 }
 
-main header .boxesContainer .boxOne .description p {
-  font-size: clamp(1.25rem, 1.25vw, 2.7rem);
-  font-family: poppins;
-  margin: 1.25rem 0;
+main header .title ul li {
+  margin: -8rem 0;
 }
 
-main header .boxesContainer .boxOne .description p::before {
-  content: '';
-  width: clamp(33rem, 35vw, 82rem);
-  height: clamp(0.75vh, 1vw, 1.75vh);
-  background-color: #f4eee1;
-  position: absolute;
-  z-index: -1;
-  border-radius: 2rem;
-  -webkit-animation: tanUnderlineAnimation 2s;
-          animation: tanUnderlineAnimation 2s;
-}
-
-main header .boxesContainer .boxOne .typingEffect h1 {
-  font-size: clamp(5.95rem, 6vw, 12.5rem);
-  color: #1C56A3;
-  font-family: poppins;
-  margin: 0;
-}
-
-main header .boxesContainer .boxOne .typingEffect .typed-text {
+main header .title ul li h1 {
   font-size: clamp(5.95rem, 6vw, 12.5rem);
   color: #101011;
   font-family: poppins;
 }
 
-main header .boxesContainer .boxOne .typingEffect .cursor {
-  display: inline-block;
-  background-color: #1C56A3;
-  margin-left: 0.1rem;
-  width: 3px;
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
-  z-index: 1;
-}
-
-main header .boxesContainer .boxOne .typingEffect .cursor.typing {
-  -webkit-animation: none;
-          animation: none;
-  z-index: 1;
-}
-
-main header .boxesContainer .boxOne .title {
-  margin: -8% 0;
-}
-
-main header .boxesContainer .boxOne .title h1 {
-  font-size: clamp(5.95rem, 6vw, 12.5rem);
-  color: #101011;
-  font-family: poppins;
-  text-transform: capitalize;
-}
-
-main header .boxesContainer .boxOne .title span {
+main header .title ul li span {
   font-size: clamp(5.95rem, 6vw, 12.5rem);
   color: #1C56A3;
   font-family: poppins;
 }
 
-main header .boxesContainer .boxOne .details {
-  padding: 1rem 0 0 0;
+main header .title ul li h1.titleOutline {
+  -webkit-text-stroke: 1px #101011;
+  color: transparent;
 }
 
-main header .boxesContainer .boxOne .details .myWork {
-  background-color: transparent;
-  padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
-  border-radius: 5rem;
-  font-family: poppins;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
-  color: #1C56A3;
-  border: 1px solid #1C56A3;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
-  transition: 0.25s all;
-  text-transform: capitalize;
-}
-
-main header .boxesContainer .boxOne .details .myWork:hover {
-  background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
-  padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
-  border-radius: 5rem;
-  font-family: poppins;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
-  cursor: pointer;
-  transition: 0.25s all;
-}
-
-main header .boxesContainer .boxOne .details .letschatButton {
-  background-color: transparent;
-  border: none;
-  font-family: poppins;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
-  color: #1C56A3;
-  cursor: pointer;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
-  text-transform: capitalize;
-  margin: 0 0 0 3rem;
-}
-
-main header .boxesContainer .boxOne .details .letschatButton::before {
-  content: '';
-  position: absolute;
-  background-color: #1C56A3;
-  width: 2rem;
-  height: 1rem;
-  margin: clamp(0rem, 1.75em, 4.25rem) 0 0 0;
-  cursor: pointer;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-
-main header .boxesContainer .boxOne .details .letschatButton:hover:before {
-  content: '';
-  position: absolute;
-  background-color: #1C56A3;
-  width: 2rem;
-  height: 1rem;
-  margin: clamp(0rem, 1.75em, 4.25rem) 0 0 0;
-  cursor: pointer;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-}
-
-main header .boxesContainer .boxTwo {
-  -webkit-animation: boxTwoAnimation 1s;
-          animation: boxTwoAnimation 1s;
-  position: relative;
-  z-index: 1;
-}
-
-main header .boxesContainer .boxTwo img {
-  width: auto;
-  height: clamp(25rem, 26vw, 45rem);
+main header .title ul li h1.titleOutline span {
+  -webkit-text-stroke: 1px #1C56A3;
+  color: transparent;
 }
 
 main header .portfolioBelow {
@@ -736,26 +603,16 @@ main .background svg {
   width: 55rem;
 }
 
-section.portfolio {
+section.sectionOne {
   height: 100vh;
   padding: 0 13vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-section.portfolio .titleContainer {
+section.sectionOne .titleContainer {
   position: relative;
 }
 
-section.portfolio .titleContainer .title {
+section.sectionOne .titleContainer .title {
   opacity: 0%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -763,7 +620,7 @@ section.portfolio .titleContainer .title {
           transform: translateY(-3rem);
 }
 
-section.portfolio .titleContainer .title h1 {
+section.sectionOne .titleContainer .title h1 {
   text-transform: capitalize;
   font-size: clamp(3.75rem, 3.75vw, 6.5rem);
   font-weight: 700;
@@ -771,23 +628,7 @@ section.portfolio .titleContainer .title h1 {
   padding: 0;
 }
 
-section.portfolio .titleContainer .animationSection .lineAnimationContainer {
-  position: absolute;
-  overflow: hidden;
-  z-index: -2;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-section.portfolio .titleContainer .animationSection .lineAnimationContainer svg {
-  height: auto;
-  width: clamp(75vw, 80vw, 85vw);
-  margin: 0;
-  z-index: -2;
-}
-
-section.portfolio .container {
+section.sectionOne .container {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -801,15 +642,15 @@ section.portfolio .container {
   box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
 }
 
-section.portfolio .container a {
+section.sectionOne .container a {
   text-decoration: none;
 }
 
-section.portfolio .container .marqueeOne {
+section.sectionOne .container .marqueeOne {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeOne span {
+section.sectionOne .container .marqueeOne span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -823,41 +664,41 @@ section.portfolio .container .marqueeOne span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeOne .uxuiDesign:hover {
+section.sectionOne .container .marqueeOne .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeOne .graphicDesign:hover {
+section.sectionOne .container .marqueeOne .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeOne .architecture:hover {
+section.sectionOne .container .marqueeOne .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeOne .frontendDevelopment:hover {
+section.sectionOne .container .marqueeOne .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeOne .digitalArtwork:hover {
+section.sectionOne .container .marqueeOne .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo {
+section.sectionOne .container .marqueeTwo {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeTwo span {
+section.sectionOne .container .marqueeTwo span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -871,41 +712,41 @@ section.portfolio .container .marqueeTwo span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeTwo .uxuiDesign:hover {
+section.sectionOne .container .marqueeTwo .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo .graphicDesign:hover {
+section.sectionOne .container .marqueeTwo .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo .architecture:hover {
+section.sectionOne .container .marqueeTwo .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo .frontendDevelopment:hover {
+section.sectionOne .container .marqueeTwo .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeTwo .digitalArtwork:hover {
+section.sectionOne .container .marqueeTwo .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree {
+section.sectionOne .container .marqueeThree {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeThree span {
+section.sectionOne .container .marqueeThree span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -919,41 +760,41 @@ section.portfolio .container .marqueeThree span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeThree .uxuiDesign:hover {
+section.sectionOne .container .marqueeThree .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree .graphicDesign:hover {
+section.sectionOne .container .marqueeThree .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree .architecture:hover {
+section.sectionOne .container .marqueeThree .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree .frontendDevelopment:hover {
+section.sectionOne .container .marqueeThree .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeThree .digitalArtwork:hover {
+section.sectionOne .container .marqueeThree .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour {
+section.sectionOne .container .marqueeFour {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeFour span {
+section.sectionOne .container .marqueeFour span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -967,41 +808,41 @@ section.portfolio .container .marqueeFour span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeFour .uxuiDesign:hover {
+section.sectionOne .container .marqueeFour .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour .graphicDesign:hover {
+section.sectionOne .container .marqueeFour .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour .architecture:hover {
+section.sectionOne .container .marqueeFour .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour .frontendDevelopment:hover {
+section.sectionOne .container .marqueeFour .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFour .digitalArtwork:hover {
+section.sectionOne .container .marqueeFour .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive {
+section.sectionOne .container .marqueeFive {
   overflow: hidden;
 }
 
-section.portfolio .container .marqueeFive span {
+section.sectionOne .container .marqueeFive span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -1015,91 +856,42 @@ section.portfolio .container .marqueeFive span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeFive .uxuiDesign:hover {
+section.sectionOne .container .marqueeFive .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive .graphicDesign:hover {
+section.sectionOne .container .marqueeFive .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive .architecture:hover {
+section.sectionOne .container .marqueeFive .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive .frontendDevelopment:hover {
+section.sectionOne .container .marqueeFive .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeFive .digitalArtwork:hover {
+section.sectionOne .container .marqueeFive .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSix {
-  overflow: hidden;
-  display: none;
-}
-
-section.portfolio .container .marqueeSix span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.portfolio .container .marqueeSix .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSix .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSix .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSix .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSix .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.portfolio .container .marqueeSeven {
+section.sectionOne .container .marqueeSix {
   overflow: hidden;
   display: none;
 }
 
-section.portfolio .container .marqueeSeven span {
+section.sectionOne .container .marqueeSix span {
   text-transform: capitalize;
   font-size: clamp(6rem, 4.25vw, 8rem);
   font-weight: 700;
@@ -1113,59 +905,95 @@ section.portfolio .container .marqueeSeven span {
   padding: 1rem;
 }
 
-section.portfolio .container .marqueeSeven .uxuiDesign:hover {
+section.sectionOne .container .marqueeSix .uxuiDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSeven .graphicDesign:hover {
+section.sectionOne .container .marqueeSix .graphicDesign:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSeven .architecture:hover {
+section.sectionOne .container .marqueeSix .architecture:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSeven .frontendDevelopment:hover {
+section.sectionOne .container .marqueeSix .frontendDevelopment:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.portfolio .container .marqueeSeven .digitalArtwork:hover {
+section.sectionOne .container .marqueeSix .digitalArtwork:hover {
   color: #FFFFFF;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.about {
+section.sectionOne .container .marqueeSeven {
+  overflow: hidden;
+  display: none;
+}
+
+section.sectionOne .container .marqueeSeven span {
+  text-transform: capitalize;
+  font-size: clamp(6rem, 4.25vw, 8rem);
+  font-weight: 700;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+  color: transparent;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+section.sectionOne .container .marqueeSeven .uxuiDesign:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+section.sectionOne .container .marqueeSeven .graphicDesign:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+section.sectionOne .container .marqueeSeven .architecture:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+section.sectionOne .container .marqueeSeven .frontendDevelopment:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+section.sectionOne .container .marqueeSeven .digitalArtwork:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+section.sectionTwo {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 0 13vw;
 }
 
-section.about .titleContainerAbout {
+section.sectionTwo .titleContainerAbout {
   position: relative;
 }
 
-section.about .titleContainerAbout .aboutTitle {
+section.sectionTwo .titleContainerAbout .aboutTitle {
   opacity: 0%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -1173,7 +1001,7 @@ section.about .titleContainerAbout .aboutTitle {
           transform: translateY(-3rem);
 }
 
-section.about .titleContainerAbout .aboutTitle h1 {
+section.sectionTwo .titleContainerAbout .aboutTitle h1 {
   text-transform: capitalize;
   font-size: clamp(3.75rem, 3.75vw, 6.5rem);
   font-weight: 700;
@@ -1181,7 +1009,7 @@ section.about .titleContainerAbout .aboutTitle h1 {
   padding: 0;
 }
 
-section.about .titleContainerAbout .animationSectionAbout .lineAnimationContainerAbout {
+section.sectionTwo .titleContainerAbout .animationSectionAbout .lineAnimationContainerAbout {
   position: absolute;
   overflow: hidden;
   z-index: -2;
@@ -1190,14 +1018,14 @@ section.about .titleContainerAbout .animationSectionAbout .lineAnimationContaine
   text-align: center;
 }
 
-section.about .titleContainerAbout .animationSectionAbout .lineAnimationContainerAbout svg {
+section.sectionTwo .titleContainerAbout .animationSectionAbout .lineAnimationContainerAbout svg {
   height: auto;
   width: clamp(70vw, 75vw, 80vw);
   margin: 0;
   z-index: -2;
 }
 
-section.about .aboutGridContainer {
+section.sectionTwo .aboutGridContainer {
   height: 60vh;
   display: -ms-grid;
   display: grid;
@@ -1207,13 +1035,13 @@ section.about .aboutGridContainer {
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
   grid-row-gap: 1rem;
-      grid-template-areas: "imageOne imageTwo details" "imageOne imageThree details";
+      grid-template-areas: "imageOne imageTwo details" "imageOne imageThree details";
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-section.about .aboutGridContainer .aboutImageOne {
+section.sectionTwo .aboutGridContainer .aboutImageOne {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -1226,7 +1054,7 @@ section.about .aboutGridContainer .aboutImageOne {
   background-repeat: no-repeat;
 }
 
-section.about .aboutGridContainer .aboutImageTwo {
+section.sectionTwo .aboutGridContainer .aboutImageTwo {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: imageTwo;
@@ -1238,7 +1066,7 @@ section.about .aboutGridContainer .aboutImageTwo {
   background-repeat: no-repeat;
 }
 
-section.about .aboutGridContainer .aboutImageThree {
+section.sectionTwo .aboutGridContainer .aboutImageThree {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: imageThree;
@@ -1250,7 +1078,7 @@ section.about .aboutGridContainer .aboutImageThree {
   background-repeat: no-repeat;
 }
 
-section.about .aboutGridContainer .details {
+section.sectionTwo .aboutGridContainer .details {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -1262,7 +1090,7 @@ section.about .aboutGridContainer .details {
   position: relative;
 }
 
-section.about .aboutGridContainer .details p {
+section.sectionTwo .aboutGridContainer .details p {
   font-size: clamp(1.19rem, 0.9vw, 2rem);
   font-family: poppins;
   line-height: clamp(3rem, 2vw, 4rem);
@@ -1271,17 +1099,17 @@ section.about .aboutGridContainer .details p {
   padding: 0;
 }
 
-section.about .aboutGridContainer .details .contentContainer {
+section.sectionTwo .aboutGridContainer .details .contentContainer {
   position: absolute;
   bottom: 0;
 }
 
-section.about .aboutGridContainer .details .contentContainer .signatureIcon {
+section.sectionTwo .aboutGridContainer .details .contentContainer .signatureIcon {
   width: calc(100% - 15rem);
   height: auto;
 }
 
-section.about .aboutGridContainer .details .contentContainer .viewMore {
+section.sectionTwo .aboutGridContainer .details .contentContainer .viewMore {
   background-color: transparent;
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
@@ -1296,7 +1124,7 @@ section.about .aboutGridContainer .details .contentContainer .viewMore {
   width: 100%;
 }
 
-section.about .aboutGridContainer .details .contentContainer .viewMore:hover {
+section.sectionTwo .aboutGridContainer .details .contentContainer .viewMore:hover {
   background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
   padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
   border-radius: 5rem;
@@ -1623,7 +1451,7 @@ footer .footerList .footerContact a.footerLinkedin:hover:before {
   width: 5rem;
 }
 
-section.portfolio.active .container {
+section.sectionOne.active .container {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -1631,7 +1459,7 @@ section.portfolio.active .container {
           transform: translateY(0rem);
 }
 
-section.portfolio.active .titleContainer .title {
+section.sectionOne.active .titleContainer .title {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -1639,7 +1467,7 @@ section.portfolio.active .titleContainer .title {
           transform: translateY(0rem);
 }
 
-section.about.active .aboutTitle {
+section.sectionTwo.active .aboutTitle {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -1647,7 +1475,7 @@ section.about.active .aboutTitle {
           transform: translateY(0rem);
 }
 
-section.about.active .aboutGridContainer {
+section.sectionTwo.active .aboutGridContainer {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -1659,15 +1487,6 @@ section.about.active .aboutGridContainer {
   }
   main header {
     padding: 0 10vw;
-  }
-  main header .portfolioBelow {
-    position: absolute;
-    top: 85%;
-    left: calc(50% - 6rem);
-  }
-  main header .portfolioBelow img {
-    width: 12rem;
-    height: auto;
   }
   main nav {
     display: -webkit-box;
@@ -2113,113 +1932,13 @@ section.about.active .aboutGridContainer {
     top: 0rem;
     transition: 0.5s all;
   }
-  section.portfolio {
-    height: 60%;
-    padding: 0 10vw;
-    padding-bottom: 30rem;
-  }
-  section.portfolio .container .marqueeOne span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeTwo span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeThree span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeFour span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeFive span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeSix span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeSeven span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeSix {
-    display: inherit;
-  }
-  section.portfolio .container .marqueeSeven {
-    display: inherit;
-  }
-  section.portfolio .animationSection {
-    display: none;
-  }
-  section.about {
-    padding: 0 10vw;
-    padding-bottom: 50rem;
+  section.sectionOne {
     height: 100%;
+    padding: 0 10vw;
   }
-  section.about .aboutGridContainer {
-    height: clamp(30rem, 60vw, 50rem);
-    display: -ms-grid;
-    display: grid;
-    padding: 0;
-    margin: 0;
-    -ms-grid-columns: calc(40% - 1rem) 60%;
-        grid-template-columns: calc(40% - 1rem) 60%;
-    grid-column-gap: 1rem;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
-    grid-row-gap: 1rem;
-        grid-template-areas: "imageOne imageTwo" "imageOne imageThree" "details details";
-  }
-  section.about .aboutGridContainer .details {
-    position: initial;
-  }
-  section.about .aboutGridContainer .details .contentContainer {
-    position: initial;
-  }
-  section.about .aboutGridContainer .details .contentContainer .signatureIcon {
-    width: 30%;
-  }
-  section.about .animationSectionAbout {
-    display: none;
+  section.sectionTwo {
+    height: 100%;
+    padding: 0 10vw;
   }
   footer {
     height: calc(100%);
@@ -2444,46 +2163,6 @@ section.about.active .aboutGridContainer {
   main header {
     padding: 0 7vw;
   }
-  main header .boxesContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  main header .boxesContainer .boxOne {
-    width: 100%;
-    padding: 0 0 5rem 0;
-  }
-  main header .boxesContainer .boxOne .description p {
-    font-size: clamp(1.19rem, 0.9vw, 2rem);
-  }
-  main header .boxesContainer .boxOne .typingEffect {
-    padding: 0 0 1rem 0;
-  }
-  main header .boxesContainer .boxOne .typingEffect .typingEffectOne::after {
-    content: "\a";
-    white-space: pre;
-  }
-  main header .boxesContainer .boxTwo {
-    display: none;
-  }
-  main header .portfolioBelow {
-    position: absolute;
-    top: 62.5rem;
-    left: calc(50% - 5rem);
-  }
-  main header .portfolioBelow img {
-    width: 10rem;
-  }
   main .background {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -2496,80 +2175,13 @@ section.about.active .aboutGridContainer {
     height: auto;
     width: 35rem;
   }
-  section.portfolio {
+  section.sectionOne {
     height: 100%;
     padding: 0 7vw;
-    padding-bottom: 30rem;
   }
-  section.portfolio .animationSection {
-    display: none;
-  }
-  section.portfolio .container .marqueeOne span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeTwo span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeThree span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeFour span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeFive span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeSix span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.portfolio .container .marqueeSeven span {
-    font-size: 5rem;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: transparent;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
-  }
-  section.about {
+  section.sectionTwo {
+    height: 100%;
     padding: 0 7vw;
-    padding-bottom: 50rem;
   }
   footer {
     height: calc(100%);
@@ -2684,4 +2296,4 @@ section.about.active .aboutGridContainer {
     margin: 0;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=uxuidesign.css.map */

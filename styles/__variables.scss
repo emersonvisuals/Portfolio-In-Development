@@ -37,11 +37,52 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
 
 // body default 
+
+    @mixin body {
+        padding: 0;
+        margin: 0;
+        overflow-x:hidden;
+    }
+    
     @mixin bodyDefault {
         font-size: 62.5%;
         box-sizing: border-box;
         font-family: $fontFamily;
         scroll-behavior: smooth;
+    }
+
+// main default 
+    @mixin main {
+        height: 100%;
+    }
+
+// section default
+    @mixin section {
+        height: 100vh;
+        padding: $desktopPadding;
+    }
+
+    @mixin sectionTablet {
+        height: 100%;
+        padding: $ipadPadding;
+    }
+
+    @mixin sectionMobile {
+        height: 100%;
+        padding: $mobilePadding;
+    }
+
+// scrollBelow 
+    @mixin scrollBelow {
+        position: absolute;
+        top:85%;
+        left:calc(50% - 6rem);
+
+        img {
+            width: 12rem;
+            height: auto;
+        }
+    
     }
 
 // background logo
@@ -56,6 +97,20 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         svg {
             height: auto;
             width: 55rem;
+        }
+    }
+
+    @mixin backgroundLogoMobile {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: fixed;
+        top: 45rem;
+        right: -5rem;
+        z-index: -1;
+
+        svg {
+            height: auto;
+            width: 35rem;
         }
     }
 
@@ -464,6 +519,21 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             position: absolute;
             right: 10vw;
             top: 3rem;
+            z-index: 2;
+            background-color: transparent;
+
+            .trigger {
+                display: initial;
+                content: '';
+                width: 2.5rem;
+                height: 2.5rem;
+                cursor: pointer;
+                position: absolute;
+                top:0;
+                left: 0;
+                z-index: 2;
+                background-color: transparent;
+            }
 
 
             .mobileToggle {
@@ -1091,7 +1161,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: 2.5rem;
         height: 0.3rem;
         background-color: $blue;
-        z-index: 1;
+        z-index: -1;
         top:50%;
         transition: 0.5s all;
     }
@@ -1103,7 +1173,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: 2.5rem;
         height: 0.35rem;
         background-color: $blue;
-        z-index: 1;
+        z-index: -1;
         top:0.75rem;
         transition: 0.5s all;
     }
@@ -1115,7 +1185,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         width: 2.5rem;
         height: 0.3rem;
         background-color: $blue;
-        z-index: 1;
+        z-index: -1;
         bottom:0.75rem;
         transition: 0.5s all;
     }
