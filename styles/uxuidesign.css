@@ -546,6 +546,11 @@ main header {
           justify-content: flex-start;
 }
 
+main header .title {
+  -webkit-animation: boxOneAnimation 1s;
+          animation: boxOneAnimation 1s;
+}
+
 main header .title ul {
   list-style: none;
   text-decoration: none;

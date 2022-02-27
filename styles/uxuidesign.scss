@@ -32,6 +32,7 @@ main {
         justify-content: flex-start;
 
         .title {
+            animation: boxOneAnimation 1s;
 
             ul {
                 list-style: none;
