@@ -38,16 +38,23 @@ main {
                 list-style: none;
                 text-decoration: none;
                 padding: 0;
+                margin: 0;
 
                 li {
-                    margin: -8rem 0;
+                    padding:0;
 
                     h1 {
                         @include headingDarkBlue;
+                        padding: 0;
+                        margin: 0;
+                        font-size: $headingFontSizeClamp;
                     }
 
                     span {
                         @include headingLightBlue;
+                        padding: 0;
+                        margin: 0;
+                        font-size: $headingFontSizeClamp;
                     }
 
                     h1.titleOutline {
@@ -301,11 +308,13 @@ section.sectionTwo.active {
     }
 
     section.sectionOne {
-        @include sectionTablet
+        @include sectionTablet;
+        height: 100vh;
     }
 
     section.sectionTwo {
-        @include sectionTablet
+        @include sectionTablet;
+        height: 100vh;
     }
 
     footer {
@@ -327,7 +336,27 @@ section.sectionTwo.active {
         }
 
         header {
+
             padding: $mobilePadding;
+
+            .title {
+
+                ul {
+
+                    li {
+
+                        h1 {
+                            font-size: $headingFontSizeClamp02;
+                        }
+
+                        span {
+                            font-size: $headingFontSizeClamp02;
+                        }
+
+                    }
+                }
+                
+            }
         }
 
         .background {
@@ -337,11 +366,13 @@ section.sectionTwo.active {
     }
 
     section.sectionOne {
-        @include sectionMobile
+        @include sectionMobile;
+        height: 100vh;
     }
 
     section.sectionTwo {
-        @include sectionMobile
+        @include sectionMobile;
+        height: 100vh;
     }
 
     footer {
