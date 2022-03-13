@@ -187,7 +187,7 @@ window.scrollTo({
 });
 
 
-
+/*
 const mediaQuery01 = window.matchMedia("(max-width: 1024px) and (min-width: 651px)");
 const mediaQuery02 = window.matchMedia("(max-width: 650px)");
 
@@ -197,7 +197,7 @@ const y01 = portfolioSection.getBoundingClientRect().top + window.pageYOffset + 
 
 const yOffset02 = -170; 
 const y02 = portfolioSection.getBoundingClientRect().top + window.pageYOffset + yOffset02;
-
+*/
 
 
 myWork.addEventListener('click', navigateFourth, false);
@@ -211,3 +211,8 @@ if (mediaQuery01.matches) {
   portfolioSection.scrollIntoView({behavior: 'smooth', top:0});
 }
 }
+
+const scrollUp = document.querySelector('.portfolioBelow');
+
+console.log(myWork);
+
