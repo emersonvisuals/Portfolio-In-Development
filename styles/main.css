@@ -795,6 +795,22 @@ section.portfolio .titleContainer .title h1 {
   padding: 0;
 }
 
+section.portfolio .titleContainer .animationSection {
+  opacity: 100%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#101011), color-stop(#1d2031), color-stop(#253154), color-stop(#27437a), to(#1c56a3));
+  background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
+  height: auto;
+  width: calc(100% - 5rem);
+  border-radius: 2rem;
+  padding: 0 2.5rem;
+  -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+  -webkit-animation: opactityChange 0.25s;
+          animation: opactityChange 0.25s;
+}
+
 section.portfolio .titleContainer .animationSection .lineAnimationContainer {
   position: absolute;
   overflow: hidden;

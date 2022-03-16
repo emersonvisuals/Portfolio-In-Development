@@ -173,6 +173,9 @@ section.portfolio {
         }
 
         .animationSection {
+            @include marqueeContainer;
+            animation: opactityChange 0.25s;
+    
 
             .lineAnimationContainer {
                 position: absolute;
