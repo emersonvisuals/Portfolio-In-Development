@@ -551,11 +551,6 @@ main nav .mobileTrigger {
   display: none;
 }
 
-main nav .navList li.navPortfolio::before {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-}
-
 main header {
   padding: 0 13vw;
   height: 100vh;
@@ -2342,4 +2337,4 @@ section.sectionTwo.active .aboutGridContainer {
     margin: 0;
   }
 }
-/*# sourceMappingURL=uxuidesign.css.map */
+/*# sourceMappingURL=contact.css.map */

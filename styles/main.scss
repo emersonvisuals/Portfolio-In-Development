@@ -195,6 +195,7 @@ section.portfolio {
 
     .container {
         @include marqueeContainer;
+        animation: opactityChange 0.25s;
 
         a {
             text-decoration: none;

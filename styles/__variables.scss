@@ -1211,6 +1211,12 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         100% {opacity: 1;}
     }
 
+    @mixin opactityChange {
+        0% {opacity: 0;}
+        95% {opacity:0;}
+        100%{opacity: 100%}
+    }
+
     @mixin lineAnimationTitleBefore {
         opacity: 0%;
         transition: 0.5s all;

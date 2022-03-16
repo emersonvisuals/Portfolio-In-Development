@@ -551,7 +551,7 @@ main nav .mobileTrigger {
   display: none;
 }
 
-main nav .navList li.navPortfolio::before {
+main nav .navList .navAbout::before {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
@@ -2342,4 +2342,4 @@ section.sectionTwo.active .aboutGridContainer {
     margin: 0;
   }
 }
-/*# sourceMappingURL=uxuidesign.css.map */
+/*# sourceMappingURL=about.css.map */
