@@ -2475,6 +2475,10 @@ section.about.active .aboutGridContainer {
     top: 0rem;
     transition: 0.5s all;
   }
+  main nav .navList li.navPortfolio::before {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
   main nav.active {
     padding: 4rem 7vw;
     width: calc(100% - 14vw);

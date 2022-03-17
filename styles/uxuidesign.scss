@@ -296,6 +296,27 @@ section.sectionTwo.active {
 
         header {
             padding: $ipadPadding;
+
+            .title {
+                animation: boxOneAnimation 1s;
+    
+                ul {
+    
+                    li {
+    
+                        h1.titleOutline {
+                            -webkit-text-stroke: 1px $darkBlue;
+                            color: transparent;
+                        }
+    
+                        h1.titleOutline span {
+                            -webkit-text-stroke: 1px $blue;
+                            color: transparent;
+                        }
+                    }
+    
+                }
+            }
         }
 
         nav {
@@ -349,6 +370,16 @@ section.sectionTwo.active {
                             font-size: $headingFontSizeClamp02;
                         }
 
+                        h1.titleOutline {
+                            -webkit-text-stroke: 0.75px $darkBlue;
+                            color: transparent;
+                        }
+    
+                        h1.titleOutline span {
+                            -webkit-text-stroke: 0.75px $blue;
+                            color: transparent;
+                        }
+                                
                         span {
                             font-size: $headingFontSizeClamp02;
                         }

@@ -755,6 +755,13 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             }
         }
 
+        .navList {
+
+            li.navPortfolio::before {
+                transform: scaleY(0);
+            }
+        }
+
     }
 
     @mixin navBarMobileActive {
