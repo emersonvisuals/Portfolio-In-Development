@@ -2218,7 +2218,7 @@ section.sectionTwo.active .aboutGridContainer {
     padding: 0 7vw;
   }
   main header .title ul li h1 {
-    font-size: clamp(4.8rem, 6vw, 12.5rem);
+    font-size: clamp(4.25rem, 6vw, 12.5rem);
   }
   main header .title ul li h1.titleOutline {
     -webkit-text-stroke: 0.75px #101011;
@@ -2229,7 +2229,7 @@ section.sectionTwo.active .aboutGridContainer {
     color: transparent;
   }
   main header .title ul li span {
-    font-size: clamp(4.8rem, 6vw, 12.5rem);
+    font-size: clamp(4.25rem, 6vw, 12.5rem);
   }
   main .background {
     overflow-x: hidden;
