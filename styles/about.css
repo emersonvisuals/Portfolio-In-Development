@@ -655,10 +655,22 @@ main .background svg {
 section.sectionOne {
   height: 100vh;
   padding: 0 13vw;
+  height: 100vh;
 }
 
 section.sectionOne .titleContainer {
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
 }
 
 section.sectionOne .titleContainer .title {
@@ -667,6 +679,7 @@ section.sectionOne .titleContainer .title {
   transition: 0.5s all;
   -webkit-transform: translateY(-3rem);
           transform: translateY(-3rem);
+  padding: 0 5rem 0 0;
 }
 
 section.sectionOne .titleContainer .title h1 {
@@ -675,6 +688,31 @@ section.sectionOne .titleContainer .title h1 {
   font-weight: 700;
   margin: 0;
   padding: 0;
+}
+
+section.sectionOne .titleContainer .title p {
+  font-size: clamp(1.19rem, 0.9vw, 2rem);
+  font-family: poppins;
+  line-height: clamp(3rem, 2vw, 4rem);
+  font-weight: 400;
+}
+
+section.sectionOne .titleContainer .profile {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.sectionOne .titleContainer .profile img {
+  height: auto;
+  width: 100%;
 }
 
 section.sectionOne .container {
@@ -1033,161 +1071,6 @@ section.sectionOne .container .marqueeSeven .digitalArtwork:hover {
   transition: 0.5s all;
 }
 
-section.sectionTwo {
-  height: 100vh;
-  padding: 0 13vw;
-}
-
-section.sectionTwo .titleContainerAbout {
-  position: relative;
-}
-
-section.sectionTwo .titleContainerAbout .aboutTitle {
-  opacity: 0%;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  -webkit-transform: translateY(-3rem);
-          transform: translateY(-3rem);
-}
-
-section.sectionTwo .titleContainerAbout .aboutTitle h1 {
-  text-transform: capitalize;
-  font-size: clamp(3.75rem, 3.75vw, 6.5rem);
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-
-section.sectionTwo .titleContainerAbout .animationSectionAbout .lineAnimationContainerAbout {
-  position: absolute;
-  overflow: hidden;
-  z-index: -2;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-section.sectionTwo .titleContainerAbout .animationSectionAbout .lineAnimationContainerAbout svg {
-  height: auto;
-  width: clamp(70vw, 75vw, 80vw);
-  margin: 0;
-  z-index: -2;
-}
-
-section.sectionTwo .aboutGridContainer {
-  height: 60vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: calc(30% - 1rem) calc(37% - 1rem) calc(33% - 1rem);
-      grid-template-columns: calc(30% - 1rem) calc(37% - 1rem) calc(33% - 1rem);
-  grid-column-gap: 1rem;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-  grid-row-gap: 1rem;
-      grid-template-areas: "imageOne imageTwo details" "imageOne imageThree details";
-  opacity: 100%;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionTwo .aboutGridContainer .aboutImageOne {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: imageOne;
-  width: auto;
-  height: 100%;
-  background-image: url(/images/aboutImageOne.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-section.sectionTwo .aboutGridContainer .aboutImageTwo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: imageTwo;
-  width: auto;
-  height: 100%;
-  background-image: url(/images/aboutImageTwo.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-section.sectionTwo .aboutGridContainer .aboutImageThree {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: imageThree;
-  width: auto;
-  height: 100%;
-  background-image: url(/images/aboutImageThree.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-section.sectionTwo .aboutGridContainer .details {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: details;
-  width: auto;
-  height: 100%;
-  margin: 0;
-  height: auto;
-  position: relative;
-}
-
-section.sectionTwo .aboutGridContainer .details p {
-  font-size: clamp(1.19rem, 0.9vw, 2rem);
-  font-family: poppins;
-  line-height: clamp(3rem, 2vw, 4rem);
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-section.sectionTwo .aboutGridContainer .details .contentContainer {
-  position: absolute;
-  bottom: 0;
-}
-
-section.sectionTwo .aboutGridContainer .details .contentContainer .signatureIcon {
-  width: calc(100% - 15rem);
-  height: auto;
-}
-
-section.sectionTwo .aboutGridContainer .details .contentContainer .viewMore {
-  background-color: transparent;
-  padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
-  border-radius: 5rem;
-  font-family: poppins;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
-  color: #1C56A3;
-  border: 1px solid #1C56A3;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
-  text-transform: capitalize;
-  width: 100%;
-}
-
-section.sectionTwo .aboutGridContainer .details .contentContainer .viewMore:hover {
-  background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
-  padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
-  border-radius: 5rem;
-  font-family: poppins;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
-  cursor: pointer;
-  width: 100%;
-}
-
 footer {
   height: 40rem;
   background-color: #101011;
@@ -1514,20 +1397,6 @@ section.sectionOne.active .titleContainer .title {
   transition: 0.5s all;
   -webkit-transform: translateY(0rem);
           transform: translateY(0rem);
-}
-
-section.sectionTwo.active .aboutTitle {
-  opacity: 100%;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  -webkit-transform: translateY(0rem);
-          transform: translateY(0rem);
-}
-
-section.sectionTwo.active .aboutGridContainer {
-  opacity: 100%;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -2225,6 +2094,7 @@ section.sectionTwo.active .aboutGridContainer {
     display: none;
   }
   main header {
+    height: 100vh;
     padding: 0 7vw;
   }
   main header .title ul li h1 {
@@ -2248,7 +2118,58 @@ section.sectionTwo.active .aboutGridContainer {
   section.sectionOne {
     height: 100%;
     padding: 0 7vw;
-    height: 100vh;
+  }
+  section.sectionOne .titleContainer {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 65% 35%;
+        grid-template-rows: 65% 35%;
+    padding: 0 0 10rem 0;
+  }
+  section.sectionOne .titleContainer .title {
+    opacity: 0%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+    padding: 0;
+  }
+  section.sectionOne .titleContainer .title h1 {
+    text-transform: capitalize;
+    font-size: clamp(3.75rem, 3.75vw, 6.5rem);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  section.sectionOne .titleContainer .title p {
+    font-size: clamp(1.19rem, 0.9vw, 2rem);
+    font-family: poppins;
+    line-height: clamp(3rem, 2vw, 4rem);
+    font-weight: 400;
+  }
+  section.sectionOne .titleContainer .profile {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.sectionOne .titleContainer .profile img {
+    height: auto;
+    width: 100%;
   }
   section.sectionTwo {
     height: 100%;
