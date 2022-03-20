@@ -337,7 +337,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             }
 
             .navPortfolio.active::before {
-                transform:scaleY(1);
+                @include navHoverActive;
             }
             
             .navPortfolio:hover::before {
@@ -486,6 +486,10 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                             }
                         }
                     }
+                }
+
+                li.navPortfolio::before {
+                    display: none;
                 }
             }
 
@@ -644,6 +648,10 @@ $logoSize: clamp(5rem, 20vw, 20rem);
                     }
                 }
 
+                .navPortfolio:hover::before {
+                    transform: scaleY(0);
+                }
+
                 a::before {
                     display: none;
                 }
@@ -757,8 +765,11 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
         .navList {
 
-            li.navPortfolio::before {
-                transform: scaleY(0);
+            .navPortfolio {
+
+                .navPortfolio:hover::before {
+                    display: none;
+                }
             }
         }
 
@@ -774,9 +785,12 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         }
 
         .navList {
+            
+            .navPortfolio {
 
-            li.navPortfolio::before {
-                transform: scaleY(0);
+                .navPortfolio:hover::before {
+                    display: none;
+                }
             }
         }
     }
@@ -1142,6 +1156,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         margin: 3rem 0 0 0;
         opacity: 1;
         transform:scaleY(0);
+        -webkit-transform: scaleY(0);
         transition: 0.25s all;
     }
 
@@ -1151,7 +1166,6 @@ $logoSize: clamp(5rem, 20vw, 20rem);
         transform:scaleY(1);
         transition: 0.25s all;
     }
-
 
     @mixin navToggle {
         @include navHover;

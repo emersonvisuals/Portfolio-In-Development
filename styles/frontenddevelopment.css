@@ -330,8 +330,8 @@ main nav .navList .navHome::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  transform: scaleY(0);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
@@ -344,8 +344,8 @@ main nav .navList .navHome:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  transform: scaleY(0);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   opacity: 1;
@@ -362,15 +362,28 @@ main nav .navList .navPortfolio::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  transform: scaleY(0);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
 
 main nav .navList .navPortfolio.active::before {
+  content: '';
+  position: absolute;
+  background-color: #1C56A3;
+  width: 2.0rem;
+  height: 1rem;
+  margin: 3rem 0 0 0;
+  opacity: 1;
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  opacity: 1;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+  transition: 0.25s all;
 }
 
 main nav .navList .navPortfolio:hover::before {
@@ -381,8 +394,8 @@ main nav .navList .navPortfolio:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  transform: scaleY(0);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   opacity: 1;
@@ -399,8 +412,8 @@ main nav .navList .navAbout::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  transform: scaleY(0);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
@@ -413,8 +426,8 @@ main nav .navList .navAbout:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  transform: scaleY(0);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   opacity: 1;
@@ -431,8 +444,8 @@ main nav .navList .navResume::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  transform: scaleY(0);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
 }
@@ -445,8 +458,8 @@ main nav .navList .navResume:hover::before {
   height: 1rem;
   margin: 3rem 0 0 0;
   opacity: 1;
+  transform: scaleY(0);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   opacity: 1;
@@ -1635,6 +1648,9 @@ section.sectionTwo.active .aboutGridContainer {
     font-family: poppins;
     text-transform: capitalize;
   }
+  main nav .navList ul li.navPortfolio::before {
+    display: none;
+  }
   main nav .navList a::before {
     display: none;
   }
@@ -1862,6 +1878,10 @@ section.sectionTwo.active .aboutGridContainer {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
     padding: 0.5rem 0;
+  }
+  main nav.active .navList ul .navPortfolio:hover::before {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
   main nav.active .navList ul a::before {
     display: none;
@@ -2190,9 +2210,8 @@ section.sectionTwo.active .aboutGridContainer {
     top: 0rem;
     transition: 0.5s all;
   }
-  main nav .navList li.navPortfolio::before {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+  main nav .navList .navPortfolio .navPortfolio:hover::before {
+    display: none;
   }
   main nav.active {
     padding: 4rem 7vw;
@@ -2201,6 +2220,9 @@ section.sectionTwo.active .aboutGridContainer {
   main nav.active .mobileTrigger {
     right: 7vw;
     top: 3rem;
+  }
+  main nav.active .navList .navPortfolio .navPortfolio:hover::before {
+    display: none;
   }
   main header {
     padding: 0 7vw;
