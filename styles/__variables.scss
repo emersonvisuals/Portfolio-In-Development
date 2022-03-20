@@ -772,6 +772,13 @@ $logoSize: clamp(5rem, 20vw, 20rem);
             right: 7vw;
             top: 3rem;
         }
+
+        .navList {
+
+            li.navPortfolio::before {
+                transform: scaleY(0);
+            }
+        }
     }
 
     @mixin navBarStyleDesktop {
