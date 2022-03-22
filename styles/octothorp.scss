@@ -1,0 +1,502 @@
+@import "./_variables";
+@import "./_keyframes";
+
+body {
+    @include body;
+}
+
+html {
+    @include bodyDefault;
+}
+
+main {
+    @include main
+
+    nav {
+        @include navBarDesktop;
+        
+        .navList {
+
+            li.navPortfolio::before {
+                transform: scaleY(1);
+            }
+
+            .navAbout::before {
+                transform: scaleY(0);
+            }
+
+        }
+    }
+
+    header {
+        padding: $desktopPadding;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .title {
+            animation: boxOneAnimation 1s;
+
+            ul {
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    padding:0;
+
+                    h1 {
+                        @include headingDarkBlue;
+                        padding: 0;
+                        margin: 0;
+                        font-size: $headingFontSizeClamp;
+                    }
+
+                    span {
+                        @include headingLightBlue;
+                        padding: 0;
+                        margin: 0;
+                        font-size: $headingFontSizeClamp;
+                    }
+
+                    h1.titleOutline {
+                        -webkit-text-stroke: 1px $darkBlue;
+                        color: transparent;
+                    }
+
+                    h1.titleOutline span {
+                        -webkit-text-stroke: 1px $blue;
+                        color: transparent;
+                    }
+                }
+
+            }
+        }
+
+        .portfolioBelow {
+            @include scrollBelow;
+        }
+    }
+
+    .background {
+        @include backgroundLogo;
+    }
+}
+
+section.sectionOne {
+    @include section;
+    height: 100vh;
+
+    .titleContainer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+
+        .title {
+            @include lineAnimationTitleBefore;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 3rem 0 0;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .profile {
+            @include lineAnimationTitleBefore02;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0 0 0 7rem;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            h1 {
+                @include subHeading;
+            }
+        }
+    }
+
+    .container {
+        @include marqueeContainer;
+
+        a {
+            text-decoration: none;
+        }
+
+        .marqueeOne {
+            @include marqueeTemplate;
+        }
+
+        .marqueeTwo {
+            @include marqueeTemplate;
+        }
+
+        .marqueeThree {
+            @include marqueeTemplate;
+        }
+
+        .marqueeFour {
+            @include marqueeTemplate;
+        }
+
+        .marqueeFive {
+            @include marqueeTemplate;
+        }
+
+        .marqueeSix {
+            @include marqueeTemplate;
+            display: none
+        }
+
+        .marqueeSeven {
+            @include marqueeTemplate;
+            display: none;
+        }
+    }
+}
+
+section.sectionTwo {
+    @include section;
+    height: 100vh;
+
+    .titleContainer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+
+
+        .profile {
+            @include lineAnimationTitleBefore02;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .container {
+        @include marqueeContainer;
+
+        a {
+            text-decoration: none;
+        }
+
+        .marqueeOne {
+            @include marqueeTemplate;
+        }
+
+        .marqueeTwo {
+            @include marqueeTemplate;
+        }
+
+        .marqueeThree {
+            @include marqueeTemplate;
+        }
+
+        .marqueeFour {
+            @include marqueeTemplate;
+        }
+
+        .marqueeFive {
+            @include marqueeTemplate;
+        }
+
+        .marqueeSix {
+            @include marqueeTemplate;
+            display: none
+        }
+
+        .marqueeSeven {
+            @include marqueeTemplate;
+            display: none;
+        }
+    }
+}
+
+section.sectionThree {
+    @include section;
+    height: 100vh;
+
+    .titleContainer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+
+
+        .profile {
+            @include lineAnimationTitleBefore02;
+            height: 100%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-gap: 1rem;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    .container {
+        @include marqueeContainer;
+
+        a {
+            text-decoration: none;
+        }
+
+        .marqueeOne {
+            @include marqueeTemplate;
+        }
+
+        .marqueeTwo {
+            @include marqueeTemplate;
+        }
+
+        .marqueeThree {
+            @include marqueeTemplate;
+        }
+
+        .marqueeFour {
+            @include marqueeTemplate;
+        }
+
+        .marqueeFive {
+            @include marqueeTemplate;
+        }
+
+        .marqueeSix {
+            @include marqueeTemplate;
+            display: none
+        }
+
+        .marqueeSeven {
+            @include marqueeTemplate;
+            display: none;
+        }
+    }
+}
+
+
+footer {
+    @include defaultFooterDesktop;
+}
+
+section.sectionOne.active {
+
+    .container {
+        @include lineAnimationTitleAfter
+    }
+
+    .titleContainer {
+
+        .title {
+            @include lineAnimationTitleAfter;
+        }
+    }
+
+    .profile {
+        @include lineAnimationTitleAfter;
+    }
+}
+
+section.sectionTwo.active {
+
+    .container {
+        @include lineAnimationTitleAfter
+    }
+
+    .titleContainer {
+
+        .title {
+            @include lineAnimationTitleAfter;
+        }
+    }
+
+    .profile {
+        @include lineAnimationTitleAfter;
+    }
+}
+
+section.sectionThree.active {
+
+    .container {
+        @include lineAnimationTitleAfter
+    }
+
+    .titleContainer {
+
+        .title {
+            @include lineAnimationTitleAfter;
+        }
+    }
+
+    .profile {
+        @include lineAnimationTitleAfter;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    main {
+        @include main
+
+        header {
+            padding: $ipadPadding;
+        }
+
+        nav {
+            @include navBarTablet;
+        }
+
+        nav.active {
+            @include navBarTabletActive;
+        }
+    }
+
+    section.sectionOne {
+        @include sectionTablet;
+        height: 100vh;
+    }
+
+    section.sectionTwo {
+        @include sectionTablet;
+        height: 100vh;
+    }
+
+    footer {
+        @include defaultFooterTablet;
+    }
+
+  }
+
+@media only screen and (max-width: 650px) {
+    main {
+        @include main
+
+        nav {
+            @include navBarMobile;
+        }
+
+        nav.active {
+            @include navBarMobileActive;
+        }
+
+        header {
+            height: 100vh;
+
+            padding: $mobilePadding;
+
+            .title {
+
+                ul {
+
+                    li {
+
+                        h1 {
+                            font-size: $headingFontSizeClamp02;
+                        }
+
+                        span {
+                            font-size: $headingFontSizeClamp02;
+                        }
+
+                    }
+                }
+                
+            }
+        }
+
+        .background {
+            @include backgroundLogoMobile
+        }
+        
+    }
+
+    section.sectionOne {
+        @include sectionMobile;
+
+        .titleContainer {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            padding: 0 0 10rem 0;
+    
+            .title {
+                @include lineAnimationTitleBefore;
+                padding: 0;
+    
+                
+                h1 {
+                    @include subHeading;
+                    margin: 0;
+                    padding:0;
+                }
+    
+                p {
+                    @include paragraph;
+                }
+            }
+    
+            .profile {
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5rem 0 0 0;
+    
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    section.sectionTwo {
+        @include sectionMobile;
+        height: auto
+    }
+
+    section.sectionThree {
+        @include sectionMobile;
+        height: 50vh;
+        margin: 10rem 0 0 0;
+    }
+
+    footer {
+        @include defaultFooterMobile;
+    }
+}

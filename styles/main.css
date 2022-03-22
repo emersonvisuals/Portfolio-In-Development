@@ -673,6 +673,7 @@ main header .boxesContainer .boxOne .details .myWork {
   border: 1px solid #1C56A3;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
+  text-transform: capitalize;
   transition: 0.25s all;
   text-transform: capitalize;
 }
@@ -1347,6 +1348,7 @@ section.about .aboutGridContainer .details .contentContainer .viewMore {
   border: 1px solid #1C56A3;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
+  text-transform: capitalize;
   text-transform: capitalize;
   width: 100%;
 }

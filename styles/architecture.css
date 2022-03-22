@@ -1170,6 +1170,7 @@ section.sectionTwo .aboutGridContainer .details .contentContainer .viewMore {
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
   text-transform: capitalize;
+  text-transform: capitalize;
   width: 100%;
 }
 
