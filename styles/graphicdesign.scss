@@ -141,43 +141,9 @@ section.sectionOne {
                 width: 100%;
             }
         }
-    }
-
-    .container {
-        @include marqueeContainer;
-
-        a {
-            text-decoration: none;
-        }
-
-        .marqueeOne {
-            @include marqueeTemplate;
-        }
-
-        .marqueeTwo {
-            @include marqueeTemplate;
-        }
-
-        .marqueeThree {
-            @include marqueeTemplate;
-        }
-
-        .marqueeFour {
-            @include marqueeTemplate;
-        }
-
-        .marqueeFive {
-            @include marqueeTemplate;
-        }
-
-        .marqueeSix {
-            @include marqueeTemplate;
-            display: none
-        }
-
-        .marqueeSeven {
-            @include marqueeTemplate;
-            display: none;
+        
+        .buttonContainerMobile {
+            visibility: hidden;
         }
     }
 }
@@ -284,18 +250,18 @@ section.sectionOne.active {
 
     section.sectionOne {
         @include sectionMobile;
+        height: 100%;
 
         .titleContainer {
-            display: grid;
-            justify-content: center;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            grid-template-columns: 100%;
-            grid-template-rows: 65% 35%;
-            padding: 0 0 10rem 0;
+            flex-direction: column;
+            padding: 0 0 5rem 0;
     
             .title {
                 @include lineAnimationTitleBefore;
-                padding: 0;
+                padding: 0 0 3rem 0;
     
                 
                 h1 {
@@ -307,6 +273,10 @@ section.sectionOne.active {
                 p {
                     @include paragraph;
                 }
+
+                .buttonContainer {
+                    visibility:hidden;
+                }
             }
     
             .profile {
@@ -314,10 +284,25 @@ section.sectionOne.active {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                padding: 0 0 3rem 0;
     
                 img {
                     height: auto;
                     width: 100%;
+                }
+            }
+
+            .buttonContainerMobile {
+                visibility: visible;
+                width: 100%;
+
+                button {
+                    @include buttonNeutral;
+                    width: 100%;
+                }
+
+                button:hover {
+                    @include buttonNeutralHover;
                 }
             }
         }
