@@ -2002,7 +2002,95 @@ section.sectionTwo.active .aboutGridContainer {
   section.sectionOne {
     height: 100%;
     padding: 0 7vw;
-    height: 100vh;
+    height: 100%;
+  }
+  section.sectionOne .titleContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 5rem 0;
+  }
+  section.sectionOne .titleContainer .title {
+    opacity: 0%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+    padding: 0 0 3rem 0;
+  }
+  section.sectionOne .titleContainer .title h1 {
+    text-transform: uppercase;
+    font-size: clamp(3.75rem, 3.75vw, 6.5rem);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  section.sectionOne .titleContainer .title p {
+    font-size: clamp(1.19rem, 0.9vw, 2rem);
+    font-family: poppins;
+    line-height: clamp(3rem, 2vw, 4rem);
+    font-weight: 400;
+  }
+  section.sectionOne .titleContainer .title .buttonContainer {
+    visibility: hidden;
+  }
+  section.sectionOne .titleContainer .profile {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 0 3rem 0;
+  }
+  section.sectionOne .titleContainer .profile img {
+    height: auto;
+    width: 100%;
+  }
+  section.sectionOne .titleContainer .buttonContainerMobile {
+    visibility: visible;
+    width: 100%;
+  }
+  section.sectionOne .titleContainer .buttonContainerMobile button {
+    background-color: transparent;
+    padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
+    border-radius: 5rem;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+    color: #1C56A3;
+    border: 1px solid #1C56A3;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    text-transform: capitalize;
+    width: 100%;
+  }
+  section.sectionOne .titleContainer .buttonContainerMobile button:hover {
+    background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
+    padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
+    border-radius: 5rem;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    cursor: pointer;
   }
   section.sectionTwo {
     height: 100%;
