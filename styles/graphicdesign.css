@@ -689,7 +689,7 @@ section.sectionOne .titleContainer .title {
 }
 
 section.sectionOne .titleContainer .title h1 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: clamp(3.75rem, 3.75vw, 6.5rem);
   font-weight: 700;
   margin: 0;
@@ -1845,7 +1845,7 @@ section.sectionOne.active .profile {
     padding: 0 0 3rem 0;
   }
   section.sectionOne .titleContainer .title h1 {
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: clamp(3.75rem, 3.75vw, 6.5rem);
     font-weight: 700;
     margin: 0;

@@ -83,56 +83,63 @@ main {
 
 section.sectionOne {
     @include section;
+    height: 100vh;
 
     .titleContainer {
-        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;
 
         .title {
             @include lineAnimationTitleBefore;
+            padding: 0 5rem 0 0;
+            position: relative;    
+
             
             h1 {
                 @include subHeading;
                 margin: 0;
                 padding:0;
             }
-        }
-    }
 
-    .container {
-        @include marqueeContainer;
+            p {
+                @include paragraph;
+            }
 
-        a {
-            text-decoration: none;
-        }
+            .buttonContainer {
+                position: absolute;
+                bottom: -7rem;
+                
 
-        .marqueeOne {
-            @include marqueeTemplate;
-        }
+                button {
+                    @include buttonNeutral;
+                }
 
-        .marqueeTwo {
-            @include marqueeTemplate;
-        }
+                button:hover {
+                    @include buttonNeutralHover;
+                }
 
-        .marqueeThree {
-            @include marqueeTemplate;
-        }
-
-        .marqueeFour {
-            @include marqueeTemplate;
+                
+            }
         }
 
-        .marqueeFive {
-            @include marqueeTemplate;
-        }
+        .profile {
+            @include lineAnimationTitleBefore02;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-        .marqueeSix {
-            @include marqueeTemplate;
-            display: none
+            img {
+                height: auto;
+                width: 100%;
+            }
         }
-
-        .marqueeSeven {
-            @include marqueeTemplate;
-            display: none;
+        
+        .buttonContainerMobile {
+            visibility: hidden;
         }
     }
 }
@@ -263,6 +270,7 @@ footer {
     @include defaultFooterDesktop;
 }
 
+
 section.sectionOne.active {
 
     .container {
@@ -274,6 +282,10 @@ section.sectionOne.active {
         .title {
             @include lineAnimationTitleAfter;
         }
+    }
+
+    .profile {
+        @include lineAnimationTitleAfter;
     }
 }
 

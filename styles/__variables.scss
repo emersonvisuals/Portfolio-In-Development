@@ -222,7 +222,7 @@ $logoSize: clamp(5rem, 20vw, 20rem);
 
 //subHeading
     @mixin subHeading {
-        text-transform: capitalize;
+        text-transform: uppercase;
         font-size: clamp(3.75rem, 3.75vw, 6.5rem);
         font-weight: 700;
         

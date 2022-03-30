@@ -665,7 +665,7 @@ section.sectionOne .titleContainer .title {
 }
 
 section.sectionOne .titleContainer .title h1 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: clamp(3.75rem, 3.75vw, 6.5rem);
   font-weight: 700;
   margin: 0;
@@ -1046,7 +1046,7 @@ section.sectionTwo .titleContainerAbout .aboutTitle {
 }
 
 section.sectionTwo .titleContainerAbout .aboutTitle h1 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: clamp(3.75rem, 3.75vw, 6.5rem);
   font-weight: 700;
   margin: 0;
