@@ -655,10 +655,22 @@ main .background svg {
 section.sectionOne {
   height: 100vh;
   padding: 0 13vw;
+  height: 100vh;
 }
 
 section.sectionOne .titleContainer {
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
 }
 
 section.sectionOne .titleContainer .title {
@@ -667,6 +679,8 @@ section.sectionOne .titleContainer .title {
   transition: 0.5s all;
   -webkit-transform: translateY(-3rem);
           transform: translateY(-3rem);
+  padding: 0 5rem 0 0;
+  position: relative;
 }
 
 section.sectionOne .titleContainer .title h1 {
@@ -677,360 +691,71 @@ section.sectionOne .titleContainer .title h1 {
   padding: 0;
 }
 
-section.sectionOne .container {
-  opacity: 100%;
+section.sectionOne .titleContainer .title p {
+  font-size: clamp(1.19rem, 0.9vw, 2rem);
+  font-family: poppins;
+  line-height: clamp(3rem, 2vw, 4rem);
+  font-weight: 400;
+}
+
+section.sectionOne .titleContainer .title .buttonContainer {
+  position: absolute;
+  bottom: -7rem;
+}
+
+section.sectionOne .titleContainer .title .buttonContainer button {
+  background-color: transparent;
+  padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
+  border-radius: 5rem;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+  color: #1C56A3;
+  border: 1px solid #1C56A3;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  text-transform: capitalize;
+}
+
+section.sectionOne .titleContainer .title .buttonContainer button:hover {
+  background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
+  padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
+  border-radius: 5rem;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  cursor: pointer;
+}
+
+section.sectionOne .titleContainer .profile {
+  opacity: 0%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#101011), color-stop(#1d2031), color-stop(#253154), color-stop(#27437a), to(#1c56a3));
-  background-image: linear-gradient(to left top, #101011, #1d2031, #253154, #27437a, #1c56a3);
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.sectionOne .titleContainer .profile img {
   height: auto;
-  width: calc(100% - 5rem);
-  border-radius: 2rem;
-  padding: 0 2.5rem;
-  -webkit-box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 35px 25px -10px rgba(0, 0, 0, 0.05);
+  width: 100%;
 }
 
-section.sectionOne .container a {
-  text-decoration: none;
-}
-
-section.sectionOne .container .marqueeOne {
-  overflow: hidden;
-}
-
-section.sectionOne .container .marqueeOne span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.sectionOne .container .marqueeOne .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeOne .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeOne .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeOne .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeOne .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeTwo {
-  overflow: hidden;
-}
-
-section.sectionOne .container .marqueeTwo span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.sectionOne .container .marqueeTwo .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeTwo .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeTwo .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeTwo .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeTwo .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeThree {
-  overflow: hidden;
-}
-
-section.sectionOne .container .marqueeThree span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.sectionOne .container .marqueeThree .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeThree .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeThree .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeThree .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeThree .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFour {
-  overflow: hidden;
-}
-
-section.sectionOne .container .marqueeFour span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.sectionOne .container .marqueeFour .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFour .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFour .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFour .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFour .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFive {
-  overflow: hidden;
-}
-
-section.sectionOne .container .marqueeFive span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.sectionOne .container .marqueeFive .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFive .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFive .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFive .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeFive .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSix {
-  overflow: hidden;
-  display: none;
-}
-
-section.sectionOne .container .marqueeSix span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.sectionOne .container .marqueeSix .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSix .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSix .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSix .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSix .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSeven {
-  overflow: hidden;
-  display: none;
-}
-
-section.sectionOne .container .marqueeSeven span {
-  text-transform: capitalize;
-  font-size: clamp(6rem, 4.25vw, 8rem);
-  font-weight: 700;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFFFFF;
-  color: transparent;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 1rem;
-}
-
-section.sectionOne .container .marqueeSeven .uxuiDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSeven .graphicDesign:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSeven .architecture:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSeven .frontendDevelopment:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-section.sectionOne .container .marqueeSeven .digitalArtwork:hover {
-  color: #FFFFFF;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+section.sectionOne .titleContainer .buttonContainerMobile {
+  visibility: hidden;
 }
 
 section.sectionTwo {
@@ -2249,7 +1974,95 @@ section.sectionTwo.active .aboutGridContainer {
   section.sectionOne {
     height: 100%;
     padding: 0 7vw;
-    height: 100vh;
+    height: 100%;
+  }
+  section.sectionOne .titleContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 5rem 0;
+  }
+  section.sectionOne .titleContainer .title {
+    opacity: 0%;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+    padding: 0 0 3rem 0;
+  }
+  section.sectionOne .titleContainer .title h1 {
+    text-transform: uppercase;
+    font-size: clamp(3.75rem, 3.75vw, 6.5rem);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  section.sectionOne .titleContainer .title p {
+    font-size: clamp(1.19rem, 0.9vw, 2rem);
+    font-family: poppins;
+    line-height: clamp(3rem, 2vw, 4rem);
+    font-weight: 400;
+  }
+  section.sectionOne .titleContainer .title .buttonContainer {
+    visibility: hidden;
+  }
+  section.sectionOne .titleContainer .profile {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 0 3rem 0;
+  }
+  section.sectionOne .titleContainer .profile img {
+    height: auto;
+    width: 100%;
+  }
+  section.sectionOne .titleContainer .buttonContainerMobile {
+    visibility: visible;
+    width: 100%;
+  }
+  section.sectionOne .titleContainer .buttonContainerMobile button {
+    background-color: transparent;
+    padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
+    border-radius: 5rem;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+    color: #1C56A3;
+    border: 1px solid #1C56A3;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    text-transform: capitalize;
+    width: 100%;
+  }
+  section.sectionOne .titleContainer .buttonContainerMobile button:hover {
+    background: linear-gradient(27deg, #10376c 0%, #1c56a3 100%);
+    padding: 1.25rem clamp(6rem, 1.5vw, 10rem);
+    border-radius: 5rem;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.25vw, 2.7rem);
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    -webkit-transition: 0.25s all;
+    transition: 0.25s all;
+    cursor: pointer;
   }
   section.sectionTwo {
     height: 100%;
