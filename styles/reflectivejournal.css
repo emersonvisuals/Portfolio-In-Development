@@ -708,7 +708,7 @@ main .background svg {
 .sectionTwo {
   height: 100vh;
   padding: 0 13vw;
-  height: 100vh;
+  height: auto;
 }
 
 .sectionTwo .titleContainer {
@@ -749,7 +749,7 @@ main .background svg {
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
   margin: 0 2rem;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 20rem 0;
 }
 
 .sectionTwo .diagramContainer .containerOne {
@@ -842,6 +842,8 @@ main .background svg {
   opacity: 0%;
   -webkit-transition: 1s all;
   transition: 1s all;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
 }
 
 .sectionTwo .diagramContainer .containerOne p.active {
@@ -943,6 +945,8 @@ main .background svg {
   opacity: 0%;
   -webkit-transition: 1s all;
   transition: 1s all;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
 }
 
 .sectionTwo .diagramContainer .containerTwo p.active {
@@ -1044,6 +1048,8 @@ main .background svg {
   opacity: 0%;
   -webkit-transition: 1s all;
   transition: 1s all;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
 }
 
 .sectionTwo .diagramContainer .containerThree p.active {
