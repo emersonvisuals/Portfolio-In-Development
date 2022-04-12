@@ -166,3 +166,52 @@ if (mediaQuery01.matches) {
 }
 
 const scrollUp = document.querySelector('.portfolioBelow');
+
+
+// reveal theme 
+const buttonMultigenerational = document.querySelector('button.multiGenerational');
+const buttonSustainability = document.querySelector('button.sustainability');
+const buttonTechnology = document.querySelector('button.technology');
+const multiGenerationalP = document.querySelector('p.multiGenerationalP');
+const sustainabilityP = document.querySelector('p.sustainabilityP');
+const technologyP = document.querySelector('p.technologyP');
+
+buttonMultigenerational.addEventListener('click', function(){
+    buttonMultigenerational.classList.toggle('active');
+  if (buttonMultigenerational.classList.contains('active')) {
+    buttonMultigenerational.innerHTML = 'Close theme'
+    buttonMultigenerational.style.transition = 'all 0.5s'
+    multiGenerationalP.classList.add('active');
+  } else {
+    buttonMultigenerational.innerHTML = 'View theme'
+    buttonMultigenerational.style.transition = 'all 0.5s'
+    multiGenerationalP.classList.remove('active');
+  }
+});
+
+buttonSustainability.addEventListener('click', function(){
+    buttonSustainability.classList.toggle('active');
+  if (buttonSustainability.classList.contains('active')) {
+    buttonSustainability.innerHTML = 'Close theme'
+    buttonSustainability.style.transition = 'all 0.5s'
+    sustainabilityP.classList.add('active');
+  } else {
+    buttonSustainability.innerHTML = 'View theme'
+    buttonSustainability.style.transition = 'all 0.5s'
+    sustainabilityP.classList.remove('active');
+  }
+});
+
+buttonTechnology.addEventListener('click', function(){
+    buttonTechnology.classList.toggle('active');
+  if (buttonTechnology.classList.contains('active')) {
+    buttonTechnology.innerHTML = 'Close theme'
+    buttonTechnology.style.transition = 'all 0.5s'
+    technologyP.classList.add('active');
+  } else {
+    buttonTechnology.innerHTML = 'View theme'
+    buttonTechnology.style.transition = 'all 0.5s'
+    technologyP.classList.remove('active');
+  }
+});
+

@@ -1,0 +1,513 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1418.001" height="966.108" viewBox="0 0 1418.001 966.108">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5900e1"/>
+      <stop offset="1" stop-color="#667ce0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7b00f4"/>
+      <stop offset="1" stop-color="#706cea"/>
+    </linearGradient>
+    <filter id="Rectangle_21" x="0" y="112.405" width="214" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-2" x="242" y="177.89" width="232.001" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b300d0"/>
+      <stop offset="1" stop-color="#9c00e4"/>
+    </linearGradient>
+    <filter id="Rectangle_21-3" x="0" y="199.89" width="232.001" height="77" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-4" x="236" y="285.876" width="232.001" height="77" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-5" x="236" y="384.409" width="232.001" height="77" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-6" x="0" y="413.909" width="232.001" height="102" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-7" x="0" y="524.395" width="232.001" height="102" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-8" x="242" y="539.89" width="232.001" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-9" x="242" y="463.395" width="232.001" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-9"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-10" x="510" y="76.905" width="232.001" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-10"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-11" x="714" y="177.89" width="232.001" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-11"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-12" x="510" y="267.558" width="232.001" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-12"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-13" x="510" y="376.558" width="232.001" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-13"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-14" x="740" y="298.548" width="232.001" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-14"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-15" x="740" y="367.961" width="232.001" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-15"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-15"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-16" x="510.079" y="449.058" width="232.001" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-16"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-16"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-17" x="510.079" y="534.56" width="232.001" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-17"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-17"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-18" x="740" y="434.288" width="232.001" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-18"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-18"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-19" x="740" y="494.558" width="232.001" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-19"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-19"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-20" x="740" y="550.89" width="232.001" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-20"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-20"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-21" x="944" y="67.938" width="232.001" height="81.009" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-21"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-21"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-22" x="944" y="166.938" width="232.001" height="81.009" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-22"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-22"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-23" x="966" y="257.04" width="232.001" height="81.009" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-23"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-23"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-24" x="966" y="339.123" width="232.001" height="81.008" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-24"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-24"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-25" x="1196" y="307.559" width="222.001" height="81.009" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-25"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-25"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-26" x="1197" y="415.029" width="221.001" height="105.008" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-26"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-26"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-27" x="966" y="431.549" width="232.001" height="81.008" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-27"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-27"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-28" x="966" y="525.299" width="232.001" height="81.009" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-28"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-28"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21-29" x="1198" y="525.299" width="220.001" height="81.009" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-29"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-29"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="diagram_of_thematic_links" data-name="diagram of thematic links" transform="translate(-251 -1578.11)">
+    <g id="Diagram_test" data-name="Diagram test" transform="translate(113 486)">
+      <g id="Group_396" data-name="Group 396" transform="translate(249 1092.11)">
+        <rect id="Rectangle_3" data-name="Rectangle 3" width="287.135" height="50.15" rx="25.075" fill="url(#linear-gradient)"/>
+        <text id="Technology" transform="translate(100.777 30.639)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Technology</tspan></text>
+      </g>
+      <text id="NO" transform="translate(359 2054.218)" fill="#5a5c5f" font-size="11" font-family="Poppins-Regular, Poppins"><tspan x="-8.189" y="0">NO</tspan></text>
+      <g id="Group_432" data-name="Group 432" transform="translate(695 1092.11)">
+        <rect id="Rectangle_14" data-name="Rectangle 14" width="287.135" height="50.15" rx="25.075" fill="url(#linear-gradient-2)"/>
+        <text id="Sustainability" transform="translate(143.567 30.075)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-46.844" y="0">Sustainability</tspan></text>
+      </g>
+      <g id="Group_433" data-name="Group 433" transform="translate(1142 1092.11)">
+        <rect id="Rectangle_14-2" data-name="Rectangle 14" width="287.135" height="50.15" rx="25.075" fill="url(#linear-gradient-2)"/>
+        <text id="Multigenerational" transform="translate(143.567 30.075)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-61.418" y="0">Multigenerational</tspan></text>
+      </g>
+      <g id="Group_434" data-name="Group 434" transform="translate(-547.141 827.515)">
+        <g transform="matrix(1, 0, 0, 1, 685.14, 264.6)" filter="url(#Rectangle_21)">
+          <rect id="Rectangle_21-30" data-name="Rectangle 21" width="196" height="61" transform="translate(9 118.4)" fill="#fff"/>
+        </g>
+        <text id="Interest_in_programming_at_a_young_age" data-name="Interest in programming
+at a young age" transform="translate(793.464 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-85.435" y="0">Interest in programming</tspan><tspan x="-53.536" y="21">at a young age</tspan></text>
+      </g>
+      <g id="Group_435" data-name="Group 435" transform="translate(-305.141 893)">
+        <g transform="matrix(1, 0, 0, 1, 443.14, 199.11)" filter="url(#Rectangle_21-2)">
+          <rect id="Rectangle_21-31" data-name="Rectangle 21" width="214.001" height="61" transform="translate(251 183.89)" fill="#fff"/>
+        </g>
+        <text id="Interest_in_digital_products_such_as_apps_and_websites" data-name="Interest in digital products
+such as apps and websites" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-91.448" y="0">Interest in digital products</tspan><tspan x="-95.249" y="21">such as apps and websites</tspan></text>
+      </g>
+      <g id="Group_436" data-name="Group 436" transform="translate(-108 523.236)">
+        <path id="Polygon_5" data-name="Polygon 5" d="M84.5,0,169,38.5,84.5,77,0,38.5Z" transform="translate(497 648.778)" fill="url(#linear-gradient-4)"/>
+        <text id="Outside_Design" data-name="Outside
+Design" transform="translate(581.5 683.278)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-26.978" y="0">Outside</tspan><tspan x="-23.877" y="18">Design</tspan></text>
+      </g>
+      <g id="Group_437" data-name="Group 437" transform="translate(-547.141 915)">
+        <g transform="matrix(1, 0, 0, 1, 685.14, 177.11)" filter="url(#Rectangle_21-3)">
+          <rect id="Rectangle_21-32" data-name="Rectangle 21" width="214.001" height="59" transform="translate(9 205.89)" fill="#fff"/>
+        </g>
+        <text id="Exposure_to_coding_lanuages_outside_uni" data-name="Exposure to coding
+lanuages outside uni" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-66.402" y="0">Exposure to coding</tspan><tspan x="-73.248" y="21">lanuages outside uni</tspan></text>
+        <path id="Path_3875" data-name="Path 3875" d="M935.791,393h-13.4v12.015H908.179" fill="none" stroke="#707070" stroke-width="1"/>
+      </g>
+      <g id="Group_438" data-name="Group 438" transform="translate(-321.542 727.707)">
+        <path id="Polygon_5-2" data-name="Polygon 5" d="M84.5,0,169,38.5,84.5,77,0,38.5Z" transform="translate(497 648.778)" fill="url(#linear-gradient-4)"/>
+        <text id="Within_Design" data-name="Within
+Design" transform="translate(581.5 683.278)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-21.784" y="0">Within</tspan><tspan x="-23.877" y="18">Design</tspan></text>
+      </g>
+      <g id="Group_439" data-name="Group 439" transform="translate(-311.141 1000.985)">
+        <g transform="matrix(1, 0, 0, 1, 449.14, 91.12)" filter="url(#Rectangle_21-4)">
+          <rect id="Rectangle_21-33" data-name="Rectangle 21" width="214.001" height="59" transform="translate(245 291.88)" fill="#fff"/>
+        </g>
+        <text id="Applied_coding_logic_into_architecture" data-name="Applied coding logic
+into architecture" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-71.736" y="0">Applied coding logic</tspan><tspan x="-58.009" y="21">into architecture</tspan></text>
+      </g>
+      <path id="Path_3878" data-name="Path 3878" d="M558,1442.985v39.533" fill="none" stroke="#707070" stroke-width="1"/>
+      <g id="Group_440" data-name="Group 440" transform="translate(-311.141 1099.519)">
+        <g transform="matrix(1, 0, 0, 1, 449.14, -7.41)" filter="url(#Rectangle_21-5)">
+          <rect id="Rectangle_21-34" data-name="Rectangle 21" width="214.001" height="59" transform="translate(245 390.41)" fill="#fff"/>
+        </g>
+        <text id="Achieved_by_parametric_modelling." data-name="Achieved by parametric
+modelling." transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-84.406" y="0">Achieved by parametric</tspan><tspan x="-36.61" y="21">modelling.</tspan></text>
+      </g>
+      <g id="Group_441" data-name="Group 441" transform="translate(-547.141 1129.019)">
+        <g transform="matrix(1, 0, 0, 1, 685.14, -36.91)" filter="url(#Rectangle_21-6)">
+          <rect id="Rectangle_21-35" data-name="Rectangle 21" width="214.001" height="84" transform="translate(9 419.91)" fill="#fff"/>
+        </g>
+        <text id="Applied_method_to_landscape_design_in_past_projects" data-name="Applied method to 
+landscape design in past 
+projects" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-67.123" y="0">Applied method to </tspan><tspan x="-90.377" y="21">landscape design in past </tspan><tspan x="-28.35" y="42">projects</tspan></text>
+      </g>
+      <g id="Group_442" data-name="Group 442" transform="translate(-547.141 1239.504)">
+        <g transform="matrix(1, 0, 0, 1, 685.14, -147.39)" filter="url(#Rectangle_21-7)">
+          <rect id="Rectangle_21-36" data-name="Rectangle 21" width="214.001" height="84" transform="translate(9 530.39)" fill="#fff"/>
+        </g>
+        <text id="Created_an_interest_for_researching_innovative_building_design_methods" data-name="Created an interest
+for researching innovative
+building design methods" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-67.9" y="0">Created an interest</tspan><tspan x="-91.441" y="21">for researching innovative</tspan><tspan x="-87.164" y="42">building design methods</tspan></text>
+      </g>
+      <g id="Group_443" data-name="Group 443" transform="translate(-305.141 1240)">
+        <g transform="matrix(1, 0, 0, 1, 443.14, -147.89)" filter="url(#Rectangle_21-8)">
+          <rect id="Rectangle_21-37" data-name="Rectangle 21" width="214.001" height="54" transform="translate(251 545.89)" fill="#fff"/>
+        </g>
+        <text id="Exposure_to_Fabrication_of_evidence_precedent" data-name="Exposure to Fabrication
+of evidence precedent" transform="translate(801.14 419.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-81.543" y="0">Exposure to Fabrication</tspan><tspan x="-79.023" y="21">of evidence precedent</tspan></text>
+      </g>
+      <g id="Group_444" data-name="Group 444" transform="translate(-305.141 1163.504)">
+        <g transform="matrix(1, 0, 0, 1, 443.14, -71.39)" filter="url(#Rectangle_21-9)">
+          <rect id="Rectangle_21-38" data-name="Rectangle 21" width="214.001" height="54" transform="translate(251 469.39)" fill="#fff"/>
+        </g>
+        <text id="Explored_how_data_servers_could_be_changed" data-name="Explored how data servers
+could be changed" transform="translate(801.14 419.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-91.749" y="0">Explored how data servers</tspan><tspan x="-64.218" y="21">could be changed</tspan></text>
+      </g>
+      <g id="Group_445" data-name="Group 445" transform="translate(-37.141 777.015)">
+        <g transform="matrix(1, 0, 0, 1, 175.14, 315.1)" filter="url(#Rectangle_21-10)">
+          <rect id="Rectangle_21-39" data-name="Rectangle 21" width="214.001" height="54" transform="translate(519 82.9)" fill="#fff"/>
+        </g>
+        <text id="Using_recycled_heat_into_other_areas_of_the_building" data-name="Using recycled heat into
+other areas of the building" transform="translate(801.14 419.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-84.434" y="0">Using recycled heat into</tspan><tspan x="-92.477" y="21">other areas of the building</tspan></text>
+      </g>
+      <g id="Group_446" data-name="Group 446" transform="translate(393 523.236)">
+        <path id="Polygon_5-3" data-name="Polygon 5" d="M84.5,0,169,38.5,84.5,77,0,38.5Z" transform="translate(497 648.778)" fill="url(#linear-gradient-4)"/>
+        <text id="Outside_Design-2" data-name="Outside
+Design" transform="translate(581.5 683.278)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-26.978" y="0">Outside</tspan><tspan x="-23.877" y="18">Design</tspan></text>
+      </g>
+      <g id="Group_447" data-name="Group 447" transform="translate(166.859 893)">
+        <g transform="matrix(1, 0, 0, 1, -28.86, 199.11)" filter="url(#Rectangle_21-11)">
+          <rect id="Rectangle_21-40" data-name="Rectangle 21" width="214.001" height="61" transform="translate(723 183.89)" fill="#fff"/>
+        </g>
+        <text id="Strong_believer_in_climate_change_policies" data-name="Strong believer in climate
+change policies" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-89.026" y="0">Strong believer in climate</tspan><tspan x="-55.503" y="21">change policies</tspan></text>
+        <path id="Path_3885" data-name="Path 3885" d="M806.141,354.818v29.508" fill="none" stroke="#707070" stroke-width="1"/>
+      </g>
+      <g id="Group_448" data-name="Group 448" transform="translate(173 610.722)">
+        <path id="Polygon_5-4" data-name="Polygon 5" d="M84.5,0,169,38.5,84.5,77,0,38.5Z" transform="translate(497 648.778)" fill="url(#linear-gradient-4)"/>
+        <text id="Within_Design-2" data-name="Within
+Design" transform="translate(581.5 683.278)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-21.784" y="0">Within</tspan><tspan x="-23.877" y="18">Design</tspan></text>
+      </g>
+      <g id="Group_450" data-name="Group 450" transform="translate(-37.141 982.667)">
+        <g transform="matrix(1, 0, 0, 1, 175.14, 109.44)" filter="url(#Rectangle_21-12)">
+          <rect id="Rectangle_21-41" data-name="Rectangle 21" width="214.001" height="61" transform="translate(519 273.56)" fill="#fff"/>
+        </g>
+        <text id="Keen_interest_in_sustainable_technologies_methods" data-name="Keen interest in sustainable
+technologies / methods" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-96.201" y="0">Keen interest in sustainable</tspan><tspan x="-83.741" y="21">technologies / methods</tspan></text>
+      </g>
+      <g id="Group_451" data-name="Group 451" transform="translate(-37.141 1082.667)">
+        <g transform="matrix(1, 0, 0, 1, 175.14, 9.44)" filter="url(#Rectangle_21-13)">
+          <rect id="Rectangle_21-42" data-name="Rectangle 21" width="214.001" height="43" transform="translate(519 382.56)" fill="#fff"/>
+        </g>
+        <text id="Exposure_to_passive_design" data-name="Exposure to passive design" transform="translate(801.141 418.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-94.297" y="0">Exposure to passive design</tspan></text>
+      </g>
+      <g id="Group_452" data-name="Group 452" transform="translate(195.859 1004.167)">
+        <path id="Path_3888" data-name="Path 3888" d="M675.367,495.5h8.922V415.214h6.862" fill="none" stroke="#707070" stroke-width="1"/>
+      </g>
+      <g id="Group_463" data-name="Group 463" transform="translate(830 522.04)">
+        <path id="Polygon_5-5" data-name="Polygon 5" d="M84.5,0,169,38.5,84.5,77,0,38.5Z" transform="translate(497 648.778)" fill="url(#linear-gradient-4)"/>
+        <text id="Outside_Design-3" data-name="Outside
+Design" transform="translate(581.5 683.278)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-26.978" y="0">Outside</tspan><tspan x="-23.877" y="18">Design</tspan></text>
+      </g>
+      <g id="Group_465" data-name="Group 465" transform="translate(881 655.722)">
+        <path id="Polygon_5-6" data-name="Polygon 5" d="M84.5,0,169,38.5,84.5,77,0,38.5Z" transform="translate(497 648.778)" fill="url(#linear-gradient-4)"/>
+        <text id="Within_Design-3" data-name="Within
+Design" transform="translate(581.5 683.278)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-21.784" y="0">Within</tspan><tspan x="-23.877" y="18">Design</tspan></text>
+      </g>
+    </g>
+    <path id="Path_3873" data-name="Path 3873" d="M15487.054,949.135H15464v32.2h-23.929" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3874" data-name="Path 3874" d="M15570.456,986.615v28.506" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3876" data-name="Path 3876" d="M15352.057,1009.475v28.018" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3877" data-name="Path 3877" d="M15440.071,1153.582H15480" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3879" data-name="Path 3879" d="M15480,1255.546h-10.225v41.418H15458" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3880" data-name="Path 3880" d="M15346,1334.745v28.822" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3881" data-name="Path 3881" d="M15346,1334.745v28.822" transform="translate(1837.566 -13195.844) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3882" data-name="Path 3882" d="M15587.276,1369.974v-20.709" transform="translate(-14984 752.157)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3883" data-name="Path 3883" d="M15700,1324.437h33.2V942.879h20.876" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3886" data-name="Path 3886" d="M15851.7,1076.346v28.506" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3887" data-name="Path 3887" d="M15851.7,1165.032v49.093" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_453" data-name="Group 453" transform="translate(305.859 1490.658)">
+      <g transform="matrix(1, 0, 0, 1, -54.86, 87.45)" filter="url(#Rectangle_21-14)">
+        <rect id="Rectangle_21-43" data-name="Rectangle 21" width="214.001" height="43" transform="translate(749 304.55)" fill="#fff"/>
+      </g>
+      <text id="Roof_designs_and_slopes" data-name="Roof designs and slopes" transform="translate(801.141 418.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-84.966" y="0">Roof designs and slopes</tspan></text>
+    </g>
+    <g id="Group_454" data-name="Group 454" transform="translate(305.859 1560.071)">
+      <g transform="matrix(1, 0, 0, 1, -54.86, 18.04)" filter="url(#Rectangle_21-15)">
+        <rect id="Rectangle_21-44" data-name="Rectangle 21" width="214.001" height="43" transform="translate(749 373.96)" fill="#fff"/>
+      </g>
+      <text id="Solar_access" data-name="Solar access" transform="translate(801.141 418.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-44.401" y="0">Solar access</tspan></text>
+    </g>
+    <path id="Path_3889" data-name="Path 3889" d="M15977.183,1238.474v19.193h6.54" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_455" data-name="Group 455" transform="translate(75.938 1641.167)">
+      <g id="Group_456" data-name="Group 456">
+        <g transform="matrix(1, 0, 0, 1, 175.06, -63.06)" filter="url(#Rectangle_21-16)">
+          <rect id="Rectangle_21-45" data-name="Rectangle 21" width="214.001" height="43" transform="translate(519.08 455.06)" fill="#fff"/>
+        </g>
+        <text id="Cross_ventilation" data-name="Cross ventilation" transform="translate(801.141 418.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-58.373" y="0">Cross ventilation</tspan></text>
+      </g>
+      <path id="Path_3890" data-name="Path 3890" d="M790.151,392V362.46" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <g id="Group_457" data-name="Group 457" transform="translate(75.938 1726.67)">
+      <g transform="matrix(1, 0, 0, 1, 175.06, -148.56)" filter="url(#Rectangle_21-17)">
+        <rect id="Rectangle_21-46" data-name="Rectangle 21" width="214.001" height="43" transform="translate(519.08 540.56)" fill="#fff"/>
+      </g>
+      <text id="Interest_in_materials" data-name="Interest in materials" transform="translate(801.141 418.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-69.454" y="0">Interest in materials</tspan></text>
+    </g>
+    <path id="Path_3891" data-name="Path 3891" d="M15754.078,1138.108h-10.071v258.133h10.071" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3892" data-name="Path 3892" d="M15346,949.135V894.791h126.836V881.409" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3893" data-name="Path 3893" d="M15570.456,910.633V894.295h-97.384" transform="translate(-14984 747.48)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3894" data-name="Path 3894" d="M16070,911.114V896.338h-216.223v17.42" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3895" data-name="Path 3895" d="M15851.7,996.87V966.83" transform="translate(-14984 748.226)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3896" data-name="Path 3896" d="M15933.391,881.43V896.4" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_458" data-name="Group 458" transform="translate(305.859 1626.398)">
+      <g transform="matrix(1, 0, 0, 1, -54.86, -48.29)" filter="url(#Rectangle_21-18)">
+        <rect id="Rectangle_21-47" data-name="Rectangle 21" width="214.001" height="43" transform="translate(749 440.29)" fill="#fff"/>
+      </g>
+      <text id="Recycled_brick" data-name="Recycled brick" transform="translate(801.141 418.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-50.617" y="0">Recycled brick</tspan></text>
+    </g>
+    <g id="Group_459" data-name="Group 459" transform="translate(305.859 1686.667)">
+      <g transform="matrix(1, 0, 0, 1, -54.86, -108.56)" filter="url(#Rectangle_21-19)">
+        <rect id="Rectangle_21-48" data-name="Rectangle 21" width="214.001" height="43" transform="translate(749 500.56)" fill="#fff"/>
+      </g>
+      <text id="Geopolymer_concrete" data-name="Geopolymer concrete" transform="translate(801.141 418.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-76.468" y="0">Geopolymer concrete</tspan></text>
+    </g>
+    <g id="Group_460" data-name="Group 460" transform="translate(305.859 1743)">
+      <g transform="matrix(1, 0, 0, 1, -54.86, -164.89)" filter="url(#Rectangle_21-20)">
+        <rect id="Rectangle_21-49" data-name="Rectangle 21" width="214.001" height="43" transform="translate(749 556.89)" fill="#fff"/>
+      </g>
+      <text id="Timber" transform="translate(801.141 418.5)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-24.402" y="0">Timber</tspan></text>
+    </g>
+    <path id="Path_3897" data-name="Path 3897" d="M15861.078,1329.167v42.256" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3898" data-name="Path 3898" d="M15968.079,1396.241h8.118v15.83h7.918" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3899" data-name="Path 3899" d="M15976.1,1396.241v-40.627h8.229" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3900" data-name="Path 3900" d="M15976.1,1355.614v-60.548h7.748" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_462" data-name="Group 462" transform="translate(509.859 1269.048)">
+      <g transform="matrix(1, 0, 0, 1, -258.86, 309.06)" filter="url(#Rectangle_21-21)">
+        <rect id="Rectangle_21-50" data-name="Rectangle 21" width="214.001" height="63.008" transform="translate(953 73.94)" fill="#fff"/>
+      </g>
+      <text id="Interest_in_tackling_these_issues_for_the_future" data-name="Interest in tackling these
+issues for the future" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-85.204" y="0">Interest in tackling these</tspan><tspan x="-68.635" y="21">issues for the future</tspan></text>
+    </g>
+    <path id="Path_3901" data-name="Path 3901" d="M16172,1047.307h7.411V939.092H16188" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3902" data-name="Path 3902" d="M16295,905.048v-9.768h72.883V880.5" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3903" data-name="Path 3903" d="M16509.354,908.551v-13.8h-141.471" transform="translate(-14984 747.453)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_464" data-name="Group 464" transform="translate(509.859 1368.048)">
+      <g transform="matrix(1, 0, 0, 1, -258.86, 210.06)" filter="url(#Rectangle_21-22)">
+        <rect id="Rectangle_21-51" data-name="Rectangle 21" width="214.001" height="63.008" transform="translate(953 172.94)" fill="#fff"/>
+      </g>
+      <text id="Strong_relationship_with_family_friends" data-name="Strong relationship
+with family/friends" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-66.052" y="0">Strong relationship</tspan><tspan x="-65.163" y="21">with family/friends</tspan></text>
+    </g>
+    <path id="Path_3904" data-name="Path 3904" d="M16509.354,987.131v47.509h-107.148" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_466" data-name="Group 466" transform="translate(531.859 1458.15)">
+      <g transform="matrix(1, 0, 0, 1, -280.86, 119.96)" filter="url(#Rectangle_21-23)">
+        <rect id="Rectangle_21-52" data-name="Rectangle 21" width="214.001" height="63.008" transform="translate(975 263.04)" fill="#fff"/>
+      </g>
+      <text id="Use_this_concept_in_my_design_work" data-name="Use this concept in
+my design work" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-66.01" y="0">Use this concept in</tspan><tspan x="-54.985" y="21">my design work</tspan></text>
+    </g>
+    <path id="Path_3905" data-name="Path 3905" d="M16471.385,1081.622h-148.334v12.669" transform="translate(-14980.833 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_467" data-name="Group 467" transform="translate(531.859 1540.233)">
+      <g transform="matrix(1, 0, 0, 1, -280.86, 37.88)" filter="url(#Rectangle_21-24)">
+        <rect id="Rectangle_21-53" data-name="Rectangle 21" width="214.001" height="63.008" transform="translate(975 345.12)" fill="#fff"/>
+      </g>
+      <text id="Interest_behind_flexibility_and_adaptability" data-name="Interest behind
+flexibility and adaptability" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-52.598" y="0">Interest behind</tspan><tspan x="-90.104" y="21">flexibility and adaptability</tspan></text>
+      <path id="Path_3906" data-name="Path 3906" d="M798.9,363.877" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <path id="Path_3907" data-name="Path 3907" d="M16329,1157.11v19" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_468" data-name="Group 468" transform="translate(751.859 1508.669)">
+      <g transform="matrix(1, 0, 0, 1, -500.86, 69.44)" filter="url(#Rectangle_21-25)">
+        <rect id="Rectangle_21-54" data-name="Rectangle 21" width="204.001" height="63.008" transform="translate(1205 313.56)" fill="#fff"/>
+      </g>
+      <text id="Use_of_curtains_and_bi-fold_doors" data-name="Use of curtains and
+bi-fold doors" transform="translate(806.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-67.529" y="0">Use of curtains and</tspan><tspan x="-45.374" y="21">bi-fold doors</tspan></text>
+      <path id="Path_3906-2" data-name="Path 3906" d="M798.9,363.877" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <path id="Path_3908" data-name="Path 3908" d="M16559.551,1119.63v24.81" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_3909" data-name="Path 3909" d="M16424,1207.677h7.229v-28.072h9.34" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_469" data-name="Group 469" transform="translate(751.859 1616.139)">
+      <g transform="matrix(1, 0, 0, 1, -500.86, -38.03)" filter="url(#Rectangle_21-26)">
+        <rect id="Rectangle_21-55" data-name="Rectangle 21" width="203.001" height="87.008" transform="translate(1206 421.03)" fill="#fff"/>
+      </g>
+      <text id="Interest_in_transforming_fixed_rooms_into_different_rooms_overtime_" data-name="Interest in transforming
+fixed rooms into different
+rooms overtime " transform="translate(806.64 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-81.746" y="0">Interest in transforming</tspan><tspan x="-87.101" y="21">fixed rooms into different</tspan><tspan x="-57.351" y="42">rooms overtime </tspan></text>
+      <path id="Path_3906-3" data-name="Path 3906" d="M798.9,363.877" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <path id="Path_3910" data-name="Path 3910" d="M16537,1207.677v44.715" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_470" data-name="Group 470" transform="translate(531.859 1632.659)">
+      <g transform="matrix(1, 0, 0, 1, -280.86, -54.55)" filter="url(#Rectangle_21-27)">
+        <rect id="Rectangle_21-56" data-name="Rectangle 21" width="214.001" height="63.008" transform="translate(975 437.55)" fill="#fff"/>
+      </g>
+      <text id="How_can_infill_be_used_to_create_individuality_" data-name="How can infill be used
+to create individuality?" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-75.95" y="0">How can infill be used</tspan><tspan x="-79.436" y="21">to create individuality?</tspan></text>
+      <path id="Path_3906-4" data-name="Path 3906" d="M798.9,363.877" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <path id="Path_3911" data-name="Path 3911" d="M16440,1301.426h-16" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_471" data-name="Group 471" transform="translate(531.859 1726.408)">
+      <g transform="matrix(1, 0, 0, 1, -280.86, -148.3)" filter="url(#Rectangle_21-28)">
+        <rect id="Rectangle_21-57" data-name="Rectangle 21" width="214.001" height="63.008" transform="translate(975 531.3)" fill="#fff"/>
+      </g>
+      <text id="Interest_in_façade_transformation" data-name="Interest in façade
+transformation" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-61.271" y="0">Interest in façade</tspan><tspan x="-52.591" y="21">transformation</tspan></text>
+      <path id="Path_3906-5" data-name="Path 3906" d="M798.9,363.877" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <path id="Path_3912" data-name="Path 3912" d="M16317,1331.667v29.206" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Group_472" data-name="Group 472" transform="translate(751.859 1726.408)">
+      <g transform="matrix(1, 0, 0, 1, -500.86, -148.3)" filter="url(#Rectangle_21-29)">
+        <rect id="Rectangle_21-58" data-name="Rectangle 21" width="202.001" height="63.008" transform="translate(1207 531.3)" fill="#fff"/>
+      </g>
+      <text id="Interest_in_how_interiors_can_be_transformed" data-name="Interest in how interiors
+can be transformed" transform="translate(801.14 408)" fill="#5a5c5f" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="-80.92" y="0">Interest in how interiors</tspan><tspan x="-69.972" y="21">can be transformed</tspan></text>
+      <path id="Path_3906-6" data-name="Path 3906" d="M798.9,363.877" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <path id="Path_3913" data-name="Path 3913" d="M16424,1394.008h18.631" transform="translate(-14984 747)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

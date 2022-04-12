@@ -1,0 +1,512 @@
+@import "./_variables";
+@import "./_keyframes";
+
+body {
+    @include body;
+}
+
+html {
+    @include bodyDefault;
+}
+
+main {
+    @include main
+
+    nav {
+        @include navBarDesktop;
+        
+        .navList {
+
+            li.navPortfolio::before {
+                transform: scaleY(1);
+            }
+
+        }
+    }
+
+    header {
+        padding: $desktopPadding;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .title {
+            animation: boxOneAnimation 1s;
+
+            ul {
+                list-style: none;
+                text-decoration: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    padding:0;
+
+                    h1 {
+                        @include headingDarkBlue;
+                        padding: 0;
+                        margin: 0;
+                        font-size: $headingFontSizeClamp;
+                    }
+
+                    span {
+                        @include headingLightBlue;
+                        padding: 0;
+                        margin: 0;
+                        font-size: $headingFontSizeClamp;
+                    }
+
+                    h1.titleOutline {
+                        -webkit-text-stroke: 1px $darkBlue;
+                        color: transparent;
+                    }
+
+                    h1.titleOutline span {
+                        -webkit-text-stroke: 1px $blue;
+                        color: transparent;
+                    }
+                }
+
+            }
+        }
+
+        .portfolioBelow {
+            @include scrollBelow;
+        }
+    }
+
+    .background {
+        @include backgroundLogo;
+    }
+}
+
+.sectionOne {
+    @include section;
+    height: 100vh;
+
+    .titleContainer {
+        display: flex;
+
+        .title {
+            @include lineAnimationTitleBefore;
+            padding: 0 0 0 0;   
+
+            
+            h1 {
+                @include subHeadingThree;
+                margin: 0;
+                padding:0;
+            }
+
+        }
+    }
+
+    .diagramContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 3rem 0 0 0;
+        
+        img {
+            height: auto;
+            width: 73vw;
+            @include lineAnimationTitleBefore;
+        }
+    }
+}
+
+.sectionTwo {
+    @include section;
+    height: 100vh;
+
+    .titleContainer {
+        display: flex;
+
+        .title {
+            @include lineAnimationTitleBefore;
+            padding: 0 0 0 0;   
+
+            
+            h1 {
+                @include subHeadingThree;
+                margin: 0;
+                padding:0;
+            }
+
+        }
+    }
+
+    .diagramContainer {
+        display: grid;
+        align-items: flex-start;
+        justify-content: space-around;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100%;
+        column-gap: 2rem;
+        margin: 0 2rem;
+        padding: 2rem 0 0 0;
+
+        .containerOne {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            border-radius: 2rem;
+            margin:0;
+            padding: 5rem 2rem 2rem 2rem;
+            -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
+
+            img {
+                height: auto;
+                width: 10rem;
+                @include lineAnimationTitleBefore;
+            }
+
+            h1 {
+                @include subHeadingFour;
+            }
+
+            button {
+                @include buttonNeutral02;
+                width: 100%;
+            }
+
+            button:hover {
+                @include buttonNeutralHover02;
+                width: 100%;
+            }
+
+            button.active {
+                @include buttonNeutralHover02;
+                width: 100%;
+            }
+            
+            p {
+                padding: 2rem 0 0 0;
+                max-height: 0;
+                visibility: hidden;
+                opacity: 0%;
+                transition: 1s all;
+            }
+
+                        
+            p.active {
+                padding: 2rem 0 0 0;
+                max-height: 100rem;
+                visibility: visible;
+                opacity: 100%;
+                transition: 1s all;
+            }
+        } 
+
+        .containerTwo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            border-radius: 2rem;
+            margin:0;
+            padding: 5rem 2rem 2rem 2rem;
+            -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
+
+            img {
+                height: auto;
+                width: 10rem;
+                @include lineAnimationTitleBefore;
+            }
+
+            h1 {
+                @include subHeadingFour;
+            }
+
+            button {
+                @include buttonNeutral02;
+                width: 100%;
+            }
+
+            button:hover {
+                @include buttonNeutralHover02;
+                width: 100%;
+            }
+
+            button.active {
+                @include buttonNeutralHover02;
+                width: 100%;
+            }
+            
+            p {
+                padding: 2rem 0 0 0;
+                max-height: 0;
+                visibility: hidden;
+                opacity: 0%;
+                transition: 1s all;
+            }
+
+                        
+            p.active {
+                padding: 2rem 0 0 0;
+                max-height: 100rem;
+                visibility: visible;
+                opacity: 100%;
+                transition: 1s all;
+            }
+        } 
+
+        .containerThree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            border-radius: 2rem;
+            margin:0;
+            padding: 5rem 2rem 2rem 2rem;
+            -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
+
+            img {
+                height: auto;
+                width: 10rem;
+                @include lineAnimationTitleBefore;
+            }
+
+            h1 {
+                @include subHeadingFour;
+            }
+
+            button {
+                @include buttonNeutral02;
+                width: 100%;
+            }
+
+            button:hover {
+                @include buttonNeutralHover02;
+                width: 100%;
+            }
+
+            button.active {
+                @include buttonNeutralHover02;
+                width: 100%;
+            }
+            
+            p {
+                padding: 2rem 0 0 0;
+                max-height: 0;
+                visibility: hidden;
+                opacity: 0%;
+                transition: 1s all;
+            }
+
+                        
+            p.active {
+                padding: 2rem 0 0 0;
+                max-height: 100rem;
+                visibility: visible;
+                opacity: 100%;
+                transition: 1s all;
+            }
+        } 
+    }
+}
+
+footer {
+    @include defaultFooterDesktop;
+}
+
+
+section.sectionOne.active {
+
+    .container {
+        @include lineAnimationTitleAfter
+    }
+
+    .titleContainer {
+
+        .title {
+            @include lineAnimationTitleAfter;
+        }
+    }
+
+    .diagramContainer {
+        img {
+            @include lineAnimationTitleAfter;
+        }
+    }
+}
+
+section.sectionTwo.active {
+
+    .container {
+        @include lineAnimationTitleAfter
+    }
+
+    .titleContainer {
+
+        .title {
+            @include lineAnimationTitleAfter;
+        }
+    }
+
+    .diagramContainer {
+        img {
+            @include lineAnimationTitleAfter;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    main {
+        @include main
+
+        header {
+            padding: $ipadPadding;
+        }
+
+        nav {
+            @include navBarTablet;
+        }
+
+        nav.active {
+            @include navBarTabletActive;
+        }
+    }
+
+    section.sectionOne {
+        @include sectionTablet;
+        height: 100vh;
+    }
+
+    section.sectionTwo {
+        @include sectionTablet;
+        height: 100vh;
+    }
+
+    footer {
+        @include defaultFooterTablet;
+    }
+
+  }
+
+@media only screen and (max-width: 650px) {
+    main {
+        @include main
+
+        nav {
+            @include navBarMobile;
+        }
+
+        nav.active {
+            @include navBarMobileActive;
+        }
+
+        header {
+
+            padding: $mobilePadding;
+
+            .title {
+
+                ul {
+
+                    li {
+
+                        h1 {
+                            font-size: $headingFontSizeClamp02;
+                        }
+
+                        span {
+                            font-size: $headingFontSizeClamp02;
+                        }
+
+                    }
+                }
+                
+            }
+        }
+
+        .background {
+            @include backgroundLogoMobile
+        }
+        
+    }
+
+    section.sectionOne {
+        @include sectionMobile;
+        height: 100%;
+
+        .titleContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 0 5rem 0;
+    
+            .title {
+                @include lineAnimationTitleBefore;
+                padding: 0 0 3rem 0;
+    
+                
+                h1 {
+                    @include subHeading;
+                    margin: 0;
+                    padding:0;
+                }
+    
+                p {
+                    @include paragraph;
+                }
+
+                .buttonContainer {
+                    visibility:hidden;
+                }
+            }
+    
+            .profile {
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 0 3rem 0;
+    
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+
+            .buttonContainerMobile {
+                visibility: visible;
+                width: 100%;
+
+                button {
+                    @include buttonNeutral;
+                    width: 100%;
+                }
+
+                button:hover {
+                    @include buttonNeutralHover;
+                }
+            }
+        }
+    }
+
+
+    section.sectionTwo {
+        @include sectionMobile;
+        height: 100vh;
+    }
+
+    footer {
+        @include defaultFooterMobile;
+    }
+}
