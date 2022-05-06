@@ -306,6 +306,73 @@ section.sectionThree {
     }
 }
 
+section.sectionFour {
+    @include section;
+    height: 100vh;
+
+    .titleContainer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+
+
+        .profile {
+            @include lineAnimationTitleBefore02;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .container {
+        @include marqueeContainer;
+
+        a {
+            text-decoration: none;
+        }
+
+        .marqueeOne {
+            @include marqueeTemplate;
+        }
+
+        .marqueeTwo {
+            @include marqueeTemplate;
+        }
+
+        .marqueeThree {
+            @include marqueeTemplate;
+        }
+
+        .marqueeFour {
+            @include marqueeTemplate;
+        }
+
+        .marqueeFive {
+            @include marqueeTemplate;
+        }
+
+        .marqueeSix {
+            @include marqueeTemplate;
+            display: none
+        }
+
+        .marqueeSeven {
+            @include marqueeTemplate;
+            display: none;
+        }
+    }
+}
+
 
 footer {
     @include defaultFooterDesktop;
@@ -364,6 +431,25 @@ section.sectionThree.active {
         @include lineAnimationTitleAfter;
     }
 }
+
+section.sectionFour.active {
+
+    .container {
+        @include lineAnimationTitleAfter
+    }
+
+    .titleContainer {
+
+        .title {
+            @include lineAnimationTitleAfter;
+        }
+    }
+
+    .profile {
+        @include lineAnimationTitleAfter;
+    }
+}
+
 
 
 @media only screen and (max-width: 1024px) {
