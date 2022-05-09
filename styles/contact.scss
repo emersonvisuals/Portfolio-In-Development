@@ -80,179 +80,50 @@ main {
 section.sectionOne {
     @include section;
 
-    .titleContainer {
-        position: relative;
+    form {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
 
-        .title {
-            @include lineAnimationTitleBefore;
+        .nameContainer {
             
-            h1 {
-                @include subHeading;
-                margin: 0;
-                padding:0;
+            input {
+                @include contactContainer;
+            }
+        }
+
+        .emailContainer {
+
+            input {
+                @include contactContainer;
+            }
+
+        }
+
+        .companyContainer {
+
+            input {
+                @include contactContainer;
+            }
+
+        }
+
+        .enquiryContainer {
+
+            textarea {
+                @include contactContainer;
+            }
+
+        }
+
+        .submitContainer {
+            width: 100%;
+
+            button.contactButton {
+                width: 100%;
             }
         }
     }
-
-    .container {
-        @include marqueeContainer;
-
-        a {
-            text-decoration: none;
-        }
-
-        .marqueeOne {
-            @include marqueeTemplate;
-        }
-
-        .marqueeTwo {
-            @include marqueeTemplate;
-        }
-
-        .marqueeThree {
-            @include marqueeTemplate;
-        }
-
-        .marqueeFour {
-            @include marqueeTemplate;
-        }
-
-        .marqueeFive {
-            @include marqueeTemplate;
-        }
-
-        .marqueeSix {
-            @include marqueeTemplate;
-            display: none
-        }
-
-        .marqueeSeven {
-            @include marqueeTemplate;
-            display: none;
-        }
-    }
-}
-
-section.sectionTwo {
-    @include section
-
-    .titleContainerAbout {
-        position: relative;
-
-        .aboutTitle {
-            @include lineAnimationTitleBefore
-
-            h1 {
-                @include subHeading;
-                margin: 0;
-                padding: 0;
-            }
-        }
-
-        .animationSectionAbout {
-
-            .lineAnimationContainerAbout {
-                position: absolute;
-                overflow: hidden;
-                z-index: -2;
-                bottom: 0;
-                left:0;
-                text-align: center;
-        
-        
-                svg {
-                    height:auto;
-                    width: clamp(70vw, 75vw, 80vw);
-                    margin: 0;
-                    z-index: -2;
-                }
-            }
-        }
-
-    }
-
-
-    .aboutGridContainer {
-        height: 60vh;
-        display: grid;
-        grid-template-columns: calc(30% - 1rem) calc(37% - 1rem) calc(33% - 1rem);
-        grid-column-gap: 1rem;
-        grid-template-rows: 50% 50%;
-        grid-row-gap: 1rem;
-        grid-template-areas: 
-        "imageOne imageTwo details"
-        "imageOne imageThree details";
-        opacity: 100%;
-        transition: 0.5s all;
-
-            .aboutImageOne {
-                grid-area: imageOne;
-                width: auto;
-                height: 100%;
-                background-image: url(/images/aboutImageOne.png);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-
-            .aboutImageTwo {
-                grid-area: imageTwo;
-                width: auto;
-                height: 100%;
-                background-image: url(/images/aboutImageTwo.png);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-
-            .aboutImageThree {
-                grid-area: imageThree;
-                width: auto;
-                height: 100%;
-                background-image: url(/images/aboutImageThree.png);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-
-            }
-
-            .details {
-                grid-area: details;
-                width: auto;
-                height: 100%;
-                margin: 0;
-                height: auto;
-                position: relative;
-
-                p {
-                    @include paragraph;
-                    margin: 0;
-                    padding:0;
-                }
-
-                .contentContainer {
-                    position: absolute;
-                    bottom: 0;
-                    
-                    .signatureIcon {
-                        width: calc(100% - 15rem);
-                        height: auto;
-                    }
-
-                    .viewMore {
-                        @include buttonNeutral;
-                        text-transform: capitalize;
-                        width: 100%;
-                    }
-
-                    .viewMore:hover {
-                        @include buttonNeutralHover;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    
 }
 
 footer {
@@ -273,17 +144,6 @@ section.sectionOne.active {
     }
 }
 
-section.sectionTwo.active {
-
-    .aboutTitle {
-        @include lineAnimationTitleAfter
-    }
-
-    .aboutGridContainer {
-        opacity: 100%;
-        transition: 0.5s all;
-    }
-}
 
 @media only screen and (max-width: 1024px) {
 
@@ -304,11 +164,6 @@ section.sectionTwo.active {
     }
 
     section.sectionOne {
-        @include sectionTablet;
-        height: 100vh;
-    }
-
-    section.sectionTwo {
         @include sectionTablet;
         height: 100vh;
     }
@@ -362,11 +217,6 @@ section.sectionTwo.active {
     }
 
     section.sectionOne {
-        @include sectionMobile;
-        height: 100vh;
-    }
-
-    section.sectionTwo {
         @include sectionMobile;
         height: 100vh;
     }
