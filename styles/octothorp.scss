@@ -552,13 +552,12 @@ section.sectionFour.active {
 
     section.sectionThree {
         @include sectionMobile;
-        height: 50vh;
         margin: 10rem 0 0 0;
     }
 
     section.sectionFour {
         @include sectionMobile;
-        height: 30vh;
+        height: 50vh;
         margin: 10rem 0 0 0;
         
         .iframe-container{
@@ -567,6 +566,7 @@ section.sectionFour.active {
             padding-bottom: 56.25%; 
             height: 0;
         }
+
         .iframe-container iframe{
             position: absolute;
             top:0;
