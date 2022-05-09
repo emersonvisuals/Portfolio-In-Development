@@ -310,69 +310,20 @@ section.sectionFour {
     @include section;
     height: 100vh;
 
-    .titleContainer {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-
-
-        .profile {
-            @include lineAnimationTitleBefore02;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-
-            img {
-                height: auto;
-                width: 100%;
-            }
-
-        }
-    }
-
-    .container {
-        @include marqueeContainer;
-
-        a {
-            text-decoration: none;
-        }
-
-        .marqueeOne {
-            @include marqueeTemplate;
-        }
-
-        .marqueeTwo {
-            @include marqueeTemplate;
-        }
-
-        .marqueeThree {
-            @include marqueeTemplate;
-        }
-
-        .marqueeFour {
-            @include marqueeTemplate;
-        }
-
-        .marqueeFive {
-            @include marqueeTemplate;
-        }
-
-        .marqueeSix {
-            @include marqueeTemplate;
-            display: none
-        }
-
-        .marqueeSeven {
-            @include marqueeTemplate;
-            display: none;
-        }
-    }
+    .iframe-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+      }
+      .iframe-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
 }
-
 
 footer {
     @include defaultFooterDesktop;
@@ -450,8 +401,6 @@ section.sectionFour.active {
     }
 }
 
-
-
 @media only screen and (max-width: 1024px) {
 
     main {
@@ -478,6 +427,31 @@ section.sectionFour.active {
     section.sectionTwo {
         @include sectionTablet;
         height: 100vh;
+    }
+
+    section.sectionThree {
+        @include sectionTablet;
+        height: 100vh;
+    }
+
+    section.sectionFour {
+        @include sectionTablet;
+        height: 100vh;
+
+        .iframe-container{
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+            height: 0;
+        }
+
+        .iframe-container iframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     footer {
@@ -580,6 +554,26 @@ section.sectionFour.active {
         @include sectionMobile;
         height: 50vh;
         margin: 10rem 0 0 0;
+    }
+
+    section.sectionFour {
+        @include sectionMobile;
+        height: 50vh;
+        margin: 10rem 0 0 0;
+        
+        .iframe-container{
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+            height: 0;
+        }
+        .iframe-container iframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     footer {
