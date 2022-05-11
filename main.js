@@ -160,13 +160,13 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
         target[index].style.transform = 'translate3d(0px,'+pos+'px, 0px)';
       
       } else if (target[index].dataset.direction === 'horizontal') {
-        var posX = window.pageYOffset * target[index].dataset.ratex;
+        target[index].style.transform = 'translate3d('+pos+'px, 0px, 0px)';
+
+      } else if (target[index].dataset.direction === 'horizontalTwo') {
         target[index].style.transform = 'translate3d('+pos+'px, 0px, 0px)';
 
       } else if (target[index].dataset.direction === 'opacityAndScale') {
-        var posX = window.pageYOffset * target[index].dataset.ratex;
         target[index].style.opacity = 'calc(1 - '+pos+')';
-        //target[index].style.transform = 'scale(calc(1 + '+pos+' * 0.3), calc(1 + '+pos+' * 0.3))';
       
       } else {
         return
