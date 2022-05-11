@@ -789,11 +789,13 @@ section.portfolio {
           justify-content: center;
 }
 
-section.portfolio .titleContainer {
+section.portfolio trans
+.titleContainer {
   position: relative;
 }
 
-section.portfolio .titleContainer .title {
+section.portfolio trans
+.titleContainer .title {
   opacity: 0%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -801,7 +803,8 @@ section.portfolio .titleContainer .title {
           transform: translateY(-3rem);
 }
 
-section.portfolio .titleContainer .title h1 {
+section.portfolio trans
+.titleContainer .title h1 {
   text-transform: uppercase;
   font-size: clamp(3.75rem, 3.75vw, 6.5rem);
   font-weight: 700;
@@ -809,7 +812,8 @@ section.portfolio .titleContainer .title h1 {
   padding: 0;
 }
 
-section.portfolio .titleContainer .animationSection {
+section.portfolio trans
+.titleContainer .animationSection {
   opacity: 100%;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -825,7 +829,8 @@ section.portfolio .titleContainer .animationSection {
           animation: opactityChange 0.25s;
 }
 
-section.portfolio .titleContainer .animationSection .lineAnimationContainer {
+section.portfolio trans
+.titleContainer .animationSection .lineAnimationContainer {
   position: absolute;
   overflow: hidden;
   z-index: -2;
@@ -834,7 +839,8 @@ section.portfolio .titleContainer .animationSection .lineAnimationContainer {
   text-align: center;
 }
 
-section.portfolio .titleContainer .animationSection .lineAnimationContainer svg {
+section.portfolio trans
+.titleContainer .animationSection .lineAnimationContainer svg {
   height: auto;
   width: clamp(75vw, 80vw, 85vw);
   margin: 0;
